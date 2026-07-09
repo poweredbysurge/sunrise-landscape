@@ -6,6 +6,8 @@ import ServiceAreasSection from '@/components/ServiceAreasSection'
 import ServiceCarousel from '@/components/ServiceCarousel'
 import FeaturedWorkCarousel from '@/components/FeaturedWorkCarousel'
 import ContactFormSection from '@/components/ContactFormSection'
+import ServiceExpansion from '@/components/ServiceExpansion'
+import { serviceExpansions } from '@/lib/serviceExpansions'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 
@@ -105,6 +107,8 @@ export default function LandscapeDesignPage() {
 
       {/* ── SERVICES CAROUSEL ── */}
       <ServiceCarousel />
+
+      <ServiceExpansion data={serviceExpansions['landscape-design-northern-virginia']} />
 
       {/* ── SERVICE AREA BAR ── */}
       <ServiceAreasSection />

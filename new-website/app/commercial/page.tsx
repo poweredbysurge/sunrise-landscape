@@ -6,6 +6,8 @@ import ServiceAreasSection from '@/components/ServiceAreasSection'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
+import ServiceExpansion from '@/components/ServiceExpansion'
+import { serviceExpansions } from '@/lib/serviceExpansions'
 
 export const metadata: Metadata = {
   title: 'Commercial Landscape Maintenance | Sunrise Landscape',
@@ -120,9 +122,10 @@ export default function CommercialAliasPage() {
         </div>
       </section>
 
+      <ServiceExpansion data={serviceExpansions['commercial']} />
+
       {/* Service area bar */}
       <ServiceAreasSection />
-
 
       {/* ── CONTACT FORM ── */}
       <ContactFormSection />

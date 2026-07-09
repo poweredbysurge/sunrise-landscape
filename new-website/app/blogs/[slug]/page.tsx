@@ -2,11 +2,16 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
-import ServiceAreasSection from '@/components/ServiceAreasSection'
 import NewsletterSidebar from '@/components/NewsletterSidebar'
 import ShareButtons from '@/components/ShareButtons'
 import { getMdxJsonLd, getBlogHtml, getAllBlogSlugs } from '@/lib/manifest'
 import { getBlogBySlug, BLOGS } from '@/lib/blogData'
+
+// One H1 per page: the template renders the H1, so any H1 inside the
+// imported article HTML is demoted to H2 (fixes duplicate-H1 pages).
+function demoteBodyH1(html: string): string {
+  return html.replace(/<h1(\s[^>]*)?>/gi, '<h2$1>').replace(/<\/h1>/gi, '</h2>')
+}
 
 export async function generateStaticParams() {
   return getAllBlogSlugs().map((slug) => ({ slug }))
@@ -116,7 +121,7 @@ export default async function BlogPostPage({
               {articleHtml ? (
                 <div
                   className="prose-content"
-                  dangerouslySetInnerHTML={{ __html: articleHtml }}
+                  dangerouslySetInnerHTML={{ __html: demoteBodyH1(articleHtml) }}
                 />
               ) : (
                 /* Fallback for posts without a local HTML file */
@@ -170,8 +175,6 @@ export default async function BlogPostPage({
           </div>
         </div>
       </section>
-
-      <ServiceAreasSection />
     </>
   )
 }

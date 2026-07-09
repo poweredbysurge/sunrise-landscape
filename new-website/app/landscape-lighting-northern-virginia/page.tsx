@@ -6,6 +6,8 @@ import ServiceAreasSection from '@/components/ServiceAreasSection'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
+import ServiceExpansion from '@/components/ServiceExpansion'
+import { serviceExpansions } from '@/lib/serviceExpansions'
 import ServiceCard from '@/components/ServiceCard'
 
 export const metadata: Metadata = {
@@ -230,9 +232,10 @@ export default function LandscapeLightingPage() {
         </div>
       </section>
 
+      <ServiceExpansion data={serviceExpansions['landscape-lighting-northern-virginia']} />
+
       {/* ── SERVICE AREA BAR ── */}
       <ServiceAreasSection />
-
 
       {/* ── CONTACT FORM ── */}
       <ContactFormSection />

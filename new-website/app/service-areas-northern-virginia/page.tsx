@@ -6,6 +6,8 @@ import ServiceCarousel from '@/components/ServiceCarousel'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
+import ServiceExpansion from '@/components/ServiceExpansion'
+import { serviceExpansions } from '@/lib/serviceExpansions'
 
 export const metadata: Metadata = {
   title: 'Landscape Services Across Northern Virginia | Sunrise Landscape & Design',
@@ -166,9 +168,9 @@ export default function ServiceAreasNVPage() {
       {/* Second H1 (matches Webflow heading tree) */}
       <section className="bg-cream py-8">
         <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
-          <h1 className="text-4xl lg:text-6xl text-green">
+          <h2 className="text-4xl lg:text-6xl text-green">
             Landscape Lighting Services in Northern Virginia
-          </h1>
+          </h2>
         </div>
       </section>
 
@@ -220,6 +222,8 @@ export default function ServiceAreasNVPage() {
       <ServiceCarousel title="Our Services in Northern Virginia" />
 
       {/* ── CONTACT FORM ── */}
+      <ServiceExpansion data={serviceExpansions['service-areas-northern-virginia']} />
+
       <ContactFormSection />
     </>
   )

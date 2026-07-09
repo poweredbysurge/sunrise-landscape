@@ -257,11 +257,11 @@ export default function HomeVersionB() {
       {/* ── MAINTENANCE SECTION ────────────────────────────────────── */}
       <MaintenanceSection />
 
-      {/* ── SERVICE AREAS ──────────────────────────────────────────── */}
-      <ServiceAreasSection />
-
       {/* ── TESTIMONIALS ───────────────────────────────────────────── */}
       <TestimonialsSection testimonials={testimonials} />
+
+      {/* ── SERVICE AREAS ──────────────────────────────────────────── */}
+      <ServiceAreasSection />
 
       {/* ── CONTACT FORM ───────────────────────────────────────────── */}
       <ContactFormSection />

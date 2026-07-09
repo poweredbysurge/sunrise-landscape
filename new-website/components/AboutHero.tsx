@@ -33,13 +33,16 @@ export default function AboutHero() {
 
         {/* Left: editorial heading */}
         <div className="lg:w-1/2">
-          <h1
+          <h1 className="text-cream text-lg lg:text-xl font-bold uppercase tracking-widest mb-4">
+            About Sunrise Landscape and Design
+          </h1>
+          <p
             className="text-cream"
             style={{ fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'italic', fontWeight: 400, fontSize: '4.5rem', lineHeight: 0.92, letterSpacing: '-0.025em' }}
           >
             <span className="block">Growing joy</span>
             <span className="block">The sunrise story</span>
-          </h1>
+          </p>
         </div>
 
         {/* Right: body text */}

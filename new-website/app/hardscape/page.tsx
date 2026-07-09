@@ -6,6 +6,8 @@ import ServiceAreasSection from '@/components/ServiceAreasSection'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
+import ServiceExpansion from '@/components/ServiceExpansion'
+import { serviceExpansions } from '@/lib/serviceExpansions'
 import HardscapeHero from '@/components/HardscapeHero'
 
 export const metadata: Metadata = {
@@ -85,9 +87,10 @@ export default function HardscapeAliasPage() {
         </div>
       </section>
 
+      <ServiceExpansion data={serviceExpansions['hardscape']} />
+
       {/* Service area bar */}
       <ServiceAreasSection />
-
 
       {/* ── CONTACT FORM ── */}
       <ContactFormSection />

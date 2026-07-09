@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
-import ServiceAreasSection from '@/components/ServiceAreasSection'
 import ContactFormSection from '@/components/ContactFormSection'
 import ContactHero from '@/components/ContactHero'
 import LeafletMapClient from '@/components/LeafletMapClient'
@@ -164,9 +163,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
-      {/* ── SERVICE AREA BAR ── */}
-      <ServiceAreasSection />
     </>
   )
 }

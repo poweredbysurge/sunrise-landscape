@@ -6,6 +6,8 @@ import ServiceAreasSection from '@/components/ServiceAreasSection'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
+import ServiceExpansion from '@/components/ServiceExpansion'
+import { serviceExpansions } from '@/lib/serviceExpansions'
 
 export const metadata: Metadata = {
   title: 'Landscape Planting Northern Virginia | Sunrise Landscape',
@@ -75,7 +77,11 @@ export default function LandscapePlantingPage() {
               ))}
             </svg>
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-10 py-10 lg:px-14 lg:py-12">
-              <h1 className="text-cream" style={{ lineHeight: 1.05 }}>
+              <div>
+              <h1 className="text-cream text-lg lg:text-xl font-bold uppercase tracking-widest mb-4">
+                Landscape Planting Services in Northern Virginia
+              </h1>
+              <p className="text-cream" style={{ lineHeight: 1.05 }}>
                 <span style={{ fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'italic', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', display: 'block' }}>
                   Plant Design
                 </span>
@@ -85,7 +91,8 @@ export default function LandscapePlantingPage() {
                     Nature
                   </span>
                 </span>
-              </h1>
+              </p>
+            </div>
               <div>
                 <p className="text-cream leading-relaxed mb-6">
                   We believe a great planting does more than fill space — it brings life, texture, and story to your landscape. With an artist&apos;s eye and decades of experience, we create living environments that evolve beautifully with time and purpose.
@@ -278,6 +285,8 @@ export default function LandscapePlantingPage() {
 
 
       {/* ── CONTACT FORM ── */}
+      <ServiceExpansion data={serviceExpansions['landscape-planting-northern-virginia']} />
+
       <ContactFormSection />
     </>
   )

@@ -7,6 +7,8 @@ import MaintenanceHero from '@/components/MaintenanceHero'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
+import ServiceExpansion from '@/components/ServiceExpansion'
+import { serviceExpansions } from '@/lib/serviceExpansions'
 
 export const metadata: Metadata = {
   title: 'Landscape Maintenance Northern Virginia | Sunrise Landscape',
@@ -339,9 +341,10 @@ export default function LandscapeMaintenancePage() {
         </div>
       </section>
 
+      <ServiceExpansion data={serviceExpansions['landscape-maintenance-northern-virginia']} />
+
       {/* ── SERVICE AREA BAR ── */}
       <ServiceAreasSection />
-
 
       {/* ── CONTACT FORM ── */}
       <ContactFormSection />

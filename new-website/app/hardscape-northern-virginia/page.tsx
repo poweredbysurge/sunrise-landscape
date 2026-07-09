@@ -5,6 +5,8 @@ import ServiceAreasSection from '@/components/ServiceAreasSection'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
+import ServiceExpansion from '@/components/ServiceExpansion'
+import { serviceExpansions } from '@/lib/serviceExpansions'
 import HardscapeHero from '@/components/HardscapeHero'
 import HardscapeCarousel from '@/components/HardscapeCarousel'
 
@@ -67,6 +69,8 @@ export default function HardscapePage() {
 
         </div>
       </section>
+
+      <ServiceExpansion data={serviceExpansions['hardscape-northern-virginia']} />
 
       {/* ── SERVICE AREA BAR ── */}
       <ServiceAreasSection />

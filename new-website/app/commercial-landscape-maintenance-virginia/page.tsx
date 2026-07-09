@@ -6,6 +6,8 @@ import ServiceAreasSection from '@/components/ServiceAreasSection'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
+import ServiceExpansion from '@/components/ServiceExpansion'
+import { serviceExpansions } from '@/lib/serviceExpansions'
 import ServiceCard from '@/components/ServiceCard'
 
 export const metadata: Metadata = {
@@ -50,9 +52,12 @@ export default function CommercialLandscapePage() {
         >
           {/* Left: text */}
           <div className="px-10 py-12 lg:px-14 lg:py-16 flex flex-col justify-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl text-green leading-tight mb-6">
-              Commercial Landscape Services in Northern Virginia
+            <h1 className="text-green text-lg lg:text-xl font-bold uppercase tracking-widest mb-3">
+              Commercial Landscape Maintenance in Virginia
             </h1>
+            <h2 className="text-4xl sm:text-5xl lg:text-7xl text-green leading-tight mb-6">
+              Commercial Landscape Services in Northern Virginia
+            </h2>
             <p className="text-black/60 leading-relaxed mb-8 max-w-sm">
               Transform your commercial property into a distinctive destination that welcomes, impresses, and adds value to your business investment. From corporate campuses to vibrant community spaces, we bring our signature blend of artistic vision and professional excellence to every commercial project.
             </p>
@@ -146,9 +151,10 @@ export default function CommercialLandscapePage() {
         </div>
       </section>
 
+      <ServiceExpansion data={serviceExpansions['commercial-landscape-maintenance-virginia']} />
+
       {/* ── SERVICE AREA BAR ── */}
       <ServiceAreasSection />
-
 
       {/* ── CONTACT FORM ── */}
       <ContactFormSection />

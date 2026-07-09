@@ -6,6 +6,8 @@ import ServiceAreasSection from '@/components/ServiceAreasSection'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
+import ServiceExpansion from '@/components/ServiceExpansion'
+import { serviceExpansions } from '@/lib/serviceExpansions'
 
 export const metadata: Metadata = {
   title: 'Drainage Solutions Northern Virginia | Sunrise Landscape',
@@ -45,12 +47,15 @@ export default function DrainageSolutionsPage() {
       <section className="bg-green py-16 lg:py-24">
         <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <h1
-              className="text-4xl sm:text-5xl lg:text-7xl text-cream leading-tight"
-            >
-              <span className="font-display editorial-display italic font-normal block" style={{ fontSize: '0.72em' }}>Drainage</span>
-              and Erosion Control
-            </h1>
+            <div>
+              <h1 className="text-cream text-lg lg:text-xl font-bold uppercase tracking-widest mb-4">
+                Drainage Solutions in Northern Virginia
+              </h1>
+              <p className="text-4xl sm:text-5xl lg:text-7xl text-cream leading-tight">
+                <span className="font-display editorial-display italic font-normal block" style={{ fontSize: '0.72em' }}>Drainage</span>
+                and Erosion Control
+              </p>
+            </div>
             <div>
               <p className="text-cream text-lg lg:text-xl leading-relaxed mb-8">
                 Where art meets engineering, we transform water challenges into opportunities for landscape enhancement. Our expertise ensures your property remains beautiful and structurally sound through every season.
@@ -219,9 +224,10 @@ export default function DrainageSolutionsPage() {
         </div>
       </section>
 
+      <ServiceExpansion data={serviceExpansions['drainage-solutions-northern-virginia']} />
+
       {/* ── SERVICE AREA BAR ── */}
       <ServiceAreasSection />
-
 
       {/* ── CONTACT FORM ── */}
       <ContactFormSection />
