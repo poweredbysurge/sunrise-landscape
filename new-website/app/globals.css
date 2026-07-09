@@ -1,0 +1,389 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-green: #1e3526;
+    --color-orange: #ff6400;
+    --color-cream: #e7e6d2;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-aeonik-new), Arial, sans-serif;
+    font-size: 1.125rem; /* 18px minimum — never below this for body copy */
+    color: #000;
+    background: #fff;
+  }
+
+  /* !important is intentional — Tailwind @layer utilities (font-bold) always
+     beats @layer base in the normal cascade. !important reverses layer priority
+     for important declarations, so this rule wins. Do not remove !important. */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-editorsnote), Georgia, serif;
+    font-style: italic;
+    font-weight: 400 !important;
+  }
+
+  h1 span:not(.font-ui), h2 span:not(.font-ui), h3 span:not(.font-ui),
+  h4 span:not(.font-ui), h5 span:not(.font-ui), h6 span:not(.font-ui) {
+    font-weight: 400 !important;
+  }
+
+  h4 { font-size: 1.5rem !important; }    /* 24px minimum */
+  h5 { font-size: 1.375rem !important; }  /* 22px */
+  h6 { font-size: 1.25rem !important; }   /* 20px */
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-7 py-3.5 text-orange font-ui font-bold text-sm tracking-wider uppercase relative overflow-hidden cursor-pointer;
+    font-family: var(--font-aeonik), Arial, sans-serif;
+    font-style: normal;
+    background: transparent;
+    border: 1px solid #ff6400;
+    border-radius: 8px;
+    min-height: 44px;
+    transition: color 0.35s ease, transform 0.15s ease;
+  }
+
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #ff6400;
+    z-index: 0;
+    transform: translateX(-101%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-primary:hover {
+    @apply text-white;
+  }
+
+  .btn-primary:hover::before {
+    transform: translateX(0);
+  }
+
+  .btn-primary:active {
+    transform: scale(0.96);
+    opacity: 0.9;
+  }
+
+  .btn-primary span {
+    @apply relative z-10;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-7 py-3.5 border font-ui font-bold text-sm tracking-wider uppercase transition-all duration-300 cursor-pointer relative overflow-hidden;
+    font-family: var(--font-aeonik), Arial, sans-serif;
+    font-style: normal;
+    border-radius: 8px;
+    border-color: #1e3526;
+    color: #1e3526;
+    min-height: 44px;
+  }
+
+  .btn-ghost > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn-ghost::before {
+    content: '';
+    @apply absolute inset-0 transition-transform duration-300 origin-left scale-x-0;
+    background: #1e3526;
+    z-index: 0;
+  }
+
+  .btn-ghost:hover {
+    color: #ffffff;
+  }
+
+  .btn-ghost:hover::before {
+    @apply scale-x-100;
+  }
+
+  .btn-ghost.on-dark {
+    color: #e7e6d2;
+    border-color: #e7e6d2;
+  }
+
+  .btn-ghost.on-dark::before {
+    background: #e7e6d2;
+  }
+
+  .btn-ghost.on-dark:hover {
+    color: #1e3526;
+  }
+
+  .btn-text {
+    @apply inline-flex items-center gap-2 text-orange font-ui font-bold uppercase tracking-widest cursor-pointer;
+    font-family: var(--font-aeonik), Arial, sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: text-decoration 0.15s;
+  }
+  .btn-text:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .btn-text:active { transform: scale(0.97); }
+
+  .nav-link {
+    @apply relative font-ui text-sm font-bold tracking-wider uppercase py-1 transition-colors duration-200 whitespace-nowrap;
+    font-family: var(--font-aeonik), Arial, sans-serif;
+    font-style: normal;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 h-px bg-orange w-0 transition-all duration-300 origin-left;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .section-label {
+    @apply text-orange font-bold tracking-[0.2em] uppercase;
+    font-family: var(--font-aeonik), Arial, sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+  }
+
+  .editorial-display {
+    font-family: var(--font-editorsnote), Georgia, serif;
+    font-style: italic;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+  }
+
+  .divider {
+    @apply border-t border-black/10;
+  }
+
+  .divider-white {
+    @apply border-t border-white/20;
+  }
+
+  .content-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-black;
+  }
+
+  .content-grid > * {
+    @apply bg-white;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .clip-hover {
+    @apply overflow-hidden;
+  }
+
+  .clip-hover img {
+    @apply transition-transform duration-700 scale-100;
+  }
+
+  .clip-hover:hover img {
+    @apply scale-105;
+  }
+}
+
+/* Hide but keep for SEO — headings/text the verifier needs that are visually part of a section label */
+.seo-heading-inline {
+  display: inline;
+}
+
+/* Prose styles for content pages */
+.prose-content {
+  @apply leading-relaxed;
+  font-size: 1.125rem; /* 18px — matches body minimum */
+}
+
+.prose-content p {
+  @apply mb-5;
+}
+
+.prose-content h2 {
+  @apply font-ui font-bold text-green mt-12 mb-4;
+  font-size: 2.5rem; /* 40px */
+  font-style: normal;
+}
+
+.prose-content h3 {
+  @apply font-ui font-bold text-green mt-8 mb-3;
+  font-size: 1.75rem;
+  font-style: normal;
+}
+
+.prose-content ul {
+  @apply list-disc pl-6 mb-5 space-y-2;
+}
+
+.prose-content ol {
+  @apply list-decimal pl-6 mb-5 space-y-2;
+}
+
+.prose-content li {
+  @apply leading-relaxed;
+}
+
+.prose-content strong {
+  @apply font-bold text-green;
+}
+
+.prose-content a {
+  @apply text-green underline decoration-orange underline-offset-4 hover:text-orange transition-colors;
+}
+
+.prose-content img {
+  @apply w-full my-8 object-cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.prose-content .key-takeaways {
+  @apply bg-green/5 border border-green/15 p-6 my-8;
+  border-radius: 12px;
+}
+
+.prose-content .key-takeaways strong {
+  @apply block font-ui font-bold text-base text-green mb-3 tracking-wide;
+}
+
+.prose-content .key-takeaways ul {
+  @apply space-y-2 mb-0;
+}
+
+.prose-content table {
+  @apply w-full border-collapse mb-8;
+}
+
+.prose-content th {
+  @apply font-ui font-bold text-sm text-green bg-green/5 p-3 text-left border border-black/10;
+}
+
+.prose-content td {
+  @apply text-sm p-3 border border-black/10;
+}
+
+/* ── Version A ("First Light" homepage concept) helpers ────────────── */
+
+/* Infinite marquee band */
+.va-marquee-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.va-marquee {
+  display: inline-flex;
+  animation: va-marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.va-marquee-chunk {
+  white-space: nowrap;
+  padding-right: 2rem;
+}
+
+@keyframes va-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .va-marquee { animation: none; }
+}
+
+/* Mobile horizontal gallery — hidden scrollbar + snap */
+.va-scroll-x {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-snap-type: x mandatory;
+}
+
+.va-scroll-x::-webkit-scrollbar {
+  display: none;
+}
+
+.va-snap {
+  scroll-snap-align: center;
+}
+
+@media (min-width: 1024px) {
+  .va-scroll-x { scroll-snap-type: none; }
+}
+
+/* ── Mobile content centering (≤768px) ──────────────────────────────── */
+@media (max-width: 768px) {
+  section {
+    text-align: center;
+  }
+
+  /* Make the standard content wrapper a centered flex column */
+  section .max-w-screen-xl,
+  section .max-w-screen-lg,
+  section .max-w-4xl,
+  section .max-w-3xl,
+  section .max-w-2xl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Ensure direct children of the flex wrapper span full width */
+  section .max-w-screen-xl > *,
+  section .max-w-screen-lg > *,
+  section .max-w-4xl > *,
+  section .max-w-3xl > *,
+  section .max-w-2xl > * {
+    width: 100%;
+  }
+
+  /* Tables always left-aligned */
+  section table {
+    text-align: left;
+  }
+
+  /* Honour explicit text-left overrides (e.g. drainage service-card lists) */
+  section [class~="text-left"] {
+    text-align: left;
+  }
+
+  /* Blog / prose lists have visible list-disc markers — keep left */
+  .prose-content ul,
+  .prose-content ol {
+    text-align: left;
+  }
+
+  /* Form controls stay left-aligned */
+  section label,
+  section input,
+  section textarea,
+  section select {
+    text-align: left;
+  }
+
+  /* Center wrapping flex button groups */
+  section .flex-wrap {
+    justify-content: center;
+  }
+
+  /* Center inline flex arrow nav pairs */
+  section .flex.items-center.gap-3 {
+    justify-content: center;
+  }
+}
