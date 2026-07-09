@@ -1,0 +1,913 @@
+[
+  {
+    "path": "/",
+    "file": "pages/index.mdx",
+    "title": "Landscape Design Northern Virginia | Sunrise Landscape",
+    "description": "Professional landscape design services in Northern Virginia for residential and commercial properties. Trusted local experts with over 39 years of experience.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 818,
+    "image_count": 29,
+    "heading_count": 28,
+    "internal_link_count": 19,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/about-us",
+    "file": "pages/about-us/index.mdx",
+    "title": "About Us | Sunrise Landscape and Design",
+    "description": "Learn about Sunrise Landscape and Design, Northern Virginia's trusted landscape experts since 1986. Serving 15+ communities with excellence and integrity.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 625,
+    "image_count": 4,
+    "heading_count": 6,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blog",
+    "file": "pages/blog/index.mdx",
+    "title": "Landscaping Blog | Sunrise Landscape and Design",
+    "description": "Landscape design tips, planting guides, hardscaping ideas, and seasonal lawn care advice for Northern Virginia homeowners. Expert insights from Sunrise Landscape.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 3,
+    "internal_link_count": 30,
+    "schema_types": [
+      "BlogPosting",
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/backyard-landscape-design",
+    "file": "pages/blogs/backyard-landscape-design/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/commercial-landscape-design",
+    "file": "pages/blogs/commercial-landscape-design/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/commercial-landscape-maintenance",
+    "file": "pages/blogs/commercial-landscape-maintenance/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/creating-a-sustainable-garden",
+    "file": "pages/blogs/creating-a-sustainable-garden/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/designing-with-color-in-mind",
+    "file": "pages/blogs/designing-with-color-in-mind/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/dont-wait-for-spring",
+    "file": "pages/blogs/dont-wait-for-spring/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/fire-pit-installation",
+    "file": "pages/blogs/fire-pit-installation/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/front-yard-landscape-design",
+    "file": "pages/blogs/front-yard-landscape-design/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/hardscape-contractor-near-me",
+    "file": "pages/blogs/hardscape-contractor-near-me/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/hardscaping-enhancing-your-outdoor-space",
+    "file": "pages/blogs/hardscaping-enhancing-your-outdoor-space/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/how-to-build-a-retaining-wall",
+    "file": "pages/blogs/how-to-build-a-retaining-wall/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/landscape-design-costs-northern-virginia",
+    "file": "pages/blogs/landscape-design-costs-northern-virginia/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/landscape-design-services-near-me",
+    "file": "pages/blogs/landscape-design-services-near-me/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/landscape-lighting-costs-northern-virginia",
+    "file": "pages/blogs/landscape-lighting-costs-northern-virginia/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/landscape-maintenance-services",
+    "file": "pages/blogs/landscape-maintenance-services/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/modern-landscape-design",
+    "file": "pages/blogs/modern-landscape-design/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/northern-virginia-landscaping-planting-guide",
+    "file": "pages/blogs/northern-virginia-landscaping-planting-guide/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/residential-landscape-design",
+    "file": "pages/blogs/residential-landscape-design/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/residential-landscaping",
+    "file": "pages/blogs/residential-landscaping/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/retaining-walls-northern-virginia",
+    "file": "pages/blogs/retaining-walls-northern-virginia/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/snow-and-ice-management",
+    "file": "pages/blogs/snow-and-ice-management/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/snow-plowing-vs-snow-removal-costs",
+    "file": "pages/blogs/snow-plowing-vs-snow-removal-costs/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/the-benefits-of-native-plants",
+    "file": "pages/blogs/the-benefits-of-native-plants/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/top-10-plants-for-your-garden",
+    "file": "pages/blogs/top-10-plants-for-your-garden/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/transform-your-backyard-into-a-paradise",
+    "file": "pages/blogs/transform-your-backyard-into-a-paradise/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/what-is-dormant-turf-and-why-it-matters-in-northern-virginia",
+    "file": "pages/blogs/what-is-dormant-turf-and-why-it-matters-in-northern-virginia/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/when-to-mulch-in-northern-virginia-mulch-installation-guide",
+    "file": "pages/blogs/when-to-mulch-in-northern-virginia-mulch-installation-guide/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/why-fall-fertilization-matters-for-trees-and-shrubs",
+    "file": "pages/blogs/why-fall-fertilization-matters-for-trees-and-shrubs/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/winter-outdoor-space-cozy-escape",
+    "file": "pages/blogs/winter-outdoor-space-cozy-escape/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/blogs/year-round-landscape-maintenance-northern-virginia",
+    "file": "pages/blogs/year-round-landscape-maintenance-northern-virginia/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "Read expert landscaping advice from Sunrise Landscape and Design. Tips on landscape design, maintenance, hardscaping, and outdoor living in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 0,
+    "image_count": 2,
+    "heading_count": 1,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/career",
+    "file": "pages/career/index.mdx",
+    "title": "Landscaping Careers Northern Virginia | Sunrise Landscape",
+    "description": "Join Sunrise Landscape and Design in Northern Virginia. We're hiring skilled landscape professionals for design, installation, and maintenance. Apply today.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 554,
+    "image_count": 7,
+    "heading_count": 9,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/commercial",
+    "file": "pages/commercial/index.mdx",
+    "title": "Commercial Landscape Maintenance | Sunrise Landscape",
+    "description": "Commercial landscape maintenance in Virginia. Professional care for corporate campuses and commercial properties. Serving Northern Virginia since 1986.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 120,
+    "image_count": 5,
+    "heading_count": 5,
+    "internal_link_count": 31,
+    "schema_types": [
+      "LocalBusiness",
+      "Service"
+    ]
+  },
+  {
+    "path": "/commercial-landscape-maintenance-virginia",
+    "file": "pages/commercial-landscape-maintenance-virginia/index.mdx",
+    "title": "Commercial Landscape Maintenance | Sunrise Landscape",
+    "description": "Commercial landscape maintenance in Virginia. Professional care for corporate campuses and commercial properties. Serving Northern Virginia since 1986.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 120,
+    "image_count": 5,
+    "heading_count": 5,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness",
+      "Service"
+    ]
+  },
+  {
+    "path": "/contact",
+    "file": "pages/contact/index.mdx",
+    "title": "Contact Us | Sunrise Landscape and Design",
+    "description": "Contact Sunrise Landscape and Design in Sterling, VA. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 162,
+    "image_count": 2,
+    "heading_count": 8,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/drainage-solutions-northern-virginia",
+    "file": "pages/drainage-solutions-northern-virginia/index.mdx",
+    "title": "Drainage Solutions Northern Virginia | Sunrise Landscape",
+    "description": "Professional drainage solutions in Northern Virginia. Protect your property from water damage with expert erosion control and drainage systems.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 119,
+    "image_count": 6,
+    "heading_count": 10,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness",
+      "Service"
+    ]
+  },
+  {
+    "path": "/hardscape",
+    "file": "pages/hardscape/index.mdx",
+    "title": "Hardscape Contractor Northern Virginia | Sunrise Landscape",
+    "description": "Professional hardscape contractor serving Northern Virginia. Custom patios, walkways, and stonework built to last. Get your free consultation today.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 129,
+    "image_count": 9,
+    "heading_count": 5,
+    "internal_link_count": 31,
+    "schema_types": [
+      "LocalBusiness",
+      "Service"
+    ]
+  },
+  {
+    "path": "/hardscape-northern-virginia",
+    "file": "pages/hardscape-northern-virginia/index.mdx",
+    "title": "Hardscape Contractor Northern Virginia | Sunrise Landscape",
+    "description": "Professional hardscape contractor serving Northern Virginia. Custom patios, walkways, and stonework built to last. Get your free consultation today.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 129,
+    "image_count": 9,
+    "heading_count": 5,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness",
+      "Service"
+    ]
+  },
+  {
+    "path": "/landscape-design-northern-virginia",
+    "file": "pages/landscape-design-northern-virginia/index.mdx",
+    "title": "Landscape Design Northern Virginia | Sunrise Landscape",
+    "description": "Expert landscape design services in Northern Virginia. Transform your outdoor space with custom designs from our experienced team. Free consultation available.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 473,
+    "image_count": 28,
+    "heading_count": 21,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness",
+      "Service"
+    ]
+  },
+  {
+    "path": "/landscape-lighting-northern-virginia",
+    "file": "pages/landscape-lighting-northern-virginia/index.mdx",
+    "title": "Landscape Lighting Northern Virginia | Sunrise Landscape",
+    "description": "Transform your property with professional landscape lighting in Northern Virginia. Expert design and installation for homes and businesses.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 212,
+    "image_count": 9,
+    "heading_count": 12,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness",
+      "Service"
+    ]
+  },
+  {
+    "path": "/landscape-maintenance-northern-virginia",
+    "file": "pages/landscape-maintenance-northern-virginia/index.mdx",
+    "title": "Landscape Maintenance Northern Virginia | Sunrise Landscape",
+    "description": "Professional landscape maintenance in Northern Virginia. Year-round care packages for residential and commercial properties. Keep your landscape thriving.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 235,
+    "image_count": 8,
+    "heading_count": 7,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness",
+      "Service"
+    ]
+  },
+  {
+    "path": "/landscape-planting-northern-virginia",
+    "file": "pages/landscape-planting-northern-virginia/index.mdx",
+    "title": "Landscape Planting Northern Virginia | Sunrise Landscape",
+    "description": "Expert landscape planting services in Northern Virginia. Beautiful plantings, trees, and shrubs for residential and commercial properties. Free consultation.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 294,
+    "image_count": 4,
+    "heading_count": 17,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness",
+      "Service"
+    ]
+  },
+  {
+    "path": "/privacy",
+    "file": "pages/privacy/index.mdx",
+    "title": "Privacy Policy | Sunrise Landscape and Design",
+    "description": "Privacy policy for Sunrise Landscape and Design. Learn how we collect, use, and protect your personal information when you visit our website or request our services.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 581,
+    "image_count": 1,
+    "heading_count": 12,
+    "internal_link_count": 3,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/service-areas-northern-virginia",
+    "file": "pages/service-areas-northern-virginia/index.mdx",
+    "title": "Landscape Services Across Northern Virginia | Sunrise Landscape & Design",
+    "description": "Sunrise Landscape & Design serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. 39+ years of landscape design, hardscape, and maintenance expertise.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 515,
+    "image_count": 21,
+    "heading_count": 25,
+    "internal_link_count": 31,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/service-areas/landscaping-ashburn-va",
+    "file": "pages/service-areas/landscaping-ashburn-va/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "",
+    "canonical": "",
+    "robots": "",
+    "word_count": 342,
+    "image_count": 13,
+    "heading_count": 17,
+    "internal_link_count": 14,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/service-areas/landscaping-centreville-va",
+    "file": "pages/service-areas/landscaping-centreville-va/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "",
+    "canonical": "",
+    "robots": "",
+    "word_count": 346,
+    "image_count": 13,
+    "heading_count": 17,
+    "internal_link_count": 14,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/service-areas/landscaping-chantilly-va",
+    "file": "pages/service-areas/landscaping-chantilly-va/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "",
+    "canonical": "",
+    "robots": "",
+    "word_count": 339,
+    "image_count": 13,
+    "heading_count": 17,
+    "internal_link_count": 14,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/service-areas/landscaping-great-falls-va",
+    "file": "pages/service-areas/landscaping-great-falls-va/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "",
+    "canonical": "",
+    "robots": "",
+    "word_count": 346,
+    "image_count": 13,
+    "heading_count": 17,
+    "internal_link_count": 14,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/service-areas/landscaping-herndon-va",
+    "file": "pages/service-areas/landscaping-herndon-va/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "",
+    "canonical": "",
+    "robots": "",
+    "word_count": 348,
+    "image_count": 13,
+    "heading_count": 17,
+    "internal_link_count": 14,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/service-areas/landscaping-leesburg-va",
+    "file": "pages/service-areas/landscaping-leesburg-va/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "",
+    "canonical": "",
+    "robots": "",
+    "word_count": 349,
+    "image_count": 13,
+    "heading_count": 17,
+    "internal_link_count": 14,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/service-areas/landscaping-mclean-va",
+    "file": "pages/service-areas/landscaping-mclean-va/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "",
+    "canonical": "",
+    "robots": "",
+    "word_count": 340,
+    "image_count": 13,
+    "heading_count": 17,
+    "internal_link_count": 14,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/service-areas/landscaping-oakton-va",
+    "file": "pages/service-areas/landscaping-oakton-va/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "",
+    "canonical": "",
+    "robots": "",
+    "word_count": 350,
+    "image_count": 13,
+    "heading_count": 17,
+    "internal_link_count": 14,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/service-areas/landscaping-reston-va",
+    "file": "pages/service-areas/landscaping-reston-va/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "",
+    "canonical": "",
+    "robots": "",
+    "word_count": 347,
+    "image_count": 13,
+    "heading_count": 17,
+    "internal_link_count": 14,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/service-areas/landscaping-sterling-va",
+    "file": "pages/service-areas/landscaping-sterling-va/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "",
+    "canonical": "",
+    "robots": "",
+    "word_count": 343,
+    "image_count": 13,
+    "heading_count": 17,
+    "internal_link_count": 14,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/service-areas/landscaping-vienna-va",
+    "file": "pages/service-areas/landscaping-vienna-va/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "",
+    "canonical": "",
+    "robots": "",
+    "word_count": 339,
+    "image_count": 13,
+    "heading_count": 17,
+    "internal_link_count": 14,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/service-areas/landscaping-western-loudoun-va",
+    "file": "pages/service-areas/landscaping-western-loudoun-va/index.mdx",
+    "title": "Sunrise Landscape",
+    "description": "",
+    "canonical": "",
+    "robots": "",
+    "word_count": 349,
+    "image_count": 13,
+    "heading_count": 17,
+    "internal_link_count": 14,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/terms-of-service",
+    "file": "pages/terms-of-service/index.mdx",
+    "title": "Terms of Service | Sunrise Landscape and Design",
+    "description": "Terms of service for Sunrise Landscape and Design. Review our service agreements, payment policies, and client responsibilities for landscaping services in Northern Virginia.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 590,
+    "image_count": 2,
+    "heading_count": 13,
+    "internal_link_count": 31,
+    "schema_types": [
+      "LocalBusiness"
+    ]
+  },
+  {
+    "path": "/water-features-northern-virginia",
+    "file": "pages/water-features-northern-virginia/index.mdx",
+    "title": "Water Features Northern Virginia | Sunrise Landscape",
+    "description": "Custom water features and pond installation in Northern Virginia. From koi ponds to waterfalls, we create stunning aquatic landscapes. Contact us today.",
+    "canonical": "",
+    "robots": "",
+    "word_count": 130,
+    "image_count": 10,
+    "heading_count": 10,
+    "internal_link_count": 30,
+    "schema_types": [
+      "LocalBusiness",
+      "Service"
+    ]
+  }
+]
