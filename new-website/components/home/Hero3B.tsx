@@ -1,6 +1,8 @@
 'use client'
 
 import { useEffect, useRef, useState, type MouseEvent } from 'react'
+import Image from 'next/image'
+import heroBackground from './Background 2.png'
 
 type ServiceKey = 'maintenance' | 'project' | 'commercial' | 'notsure'
 
@@ -128,7 +130,7 @@ export default function Hero3B() {
   const reviewCount = GOOGLE_REVIEWS.length
 
   const heroCopy = (
-    <div className="flex flex-col justify-start lg:justify-center gap-4 lg:gap-6 px-6 lg:px-14 py-0 lg:py-0">
+    <div className="relative z-10 flex flex-col justify-start lg:justify-center gap-4 lg:gap-6 px-6 lg:px-14 py-0 lg:py-0">
       <p className="hidden lg:block section-label text-orange">
         Family Owned &middot; Sterling, Virginia &middot; Since 1986
       </p>
@@ -472,13 +474,18 @@ export default function Hero3B() {
     <>
       <section
         ref={heroRef}
-        className="relative w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_560px]"
-        style={{ backgroundColor: '#1e3526', minHeight: '90vh', paddingTop: '150px', paddingBottom: '64px' }}
+        className="relative w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_560px] overflow-hidden"
+        style={{ backgroundColor: '#1e3526', minHeight: '90vh', paddingTop: '112px', paddingBottom: '64px' }}
       >
+        <div className="absolute inset-0 z-0">
+          <Image src={heroBackground} alt="" fill priority className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0 bg-[#1e3526]/45" />
+        </div>
+
         {heroCopy}
 
         {/* Right: desktop-only inline form card */}
-        <div id="hero-form" className="hidden lg:flex items-center px-6 lg:pr-12 py-10 lg:py-0">
+        <div id="hero-form" className="relative z-10 hidden lg:flex items-center px-6 lg:pr-12 py-10 lg:py-0">
           <div
             className="flex-1 bg-cream flex flex-col gap-5 p-8 shadow-2xl overflow-y-auto"
             style={{ borderRadius: '10px', height: 560 }}
