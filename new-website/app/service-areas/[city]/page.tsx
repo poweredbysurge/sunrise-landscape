@@ -43,8 +43,11 @@ export async function generateMetadata({
 }
 
 function extractIntroParagraph(body: string): string {
-  // Match text between the 2nd H2 (city name) and "## Our Services in"
-  const m = body.match(/## [^\n]+\n\n([\s\S]+?)\n\n## Our Services in/)
+  // Match text between the 2nd H2 (city name) and "## Our Services in".
+  // Both leading H2s are matched explicitly so the capture group starts
+  // after the city-name heading, not the "Landscape Services In" one —
+  // otherwise the literal "## Great Falls" heading text leaks into the copy.
+  const m = body.match(/## [^\n]+\n\n## [^\n]+\n\n([\s\S]+?)\n\n## Our Services in/)
   return m ? m[1].trim() : ''
 }
 
@@ -160,22 +163,22 @@ export default async function CityPage({
             />
           </div>
         )}
-        <div className="relative z-10 max-w-screen-xl mx-auto px-5 lg:px-8 pb-16 pt-32">
+        <div className="relative z-10 max-w-screen-xl mx-auto px-5 lg:px-8 pb-16 pt-32 text-center">
           {svgLogo && (
-            <div className="relative w-24 h-8 mb-8 opacity-60">
+            <div className="relative w-24 h-8 mb-8 mx-auto opacity-60">
               <Image
                 src={cdnToLocal(svgLogo.src)}
                 alt={svgLogo.alt}
                 fill
-                className="object-contain object-left"
+                className="object-contain"
                 sizes="96px"
               />
             </div>
           )}
-          <h2 className="text-base font-ui not-italic font-bold text-orange uppercase tracking-widest mb-1">
+          <h2 className="text-lg lg:text-xl font-ui not-italic font-bold text-orange uppercase tracking-widest mb-3">
             Landscape Services In
           </h2>
-          <h2 className="text-cream leading-tight">
+          <h2 className="text-5xl sm:text-6xl lg:text-7xl text-cream leading-tight">
             {cityName}
           </h2>
         </div>
@@ -183,15 +186,15 @@ export default async function CityPage({
 
       {/* Intro */}
       <section className="py-16 bg-cream">
-        <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
+        <div className="max-w-screen-xl mx-auto px-5 lg:px-8 text-center">
           <h2 className="text-xl font-ui not-italic font-bold text-green mb-6 tracking-wide uppercase">
             Our Services in
           </h2>
-          <h1 className="text-green mb-8">
+          <h2 className="text-green mb-8">
             {cityName}
-          </h1>
+          </h2>
           {introParagraph && (
-            <p className="text-green/70 max-w-3xl leading-relaxed">
+            <p className="text-green/70 max-w-3xl mx-auto leading-relaxed">
               {introParagraph}
             </p>
           )}
@@ -214,7 +217,7 @@ export default async function CityPage({
 
       {/* Neighborhoods */}
       <section className="py-12 bg-cream">
-        <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
+        <div className="max-w-screen-xl mx-auto px-5 lg:px-8 text-center">
           <h3 className="font-ui not-italic text-base lg:text-lg font-bold uppercase tracking-widest text-green mb-4">
             Neighborhoods We Serve
           </h3>
@@ -231,17 +234,17 @@ export default async function CityPage({
         return (
           <>
             <section className="py-12 bg-cream">
-              <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
+              <div className="max-w-screen-xl mx-auto px-5 lg:px-8 text-center">
                 <h2 className="text-3xl lg:text-4xl text-green leading-tight mb-6">{expansion.knowledgeHeading}</h2>
-                <p className="text-green/70 max-w-3xl leading-relaxed">{expansion.knowledgePara}</p>
+                <p className="text-green/70 max-w-3xl mx-auto leading-relaxed">{expansion.knowledgePara}</p>
                 {expansion.proofPara && (
-                  <p className="text-green/70 max-w-3xl leading-relaxed mt-4">{expansion.proofPara}</p>
+                  <p className="text-green/70 max-w-3xl mx-auto leading-relaxed mt-4">{expansion.proofPara}</p>
                 )}
-                <p className="text-green/70 max-w-3xl leading-relaxed mt-4">
+                <p className="text-green/70 max-w-3xl mx-auto leading-relaxed mt-4">
                   Also serving: {expansion.extraNeighborhoods}
                 </p>
                 {expansion.image && (
-                  <div className="relative aspect-[4/3] w-full max-w-2xl mt-8">
+                  <div className="relative aspect-[4/3] w-full max-w-2xl mx-auto mt-8">
                     <Image
                       src={expansion.image.src}
                       alt={expansion.image.alt}
@@ -255,11 +258,11 @@ export default async function CityPage({
             </section>
 
             <section className="py-12 bg-cream">
-              <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
+              <div className="max-w-screen-xl mx-auto px-5 lg:px-8 text-center">
                 <h3 className="text-2xl lg:text-3xl text-green leading-tight mb-6">
                   Common Questions
                 </h3>
-                <div className="max-w-3xl">
+                <div className="max-w-3xl mx-auto text-left">
                   <FaqAccordion faqs={expansion.faqs} />
                 </div>
               </div>
@@ -267,8 +270,8 @@ export default async function CityPage({
 
             {expansion.sibling && (
               <section className="py-12 bg-cream">
-                <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
-                  <p className="text-green/70 max-w-3xl leading-relaxed">
+                <div className="max-w-screen-xl mx-auto px-5 lg:px-8 text-center">
+                  <p className="text-green/70 max-w-3xl mx-auto leading-relaxed">
                     {expansion.sibling.line}{' '}
                     <Link href={expansion.sibling.href} className="underline text-green hover:text-orange">
                       {expansion.sibling.label}
@@ -298,7 +301,7 @@ export default async function CityPage({
       {/* Also serving nearby */}
       <section className="py-12 bg-cream">
         <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
-          <h3 className="font-ui not-italic text-base lg:text-lg font-bold uppercase tracking-widest text-green mb-6">
+          <h3 className="font-ui not-italic text-base lg:text-lg font-bold uppercase tracking-widest text-green mb-6 text-center">
             Also Serving Nearby Areas
           </h3>
           {nearbyImgs.length > 0 && (
@@ -341,11 +344,14 @@ export default async function CityPage({
 
 
       {/* From Our Blog — matches the section added to the live site; design-relevant posts */}
+      {/* BLOG_ART.design / .maintenance are reused as this template's own service-card
+          images (design-img-2, MP-header-img-1) for every city, so use the .2 variants
+          here to avoid repeating a photo already shown higher up on the same page. */}
       <FromOurBlog
         posts={[
-          { slug: 'modern-landscape-design', image: BLOG_ART.design },
+          { slug: 'modern-landscape-design', image: BLOG_ART.maintenance2 },
           { slug: 'backyard-landscape-design', image: BLOG_ART.design2 },
-          { slug: 'residential-landscaping', image: BLOG_ART.maintenance },
+          { slug: 'residential-landscaping', image: BLOG_ART.mowing },
         ]}
       />
 

@@ -45,12 +45,8 @@ export default function HardscapePage() {
               Hardscapes Creating Harmony
             </p>
             <div>
-              <h2 style={{ fontSize: 'clamp(2.6rem, 6.5vw, 6.2rem)', lineHeight: 1.0, letterSpacing: '-0.02em' }}>
-                <span className="font-ui font-bold text-green block">Hardscape Services:</span>
-                <span className="block">
-                  <span className="font-display italic text-green" style={{ fontStyle: 'italic' }}>Patios, Fire Pits</span>
-                  <span className="font-ui font-bold text-green"> &amp; More</span>
-                </span>
+              <h2 className="text-green" style={{ fontSize: 'clamp(2.6rem, 6.5vw, 6.2rem)', lineHeight: 1.0, letterSpacing: '-0.02em' }}>
+                Hardscape Services: Patios, Fire Pits &amp; More
               </h2>
               <p className="text-green/70 mt-6 max-w-3xl lg:text-lg leading-relaxed">
                 Sunrise creates stylish and functional hardscapes with the highest quality workmanship and time-tested methods. With over 35 years of experience and ICPI certification, Sunrise delivers exceptional results for you to enjoy forever.

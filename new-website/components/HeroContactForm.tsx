@@ -156,12 +156,7 @@ export default function HeroContactForm() {
                 className="flex-shrink-0 text-cream mb-6 leading-tight font-ui not-italic font-bold"
                 style={{ fontSize: 'clamp(1.4rem, 2.2vw, 1.9rem)' }}
               >
-                {STEP_HEADINGS[step - 1].split(' ').map((word, i) => {
-                  const italicWords = ['vision', 'Project?', 'Details', 'Touches']
-                  return italicWords.includes(word)
-                    ? <span key={i} className="editorial-display"> {word}</span>
-                    : <span key={i}> {word}</span>
-                })}
+                {STEP_HEADINGS[step - 1]}
               </h3>
 
               {/* Fields */}

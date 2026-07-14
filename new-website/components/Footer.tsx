@@ -70,7 +70,7 @@ export default function Footer() {
               </a>
               <p className="flex items-start gap-2">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mt-0.5 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                21430 Cedar Drive, Suite 206<br />Sterling, VA 20164
+                43813 Beaver Meadow Rd #100<br />Sterling, VA 20166
               </p>
             </div>
             <div className="flex gap-3 mt-6">
@@ -89,7 +89,7 @@ export default function Footer() {
             <ul>
               {serviceLinks.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="block py-2.5 text-base text-cream hover:text-orange transition-colors">
+                  <Link href={l.href} className="block py-1 text-base text-cream hover:text-orange transition-colors">
                     {l.label}
                   </Link>
                 </li>
@@ -103,7 +103,7 @@ export default function Footer() {
             <ul>
               {areaLinks.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="block py-2.5 text-base text-cream hover:text-orange transition-colors">
+                  <Link href={l.href} className="block py-1 text-base text-cream hover:text-orange transition-colors">
                     {l.label}
                   </Link>
                 </li>
@@ -117,7 +117,7 @@ export default function Footer() {
             <ul>
               {companyLinks.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="block py-2.5 text-base text-cream hover:text-orange transition-colors">
+                  <Link href={l.href} className="block py-1 text-base text-cream hover:text-orange transition-colors">
                     {l.label}
                   </Link>
                 </li>

@@ -36,10 +36,10 @@ export default function FromOurBlog({ posts }: { posts: BlogCardSpec[] }) {
   return (
     <section className="py-16 lg:py-24 px-6 lg:px-12 bg-cream/40">
       <div className="max-w-screen-xl mx-auto">
-        <p className="font-ui text-base font-bold uppercase tracking-widest text-orange mb-2">
+        <p className="font-ui text-base font-bold uppercase tracking-widest text-orange mb-2 text-center">
           Keep Reading
         </p>
-        <h2 className="text-3xl lg:text-4xl font-bold text-green leading-tight mb-10">
+        <h2 className="text-3xl lg:text-4xl font-bold text-green leading-tight mb-10 text-center">
           From Our Blog
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

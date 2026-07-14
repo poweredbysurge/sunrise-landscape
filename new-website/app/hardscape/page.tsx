@@ -6,7 +6,7 @@ import ServiceAreasSection from '@/components/ServiceAreasSection'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
-import ServiceExpansion from '@/components/ServiceExpansion'
+import ServiceExpansion from '@/components/ServiceExpansionV2'
 import { serviceExpansions } from '@/lib/serviceExpansions'
 import HardscapeHero from '@/components/HardscapeHero'
 

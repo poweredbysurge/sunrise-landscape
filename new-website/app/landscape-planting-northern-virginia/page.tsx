@@ -78,22 +78,19 @@ export default function LandscapePlantingPage() {
             </svg>
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-10 py-10 lg:px-14 lg:py-12">
               <div>
-              <h1 className="text-cream text-lg lg:text-xl font-bold uppercase tracking-widest mb-4">
-                Landscape Planting Services in Northern Virginia
-              </h1>
-              <p className="text-cream" style={{ lineHeight: 1.05 }}>
-                <span style={{ fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'italic', fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', display: 'block' }}>
+              <p className="text-cream" style={{ lineHeight: 1.05, fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'italic' }}>
+                <span style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', display: 'block' }}>
                   Plant Design
                 </span>
                 <span className="text-4xl sm:text-5xl lg:text-7xl" style={{ display: 'block' }}>
-                  Inspired by{' '}
-                  <span style={{ fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'italic', fontWeight: 400 }}>
-                    Nature
-                  </span>
+                  Inspired by Nature
                 </span>
               </p>
             </div>
               <div>
+                <h1 className="text-cream text-lg lg:text-xl font-bold uppercase tracking-widest mb-4">
+                  Landscape Planting Services in Northern Virginia
+                </h1>
                 <p className="text-cream leading-relaxed mb-6">
                   We believe a great planting does more than fill space — it brings life, texture, and story to your landscape. With an artist&apos;s eye and decades of experience, we create living environments that evolve beautifully with time and purpose.
                 </p>
@@ -243,8 +240,8 @@ export default function LandscapePlantingPage() {
             {/* Left: image */}
             <div className="relative overflow-hidden" style={{ borderRadius: '20px', aspectRatio: '4 / 3' }}>
               <Image
-                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/68230187ed0e534a13fbd511_season-img-1%20(1).webp')}
-                alt="Professionally landscaped garden bed with vibrant pink rhododendrons, black mulch, and a stone wall."
+                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7e23ce1a9da1404d5685_folder-3-2.webp')}
+                alt="Tiered stone retaining walls with a Japanese maple, flowering dogwoods, and colorful perennial beds along a paver walkway."
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

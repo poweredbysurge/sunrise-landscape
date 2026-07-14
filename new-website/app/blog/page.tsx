@@ -35,9 +35,7 @@ export default function BlogPage() {
         <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
           <p className="section-label text-orange mb-6">Blog</p>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl text-cream leading-none mb-6">
-            <span className="font-display italic">Explore</span>
-            <span className="font-ui font-bold"> Landscape </span>
-            <span className="font-display italic">Design Insights</span>
+            Explore Landscape Design Insights
           </h1>
           <p className="text-cream max-w-xl text-lg leading-relaxed mx-auto">
             Discover innovative ideas for your outdoor spaces.

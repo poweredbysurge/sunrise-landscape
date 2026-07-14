@@ -2,6 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { cdnToLocal } from '@/lib/mediaUrl'
 
+// Only the two dedicated header photos — harmony-img-1/2 and work-img-1/2/3 are used
+// further down the page (harmony section / work carousel), so keeping them out here
+// avoids showing the same photo twice on one page.
 const IMGS = [
   {
     src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821cf884cff5a6c39872bd1_hs-header-img-1%20(1).webp'),
@@ -10,14 +13,6 @@ const IMGS = [
   {
     src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821cf9d8567ec857f4ce0e4_hs-header-img-2%20(1).webp'),
     alt: 'Outdoor stone fireplace with a mounted flat-screen TV above it under a wooden patio roof',
-  },
-  {
-    src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821c39fee5907320e170120_harmony-img-1%20(1).webp'),
-    alt: 'Stone pathway leading to a wooden dock by a lake, with chairs and green grass on the sides',
-  },
-  {
-    src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821c3be80facb1a793f7612_harmony-img-2%20(1).webp'),
-    alt: 'Outdoor patio area with black metal chairs around a round stone fire pit next to a landscaped garden',
   },
 ]
 
@@ -56,13 +51,13 @@ export default function HardscapeHero() {
         </div>
       </div>
 
-      {/* 4-image row */}
+      {/* 2-image row */}
       <div className="max-w-screen-xl mx-auto px-5 lg:px-8 pb-2">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 gap-3">
           {IMGS.map((img) => (
             <div
               key={img.src}
-              className="relative aspect-[3/4] overflow-hidden"
+              className="relative aspect-[16/10] overflow-hidden"
               style={{ borderRadius: '12px' }}
             >
               <Image

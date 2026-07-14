@@ -166,6 +166,17 @@
     letter-spacing: -0.03em;
   }
 
+  /* Homepage-only italics-off preview. Scoped wrapper so no other page is
+     affected; remove the .home-no-italic wrapper in app/page.tsx to revert.
+     font-family is overridden too because EditorsNote only ships an italic
+     cut (see app/layout.tsx) — font-style: normal alone can't un-italicize
+     glyphs from a font file that has no upright weight. */
+  .home-no-italic,
+  .home-no-italic * {
+    font-style: normal !important;
+    font-family: var(--font-aeonik-new), Arial, sans-serif !important;
+  }
+
   .divider {
     @apply border-t border-black/10;
   }

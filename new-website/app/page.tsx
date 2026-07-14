@@ -24,7 +24,9 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={jsonLd} />
-      <HomeVersionB />
+      <div className="home-no-italic">
+        <HomeVersionB />
+      </div>
     </>
   )
 }

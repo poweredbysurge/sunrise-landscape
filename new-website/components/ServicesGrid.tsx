@@ -110,31 +110,42 @@ export default function ServicesGrid() {
             if (!track || !viewport) return
 
             const getDistance = () => track.scrollWidth - viewport.clientWidth
+            // Hold at the first card for this many extra px of scroll once the
+            // section is fully pinned, before the horizontal drag starts —
+            // otherwise scroll momentum yanks card 1 away before it can be read.
+            const HOLD_PX = 500
+            // The site header (ticker + nav row + border) is fixed at the very
+            // top of the viewport, so a sticky top of 0 would pin the section
+            // underneath it — hiding the title behind the nav. Offset by the
+            // header's real height so the title stays fully visible once stuck.
+            const NAV_HEIGHT = 103
 
             /* Make the section sticky via JS so mobile is unaffected */
             section.style.position = 'sticky'
-            section.style.top = '0'
-            section.style.height = '100vh'
+            section.style.top = `${NAV_HEIGHT}px`
+            section.style.height = `calc(100vh - ${NAV_HEIGHT}px)`
 
             /* Give the wrapper enough height to create scroll space */
             const updateWrapperHeight = () => {
-              wrapper.style.height = `${window.innerHeight + getDistance()}px`
+              wrapper.style.height = `${window.innerHeight - NAV_HEIGHT + HOLD_PX + getDistance()}px`
             }
             updateWrapperHeight()
             window.addEventListener('resize', updateWrapperHeight)
 
-            /* Translate track based on wrapper's scroll progress */
-            gsap.to(track, {
-              x: () => -getDistance(),
-              ease: 'none',
+            /* Translate track based on wrapper's scroll progress.
+               A no-op tween first "spends" HOLD_PX of scroll doing nothing,
+               so the section is fully settled at 100vh before card 1 moves. */
+            const tl = gsap.timeline({
               scrollTrigger: {
                 trigger: wrapper,
                 start: 'top top',
-                end: () => `+=${getDistance()}`,
+                end: () => `+=${HOLD_PX + getDistance()}`,
                 scrub: 0.6,
                 invalidateOnRefresh: true,
               },
             })
+            tl.to(track, { x: 0, duration: HOLD_PX })
+            tl.to(track, { x: () => -getDistance(), ease: 'none', duration: () => getDistance() })
 
             const refresh = () => (ScrollTrigger as { refresh: () => void } | undefined)?.refresh?.()
             refreshTimer = setTimeout(refresh, 300)
@@ -162,7 +173,7 @@ export default function ServicesGrid() {
     <div ref={wrapperRef}>
       <section ref={sectionRef} className="relative overflow-hidden" style={{ background: DEEP }}>
         {/* Header */}
-        <div className="max-w-screen-xl mx-auto px-5 lg:px-8 pt-14 pb-4 lg:pb-8">
+        <div className="max-w-screen-xl mx-auto px-5 lg:px-8 pt-14 pb-4 lg:pb-8 text-center">
           <h2 data-sg-reveal className="text-cream" style={{ fontSize: 'clamp(2rem, 4.5vw, 4.2rem)', lineHeight: 1.05 }}>
             {'Where Vision ‍ meets craftsmanship.'}
           </h2>
@@ -172,29 +183,35 @@ export default function ServicesGrid() {
         <div data-sg-viewport className="va-scroll-x overflow-x-auto lg:overflow-hidden pb-10 pt-5">
           <div data-sg-track className="flex w-max gap-5 lg:gap-8 px-5 lg:px-8 items-stretch">
             {SERVICES.map((svc, i) => (
-              <article
+              <Link
                 key={svc.heading}
-                className="va-snap relative flex-shrink-0 flex flex-col overflow-hidden"
-                style={{ width: 'min(82vw, 420px)', background: PANEL, borderRadius: '20px' }}
+                href={svc.href}
+                className="va-snap group relative flex-shrink-0 block overflow-hidden"
+                style={{ width: 'min(82vw, 420px)', height: '400px', background: PANEL, borderRadius: '20px' }}
               >
-                <div className="relative" style={{ height: '220px' }}>
-                  <Image src={svc.img} alt={svc.alt} fill className="object-cover" sizes="(min-width: 1024px) 420px, 82vw" loading="lazy" />
+                <Image src={svc.img} alt={svc.alt} fill className="object-cover" sizes="(min-width: 1024px) 420px, 82vw" loading="lazy" />
+                <div
+                  className="absolute inset-x-0 bottom-0 px-6 pb-6 pt-10 lg:px-7 lg:pb-7 transition-transform duration-500 ease-out translate-y-[calc(100%-9.5rem)] group-hover:translate-y-0"
+                  style={{
+                    background: 'linear-gradient(to top, rgba(16,31,22,1) 0%, rgba(16,31,22,0.98) 55%, rgba(16,31,22,0.9) 78%, rgba(16,31,22,0.55) 92%, transparent 100%)',
+                  }}
+                >
+                  <h3
+                    className="text-cream mb-3 !font-sans !font-normal !not-italic"
+                    style={{ fontSize: '2rem', lineHeight: 1.15 }}
+                  >
+                    {svc.heading}
+                  </h3>
+                  <p className="text-cream/90 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-150">{svc.body}</p>
                 </div>
-                <div className="flex flex-col flex-1 p-6 lg:p-7">
-                  <h3 className="text-cream mb-3" style={{ fontSize: '1.45rem', lineHeight: 1.2 }}>{svc.heading}</h3>
-                  <p className="text-cream leading-relaxed mb-5 flex-1">{svc.body}</p>
-                  <Link href={svc.href} className="inline-flex items-center gap-2 min-h-[44px] section-label text-orange hover:text-cream transition-colors duration-200">
-                    Learn more <ArrowIcon />
-                  </Link>
-                </div>
-              </article>
+              </Link>
             ))}
 
             {/* End CTA card */}
             <Link
               href="/contact"
               className="va-snap relative flex-shrink-0 flex flex-col items-center justify-center text-center p-10 group"
-              style={{ width: 'min(82vw, 420px)', background: '#ff6400', borderRadius: '20px' }}
+              style={{ width: 'min(82vw, 420px)', background: '#e7e6d2', borderRadius: '20px' }}
             >
               <span className="font-display italic text-green block mb-4" style={{ fontSize: '2.2rem', lineHeight: 1.1 }}>
                 Have a project in mind?

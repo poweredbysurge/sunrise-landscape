@@ -133,21 +133,7 @@ export default function CareerPage() {
         <div className="absolute inset-0 bg-black/55" />
         <div className="relative z-10 max-w-screen-xl mx-auto px-5 lg:px-8 pt-44 pb-20 w-full">
           <h1 className="text-4xl lg:text-6xl text-cream mb-6" style={{ lineHeight: 1 }}>
-            <span
-              style={{
-                fontFamily: 'var(--font-editorsnote), Georgia, serif',
-                fontStyle: 'italic',
-                display: 'block',
-                marginBottom: '0.15em',
-              }}
-            >
-              Grow With Us:
-            </span>
-            <span
-              className="font-ui font-bold block"
-            >
-              Careers at Sunrise
-            </span>
+            Grow With Us: Careers at Sunrise
           </h1>
           <p className="text-cream max-w-md leading-relaxed mb-8">
             Join a team where artistry meets opportunity. At Sunrise, we&rsquo;re not just creating beautiful landscapes, we&rsquo;re cultivating careers for passionate professionals who take pride in transforming outdoor spaces.
@@ -165,25 +151,7 @@ export default function CareerPage() {
             className="text-3xl lg:text-4xl text-center text-green mb-4"
             style={{ lineHeight: 1.05 }}
           >
-            <span
-              style={{
-                fontFamily: 'var(--font-editorsnote), Georgia, serif',
-                fontStyle: 'italic',
-              }}
-            >
-              Why
-            </span>
-            {' '}
-            <span className="font-ui font-bold">Work At</span>
-            {' '}
-            <span
-              style={{
-                fontFamily: 'var(--font-editorsnote), Georgia, serif',
-                fontStyle: 'italic',
-              }}
-            >
-              Sunrise?
-            </span>
+            Why Work At Sunrise?
           </h2>
           <p className="text-center text-green/60 max-w-2xl mx-auto mb-16 leading-relaxed">
             Whether you&rsquo;re an experienced hardscape artisan or aspiring landscape professional, Sunrise offers an environment where creativity flourishes and excellence is rewarded.
@@ -261,20 +229,7 @@ export default function CareerPage() {
             {/* Left */}
             <div>
               <h2 className="text-3xl lg:text-4xl text-cream mb-6" style={{ lineHeight: 1.05 }}>
-                <span
-                  className="font-ui font-bold block"
-                >
-                  Current
-                </span>
-                <span
-                  style={{
-                    fontFamily: 'var(--font-editorsnote), Georgia, serif',
-                    fontStyle: 'italic',
-                    display: 'block',
-                  }}
-                >
-                  Opportunities
-                </span>
+                Current Opportunities
               </h2>
               <p className="text-cream leading-relaxed max-w-sm mb-4">
                 Sunrise is a large and dynamic company with a broad range of design, sales and labor opportunities. We are growing and looking for the next qualified candidates to join our team!

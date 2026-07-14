@@ -152,8 +152,8 @@ export default function ServiceAreasNVPage() {
               style={{ borderRadius: '20px', aspectRatio: '4/3' }}
             >
               <Image
-                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/681c9fd4dec20f523b550af0_design-img-2%20(1).webp')}
-                alt="Beautifully designed landscape with stone patio and lush planting in Northern Virginia"
+                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/680b3f278dd4a418016b50d1_Outer-pattio.webp')}
+                alt="Stone patio with flowering planting beds and outdoor seating overlooking a Northern Virginia landscape"
                 fill
                 priority
                 className="object-cover object-center"
@@ -212,6 +212,36 @@ export default function ServiceAreasNVPage() {
                     </svg>
                   </span>
                 </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Lawn care town pages */}
+      <section className="py-14 bg-cream/60">
+        <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
+          <h2 className="text-2xl lg:text-3xl text-green leading-tight mb-3">Lawn Care in Your Town</h2>
+          <p className="text-green/60 mb-8 leading-relaxed max-w-2xl">
+            Dedicated lawn care programs for the towns we serve most. Each page covers local soil conditions, neighborhoods, and seasonal timing specific to that area.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { label: 'Lawn Care in Leesburg', href: '/lawn-care-leesburg-va' },
+              { label: 'Lawn Care in Ashburn', href: '/lawn-care-ashburn-va' },
+              { label: 'Lawn Care in Herndon', href: '/lawn-care-herndon-va' },
+              { label: 'Lawn Care in Fairfax', href: '/lawn-care-fairfax-va' },
+              { label: 'Lawn Care in Aldie', href: '/lawn-care-aldie-va' },
+              { label: 'Lawn Care in Loudoun County', href: '/lawn-care-loudoun-county-va' },
+              { label: 'Patio & Fire Pit Contractors', href: '/patio-fire-pit-leesburg-ashburn-great-falls' },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="border border-green text-green px-5 py-2.5 text-sm font-medium hover:bg-green hover:text-cream transition-colors"
+                style={{ borderRadius: '8px' }}
+              >
+                {link.label}
               </Link>
             ))}
           </div>

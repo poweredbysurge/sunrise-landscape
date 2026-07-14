@@ -128,8 +128,8 @@ export default function ContactPage() {
               <div>
                 <p className="font-ui text-xs font-bold uppercase tracking-widest text-green/50 mb-1">Office</p>
                 <address className="text-base text-green not-italic leading-relaxed">
-                  21430 Cedar Drive, Suite 206<br />
-                  Sterling, VA 20164
+                  43813 Beaver Meadow Rd #100<br />
+                  Sterling, VA 20166
                 </address>
               </div>
             </div>

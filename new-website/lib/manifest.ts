@@ -3,13 +3,12 @@ import path from 'path'
 
 const MANIFEST_ROOT = path.join(
   process.cwd(),
-  '..',
-  'seo-migration-kit',
+  'data',
   'manifest',
   'sunrise-landscape'
 )
 
-const BLOG_HTML_ROOT = path.join(process.cwd(), '..', 'blogs')
+const BLOG_HTML_ROOT = path.join(process.cwd(), 'data', 'blogs')
 
 export interface PageMeta {
   path: string

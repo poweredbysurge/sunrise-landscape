@@ -51,9 +51,9 @@ export default function MaintenanceSection() {
             <p className="absolute top-8 left-8 font-ui text-[10px] font-bold text-cream uppercase tracking-[0.2em]">
               Maintenance Services
             </p>
-            <h2 className="absolute bottom-8 left-8 leading-tight">
-              <span className="font-ui text-3xl font-bold text-cream block not-italic">Your Yard,</span>
-              <span className="editorial-display text-3xl italic text-cream block">Our Passion.</span>
+            <h2 className="absolute bottom-8 left-8 leading-tight editorial-display text-3xl italic text-cream">
+              <span className="block">Your Yard,</span>
+              <span className="block">Our Passion.</span>
             </h2>
           </div>
 

@@ -1,8 +1,7 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import ServicesGrid from '@/components/ServicesGrid'
 import DesigningForImpact from '@/components/DesigningForImpact'
-import HeroContactForm from '@/components/HeroContactForm'
+import Hero3B from '@/components/home/Hero3B'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import FeaturedWorkCarousel from '@/components/FeaturedWorkCarousel'
 import MaintenanceSection from '@/components/MaintenanceSection'
@@ -115,11 +114,66 @@ const serviceCards2 = [
 ]
 
 const featuredWork = [
-  { img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6889b8bd5d405760963255ff_Katie%20Bird%20Pool%203.jpg'), alt: 'Parkland Estate landscape project in Vienna Virginia', name: 'Parkland Estate', location: 'Vienna, VA' },
-  { img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7d113c21f26f490bb45a_folder-2-cover-1.webp'), alt: 'Backyard landscape design project in Ashburn Virginia', name: 'Backyard Retreat', location: 'Ashburn, VA' },
-  { img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp'), alt: 'Estate landscape design in full bloom in Vienna Virginia', name: 'Estate Garden', location: 'Vienna, VA' },
-  { img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7ecfc4042333b3219c72_folder-4-cover.webp'), alt: 'Grand entrance landscape design in Oakton Virginia', name: 'Grand Entrance', location: 'Oakton, VA' },
-  { img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7fb273f8f7c44bbbc942_folder-5-cover.webp'), alt: 'Water feature landscape design in Leesburg Virginia', name: 'Water Feature', location: 'Leesburg, VA' },
+  {
+    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6889b8bd5d405760963255ff_Katie%20Bird%20Pool%203.jpg'),
+    alt: 'Parkland Estate landscape project in Vienna Virginia',
+    name: 'Parkland Estate',
+    location: 'Vienna, VA',
+    images: [
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6889b8bd5d405760963255ff_Katie%20Bird%20Pool%203.jpg'), alt: 'Parkland Estate landscape project in Vienna Virginia' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6889b8bd1e9b6ef30940a042_Katie%20Bird%20Arbor.jpg'), alt: 'Rose-covered garden arbor over a stone path leading through a manicured lawn and perennial garden beds.' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6889b8bd026e584fa3a5e8cf_Katie%20Bird%20Boulder%20Retaining%20Wall%201.jpg'), alt: 'Boulder retaining wall bed with hostas, ferns, and evergreens bordering a manicured lawn.' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6889b8bca45b369aa14f8ade_Katie%20Bird%20Mowing%20Lines%202.jpg'), alt: 'Expansive striped lawn leading up to a modern estate home with a pool and mature tree line.' },
+    ],
+  },
+  {
+    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7d113c21f26f490bb45a_folder-2-cover-1.webp'),
+    alt: 'Backyard landscape design project in Ashburn Virginia',
+    name: 'Backyard Retreat',
+    location: 'Ashburn, VA',
+    images: [
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7d113c21f26f490bb45a_folder-2-cover-1.webp'), alt: 'Backyard landscape design project in Ashburn Virginia' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7caf1811776d3267929d_folder-2-1.webp'), alt: 'Outdoor stone fireplace with a lit fire, surrounded by cushioned patio furniture, a koi pond with waterfall, and flowering plants at dusk.' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7caebf8b5d7ad36bb774_folder-2-3.webp'), alt: 'Nighttime view of an illuminated koi pond with waterfall, stone patio seating, and an outdoor fireplace glowing against a dark blue sky.' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7cb07b41400be77ba043_folder-2-4.webp'), alt: 'Stone patio with an outdoor fireplace, cushioned seating, and a built-in grill overlooking an open rolling landscape.' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7caeb433ebe730947285_folder-2-5.webp'), alt: 'Koi pond with a stone waterfall and stepping-stone path, flanked by an outdoor stone fireplace and patio seating on a sunny day.' },
+    ],
+  },
+  {
+    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp'),
+    alt: 'Estate landscape design in full bloom in Vienna Virginia',
+    name: 'Estate Garden',
+    location: 'Vienna, VA',
+    images: [
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp'), alt: 'Estate landscape design in full bloom in Vienna Virginia' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7e23cadf15ecbd8b2f1b_folder-3-1.webp'), alt: 'Curved stone retaining wall with layered plantings of purple catmint, ornamental grasses, and shrubs beneath mature trees.' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7e23ce1a9da1404d5685_folder-3-2.webp'), alt: 'Tiered stone retaining walls with a Japanese maple, flowering dogwoods, and colorful perennial beds along a paver walkway.' },
+    ],
+  },
+  {
+    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7ecfc4042333b3219c72_folder-4-cover.webp'),
+    alt: 'Grand entrance landscape design in Oakton Virginia',
+    name: 'Grand Entrance',
+    location: 'Oakton, VA',
+    images: [
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7ecfc4042333b3219c72_folder-4-cover.webp'), alt: 'Grand entrance landscape design in Oakton Virginia' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7ed0fa5b34a7cbb00a22_folder-4-1.webp'), alt: 'Manicured striped lawn sloping toward a large brick home, framed by mature trees and a wooden rail fence.' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7ecf6832151e20f2f7dd_folder-4-2.webp'), alt: 'Striped lawn leading up to a stone and stucco estate home with a circular driveway and mature landscaping.' },
+    ],
+  },
+  {
+    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7fb273f8f7c44bbbc942_folder-5-cover.webp'),
+    alt: 'Water feature landscape design in Leesburg Virginia',
+    name: 'Water Feature',
+    location: 'Leesburg, VA',
+    images: [
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7fb273f8f7c44bbbc942_folder-5-cover.webp'), alt: 'Water feature landscape design in Leesburg Virginia' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7fb2416ad7fcedb36977_folder-5-1.webp'), alt: 'Poolside patio with a white-roofed pavilion, cushioned lounge furniture, and stone paver decking overlooking a community view.' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7fb21991bd484a7e97c1_folder-5-2.webp'), alt: 'Backyard lawn with a stone fire pit seating area tucked among ornamental grasses and shrubs near a pool house.' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7fb2920b2080ffa788be_folder-5-3.webp'), alt: 'Poolside garden path lined with red roses and flowering perennials leading to a pergola with a stone fireplace.' },
+      { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7fb2f4475bf6baf6303f_folder-5-4.webp'), alt: 'Covered outdoor living area with a stone fireplace, cushioned seating, and a ceiling fan overlooking the pool.' },
+    ],
+  },
 ]
 
 const testimonials = [
@@ -144,47 +198,7 @@ export default function HomeVersionB() {
   return (
     <>
       {/* ── HERO ───────────────────────────────────────────────────── */}
-      <section className="relative h-[90vh] min-h-[640px] flex items-end overflow-hidden">
-        <Image
-          src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/680b3f278dd4a418016b50d1_Outer-pattio.webp')}
-          alt="Hardscape patio and stonework installation in Northern Virginia"
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(30,53,38,0.92) 0%, rgba(30,53,38,0.55) 40%, rgba(30,53,38,0.15) 70%, transparent 100%)' }} />
-
-        <div className="relative z-10 max-w-screen-xl mx-auto px-5 lg:px-8 pb-12 lg:pb-16 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 lg:gap-12 items-end">
-
-            {/* Left: hero copy + CTAs */}
-            <div>
-              <p className="section-label text-orange mb-4">Est. 1986 · Sterling, Virginia</p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white leading-none tracking-tight max-w-3xl mb-5">
-                Landscape Design in Northern Virginia
-              </h1>
-              <p className="text-2xl lg:text-3xl text-cream mb-7 leading-relaxed">
-                Landscapes For Living.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link href="/contact" className="btn-primary">
-                  <span>Free Consultation</span>
-                </Link>
-                <Link href="/landscape-design-northern-virginia" className="btn-ghost">
-                  <span>Our Services</span>
-                </Link>
-              </div>
-            </div>
-
-            {/* Right: 4-step contact form — desktop only */}
-            <div className="hidden lg:block">
-              <HeroContactForm />
-            </div>
-
-          </div>
-        </div>
-      </section>
+      <Hero3B />
 
       {/* ── SERVICES GRID ─────────────────────────────────────────── */}
       <ServicesGrid />
