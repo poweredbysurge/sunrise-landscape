@@ -51,7 +51,7 @@ export default function MaintenanceSection() {
             <p className="absolute top-8 left-8 font-ui text-[10px] font-bold text-cream uppercase tracking-[0.2em]">
               Maintenance Services
             </p>
-            <h2 className="absolute bottom-8 left-8 leading-tight editorial-display text-3xl italic text-cream">
+            <h2 className="absolute bottom-8 left-8 leading-tight editorial-display text-3xl text-cream">
               <span className="block">Your Yard,</span>
               <span className="block">Our Passion.</span>
             </h2>
@@ -67,7 +67,7 @@ export default function MaintenanceSection() {
                   >
                     <span
                       className="text-2xl lg:text-3xl text-green"
-                      style={{ fontFamily: 'var(--font-editorsnote)', fontStyle: 'italic' }}
+                      style={{ fontFamily: 'var(--font-editorsnote)', fontStyle: 'normal' }}
                     >
                       {item.title}
                     </span>

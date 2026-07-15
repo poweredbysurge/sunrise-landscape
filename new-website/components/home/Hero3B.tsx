@@ -135,7 +135,7 @@ export default function Hero3B() {
         Family Owned &middot; Sterling, Virginia &middot; Since 1986
       </p>
       <h1 className="text-cream leading-[1.02]" style={{ fontSize: 'clamp(2.6rem, 5vw, 4.5rem)' }}>
-        Landscaping in Northern Virginia
+        Landscaping &amp; Hardscaping in Northern Virginia
       </h1>
       <p className="text-cream/85 text-lg leading-relaxed max-w-xl">
         Year-round maintenance plans, plus outdoor living projects when you&apos;re ready. Family
@@ -146,14 +146,6 @@ export default function Hero3B() {
           <span>Get My Free Yard Inspection</span>
         </a>
       </div>
-      <a
-        href="#hero-form"
-        onClick={handleCtaClick}
-        className="text-cream/60 text-sm underline underline-offset-4 hover:text-cream transition-colors w-fit"
-      >
-        Planning a bigger project? Start here
-      </a>
-
       {/* Desktop trust bar */}
       <div className="hidden lg:flex items-center gap-6 flex-wrap pt-4 border-t border-cream/15 text-cream/75 text-sm">
         <div className="flex flex-col gap-0.5">
@@ -474,8 +466,8 @@ export default function Hero3B() {
     <>
       <section
         ref={heroRef}
-        className="relative w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_560px] overflow-hidden"
-        style={{ backgroundColor: '#1e3526', minHeight: '90vh', paddingTop: '112px', paddingBottom: '64px' }}
+        className="relative w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_560px] overflow-hidden pt-[160px] lg:pt-[140px]"
+        style={{ backgroundColor: '#1e3526', minHeight: '90vh', paddingBottom: '64px' }}
       >
         <div className="absolute inset-0 z-0">
           <Image src={heroBackground} alt="" fill priority className="object-cover" sizes="100vw" />
@@ -518,9 +510,14 @@ export default function Hero3B() {
       {pastHero && !showModal && (
         <div
           className="lg:hidden fixed bottom-0 inset-x-0 z-40 px-4 pt-3"
-          style={{ backgroundColor: '#1e3526', paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}
+          style={{ backgroundColor: '#141414', paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}
         >
-          <button type="button" onClick={openForm} className="btn-primary w-full flex">
+          <button
+            type="button"
+            onClick={openForm}
+            className="w-full flex items-center justify-center gap-2 bg-orange text-white font-ui font-bold text-sm tracking-wider uppercase px-7 rounded-lg cursor-pointer active:scale-[0.96] active:opacity-90 transition-transform"
+            style={{ minHeight: '44px' }}
+          >
             <span>Get My Free Yard Inspection</span>
           </button>
         </div>

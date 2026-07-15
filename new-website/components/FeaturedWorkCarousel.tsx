@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback, useRef, useEffect, useMemo } from 'react'
+import { useState, useCallback, useRef, useEffect, useMemo, type TouchEvent } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -47,7 +47,14 @@ export default function FeaturedWorkCarousel({
   const [rawIdx, setRawIdx] = useState(CLONES)
   const [animate, setAnimate] = useState(true)
   const [cardPx, setCardPx] = useState(0)
+  const [trackWidth, setTrackWidth] = useState(0)
+  const [isDesktop, setIsDesktop] = useState(false)
   const wrapRef = useRef<HTMLDivElement>(null)
+
+  // Touch-swipe drag state (mobile). Desktop keeps its arrow-only, flush-left bleed layout.
+  const dragRef = useRef({ startX: 0, dragging: false })
+  const [dragOffset, setDragOffset] = useState(0)
+  const [isDragging, setIsDragging] = useState(false)
 
   // Lightbox state: which project (real index) is open, and which photo within its gallery
   const [lightboxProject, setLightboxProject] = useState<number | null>(null)
@@ -62,12 +69,27 @@ export default function FeaturedWorkCarousel({
 
   useEffect(() => {
     const measure = () => {
-      if (wrapRef.current) setCardPx(wrapRef.current.offsetWidth * 0.7)
+      if (!wrapRef.current) return
+      const style = getComputedStyle(wrapRef.current)
+      const padL = parseFloat(style.paddingLeft) || 0
+      const padR = parseFloat(style.paddingRight) || 0
+      const inner = wrapRef.current.clientWidth - padL - padR
+      const desktop = window.innerWidth >= 1024
+      setTrackWidth(inner)
+      setCardPx(inner * (desktop ? 0.7 : 0.78))
     }
     measure()
     const ro = new ResizeObserver(measure)
     if (wrapRef.current) ro.observe(wrapRef.current)
     return () => ro.disconnect()
+  }, [])
+
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 1024px)')
+    const update = () => setIsDesktop(mq.matches)
+    update()
+    mq.addEventListener('change', update)
+    return () => mq.removeEventListener('change', update)
   }, [])
 
   const prev = useCallback(() => {
@@ -79,6 +101,29 @@ export default function FeaturedWorkCarousel({
     setAnimate(true)
     setRawIdx(i => i + 1)
   }, [])
+
+  // Swipe: live-follow the finger while dragging, then either advance or snap back.
+  const onTouchStart = useCallback((e: TouchEvent) => {
+    dragRef.current = { startX: e.touches[0].clientX, dragging: true }
+    setIsDragging(true)
+  }, [])
+
+  const onTouchMove = useCallback((e: TouchEvent) => {
+    if (!dragRef.current.dragging) return
+    setDragOffset(e.touches[0].clientX - dragRef.current.startX)
+  }, [])
+
+  const endDrag = useCallback(() => {
+    if (!dragRef.current.dragging) return
+    dragRef.current.dragging = false
+    setIsDragging(false)
+    const threshold = 40
+    setDragOffset(offset => {
+      if (offset > threshold) prev()
+      else if (offset < -threshold) next()
+      return 0
+    })
+  }, [prev, next])
 
   // After animating to a clone, silently jump to the real counterpart
   const handleTransitionEnd = useCallback(() => {
@@ -140,6 +185,10 @@ export default function FeaturedWorkCarousel({
 
   const activeProject = lightboxProject !== null ? projects[lightboxProject] : null
 
+  // Mobile: fade should stop exactly where the centered card begins (padding + peek),
+  // not bleed onto it. Desktop keeps its original fixed-width fade for the bleed layout.
+  const fadeWidth = isDesktop ? 120 : 16 + Math.max(0, (trackWidth - cardPx) / 2)
+
   return (
     <section className="bg-cream flex flex-col overflow-hidden lg:h-[100svh]">
 
@@ -193,30 +242,39 @@ export default function FeaturedWorkCarousel({
           </div>
         </div>
 
-        {/* Card track — full-width stacked carousel on mobile, bleeds off right edge on desktop */}
+        {/* Card track — centered peek carousel on mobile (16px gutter, swipeable), bleeds off right edge on desktop */}
         <div
           ref={wrapRef}
-          className="w-full lg:flex-1 lg:min-w-0 overflow-hidden pb-8 lg:pt-8 lg:pb-14 relative h-[78vw] max-h-[440px] lg:h-full lg:max-h-none"
+          className="w-full lg:flex-1 lg:min-w-0 overflow-hidden px-4 lg:px-0 pb-8 lg:pt-8 lg:pb-14 relative h-[78vw] max-h-[440px] lg:h-full lg:max-h-none"
         >
-          {/* Left fade — only visible once user has scrolled past the first card */}
+          {/* Left fade — always visible on mobile (active card is centered, so a peek always shows); desktop only once scrolled past the first card */}
           <div
             className="absolute left-0 top-0 bottom-0 z-10 pointer-events-none transition-opacity duration-500"
             style={{
-              width: '120px',
+              width: `${fadeWidth}px`,
               background: 'linear-gradient(to right, #e7e6d2, transparent)',
-              opacity: rawIdx > CLONES ? 1 : 0,
+              opacity: isDesktop ? (rawIdx > CLONES ? 1 : 0) : 1,
             }}
           />
           {/* Right fade — always visible */}
-          <div className="absolute right-0 top-0 bottom-0 z-10 pointer-events-none" style={{ width: '120px', background: 'linear-gradient(to left, #e7e6d2, transparent)' }} />
+          <div className="absolute right-0 top-0 bottom-0 z-10 pointer-events-none" style={{ width: `${fadeWidth}px`, background: 'linear-gradient(to left, #e7e6d2, transparent)' }} />
           <div
             className="flex h-full"
             style={{
               gap: `${GAP}px`,
-              transform: `translateX(${cardPx ? -rawIdx * (cardPx + GAP) : 0}px)`,
-              transition: animate && cardPx ? 'transform 0.7s cubic-bezier(0.4,0,0.2,1)' : 'none',
+              touchAction: 'pan-y',
+              transform: `translateX(${
+                cardPx
+                  ? -rawIdx * (cardPx + GAP) + (isDesktop ? 0 : (trackWidth - cardPx) / 2) + dragOffset
+                  : 0
+              }px)`,
+              transition: isDragging ? 'none' : animate && cardPx ? 'transform 0.7s cubic-bezier(0.4,0,0.2,1)' : 'none',
             }}
             onTransitionEnd={handleTransitionEnd}
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={endDrag}
+            onTouchCancel={endDrag}
           >
             {items.map((project, i) => {
               const realIndex = ((i - CLONES) % total + total) % total

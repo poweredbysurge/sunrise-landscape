@@ -89,7 +89,7 @@ export default function CommercialLandscapePage() {
 {/* ── OUR COMMERCIAL LANDSCAPING SERVICES ── */}
       <section className="py-16 lg:py-24 bg-cream">
         <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
-          <h2 className="editorial-display italic text-3xl lg:text-5xl text-green leading-tight mb-12 text-center" style={{ fontWeight: 400 }}>
+          <h2 className="editorial-display text-3xl lg:text-5xl text-green leading-tight mb-12 text-center" style={{ fontWeight: 400 }}>
             Our Commercial Landscaping Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

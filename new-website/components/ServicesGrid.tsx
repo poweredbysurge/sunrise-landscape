@@ -213,7 +213,7 @@ export default function ServicesGrid() {
               className="va-snap relative flex-shrink-0 flex flex-col items-center justify-center text-center p-10 group"
               style={{ width: 'min(82vw, 420px)', background: '#e7e6d2', borderRadius: '20px' }}
             >
-              <span className="font-display italic text-green block mb-4" style={{ fontSize: '2.2rem', lineHeight: 1.1 }}>
+              <span className="font-display text-green block mb-4" style={{ fontSize: '2.2rem', lineHeight: 1.1 }}>
                 Have a project in mind?
               </span>
               <span className="section-label text-green inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-200">

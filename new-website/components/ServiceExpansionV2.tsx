@@ -52,7 +52,7 @@ function Card({ sec }: { sec: ExpSection & { icon?: string } }) {
       <div className="w-16 h-16 flex items-center justify-center mb-6" style={{ backgroundColor: '#1e3526', borderRadius: '50%' }}>
         <Icon name={sec.icon} />
       </div>
-      <H className="font-display italic text-2xl lg:text-3xl text-green leading-snug mb-5">
+      <H className="font-display text-2xl lg:text-3xl text-green leading-snug mb-5">
         {sec.heading}
       </H>
       <div className="w-10 h-px bg-green/30 mb-6" />

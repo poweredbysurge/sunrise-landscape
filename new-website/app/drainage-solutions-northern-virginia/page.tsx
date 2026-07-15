@@ -51,7 +51,7 @@ export default function DrainageSolutionsPage() {
               <h1 className="text-cream text-lg lg:text-xl font-bold uppercase tracking-widest mb-4">
                 Drainage Solutions in Northern Virginia
               </h1>
-              <p className="editorial-display italic text-4xl sm:text-5xl lg:text-7xl text-cream leading-tight">
+              <p className="editorial-display text-4xl sm:text-5xl lg:text-7xl text-cream leading-tight">
                 <span className="block" style={{ fontSize: '0.72em' }}>Drainage</span>
                 and Erosion Control
               </p>

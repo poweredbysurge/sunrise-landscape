@@ -32,7 +32,7 @@ export default function ContactHero() {
         <div className="lg:w-1/2">
           <h1
             className="text-cream"
-            style={{ fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'italic', fontWeight: 400, fontSize: '4.5rem', lineHeight: 0.92, letterSpacing: '-0.025em' }}
+            style={{ fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'normal', fontWeight: 400, fontSize: '4.5rem', lineHeight: 0.92, letterSpacing: '-0.025em' }}
           >
             <span className="block">Let&apos;s build</span>
             <span className="block">your dream yard</span>

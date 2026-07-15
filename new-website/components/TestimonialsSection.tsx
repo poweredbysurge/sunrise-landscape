@@ -21,7 +21,7 @@ const ArrowRight = () => (
 
 function Stars({ count = 5 }: { count?: number }) {
   return (
-    <div className="flex gap-1 mb-6" aria-label={`${count} out of 5 stars`}>
+    <div className="flex justify-center md:justify-start gap-1 mb-6" aria-label={`${count} out of 5 stars`}>
       {Array.from({ length: 5 }, (_, i) => (
         <svg key={i} viewBox="0 0 20 20" className={`w-5 h-5 ${i < count ? 'text-green' : 'text-green/20'}`} fill="currentColor">
           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -132,14 +132,14 @@ export default function TestimonialsSection({ testimonials }: { testimonials: Te
 
       {/* Card track — bleeds right edge */}
       <div ref={wrapRef} className="pl-5 lg:pl-8 overflow-hidden relative">
-        {/* Left fade */}
+        {/* Left fade — desktop only; hidden on the first card so the section starts with a clean 32px left edge, then fades in once scrolled past it */}
         <div
-          className="absolute top-0 left-0 bottom-0 w-32 pointer-events-none z-10"
-          style={{ background: `linear-gradient(to right, ${BG}, transparent)` }}
+          className="hidden lg:block absolute top-0 left-0 bottom-0 w-32 pointer-events-none z-10 transition-opacity duration-500"
+          style={{ background: `linear-gradient(to right, ${BG}, transparent)`, opacity: rawIdx > CLONES ? 1 : 0 }}
         />
-        {/* Right fade */}
+        {/* Right fade — desktop only */}
         <div
-          className="absolute top-0 right-0 bottom-0 w-40 pointer-events-none z-10"
+          className="hidden lg:block absolute top-0 right-0 bottom-0 w-40 pointer-events-none z-10"
           style={{ background: `linear-gradient(to right, transparent, ${BG})` }}
         />
 
@@ -159,7 +159,7 @@ export default function TestimonialsSection({ testimonials }: { testimonials: Te
               style={{ width: cardPx ? `${cardPx}px` : '42%' }}
             >
               <Stars count={t.stars ?? 5} />
-              <p className="text-green/70 leading-relaxed mb-8 flex-1" style={{ fontSize: '1.125rem' }}>
+              <p className="text-green/70 leading-relaxed mb-4 md:mb-8 md:flex-1" style={{ fontSize: '1.125rem' }}>
                 {t.text}
               </p>
               <div>

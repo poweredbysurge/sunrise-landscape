@@ -56,7 +56,7 @@ export default function DesignApproachSection() {
             <div className="relative mt-auto">
               <h2
                 className="text-cream"
-                style={{ fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'italic', fontWeight: 400, fontSize: 'clamp(2.8rem, 5vw, 4.5rem)', lineHeight: 0.9, letterSpacing: '-0.025em' }}
+                style={{ fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'normal', fontWeight: 400, fontSize: 'clamp(2.8rem, 5vw, 4.5rem)', lineHeight: 0.9, letterSpacing: '-0.025em' }}
               >
                 <span className="block">Our</span>
                 <span className="block">Landscape</span>

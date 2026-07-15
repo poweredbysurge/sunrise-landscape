@@ -78,7 +78,7 @@ export default function LandscapePlantingPage() {
             </svg>
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-10 py-10 lg:px-14 lg:py-12">
               <div>
-              <p className="text-cream" style={{ lineHeight: 1.05, fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'italic' }}>
+              <p className="text-cream" style={{ lineHeight: 1.05, fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'normal' }}>
                 <span style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', display: 'block' }}>
                   Plant Design
                 </span>
@@ -138,7 +138,7 @@ export default function LandscapePlantingPage() {
             <div className="lg:sticky lg:top-28">
               <h2 className="text-3xl lg:text-5xl text-green mb-6" style={{ lineHeight: 1.0 }}>
                 Our Landscape Planting
-                <span className="block" style={{ fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'italic', fontWeight: 400 }}>
+                <span className="block" style={{ fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'normal', fontWeight: 400 }}>
                   Process
                 </span>
               </h2>

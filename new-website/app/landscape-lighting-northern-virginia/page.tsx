@@ -212,7 +212,7 @@ export default function LandscapeLightingPage() {
               className="text-3xl lg:text-5xl text-cream leading-tight mb-6 illuminate-glow"
             >
               Illuminate{' '}
-              <span className="editorial-display italic" style={{ fontWeight: 400 }}>
+              <span className="editorial-display" style={{ fontWeight: 400 }}>
                 Your Vision
               </span>
             </h2>

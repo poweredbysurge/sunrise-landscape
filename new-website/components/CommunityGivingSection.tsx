@@ -58,7 +58,7 @@ export default function CommunityGivingSection() {
           <div className="lg:w-5/12 lg:sticky lg:top-24 lg:self-start">
             <h2
               className="text-green mb-8"
-              style={{ fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'italic', fontWeight: 400, fontSize: 'clamp(2.6rem, 4.5vw, 4.5rem)', lineHeight: 0.92, letterSpacing: '-0.02em' }}
+              style={{ fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'normal', fontWeight: 400, fontSize: 'clamp(2.6rem, 4.5vw, 4.5rem)', lineHeight: 0.92, letterSpacing: '-0.02em' }}
             >
               <span className="block">Community</span>
               <span className="block">Service</span>
@@ -116,7 +116,7 @@ export default function CommunityGivingSection() {
                 <h3
                   style={{
                     fontFamily: 'var(--font-editorsnote), Georgia, serif',
-                    fontStyle: 'italic',
+                    fontStyle: 'normal',
                     fontWeight: 400,
                     fontSize: 'clamp(1.25rem, 2.2vw, 1.75rem)',
                     color: '#e7e6d2',

@@ -38,14 +38,14 @@ export default function WaterFeaturesPage() {
         <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-10">
             <div>
-              <h1 className="text-cream text-lg lg:text-xl font-bold uppercase tracking-widest mb-4">
-                Water Features and Pond Installation in Northern Virginia
-              </h1>
               <p className="text-4xl sm:text-5xl lg:text-6xl text-cream leading-tight">
                 Nature&apos;s Symphony: Ponds &amp; Water Features
               </p>
             </div>
             <div className="lg:pt-2">
+              <h1 className="text-cream text-lg lg:text-xl font-bold uppercase tracking-widest mb-4">
+                Water Features and Pond Installation in Northern Virginia
+              </h1>
               <p className="text-xl lg:text-2xl text-cream mb-6 leading-relaxed">
                 Transform your outdoor sanctuary with the timeless allure of moving water. From meditative koi ponds to dramatic waterfalls, we craft water features that engage all the senses and create year-round interest in your landscape.
               </p>

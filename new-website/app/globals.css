@@ -27,7 +27,7 @@
      for important declarations, so this rule wins. Do not remove !important. */
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-editorsnote), Georgia, serif;
-    font-style: italic;
+    font-style: normal;
     font-weight: 400 !important;
   }
 
@@ -161,20 +161,9 @@
 
   .editorial-display {
     font-family: var(--font-editorsnote), Georgia, serif;
-    font-style: italic;
+    font-style: normal;
     line-height: 0.95;
     letter-spacing: -0.03em;
-  }
-
-  /* Homepage-only italics-off preview. Scoped wrapper so no other page is
-     affected; remove the .home-no-italic wrapper in app/page.tsx to revert.
-     font-family is overridden too because EditorsNote only ships an italic
-     cut (see app/layout.tsx) — font-style: normal alone can't un-italicize
-     glyphs from a font file that has no upright weight. */
-  .home-no-italic,
-  .home-no-italic * {
-    font-style: normal !important;
-    font-family: var(--font-aeonik-new), Arial, sans-serif !important;
   }
 
   .divider {

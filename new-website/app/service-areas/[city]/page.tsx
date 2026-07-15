@@ -149,50 +149,26 @@ export default async function CityPage({
     <>
       <JsonLd data={jsonLd} />
 
-      {/* Banner */}
-      <section className="relative min-h-[55vh] flex items-end bg-green overflow-hidden">
+      {/* Banner — image only, no overlay or text */}
+      <section className="relative min-h-[55vh] bg-green overflow-hidden">
         {heroImg && (
-          <div className="absolute inset-0">
-            <Image
-              src={cdnToLocal(heroImg.src)}
-              alt={heroImg.alt}
-              fill
-              className="object-cover opacity-40"
-              priority
-              sizes="100vw"
-            />
-          </div>
+          <Image
+            src={cdnToLocal(heroImg.src)}
+            alt={heroImg.alt}
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
         )}
-        <div className="relative z-10 max-w-screen-xl mx-auto px-5 lg:px-8 pb-16 pt-32 text-center">
-          {svgLogo && (
-            <div className="relative w-24 h-8 mb-8 mx-auto opacity-60">
-              <Image
-                src={cdnToLocal(svgLogo.src)}
-                alt={svgLogo.alt}
-                fill
-                className="object-contain"
-                sizes="96px"
-              />
-            </div>
-          )}
-          <h2 className="text-lg lg:text-xl font-ui not-italic font-bold text-orange uppercase tracking-widest mb-3">
-            Landscape Services In
-          </h2>
-          <h2 className="text-5xl sm:text-6xl lg:text-7xl text-cream leading-tight">
-            {cityName}
-          </h2>
-        </div>
       </section>
 
       {/* Intro */}
       <section className="py-16 bg-cream">
         <div className="max-w-screen-xl mx-auto px-5 lg:px-8 text-center">
-          <h2 className="text-xl font-ui not-italic font-bold text-green mb-6 tracking-wide uppercase">
-            Our Services in
-          </h2>
-          <h2 className="text-green mb-8">
-            {cityName}
-          </h2>
+          <h1 className="text-4xl lg:text-6xl text-green leading-tight mb-8">
+            Landscape Services in {cityName}
+          </h1>
           {introParagraph && (
             <p className="text-green/70 max-w-3xl mx-auto leading-relaxed">
               {introParagraph}

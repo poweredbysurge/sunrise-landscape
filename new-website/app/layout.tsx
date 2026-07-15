@@ -24,6 +24,7 @@ const aeonik = localFont({
 const editorsNote = localFont({
   src: [
     { path: '../public/fonts/EditorsNote-Italic.woff2', weight: '400', style: 'italic' },
+    { path: '../public/fonts/EditorsNote-Regular.otf', weight: '400', style: 'normal' },
   ],
   variable: '--font-editorsnote',
   display: 'swap',

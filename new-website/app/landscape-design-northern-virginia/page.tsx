@@ -121,7 +121,7 @@ export default function LandscapeDesignPage() {
         <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 max-w-screen-xl mx-auto px-5 lg:px-8 pb-16 lg:pb-24 w-full">
           <p className="section-label text-orange mb-4">Landscape Design Services</p>
-          <h1 className="text-white leading-none tracking-tight max-w-4xl mb-6">
+          <h1 className="text-white leading-none tracking-tight max-w-4xl mb-6 text-4xl sm:text-5xl lg:text-7xl">
             Professional Landscape Design in Northern Virginia
           </h1>
           <p className="text-xl lg:text-2xl text-cream mb-8 max-w-2xl leading-relaxed">
@@ -136,7 +136,7 @@ export default function LandscapeDesignPage() {
       {/* ── FEATURED LANDSCAPE PROJECTS ── */}
       <FeaturedWorkCarousel
         projects={featuredProjects}
-        title={<><span className="editorial-display italic">Featured</span> landscape designs projects</>}
+        title={<><span className="editorial-display">Featured</span> landscape designs projects</>}
         ctaLabel="Schedule a Call"
         ctaHref="/contact"
       />

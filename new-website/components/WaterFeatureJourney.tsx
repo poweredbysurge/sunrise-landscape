@@ -74,7 +74,7 @@ export default function WaterFeatureJourney({ data }: { data: ServiceExpansionDa
     <>
       <section className="py-16 lg:py-24 px-5 lg:px-8 bg-white">
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          <div className="relative aspect-[4/5] lg:aspect-[3/4] overflow-hidden rounded-[20px]">
+          <div className="relative aspect-[4/5] lg:aspect-[3/4] overflow-hidden rounded-[20px] lg:order-2">
             <Image
               src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7caf1811776d3267929d_folder-2-1.webp')}
               alt="Evening patio with stone fireplace overlooking a koi pond and waterfall lit by landscape lighting."
@@ -84,11 +84,10 @@ export default function WaterFeatureJourney({ data }: { data: ServiceExpansionDa
             />
           </div>
 
-          <div>
+          <div className="lg:order-1">
             {data.sections.map((sec, i) => {
               const item = ITEMS[i % ITEMS.length]
               const isOpen = openIndex === i
-              const num = String(i + 1).padStart(2, '0')
               return (
                 <div key={sec.heading} className={i > 0 ? 'border-t border-green/10 pt-6 mt-6' : ''}>
                   <div className="flex gap-5">
@@ -99,8 +98,7 @@ export default function WaterFeatureJourney({ data }: { data: ServiceExpansionDa
                       <ItemIcon>{item.icon}</ItemIcon>
                     </div>
                     <div className="flex-1 pt-1">
-                      <p className="text-orange text-sm font-bold tracking-widest mb-1">{num}</p>
-                      <h3 className="font-display italic text-2xl lg:text-3xl text-green leading-snug mb-2">
+                      <h3 className="font-display text-2xl lg:text-3xl text-green leading-snug mb-2">
                         {sec.heading}
                       </h3>
                       <p className="text-black/70 leading-relaxed">{item.teaser}</p>
