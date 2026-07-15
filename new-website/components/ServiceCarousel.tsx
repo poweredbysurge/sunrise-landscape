@@ -257,7 +257,7 @@ export default function ServiceCarousel({
       onMouseLeave={() => { pausedRef.current = false }}
     >
       {/* ── Heading ── */}
-      <div className="max-w-screen-xl mx-auto px-5 lg:px-8 mb-8">
+      <div className="max-w-screen-xl mx-auto px-5 lg:px-8 mb-8 text-center">
         <h2 className="font-ui not-italic font-bold text-cream leading-tight" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)' }}>
           {title}
         </h2>
