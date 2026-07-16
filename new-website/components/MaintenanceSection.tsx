@@ -45,9 +45,10 @@ export default function MaintenanceSection() {
               src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1200&q=80"
               alt="Beautifully manicured lawn and garden in Northern Virginia"
               fill
-              className="object-cover opacity-75"
+              className="object-cover"
             />
-            <div className="absolute inset-0 bg-[#162b1e]/50" />
+            <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-[#162b1e]/70 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-[#162b1e]/85 to-transparent" />
             <p className="absolute top-8 left-8 font-ui text-[10px] font-bold text-cream uppercase tracking-[0.2em]">
               Maintenance Services
             </p>
