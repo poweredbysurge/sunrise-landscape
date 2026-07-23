@@ -118,7 +118,7 @@ export default function ServicesGrid() {
             // top of the viewport, so a sticky top of 0 would pin the section
             // underneath it — hiding the title behind the nav. Offset by the
             // header's real height so the title stays fully visible once stuck.
-            const NAV_HEIGHT = 103
+            const NAV_HEIGHT = 116
 
             /* Make the section sticky via JS so mobile is unaffected */
             section.style.position = 'sticky'
@@ -221,6 +221,18 @@ export default function ServicesGrid() {
               </span>
             </Link>
           </div>
+        </div>
+
+        {/* Scroll hint — desktop only; this is where vertical scroll drives horizontal
+            card movement, which isn't an obvious interaction without a nudge. */}
+        <div className="hidden lg:flex items-center justify-center gap-2 pb-8 text-cream/50">
+          <span className="text-xs font-ui tracking-[0.15em] uppercase">Keep scrolling to browse all services</span>
+          <svg
+            width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8"
+            strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="animate-bounce"
+          >
+            <path d="M8 3v10M3.5 9L8 13.5 12.5 9" />
+          </svg>
         </div>
       </section>
     </div>

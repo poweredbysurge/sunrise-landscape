@@ -45,14 +45,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 pb-12 border-b border-white/10 items-start">
 
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 flex flex-col items-center text-center md:items-start md:text-left">
             <Link href="/" className="block mb-5" aria-label="Sunrise Landscape & Design — Home">
               <Image
                 src="/logos/sunrise-logo.svg"
                 alt="SUNRISE Landscape & Design"
                 width={200}
                 height={69}
-                className="w-[85%] h-auto"
+                className="w-36 h-auto"
                 style={{ filter: 'brightness(0) invert(1)' }}
               />
             </Link>
@@ -60,20 +60,20 @@ export default function Footer() {
               Landscapes<br />For Living
             </h2>
             <div className="text-base text-cream">
-              <a href="tel:703-544-0028" className="flex items-center gap-2 py-2.5 hover:text-orange transition-colors">
+              <a href="tel:703-544-0028" className="flex items-center justify-center md:justify-start gap-2 py-2.5 hover:text-orange transition-colors">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012 1.18 2 2 0 013.99 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
                 703-544-0028
               </a>
-              <a href="mailto:info@sunriselandscapeanddesign.com" className="flex items-center gap-2 py-2.5 hover:text-orange transition-colors">
+              <a href="mailto:info@sunriselandscapeanddesign.com" className="flex items-center justify-center md:justify-start gap-2 py-2.5 hover:text-orange transition-colors">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 info@sunriselandscapeanddesign.com
               </a>
-              <p className="flex items-start gap-2">
+              <p className="flex items-start justify-center md:justify-start gap-2">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mt-0.5 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 43813 Beaver Meadow Rd #100<br />Sterling, VA 20166
               </p>
             </div>
-            <div className="flex gap-3 mt-6">
+            <div className="flex justify-center md:justify-start gap-3 mt-6">
               <a href="https://www.facebook.com/sunriselandscapeanddesign" target="_blank" rel="noopener noreferrer" className="w-11 h-11 border border-white/20 flex items-center justify-center hover:border-orange hover:text-orange transition-colors" style={{ borderRadius: '50%' }} aria-label="Facebook">
                 <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
               </a>
@@ -84,7 +84,7 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div>
+          <div className="text-center md:text-left">
             <p className="section-label text-orange mb-3">Services</p>
             <ul>
               {serviceLinks.map((l) => (
@@ -98,7 +98,7 @@ export default function Footer() {
           </div>
 
           {/* Service Areas */}
-          <div>
+          <div className="text-center md:text-left">
             <p className="section-label text-orange mb-3">Service Areas</p>
             <ul>
               {areaLinks.map((l) => (
@@ -112,7 +112,7 @@ export default function Footer() {
           </div>
 
           {/* Company */}
-          <div>
+          <div className="text-center md:text-left">
             <p className="section-label text-orange mb-3">Company</p>
             <ul>
               {companyLinks.map((l) => (

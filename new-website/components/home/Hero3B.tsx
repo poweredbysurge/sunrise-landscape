@@ -1,7 +1,8 @@
 'use client'
 
-import { useEffect, useRef, useState, type MouseEvent } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import heroBackground from './Background 2.png'
 import InquiryForm from '@/components/InquiryForm'
 
@@ -38,7 +39,6 @@ const GOOGLE_REVIEWS: GoogleReview[] = [
 ]
 
 export default function Hero3B() {
-  const [showModal, setShowModal] = useState(false)
   const [reviewIdx, setReviewIdx] = useState(0)
   const [pastHero, setPastHero] = useState(false)
   const heroRef = useRef<HTMLElement>(null)
@@ -50,22 +50,6 @@ export default function Hero3B() {
     io.observe(el)
     return () => io.disconnect()
   }, [])
-
-  useEffect(() => {
-    document.body.style.overflow = showModal ? 'hidden' : ''
-    return () => {
-      document.body.style.overflow = ''
-    }
-  }, [showModal])
-
-  const openForm = () => setShowModal(true)
-
-  const handleCtaClick = (e: MouseEvent<HTMLAnchorElement>) => {
-    if (typeof window !== 'undefined' && window.innerWidth < 1024) {
-      e.preventDefault()
-      openForm()
-    }
-  }
 
   const review = GOOGLE_REVIEWS[reviewIdx]
   const reviewCount = GOOGLE_REVIEWS.length
@@ -83,9 +67,9 @@ export default function Hero3B() {
         owned, serving Northern Virginia since 1986. We respond in minutes.
       </p>
       <div className="flex items-center gap-6 flex-wrap">
-        <a href="#hero-form" onClick={handleCtaClick} className="btn-primary">
+        <Link href="/contact#form" className="btn-primary">
           <span>Get My Free Yard Inspection</span>
-        </a>
+        </Link>
       </div>
       {/* Desktop trust bar */}
       <div className="hidden lg:flex items-center gap-6 flex-wrap pt-4 border-t border-cream/15 text-cream/75 text-sm">
@@ -192,39 +176,19 @@ export default function Hero3B() {
         </div>
       </section>
 
-      {/* Mobile-only full-screen form modal */}
-      {showModal && (
-        <div className="fixed inset-0 z-50 bg-cream flex flex-col lg:hidden" style={{ height: '100dvh' }}>
-          <div className="flex items-center justify-end px-5 pt-5 flex-shrink-0">
-            <button
-              type="button"
-              onClick={() => setShowModal(false)}
-              aria-label="Close"
-              className="w-9 h-9 rounded-full bg-green/10 text-green text-xl flex items-center justify-center"
-            >
-              &times;
-            </button>
-          </div>
-          <div className="flex-1 flex flex-col gap-5 px-6 pb-8 overflow-y-auto">
-            <InquiryForm />
-          </div>
-        </div>
-      )}
-
       {/* Mobile-only sticky CTA, shown once the hero has scrolled out of view */}
-      {pastHero && !showModal && (
+      {pastHero && (
         <div
           className="lg:hidden fixed bottom-0 inset-x-0 z-40 px-4 pt-3"
           style={{ backgroundColor: '#141414', paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}
         >
-          <button
-            type="button"
-            onClick={openForm}
+          <Link
+            href="/contact#form"
             className="w-full flex items-center justify-center gap-2 bg-orange text-white font-ui font-bold text-sm tracking-wider uppercase px-7 rounded-lg cursor-pointer active:scale-[0.96] active:opacity-90 transition-transform"
             style={{ minHeight: '44px' }}
           >
             <span>Get My Free Yard Inspection</span>
-          </button>
+          </Link>
         </div>
       )}
     </>

@@ -80,15 +80,15 @@ export default function Navigation() {
         </div>
 
         {/* ── Main nav row — 3-column flex so the nav is never absolutely positioned ── */}
-        <div className="px-5 lg:px-8 flex items-center h-16">
+        <div className="px-5 lg:px-8 flex items-center h-20">
           {/* Left: Logo */}
           <div className="flex-1">
             <Link href="/" className="inline-flex flex-shrink-0 transition-opacity duration-300 hover:opacity-85" aria-label="Sunrise Landscape & Design — Home">
               <Image
-                src="/logos/sunrise-logo-white.png"
+                src="/logos/sunrise-logo.svg"
                 alt="SUNRISE Landscape & Design"
-                width={150}
-                height={46}
+                width={190}
+                height={66}
                 priority
               />
             </Link>

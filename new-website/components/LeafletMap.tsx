@@ -27,7 +27,7 @@ export default function LeafletMap() {
   return (
     <div
       className="overflow-hidden border border-green/10"
-      style={{ borderRadius: '16px', height: '400px', width: '100%' }}
+      style={{ borderRadius: '16px', height: '400px', width: '100%', isolation: 'isolate' }}
     >
       <MapContainer
         center={[OFFICE.lat, OFFICE.lng]}
