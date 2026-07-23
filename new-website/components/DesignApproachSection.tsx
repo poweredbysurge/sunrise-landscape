@@ -70,7 +70,7 @@ export default function DesignApproachSection() {
           <div className="relative lg:w-1/2" style={{ minHeight: '380px' }}>
             <Image
               src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/681c9fc83f8047121576ac84_design-img-1%20(1).webp')}
-              alt="Professional landscape design project in Northern Virginia by Sunrise Landscape and Design"
+              alt="Professional landscape design project in Northern Virginia by Sunrise Landscape"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"

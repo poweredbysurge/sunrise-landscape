@@ -15,8 +15,12 @@ const RECOVERY_PAGES = [
   '/patio-fire-pit-leesburg-ashburn-great-falls',
 ]
 
+// Redirect stubs (see next.config.ts `redirects()`) — these 308 to their
+// canonical -northern-virginia/-virginia pages and must not appear in the sitemap.
+const REDIRECT_STUB_PATHS = ['/hardscape', '/commercial']
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = getPageIndex()
+  const pages = getPageIndex().filter((page) => !REDIRECT_STUB_PATHS.includes(page.path))
 
   return [
     ...pages.map((page) => ({

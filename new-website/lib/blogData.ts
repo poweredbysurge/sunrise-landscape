@@ -54,7 +54,7 @@ export const BLOGS: BlogPost[] = [
   {
     slug: 'outdoor-living-spaces-northern-virginia',
     title: 'Outdoor Living Spaces in Northern Virginia: Design Ideas for Every Backyard',
-    excerpt: 'Outdoor living design ideas for Northern Virginia homeowners. Patios, fire pits, outdoor kitchens, and more from Sunrise Landscape & Design.',
+    excerpt: 'Outdoor living design ideas for Northern Virginia homeowners. Patios, fire pits, outdoor kitchens, and more from Sunrise Landscape.',
     image: '/blogs/blog-12-img-1.jpg',
     category: 'Inspiration',
   },
@@ -68,7 +68,7 @@ export const BLOGS: BlogPost[] = [
   {
     slug: 'fire-pit-installation',
     title: 'Fire Pit Installation: Design Ideas, Costs, and What to Know Before You Build',
-    excerpt: 'Planning a fire pit installation in Northern Virginia? Design ideas, cost ranges, permit requirements, and what to ask your contractor. Guide from Sunrise Landscape & Design.',
+    excerpt: 'Planning a fire pit installation in Northern Virginia? Design ideas, cost ranges, permit requirements, and what to ask your contractor. Guide from Sunrise Landscape.',
     image: `${CDN}/6a19ff2f4cfe38415e587630_6a19febaab43f3d2c7dd8b62_blog-20-img-1.jpeg`,
     category: 'Hardscaping',
   },

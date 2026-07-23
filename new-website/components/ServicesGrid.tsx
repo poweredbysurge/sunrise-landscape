@@ -191,18 +191,18 @@ export default function ServicesGrid() {
               >
                 <Image src={svc.img} alt={svc.alt} fill className="object-cover" sizes="(min-width: 1024px) 420px, 82vw" loading="lazy" />
                 <div
-                  className="absolute inset-x-0 bottom-0 px-6 pb-6 pt-10 lg:px-7 lg:pb-7 transition-transform duration-500 ease-out translate-y-[calc(100%-9.5rem)] group-hover:translate-y-0"
+                  className="absolute inset-x-0 bottom-0 px-6 pb-5 pt-3 lg:px-7 lg:pb-6 transition-transform duration-500 ease-out translate-y-[calc(100%-9.5rem)] group-hover:translate-y-0"
                   style={{
                     background: 'linear-gradient(to top, rgba(16,31,22,1) 0%, rgba(16,31,22,0.98) 55%, rgba(16,31,22,0.9) 78%, rgba(16,31,22,0.55) 92%, transparent 100%)',
                   }}
                 >
                   <h3
-                    className="text-cream mb-3 !font-sans !font-normal !not-italic"
+                    className="text-cream mb-2 !font-sans !font-normal !not-italic"
                     style={{ fontSize: '2rem', lineHeight: 1.15 }}
                   >
                     {svc.heading}
                   </h3>
-                  <p className="text-cream/90 leading-relaxed max-h-24 overflow-y-auto pr-1">{svc.body}</p>
+                  <p className="text-cream/90 leading-relaxed">{svc.body}</p>
                 </div>
               </Link>
             ))}
@@ -217,7 +217,7 @@ export default function ServicesGrid() {
                 Have a project in mind?
               </span>
               <span className="section-label text-green inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-200">
-                Get a free consultation <ArrowIcon />
+                Get My Free Yard Inspection <ArrowIcon />
               </span>
             </Link>
           </div>

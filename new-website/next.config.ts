@@ -29,6 +29,11 @@ const nextConfig: NextConfig = {
         destination: '/hardscape-northern-virginia',
         permanent: true,
       },
+      {
+        source: '/blogs',
+        destination: '/blog',
+        permanent: true,
+      },
     ]
   },
   images: {

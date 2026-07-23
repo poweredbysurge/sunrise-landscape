@@ -34,7 +34,7 @@ export default function ContactHero() {
             className="text-cream"
             style={{ fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'normal', fontWeight: 400, fontSize: '4.5rem', lineHeight: 0.92, letterSpacing: '-0.025em' }}
           >
-            <span className="block">Let&apos;s build</span>
+            <span className="block">Let&apos;s build </span>
             <span className="block">your dream yard</span>
           </h1>
         </div>
@@ -43,7 +43,7 @@ export default function ContactHero() {
         <div className="lg:w-[360px] lg:pt-3 flex flex-col gap-6">
           <p className="text-cream leading-relaxed">
             Ready to transform your outdoor space? Our team has been serving Northern Virginia
-            homeowners and businesses for 38+ years. Fill out the form below or reach out directly
+            homeowners and businesses for 40 years. Fill out the form below or reach out directly
             to get started with a free consultation.
           </p>
           <div className="flex flex-wrap gap-4">

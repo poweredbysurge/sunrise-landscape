@@ -6,16 +6,16 @@ import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Sunrise Landscape and Design',
-  description: 'Terms of service for Sunrise Landscape and Design. Review our service agreements, payment policies, and client responsibilities for landscaping services in Northern Virginia.',
+  title: 'Terms of Service | Sunrise Landscape',
+  description: 'Terms of service for Sunrise Landscape. Review our service agreements, payment policies, and client responsibilities for landscaping services in Northern Virginia.',
   openGraph: {
-    title: 'Terms of Service | Sunrise Landscape and Design',
-    description: 'Terms of service for Sunrise Landscape and Design. Review our service agreements, payment policies, and client responsibilities for landscaping services in Northern Virginia.',
+    title: 'Terms of Service | Sunrise Landscape',
+    description: 'Terms of service for Sunrise Landscape. Review our service agreements, payment policies, and client responsibilities for landscaping services in Northern Virginia.',
     type: 'website',
   },
   twitter: {
-    title: 'Terms of Service | Sunrise Landscape and Design',
-    description: 'Terms of service for Sunrise Landscape and Design. Review our service agreements, payment policies, and client responsibilities for landscaping services in Northern Virginia.',
+    title: 'Terms of Service | Sunrise Landscape',
+    description: 'Terms of service for Sunrise Landscape. Review our service agreements, payment policies, and client responsibilities for landscaping services in Northern Virginia.',
     card: 'summary_large_image',
   },
 }
@@ -32,7 +32,7 @@ export default function TermsPage() {
           <div className="relative w-24 h-8 mb-8">
             <Image
               src={"/logos/sunrise-logo.svg"}
-              alt="SUNRISE Landscape - Design"
+              alt="SUNRISE Landscape"
               fill
               className="object-contain object-left"
               sizes="96px"

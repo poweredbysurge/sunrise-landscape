@@ -47,7 +47,7 @@ export default function CommercialAliasPage() {
           <div className="relative w-24 h-8 mb-8">
             <Image
               src={"/logos/sunrise-logo.svg"}
-              alt="SUNRISE Landscape - Design"
+              alt="SUNRISE Landscape"
               fill
               className="object-contain object-left"
               sizes="96px"

@@ -41,7 +41,7 @@ export default function LeafletMap() {
         />
         <Marker position={[OFFICE.lat, OFFICE.lng]}>
           <Popup>
-            <strong>Sunrise Landscape &amp; Design</strong>
+            <strong>Sunrise Landscape</strong>
             <br />
             {ADDRESS}
             <br />

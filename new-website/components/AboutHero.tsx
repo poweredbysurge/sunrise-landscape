@@ -34,7 +34,7 @@ export default function AboutHero() {
         {/* Left: editorial heading */}
         <div className="lg:w-1/2">
           <h1 className="text-cream text-lg lg:text-xl font-bold uppercase tracking-widest mb-4">
-            About Sunrise Landscape and Design
+            About Sunrise Landscape
           </h1>
           <p
             className="text-cream"

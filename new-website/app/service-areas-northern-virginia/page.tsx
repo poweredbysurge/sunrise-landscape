@@ -10,16 +10,16 @@ import ServiceExpansion from '@/components/ServiceExpansion'
 import { serviceExpansions } from '@/lib/serviceExpansions'
 
 export const metadata: Metadata = {
-  title: 'Landscape Services Across Northern Virginia | Sunrise Landscape & Design',
-  description: 'Sunrise Landscape & Design serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. 39+ years of landscape design, hardscape, and maintenance expertise.',
+  title: 'Landscape Services Across Northern Virginia | Sunrise Landscape',
+  description: 'Sunrise Landscape serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. 40 years of landscape design, hardscape, and maintenance expertise.',
   openGraph: {
-    title: 'Landscape Services Across Northern Virginia | Sunrise Landscape & Design',
-    description: 'Sunrise Landscape & Design serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. 39+ years of landscape design, hardscape, and maintenance expertise.',
+    title: 'Landscape Services Across Northern Virginia | Sunrise Landscape',
+    description: 'Sunrise Landscape serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. 40 years of landscape design, hardscape, and maintenance expertise.',
     type: 'website',
   },
   twitter: {
-    title: 'Landscape Services Across Northern Virginia | Sunrise Landscape & Design',
-    description: 'Sunrise Landscape & Design serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. 39+ years of landscape design, hardscape, and maintenance expertise.',
+    title: 'Landscape Services Across Northern Virginia | Sunrise Landscape',
+    description: 'Sunrise Landscape serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. 40 years of landscape design, hardscape, and maintenance expertise.',
     card: 'summary_large_image',
   },
 }
@@ -129,17 +129,17 @@ export default function ServiceAreasNVPage() {
               <div className="relative w-24 h-8 mb-8 opacity-60">
                 <Image
                   src={"/logos/sunrise-logo.svg"}
-                  alt="SUNRISE Landscape - Design"
+                  alt="SUNRISE Landscape"
                   fill
                   className="object-contain object-left"
                   sizes="96px"
                 />
               </div>
               <h1 className="text-4xl lg:text-6xl text-cream leading-tight mb-6">
-                Landscape Design in Northern Virginia
+                Landscaping Services Across Northern Virginia
               </h1>
               <p className="text-cream/80 leading-relaxed mb-4">
-                For nearly four decades, Sunrise Landscape &amp; Design has shaped outdoor spaces across Loudoun and Fairfax counties, from estate properties in McLean and Great Falls to family backyards in Ashburn, Reston, and Sterling. Our service area spans the breadth of Northern Virginia, covering more than a dozen communities where homeowners, HOAs, and commercial property managers count on us for landscape design, hardscape construction, lighting design, and year-round maintenance.
+                For four decades, Sunrise Landscape has shaped outdoor spaces across Loudoun and Fairfax counties, from estate properties in McLean and Great Falls to family backyards in Ashburn, Reston, and Sterling. Our service area spans the breadth of Northern Virginia, covering more than a dozen communities where homeowners, HOAs, and commercial property managers count on us for landscape design, hardscape construction, lighting design, and year-round maintenance.
               </p>
               <p className="text-cream/80 leading-relaxed">
                 Northern Virginia&apos;s mid-Atlantic climate, clay-heavy soils, and four-season conditions create a unique landscape environment, one that rewards experience. Headquartered in Sterling, our team brings local knowledge to every project, whether we&apos;re installing a drainage solution in a wooded Vienna lot, designing a pool surround for a Leesburg estate, or building a low-maintenance entrance landscape for a Chantilly office park.
@@ -181,7 +181,7 @@ export default function ServiceAreasNVPage() {
             Browse Our Service Areas
           </h3>
           <p className="text-green/60 mb-10 leading-relaxed">
-            Sunrise Landscape &amp; Design serves 12 communities across Northern Virginia. Click any area below to explore our work in your neighborhood.
+            Sunrise Landscape serves 12 communities across Northern Virginia. Click any area below to explore our work in your neighborhood.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {cityCards.map((card) => (

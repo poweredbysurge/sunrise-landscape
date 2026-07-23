@@ -320,7 +320,7 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
       {
         heading: 'Built for Boards and Budget Cycles',
         body: [
-          'HOA and commercial budgets run on calendars, so we do too: proposals timed for budget season, unit pricing that survives comparison, and contract scopes written in plain language a board can vote on. After 39 years in Northern Virginia we know exactly what a February board meeting wants to see.',
+          'HOA and commercial budgets run on calendars, so we do too: proposals timed for budget season, unit pricing that survives comparison, and contract scopes written in plain language a board can vote on. After 40 years in Northern Virginia we know exactly what a February board meeting wants to see.',
         ],
       },
     ],

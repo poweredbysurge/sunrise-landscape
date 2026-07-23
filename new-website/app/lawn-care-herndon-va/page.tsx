@@ -9,12 +9,12 @@ import FromOurBlog, { BLOG_ART } from '@/components/FromOurBlog'
 export const metadata: Metadata = {
   title: 'Lawn Service in Herndon, VA | Sunrise Landscape',
   description:
-    'Lawn service in Herndon, VA built for clay soil: mowing, aeration, grub control, and drainage-aware care from a local crew. 39 years in Northern Virginia.',
+    'Lawn service in Herndon, VA built for clay soil: mowing, aeration, grub control, and drainage-aware care from a local crew. 40 years in Northern Virginia.',
   alternates: { canonical: 'https://www.sunriselandscapeanddesign.com/lawn-care-herndon-va' },
   openGraph: {
     title: 'Lawn Service in Herndon, VA | Sunrise Landscape',
     description:
-      'Lawn service in Herndon, VA built for clay soil: mowing, aeration, grub control, and drainage-aware care from a local crew. 39 years in Northern Virginia.',
+      'Lawn service in Herndon, VA built for clay soil: mowing, aeration, grub control, and drainage-aware care from a local crew. 40 years in Northern Virginia.',
     type: 'website',
     images: [
       {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Lawn Service in Herndon, VA | Sunrise Landscape',
     description:
-      'Lawn service in Herndon, VA built for clay soil: mowing, aeration, grub control, and drainage-aware care from a local crew. 39 years in Northern Virginia.',
+      'Lawn service in Herndon, VA built for clay soil: mowing, aeration, grub control, and drainage-aware care from a local crew. 40 years in Northern Virginia.',
     card: 'summary_large_image',
     images: ['https://www.sunriselandscapeanddesign.com/media/stock/freshly-mowed-lawn-closeup.webp'],
   },
@@ -65,7 +65,7 @@ const schema = [
     areaServed: { '@type': 'City', name: 'Herndon', containedInPlace: { '@type': 'State', name: 'Virginia' } },
     provider: {
       '@type': 'LocalBusiness',
-      name: 'Sunrise Landscape & Design',
+      name: 'Sunrise Landscape',
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',

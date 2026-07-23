@@ -26,9 +26,9 @@ export async function generateMetadata({
   const post = getBlogBySlug(slug)
   return {
     title: post?.title
-      ? `${post.title} | Sunrise Landscape and Design`
-      : 'Sunrise Landscape and Design',
-    description: post?.excerpt || 'Read expert landscaping advice from Sunrise Landscape and Design.',
+      ? `${post.title} | Sunrise Landscape`
+      : 'Sunrise Landscape',
+    description: post?.excerpt || 'Read expert landscaping advice from Sunrise Landscape.',
     openGraph: {
       title: post?.title,
       description: post?.excerpt,
@@ -83,7 +83,7 @@ export default async function BlogPostPage({
                 {title}
               </h1>
               <p className="text-cream tracking-wide">
-                By Sunrise Landscape &amp; Design &bull; Northern Virginia
+                By Sunrise Landscape &bull; Northern Virginia
               </p>
             </div>
             <div className="flex-shrink-0 pt-1">

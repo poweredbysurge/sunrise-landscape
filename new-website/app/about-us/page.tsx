@@ -8,16 +8,16 @@ import DesignApproachSection from '@/components/DesignApproachSection'
 import AboutHero from '@/components/AboutHero'
 
 export const metadata: Metadata = {
-  title: 'About Us | Sunrise Landscape and Design',
-  description: "Learn about Sunrise Landscape and Design, Northern Virginia's trusted landscape experts since 1986. Serving 15+ communities with excellence and integrity.",
+  title: 'About Us | Sunrise Landscape',
+  description: "Learn about Sunrise Landscape, Northern Virginia's trusted landscape experts since 1986. Serving 15+ communities with excellence and integrity.",
   openGraph: {
-    title: 'About Us | Sunrise Landscape and Design',
-    description: "Learn about Sunrise Landscape and Design, Northern Virginia's trusted landscape experts since 1986. Serving 15+ communities with excellence and integrity.",
+    title: 'About Us | Sunrise Landscape',
+    description: "Learn about Sunrise Landscape, Northern Virginia's trusted landscape experts since 1986. Serving 15+ communities with excellence and integrity.",
     type: 'website',
   },
   twitter: {
-    title: 'About Us | Sunrise Landscape and Design',
-    description: "Learn about Sunrise Landscape and Design, Northern Virginia's trusted landscape experts since 1986. Serving 15+ communities with excellence and integrity.",
+    title: 'About Us | Sunrise Landscape',
+    description: "Learn about Sunrise Landscape, Northern Virginia's trusted landscape experts since 1986. Serving 15+ communities with excellence and integrity.",
     card: 'summary_large_image',
   },
 }

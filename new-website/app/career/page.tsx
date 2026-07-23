@@ -10,15 +10,15 @@ import ContactFormSection from '@/components/ContactFormSection'
 
 export const metadata: Metadata = {
   title: 'Landscaping Careers Northern Virginia | Sunrise Landscape',
-  description: 'Join Sunrise Landscape and Design in Northern Virginia. We\'re hiring skilled landscape professionals for design, installation, and maintenance. Apply today.',
+  description: 'Join Sunrise Landscape in Northern Virginia. We\'re hiring skilled landscape professionals for design, installation, and maintenance. Apply today.',
   openGraph: {
     title: 'Landscaping Careers Northern Virginia | Sunrise Landscape',
-    description: 'Join Sunrise Landscape and Design in Northern Virginia. We\'re hiring skilled landscape professionals for design, installation, and maintenance. Apply today.',
+    description: 'Join Sunrise Landscape in Northern Virginia. We\'re hiring skilled landscape professionals for design, installation, and maintenance. Apply today.',
     type: 'website',
   },
   twitter: {
     title: 'Landscaping Careers Northern Virginia | Sunrise Landscape',
-    description: 'Join Sunrise Landscape and Design in Northern Virginia. We\'re hiring skilled landscape professionals for design, installation, and maintenance. Apply today.',
+    description: 'Join Sunrise Landscape in Northern Virginia. We\'re hiring skilled landscape professionals for design, installation, and maintenance. Apply today.',
     card: 'summary_large_image',
   },
 }

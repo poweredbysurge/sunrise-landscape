@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import ServiceAreasSection from '@/components/ServiceAreasSection'
 import { cdnToLocal } from '@/lib/mediaUrl'
@@ -49,7 +50,7 @@ export default function HardscapePage() {
                 Hardscape Services: Patios, Fire Pits &amp; More
               </h2>
               <p className="text-green/70 mt-6 max-w-3xl lg:text-lg leading-relaxed">
-                Sunrise creates stylish and functional hardscapes with the highest quality workmanship and time-tested methods. With over 35 years of experience and ICPI certification, Sunrise delivers exceptional results for you to enjoy forever.
+                Sunrise creates stylish and functional hardscapes with the highest quality workmanship and time-tested methods. With over 40 years of experience and ICPI certification, Sunrise delivers exceptional results for you to enjoy forever.
               </p>
             </div>
           </div>
@@ -63,6 +64,13 @@ export default function HardscapePage() {
             { src: 'https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821cb817cc578cffd2d3726_work-img-3%20(1).webp', alt: 'Outdoor covered patio with wicker seating, stone fireplace, wall-mounted TV, and bar counter with stools' },
           ]} />
 
+          <p className="text-green/70 mt-10 leading-relaxed">
+            Looking for a patio or fire pit specifically?{' '}
+            <Link href="/patio-fire-pit-leesburg-ashburn-great-falls" className="underline text-green hover:text-orange">
+              See our patio and fire pit contractors
+            </Link>{' '}
+            for Leesburg, Ashburn, and Great Falls.
+          </p>
         </div>
       </section>
 

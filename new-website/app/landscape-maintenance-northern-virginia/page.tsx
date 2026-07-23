@@ -11,16 +11,16 @@ import ServiceExpansion from '@/components/ServiceExpansion'
 import { serviceExpansions } from '@/lib/serviceExpansions'
 
 export const metadata: Metadata = {
-  title: 'Landscape Maintenance Northern Virginia | Sunrise Landscape',
-  description: 'Professional landscape maintenance in Northern Virginia. Year-round care packages for residential and commercial properties. Keep your landscape thriving.',
+  title: 'Landscape Maintenance Services in Northern Virginia | Sunrise Landscape',
+  description: 'Year-round landscape maintenance programs in Northern Virginia: mowing, fertilization, garden care, and seasonal cleanups for residential and commercial properties.',
   openGraph: {
-    title: 'Landscape Maintenance Northern Virginia | Sunrise Landscape',
-    description: 'Professional landscape maintenance in Northern Virginia. Year-round care packages for residential and commercial properties. Keep your landscape thriving.',
+    title: 'Landscape Maintenance Services in Northern Virginia | Sunrise Landscape',
+    description: 'Year-round landscape maintenance programs in Northern Virginia: mowing, fertilization, garden care, and seasonal cleanups for residential and commercial properties.',
     type: 'website',
   },
   twitter: {
-    title: 'Landscape Maintenance Northern Virginia | Sunrise Landscape',
-    description: 'Professional landscape maintenance in Northern Virginia. Year-round care packages for residential and commercial properties. Keep your landscape thriving.',
+    title: 'Landscape Maintenance Services in Northern Virginia | Sunrise Landscape',
+    description: 'Year-round landscape maintenance programs in Northern Virginia: mowing, fertilization, garden care, and seasonal cleanups for residential and commercial properties.',
     card: 'summary_large_image',
   },
 }
@@ -342,6 +342,36 @@ export default function LandscapeMaintenancePage() {
       </section>
 
       <ServiceExpansion data={serviceExpansions['landscape-maintenance-northern-virginia']} />
+
+      {/* ── LAWN CARE BY TOWN ── */}
+      <section className="py-14 bg-cream/60">
+        <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
+          <h2 className="text-2xl lg:text-3xl text-green leading-tight mb-3">Lawn Care by Town</h2>
+          <p className="text-green/60 mb-8 leading-relaxed max-w-2xl">
+            Prefer a dedicated mowing and turf program instead of a full maintenance package? Each town below has its own lawn care page with local soil conditions and seasonal timing.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {[
+              { label: 'Lawn Care in Leesburg', href: '/lawn-care-leesburg-va' },
+              { label: 'Lawn Care in Ashburn', href: '/lawn-care-ashburn-va' },
+              { label: 'Lawn Care in Herndon', href: '/lawn-care-herndon-va' },
+              { label: 'Lawn Care in Fairfax', href: '/lawn-care-fairfax-va' },
+              { label: 'Lawn Care in Aldie', href: '/lawn-care-aldie-va' },
+              { label: 'Lawn Care in Loudoun County', href: '/lawn-care-loudoun-county-va' },
+              { label: 'Patio & Fire Pit Contractors', href: '/patio-fire-pit-leesburg-ashburn-great-falls' },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="border border-green text-green px-5 py-2.5 text-sm font-medium hover:bg-green hover:text-cream transition-colors"
+                style={{ borderRadius: '8px' }}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* ── SERVICE AREA BAR ── */}
       <ServiceAreasSection />

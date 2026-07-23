@@ -7,16 +7,16 @@ import FaqAccordion from '@/components/FaqAccordion'
 import { getMdxJsonLd } from '@/lib/manifest'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Sunrise Landscape and Design',
-  description: 'Contact Sunrise Landscape and Design in Sterling, VA. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
+  title: 'Contact Us | Sunrise Landscape',
+  description: 'Contact Sunrise Landscape in Sterling, VA. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
   openGraph: {
-    title: 'Contact Us | Sunrise Landscape and Design',
-    description: 'Contact Sunrise Landscape and Design in Sterling, VA. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
+    title: 'Contact Us | Sunrise Landscape',
+    description: 'Contact Sunrise Landscape in Sterling, VA. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
     type: 'website',
   },
   twitter: {
-    title: 'Contact Us | Sunrise Landscape and Design',
-    description: 'Contact Sunrise Landscape and Design in Sterling, VA. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
+    title: 'Contact Us | Sunrise Landscape',
+    description: 'Contact Sunrise Landscape in Sterling, VA. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
     card: 'summary_large_image',
   },
 }
@@ -64,8 +64,21 @@ const faqs = [
   },
 ]
 
+// The homepage is the canonical LocalBusiness entity (see app/page.tsx).
+// Strip LocalBusiness nodes from the contact page's manifest JSON-LD so the
+// two pages don't compete as separate business entities in search results.
+function stripLocalBusiness(data: object[]): object[] {
+  return data
+    .filter((item) => (item as { '@type'?: string })['@type'] !== 'LocalBusiness')
+    .map((item) => {
+      const graph = (item as { '@graph'?: { '@type'?: string }[] })['@graph']
+      if (!graph) return item
+      return { ...item, '@graph': graph.filter((g) => g['@type'] !== 'LocalBusiness') }
+    })
+}
+
 export default function ContactPage() {
-  const jsonLd = getMdxJsonLd('pages/contact/index.mdx')
+  const jsonLd = stripLocalBusiness(getMdxJsonLd('pages/contact/index.mdx'))
 
   return (
     <>
@@ -147,7 +160,7 @@ export default function ContactPage() {
             FAQs
           </h2>
           <p className="text-green/60 mb-10">
-            Common questions about working with Sunrise Landscape and Design.
+            Common questions about working with Sunrise Landscape.
           </p>
           <div className="mb-14 text-left">
             <FaqAccordion faqs={faqs} />

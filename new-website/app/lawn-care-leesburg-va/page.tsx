@@ -9,12 +9,12 @@ import FromOurBlog, { BLOG_ART } from '@/components/FromOurBlog'
 export const metadata: Metadata = {
   title: 'Lawn Care in Leesburg, VA | Sunrise Landscape',
   description:
-    'Full-season lawn care in Leesburg, VA from a crew that has worked Loudoun lawns for 39 years. Mowing, fertilization, aeration, weed control. Free consultation.',
+    'Full-season lawn care in Leesburg, VA from a crew that has worked Loudoun lawns for 40 years. Mowing, fertilization, aeration, weed control. Free consultation.',
   alternates: { canonical: 'https://www.sunriselandscapeanddesign.com/lawn-care-leesburg-va' },
   openGraph: {
     title: 'Lawn Care in Leesburg, VA | Sunrise Landscape',
     description:
-      'Full-season lawn care in Leesburg, VA from a crew that has worked Loudoun lawns for 39 years. Mowing, fertilization, aeration, weed control. Free consultation.',
+      'Full-season lawn care in Leesburg, VA from a crew that has worked Loudoun lawns for 40 years. Mowing, fertilization, aeration, weed control. Free consultation.',
     type: 'website',
     images: [
       {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Lawn Care in Leesburg, VA | Sunrise Landscape',
     description:
-      'Full-season lawn care in Leesburg, VA from a crew that has worked Loudoun lawns for 39 years. Mowing, fertilization, aeration, weed control. Free consultation.',
+      'Full-season lawn care in Leesburg, VA from a crew that has worked Loudoun lawns for 40 years. Mowing, fertilization, aeration, weed control. Free consultation.',
     card: 'summary_large_image',
     images: ['https://www.sunriselandscapeanddesign.com/media/stock/mature-shade-tree-suburban-lawn.webp'],
   },
@@ -65,7 +65,7 @@ const schema = [
     areaServed: { '@type': 'City', name: 'Leesburg', containedInPlace: { '@type': 'State', name: 'Virginia' } },
     provider: {
       '@type': 'LocalBusiness',
-      name: 'Sunrise Landscape & Design',
+      name: 'Sunrise Landscape',
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',

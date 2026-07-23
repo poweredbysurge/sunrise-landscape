@@ -65,7 +65,7 @@ const schema = [
     areaServed: { '@type': 'City', name: 'Fairfax', containedInPlace: { '@type': 'State', name: 'Virginia' } },
     provider: {
       '@type': 'LocalBusiness',
-      name: 'Sunrise Landscape & Design',
+      name: 'Sunrise Landscape',
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',

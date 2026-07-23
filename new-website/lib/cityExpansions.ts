@@ -13,13 +13,14 @@ export interface CityExpansion {
   extraNeighborhoods: string
   faqs: CityFaq[]
   sibling?: { href: string; label: string; line: string }
+  extraSibling?: { href: string; label: string; line: string }
   image?: { src: string; alt: string; width: number; height: number }
 }
 
 export const cityExpansions: Record<string, CityExpansion> = {
   'landscaping-leesburg-va': {
     metaDescription:
-      'Leesburg landscaping from design through build: patios, plantings, water features. 39 years in Loudoun County. Get a free design consultation.',
+      'Leesburg landscaping from design through build: patios, plantings, water features. 40 years in Loudoun County. Get a free design consultation.',
     knowledgeHeading: 'Designing for Leesburg Lots, Old and New',
     knowledgePara:
       'Leesburg splits into two design worlds. Around the historic district, front yards are shallow, sight lines matter, and mature trees set the rules, so we design understory plantings and hardscape that defer to what is already there. Out in the newer communities the lots are bigger and blanker, which is where full design and build work shines: structure first, then plantings that will look intentional in year five, not just at install.',
@@ -59,7 +60,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
 
   'landscaping-ashburn-va': {
     metaDescription:
-      'Ashburn landscaping for new-build lots: privacy planting, patios, full-yard design. Trusted across Loudoun for 39 years. Free design consultation.',
+      'Ashburn landscaping for new-build lots: privacy planting, patios, full-yard design. Trusted across Loudoun for 40 years. Free design consultation.',
     knowledgeHeading: 'The Blank-Slate Backyard Problem',
     knowledgePara:
       'Most Ashburn backyards start as a rectangle of builder sod with a fence and zero privacy. The houses sit close, so the first design job is almost always screening: layered evergreens and ornamental trees that create a room without building a wall. From there the yard earns its keep with structure, a patio or deck landing, beds that hold shape year round, and lighting that makes the space usable after commute hours.',
@@ -139,7 +140,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
 
   'landscaping-reston-va': {
     metaDescription:
-      'Reston landscaping designed to RA standards: wooded-lot plantings, courtyards, and outdoor living. 39 years in Northern Virginia. Free consultation.',
+      'Reston landscaping designed to RA standards: wooded-lot plantings, courtyards, and outdoor living. 40 years in Northern Virginia. Free consultation.',
     knowledgeHeading: 'Working With Reston Association Standards',
     knowledgePara:
       'Reston was planned around trees, and the Reston Association design review process protects that. We design with it, not around it: plans that preserve canopy, use naturalized planting palettes, and meet the covenants the first time they are submitted. Wooded lots in South Lakes and North Point call for shade-layer design, understory trees, ferns, and groundcovers that make a forest floor feel intentional.',
@@ -392,6 +393,11 @@ export const cityExpansions: Record<string, CityExpansion> = {
       href: '/landscape-design-northern-virginia',
       label: 'Landscape Design',
       line: 'Start with the design process behind these projects:',
+    },
+    extraSibling: {
+      href: '/lawn-care-fairfax-va',
+      label: 'Lawn Care in Fairfax',
+      line: 'Just need mowing and turf care for an Oakton or Fairfax County property?',
     },
     image: {
       src: '/media/6808afe22b48076cc8e63cef/68230187ed0e534a13fbd511_season-img-1 (1).webp',

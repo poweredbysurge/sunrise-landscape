@@ -8,15 +8,15 @@ import { getMdxJsonLd } from '@/lib/manifest'
 import { BLOGS } from '@/lib/blogData'
 
 export const metadata: Metadata = {
-  title: 'Landscaping Blog | Sunrise Landscape and Design',
+  title: 'Landscaping Blog | Sunrise Landscape',
   description: 'Landscape design tips, planting guides, hardscaping ideas, and seasonal lawn care advice for Northern Virginia homeowners. Expert insights from Sunrise Landscape.',
   openGraph: {
-    title: 'Landscaping Blog | Sunrise Landscape and Design',
+    title: 'Landscaping Blog | Sunrise Landscape',
     description: 'Landscape design tips, planting guides, hardscaping ideas, and seasonal lawn care advice for Northern Virginia homeowners. Expert insights from Sunrise Landscape.',
     type: 'website',
   },
   twitter: {
-    title: 'Landscaping Blog | Sunrise Landscape and Design',
+    title: 'Landscaping Blog | Sunrise Landscape',
     description: 'Landscape design tips, planting guides, hardscaping ideas, and seasonal lawn care advice for Northern Virginia homeowners. Expert insights from Sunrise Landscape.',
     card: 'summary_large_image',
   },

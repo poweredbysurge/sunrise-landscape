@@ -6,16 +6,16 @@ import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Sunrise Landscape and Design',
-  description: 'Privacy policy for Sunrise Landscape and Design. Learn how we collect, use, and protect your personal information when you visit our website or request our services.',
+  title: 'Privacy Policy | Sunrise Landscape',
+  description: 'Privacy policy for Sunrise Landscape. Learn how we collect, use, and protect your personal information when you visit our website or request our services.',
   openGraph: {
-    title: 'Privacy Policy | Sunrise Landscape and Design',
-    description: 'Privacy policy for Sunrise Landscape and Design. Learn how we collect, use, and protect your personal information when you visit our website or request our services.',
+    title: 'Privacy Policy | Sunrise Landscape',
+    description: 'Privacy policy for Sunrise Landscape. Learn how we collect, use, and protect your personal information when you visit our website or request our services.',
     type: 'website',
   },
   twitter: {
-    title: 'Privacy Policy | Sunrise Landscape and Design',
-    description: 'Privacy policy for Sunrise Landscape and Design. Learn how we collect, use, and protect your personal information when you visit our website or request our services.',
+    title: 'Privacy Policy | Sunrise Landscape',
+    description: 'Privacy policy for Sunrise Landscape. Learn how we collect, use, and protect your personal information when you visit our website or request our services.',
     card: 'summary_large_image',
   },
 }
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
           <div className="relative w-24 h-8 mb-8">
             <Image
               src={"/logos/sunrise-logo.svg"}
-              alt="SUNRISE Landscape - Design"
+              alt="SUNRISE Landscape"
               fill
               className="object-contain object-left"
               sizes="96px"

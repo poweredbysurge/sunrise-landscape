@@ -69,7 +69,7 @@ const schema = [
     },
     provider: {
       '@type': 'LocalBusiness',
-      name: 'Sunrise Landscape & Design',
+      name: 'Sunrise Landscape',
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',

@@ -2,14 +2,24 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const serviceLinks = [
-  { label: 'Landscape Design', href: '/landscape-design-northern-virginia' },
-  { label: 'Hardscape', href: '/hardscape-northern-virginia' },
-  { label: 'Maintenance', href: '/landscape-maintenance-northern-virginia' },
-  { label: 'Lighting', href: '/landscape-lighting-northern-virginia' },
+  { label: 'Landscape Maintenance', href: '/landscape-maintenance-northern-virginia' },
   { label: 'Planting', href: '/landscape-planting-northern-virginia' },
+  { label: 'Drainage Solutions', href: '/drainage-solutions-northern-virginia' },
+  { label: 'Patios & Hardscaping', href: '/hardscape-northern-virginia' },
+  { label: 'Landscape Design', href: '/landscape-design-northern-virginia' },
+  { label: 'Outdoor Lighting', href: '/landscape-lighting-northern-virginia' },
   { label: 'Water Features', href: '/water-features-northern-virginia' },
-  { label: 'Drainage', href: '/drainage-solutions-northern-virginia' },
   { label: 'Commercial', href: '/commercial-landscape-maintenance-virginia' },
+]
+
+const lawnCareLinks = [
+  { label: 'Lawn Care in Leesburg', href: '/lawn-care-leesburg-va' },
+  { label: 'Lawn Care in Ashburn', href: '/lawn-care-ashburn-va' },
+  { label: 'Lawn Care in Herndon', href: '/lawn-care-herndon-va' },
+  { label: 'Lawn Care in Fairfax', href: '/lawn-care-fairfax-va' },
+  { label: 'Lawn Care in Loudoun County', href: '/lawn-care-loudoun-county-va' },
+  { label: 'Lawn Care in Aldie', href: '/lawn-care-aldie-va' },
+  { label: 'Patio & Fire Pit Contractors', href: '/patio-fire-pit-leesburg-ashburn-great-falls' },
 ]
 
 const areaLinks = [
@@ -46,10 +56,10 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="lg:col-span-1 flex flex-col items-center text-center md:items-start md:text-left">
-            <Link href="/" className="block mb-5" aria-label="Sunrise Landscape & Design — Home">
+            <Link href="/" className="block mb-5" aria-label="Sunrise Landscape — Home">
               <Image
                 src="/logos/sunrise-logo.svg"
-                alt="SUNRISE Landscape & Design"
+                alt="SUNRISE Landscape"
                 width={200}
                 height={69}
                 className="w-36 h-auto"
@@ -57,7 +67,7 @@ export default function Footer() {
               />
             </Link>
             <h2 className="font-display editorial-display text-3xl text-cream leading-none mb-6">
-              Landscapes<br />For Living
+              Landscapes <br />For Living
             </h2>
             <div className="text-base text-cream">
               <a href="tel:703-544-0028" className="flex items-center justify-center md:justify-start gap-2 py-2.5 hover:text-orange transition-colors">
@@ -130,9 +140,23 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Lawn Care */}
+        <div className="py-8 border-b border-white/10">
+          <p className="section-label text-orange mb-3 text-center md:text-left">Lawn Care</p>
+          <ul className="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-1">
+            {lawnCareLinks.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="block py-1 text-base text-cream hover:text-orange transition-colors">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         {/* Bottom */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-cream">
-          <p>&copy; {new Date().getFullYear()} Sunrise Landscape and Design. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Sunrise Landscape. All rights reserved.</p>
           <p>Est. 1986 · Sterling, Virginia · Serving Northern Virginia</p>
         </div>
       </div>

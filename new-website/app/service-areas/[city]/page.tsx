@@ -48,7 +48,10 @@ function extractIntroParagraph(body: string): string {
   // after the city-name heading, not the "Landscape Services In" one —
   // otherwise the literal "## Great Falls" heading text leaks into the copy.
   const m = body.match(/## [^\n]+\n\n## [^\n]+\n\n([\s\S]+?)\n\n## Our Services in/)
-  return m ? m[1].trim() : ''
+  // Manifest body content is frozen, but the approved anniversary-math fix
+  // (39 -> 40 years) applies here too — correct post-extraction rather than
+  // editing the frozen MDX source.
+  return m ? m[1].trim().replace(/\b39 years\b/, '40 years') : ''
 }
 
 function extractNeighborhoods(body: string): string {
@@ -251,6 +254,19 @@ export default async function CityPage({
                     {expansion.sibling.line}{' '}
                     <Link href={expansion.sibling.href} className="underline text-green hover:text-orange">
                       {expansion.sibling.label}
+                    </Link>
+                  </p>
+                </div>
+              </section>
+            )}
+
+            {expansion.extraSibling && (
+              <section className="py-12 bg-cream">
+                <div className="max-w-screen-xl mx-auto px-5 lg:px-8 text-center">
+                  <p className="text-green/70 max-w-3xl mx-auto leading-relaxed">
+                    {expansion.extraSibling.line}{' '}
+                    <Link href={expansion.extraSibling.href} className="underline text-green hover:text-orange">
+                      {expansion.extraSibling.label}
                     </Link>
                   </p>
                 </div>

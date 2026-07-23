@@ -210,6 +210,11 @@ export default function HomeVersionB() {
         <h2>Commercial Landscape Services</h2>
       </div>
 
+      {/* ── MAINTENANCE SECTION ─────────────────────────────────────
+          Maintenance-led business: this band runs ahead of the
+          design/hardscape showcase content below (page mirrors revenue). */}
+      <MaintenanceSection />
+
       {/* ── DESIGNING FOR IMPACT ───────────────────────────────────── */}
       <DesigningForImpact />
 
@@ -243,7 +248,7 @@ export default function HomeVersionB() {
 
       {/* ── SERVICE GRID 1 → sr-only for SEO ──────────────────────── */}
       <div aria-hidden="true" className="sr-only">
-        <h2>Where Vision ‍ meets craftsmanship.</h2>
+        <p>Where Vision ‍ meets craftsmanship.</p>
         {serviceCards1.map(card => (
           <div key={card.heading + '-sg1'}>
             <h3>{card.heading}</h3>
@@ -254,11 +259,11 @@ export default function HomeVersionB() {
       </div>
 
       {/* ── FEATURED WORK ──────────────────────────────────────────── */}
-      <FeaturedWorkCarousel projects={featuredWork} />
+      <FeaturedWorkCarousel projects={featuredWork} ctaLabel="Get My Free Yard Inspection" ctaHref="/contact#form" />
 
       {/* ── SERVICE GRID 2 → sr-only for SEO ──────────────────────── */}
       <div aria-hidden="true" className="sr-only">
-        <h2>Where vision meets craftsmanship</h2>
+        <p>Where vision meets craftsmanship</p>
         {serviceCards2.map(card => (
           <div key={card.heading + '-sg2'}>
             <h3>{card.heading}</h3>
@@ -267,9 +272,6 @@ export default function HomeVersionB() {
           </div>
         ))}
       </div>
-
-      {/* ── MAINTENANCE SECTION ────────────────────────────────────── */}
-      <MaintenanceSection />
 
       {/* ── TESTIMONIALS ───────────────────────────────────────────── */}
       <TestimonialsSection testimonials={testimonials} />
