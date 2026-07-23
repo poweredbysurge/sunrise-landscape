@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { cdnToLocal } from '@/lib/mediaUrl'
@@ -12,6 +12,12 @@ const PANEL = '#162b1e'
 const ArrowIcon = () => (
   <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5" aria-hidden="true">
     <path d="M3 8h10M9 4l4 4-4 4" />
+  </svg>
+)
+
+const NavArrowIcon = ({ direction }: { direction: 'left' | 'right' }) => (
+  <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4" aria-hidden="true">
+    {direction === 'right' ? <path d="M4 10h12M12 5l5 5-5 5" /> : <path d="M16 10H4M8 5l-5 5 5 5" />}
   </svg>
 )
 
@@ -67,9 +73,41 @@ const SERVICES = [
   },
 ]
 
+const TOTAL_CARDS = SERVICES.length + 1 // + the "Have a project in mind?" CTA card
+
 export default function ServicesGrid() {
   const wrapperRef = useRef<HTMLDivElement>(null)
   const sectionRef = useRef<HTMLElement>(null)
+  const viewportRef = useRef<HTMLDivElement>(null)
+  const cardRefs = useRef<(HTMLElement | null)[]>([])
+  const [mobileIndex, setMobileIndex] = useState(0)
+
+  // Mobile carousel arrows — track which card is centered via IntersectionObserver
+  // (native scroll-snap drives the actual scrolling; this just mirrors position).
+  useEffect(() => {
+    const viewport = viewportRef.current
+    if (!viewport) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const mostVisible = entries.reduce((best, entry) =>
+          entry.intersectionRatio > (best?.intersectionRatio ?? 0) ? entry : best
+        , entries[0])
+        if (mostVisible && mostVisible.intersectionRatio > 0) {
+          const idx = cardRefs.current.findIndex((el) => el === mostVisible.target)
+          if (idx !== -1) setMobileIndex(idx)
+        }
+      },
+      { root: viewport, threshold: [0.5, 0.75, 0.95] }
+    )
+
+    cardRefs.current.forEach((el) => el && observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
+
+  const scrollToCard = (index: number) => {
+    cardRefs.current[index]?.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
+  }
 
   useEffect(() => {
     const wrapper = wrapperRef.current
@@ -171,23 +209,27 @@ export default function ServicesGrid() {
 
   return (
     <div ref={wrapperRef}>
-      <section ref={sectionRef} className="relative overflow-hidden" style={{ background: DEEP }}>
+      <section ref={sectionRef} className="relative overflow-hidden flex flex-col min-h-dvh lg:min-h-0" style={{ background: DEEP }}>
         {/* Header */}
-        <div className="max-w-screen-xl mx-auto px-5 lg:px-8 pt-14 pb-4 lg:pb-8 text-center">
+        <div className="flex-shrink-0 max-w-screen-xl mx-auto px-5 lg:px-8 pt-14 pb-4 lg:pb-8 text-center">
           <h2 data-sg-reveal className="text-cream" style={{ fontSize: 'clamp(2rem, 4.5vw, 4.2rem)', lineHeight: 1.05 }}>
             {'Where Vision ‍ meets craftsmanship.'}
           </h2>
         </div>
 
-        {/* Scroll track */}
-        <div data-sg-viewport className="va-scroll-x overflow-x-auto lg:overflow-hidden pb-10 pt-5">
-          <div data-sg-track className="flex w-max gap-5 lg:gap-8 px-5 lg:px-8 items-stretch">
+        {/* Scroll track — viewport is itself a flex row so track stretches to
+            fill it natively (align-items:stretch); a plain `h-full` on track
+            would resolve to 0 here since percentage heights don't reliably
+            cascade through an overflow-x-auto ancestor. */}
+        <div ref={viewportRef} data-sg-viewport className="va-scroll-x overflow-x-auto lg:overflow-hidden pb-10 pt-5 flex-1 min-h-0 lg:flex-none flex">
+          <div data-sg-track className="flex flex-shrink-0 w-max gap-5 lg:gap-8 px-5 lg:px-8 items-stretch">
             {SERVICES.map((svc, i) => (
               <Link
                 key={svc.heading}
+                ref={(el) => { cardRefs.current[i] = el }}
                 href={svc.href}
-                className="va-snap group relative flex-shrink-0 block overflow-hidden"
-                style={{ width: 'min(82vw, 420px)', height: '400px', background: PANEL, borderRadius: '20px' }}
+                className="va-snap group relative flex-shrink-0 block overflow-hidden lg:h-[400px]"
+                style={{ width: 'min(82vw, 420px)', background: PANEL, borderRadius: '20px' }}
               >
                 <Image src={svc.img} alt={svc.alt} fill className="object-cover" sizes="(min-width: 1024px) 420px, 82vw" loading="lazy" />
                 <div
@@ -209,6 +251,7 @@ export default function ServicesGrid() {
 
             {/* End CTA card */}
             <Link
+              ref={(el) => { cardRefs.current[SERVICES.length] = el }}
               href="/contact#form"
               className="va-snap relative flex-shrink-0 flex flex-col items-center justify-center text-center p-10 group"
               style={{ width: 'min(82vw, 420px)', background: '#e7e6d2', borderRadius: '20px' }}
@@ -221,6 +264,33 @@ export default function ServicesGrid() {
               </span>
             </Link>
           </div>
+        </div>
+
+        {/* Mobile carousel arrows — right-only on the first card, both once you've
+            moved past it, right hides again on the last card. */}
+        <div className="flex-shrink-0 lg:hidden flex items-center justify-center gap-4 pb-10 pt-1">
+          {mobileIndex > 0 && (
+            <button
+              type="button"
+              onClick={() => scrollToCard(mobileIndex - 1)}
+              aria-label="Previous service"
+              className="w-11 h-11 flex items-center justify-center text-cream border border-cream/25 hover:border-orange hover:text-orange transition-colors active:scale-95"
+              style={{ borderRadius: '50%' }}
+            >
+              <NavArrowIcon direction="left" />
+            </button>
+          )}
+          {mobileIndex < TOTAL_CARDS - 1 && (
+            <button
+              type="button"
+              onClick={() => scrollToCard(mobileIndex + 1)}
+              aria-label="Next service"
+              className="w-11 h-11 flex items-center justify-center text-cream border border-cream/25 hover:border-orange hover:text-orange transition-colors active:scale-95"
+              style={{ borderRadius: '50%' }}
+            >
+              <NavArrowIcon direction="right" />
+            </button>
+          )}
         </div>
 
         {/* Scroll hint — desktop only; this is where vertical scroll drives horizontal
