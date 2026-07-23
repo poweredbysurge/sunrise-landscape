@@ -60,7 +60,7 @@ export default function DrainageSolutionsPage() {
               <p className="text-cream text-lg lg:text-xl leading-relaxed mb-8">
                 Where art meets engineering, we transform water challenges into opportunities for landscape enhancement. Our expertise ensures your property remains beautiful and structurally sound through every season.
               </p>
-              <Link href="/contact" className="inline-flex items-center gap-2 text-orange uppercase tracking-widest font-bold hover:underline underline-offset-2">
+              <Link href="/contact#form" className="inline-flex items-center gap-2 text-orange uppercase tracking-widest font-bold hover:underline underline-offset-2">
                 <span>Schedule a Call</span>
                 <span aria-hidden="true">↗</span>
               </Link>
@@ -213,7 +213,7 @@ export default function DrainageSolutionsPage() {
             Don&apos;t wait for water to compromise your property&apos;s beauty and integrity. Let&apos;s discuss a solution that works as beautifully as it functions.
           </p>
           <Link
-            href="/contact"
+            href="/contact#form"
             className="inline-flex items-center gap-2 font-ui font-bold uppercase tracking-wider text-orange text-sm hover:gap-3 transition-all"
           >
             Contact Us

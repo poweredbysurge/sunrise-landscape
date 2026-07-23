@@ -138,7 +138,7 @@ export default function CareerPage() {
           <p className="text-cream max-w-md leading-relaxed mb-8">
             Join a team where artistry meets opportunity. At Sunrise, we&rsquo;re not just creating beautiful landscapes, we&rsquo;re cultivating careers for passionate professionals who take pride in transforming outdoor spaces.
           </p>
-          <Link href="/contact" className="btn-primary">
+          <Link href="/contact#form" className="btn-primary">
             <span>Get in Touch</span>
           </Link>
         </div>
@@ -241,7 +241,7 @@ export default function CareerPage() {
                 703-544-0028
               </a>
               <div className="mt-6">
-                <Link href="/contact" className="section-label text-orange hover:underline">
+                <Link href="/contact#form" className="section-label text-orange hover:underline">
                   CONTACT
                 </Link>
               </div>

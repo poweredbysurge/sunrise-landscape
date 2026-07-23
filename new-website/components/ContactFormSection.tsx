@@ -2,7 +2,7 @@ import InquiryForm from '@/components/InquiryForm'
 
 export default function ContactFormSection() {
   return (
-    <section className="bg-cream py-20 lg:py-32">
+    <section id="form" className="bg-cream py-20 lg:py-32">
       <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 

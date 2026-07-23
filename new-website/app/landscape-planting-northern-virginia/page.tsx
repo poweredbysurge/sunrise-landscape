@@ -94,7 +94,7 @@ export default function LandscapePlantingPage() {
                 <p className="text-cream leading-relaxed mb-6">
                   We believe a great planting does more than fill space — it brings life, texture, and story to your landscape. With an artist&apos;s eye and decades of experience, we create living environments that evolve beautifully with time and purpose.
                 </p>
-                <Link href="/contact" className="btn-primary"><span>Free Consultation</span></Link>
+                <Link href="/contact#form" className="btn-primary"><span>Free Consultation</span></Link>
               </div>
             </div>
           </div>

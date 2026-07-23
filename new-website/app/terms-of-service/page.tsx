@@ -112,7 +112,7 @@ export default function TermsPage() {
             <p className="text-black/70 leading-relaxed">For questions about these terms, contact us at:</p>
             <p className="mt-3 font-ui font-bold text-green">Sunrise Landscape and Design</p>
             <p className="text-black/70">Sterling, VA &bull; <a href="tel:703-544-0028" className="text-orange hover:underline">703-544-0028</a> &bull; <a href="https://sunriselandscapeanddesign.com" className="text-orange hover:underline">sunriselandscapeanddesign.com</a></p>
-            <Link href="/contact" className="mt-4 btn-primary text-xs inline-flex">
+            <Link href="/contact#form" className="mt-4 btn-primary text-xs inline-flex">
               <span>Contact Us</span>
             </Link>
           </div>

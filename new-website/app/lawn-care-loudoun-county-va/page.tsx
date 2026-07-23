@@ -106,7 +106,7 @@ export default function LawnCareLoudounPage() {
             with crews sized for the lot in front of them.
           </p>
           <Link
-            href="/contact"
+            href="/contact#form"
             className="inline-block mt-8 bg-orange text-white font-bold px-8 py-4 hover:opacity-90 transition-opacity"
           >
             Get a free consultation

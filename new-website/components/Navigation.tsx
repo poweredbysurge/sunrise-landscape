@@ -20,7 +20,7 @@ const navLinks = [
   { label: 'Commercial', href: '/commercial-landscape-maintenance-virginia' },
   { label: 'Careers', href: '/career' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Contact', href: '/contact#form' },
 ]
 
 /* Repeating text items for the marquee ticker */
@@ -160,7 +160,7 @@ export default function Navigation() {
 
             {/* Inquire CTA — desktop only */}
             <Link
-              href="/contact"
+              href="/contact#form"
               className="hidden lg:inline-flex items-center gap-2 btn-primary"
               style={{ padding: '7px 16px', minHeight: '36px', fontSize: '0.7rem' }}
             >
@@ -249,7 +249,7 @@ export default function Navigation() {
 
           <div className="px-6 pb-8">
             <Link
-              href="/contact"
+              href="/contact#form"
               className="btn-primary w-full justify-center"
             >
               <span>Inquire</span>

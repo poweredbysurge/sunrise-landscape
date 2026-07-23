@@ -32,7 +32,7 @@ export default function MaintenanceHero() {
         <p className="text-xl lg:text-2xl text-cream mb-8 max-w-2xl leading-relaxed">
           Transform your outdoor space into a living masterpiece that evolves beautifully through every season.
         </p>
-        <Link href="/contact" className="btn-primary"><span>Free Consultation</span></Link>
+        <Link href="/contact#form" className="btn-primary"><span>Free Consultation</span></Link>
       </div>
     </section>
   )

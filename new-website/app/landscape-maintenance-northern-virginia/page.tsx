@@ -106,7 +106,7 @@ export default function LandscapeMaintenancePage() {
                       {pkg.num}
                     </span>
                     <Link
-                      href="/contact"
+                      href="/contact#form"
                       className="inline-flex items-center gap-1.5 font-ui not-italic text-xs font-bold tracking-widest uppercase transition-colors duration-200"
                       style={{ color: '#ff6400' }}
                     >
@@ -161,7 +161,7 @@ export default function LandscapeMaintenancePage() {
           {/* Bottom CTA */}
           <p className="mt-10 text-center" style={{ color: 'rgba(30,53,38,0.6)' }}>
             Not sure which package is right for you?{' '}
-            <Link href="/contact" className="inline-flex items-center py-2.5 text-green underline decoration-orange underline-offset-4 hover:text-orange transition-colors font-bold">
+            <Link href="/contact#form" className="inline-flex items-center py-2.5 text-green underline decoration-orange underline-offset-4 hover:text-orange transition-colors font-bold">
               Schedule a free consultation.
             </Link>
           </p>
@@ -268,7 +268,7 @@ export default function LandscapeMaintenancePage() {
                 ))}
               </ul>
 
-              <Link href="/contact" className="inline-flex items-center min-h-[44px] gap-2 section-label text-orange hover:text-green transition-colors duration-200">
+              <Link href="/contact#form" className="inline-flex items-center min-h-[44px] gap-2 section-label text-orange hover:text-green transition-colors duration-200">
                 Schedule a Consultation
                 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3 h-3" aria-hidden="true">
                   <path d="M3 3h10v10M3 13L13 3" />
@@ -318,7 +318,7 @@ export default function LandscapeMaintenancePage() {
                 ))}
               </ul>
 
-              <Link href="/contact" className="inline-flex items-center min-h-[44px] gap-2 section-label text-orange hover:text-green transition-colors duration-200">
+              <Link href="/contact#form" className="inline-flex items-center min-h-[44px] gap-2 section-label text-orange hover:text-green transition-colors duration-200">
                 Schedule a Consultation
                 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3 h-3" aria-hidden="true">
                   <path d="M3 3h10v10M3 13L13 3" />

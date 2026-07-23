@@ -40,7 +40,7 @@ export default function HardscapeHero() {
               walls that maximize usable space. We bring structure and elegance to your yard.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="btn-primary">
+              <Link href="/contact#form" className="btn-primary">
                 <span>Free Consultation</span>
               </Link>
               <Link href="/hardscape-northern-virginia" className="btn-ghost text-green">

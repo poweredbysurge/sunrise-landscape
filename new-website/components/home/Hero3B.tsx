@@ -75,7 +75,7 @@ export default function Hero3B() {
       <p className="hidden lg:block section-label text-orange">
         Family Owned &middot; Sterling, Virginia &middot; Since 1986
       </p>
-      <h1 className="text-cream leading-[1.02]" style={{ fontSize: 'clamp(2.6rem, 5vw, 4.5rem)' }}>
+      <h1 className="text-cream leading-[1.02]" style={{ fontSize: 'clamp(2.6rem, 4.5vw, 6rem)' }}>
         Landscaping &amp; Hardscaping in Northern Virginia
       </h1>
       <p className="text-cream/85 text-lg leading-relaxed max-w-xl">
@@ -171,8 +171,8 @@ export default function Hero3B() {
     <>
       <section
         ref={heroRef}
-        className="relative w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_560px] overflow-hidden pt-[160px] lg:pt-[140px]"
-        style={{ backgroundColor: '#1e3526', minHeight: '90vh', paddingBottom: '64px' }}
+        className="relative w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_clamp(460px,34vw,640px)] overflow-hidden pt-[160px] lg:pt-[140px]"
+        style={{ backgroundColor: '#1e3526', minHeight: '100vh', paddingBottom: '64px' }}
       >
         <div className="absolute inset-0 z-0">
           <Image src={heroBackground} alt="" fill priority className="object-cover" sizes="100vw" />
@@ -185,7 +185,7 @@ export default function Hero3B() {
         <div id="hero-form" className="relative z-10 hidden lg:flex items-center px-6 lg:pr-12 py-10 lg:py-0">
           <div
             className="flex-1 bg-cream flex flex-col gap-5 p-8 shadow-2xl overflow-y-auto"
-            style={{ borderRadius: '10px', height: 560 }}
+            style={{ borderRadius: '10px', height: 'clamp(520px, 62vh, 680px)' }}
           >
             <InquiryForm />
           </div>

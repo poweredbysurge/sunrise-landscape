@@ -17,11 +17,11 @@ const ArrowIcon = () => (
 
 const SERVICES = [
   {
-    heading: 'Hardscape Design Services',
-    body: 'Our hardscapes are designed to be visually stunning and functional, and built to last a lifetime.',
-    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6889b8bb276774b7c21ff399_Katie%20Bird%20Pool%205.jpg'),
-    alt: 'Hardscape patio and stonework installation in Northern Virginia',
-    href: '/hardscape-northern-virginia',
+    heading: 'Landscape Maintenance Services',
+    body: 'Transform your outdoor space into a living masterpiece that evolves beautifully through every season. Our curated maintenance packages ensure your landscape receives precisely what it needs, when it needs it.',
+    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6822f6271cbe1867ff2caf42_MP-header-img-1%20(1).webp'),
+    alt: 'Year-round landscape maintenance services in Northern Virginia',
+    href: '/landscape-maintenance-northern-virginia',
   },
   {
     heading: 'Landscape Design Services',
@@ -31,11 +31,18 @@ const SERVICES = [
     href: '/landscape-design-northern-virginia',
   },
   {
-    heading: 'Landscape Maintenance Services',
-    body: 'Transform your outdoor space into a living masterpiece that evolves beautifully through every season. Our curated maintenance packages ensure your landscape receives precisely what it needs, when it needs it.',
-    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6822f6271cbe1867ff2caf42_MP-header-img-1%20(1).webp'),
-    alt: 'Year-round landscape maintenance services in Northern Virginia',
-    href: '/landscape-maintenance-northern-virginia',
+    heading: 'Hardscape Design Services',
+    body: 'Our hardscapes are designed to be visually stunning and functional, and built to last a lifetime.',
+    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6889b8bb276774b7c21ff399_Katie%20Bird%20Pool%205.jpg'),
+    alt: 'Hardscape patio and stonework installation in Northern Virginia',
+    href: '/hardscape-northern-virginia',
+  },
+  {
+    heading: 'Commercial Landscaping',
+    body: 'Transform your commercial property into a distinctive destination that welcomes, impresses, and adds value to your business investment. From corporate campuses to vibrant community spaces, we bring our signature blend of artistic vision and professional excellence to every commercial project.',
+    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/682313a1105c47482807f99e_commercial-signature-img%20(1).webp'),
+    alt: 'Commercial landscape maintenance in Northern Virginia',
+    href: '/commercial-landscape-maintenance-virginia',
   },
   {
     heading: 'Landscape Lighting Design',
@@ -57,13 +64,6 @@ const SERVICES = [
     img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/68247d8f31ffd45cf0a28ba9_dec-header-img-2%20(1).webp'),
     alt: 'Drainage solution and erosion control landscaping in Northern Virginia',
     href: '/drainage-solutions-northern-virginia',
-  },
-  {
-    heading: 'Commercial Landscaping',
-    body: 'Transform your commercial property into a distinctive destination that welcomes, impresses, and adds value to your business investment. From corporate campuses to vibrant community spaces, we bring our signature blend of artistic vision and professional excellence to every commercial project.',
-    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/682313a1105c47482807f99e_commercial-signature-img%20(1).webp'),
-    alt: 'Commercial landscape maintenance in Northern Virginia',
-    href: '/commercial-landscape-maintenance-virginia',
   },
 ]
 
@@ -202,14 +202,14 @@ export default function ServicesGrid() {
                   >
                     {svc.heading}
                   </h3>
-                  <p className="text-cream/90 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-150">{svc.body}</p>
+                  <p className="text-cream/90 leading-relaxed max-h-24 overflow-y-auto pr-1">{svc.body}</p>
                 </div>
               </Link>
             ))}
 
             {/* End CTA card */}
             <Link
-              href="/contact"
+              href="/contact#form"
               className="va-snap relative flex-shrink-0 flex flex-col items-center justify-center text-center p-10 group"
               style={{ width: 'min(82vw, 420px)', background: '#e7e6d2', borderRadius: '20px' }}
             >

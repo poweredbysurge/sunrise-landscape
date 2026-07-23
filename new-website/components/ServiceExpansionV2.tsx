@@ -101,7 +101,7 @@ export default function ServiceExpansionV2({ data }: { data: ServiceExpansionDat
           <FaqAccordion faqs={data.faqs} />
           <p className="mt-10 text-lg text-black/70">
             {data.cta || 'Ready to talk about your property?'}{' '}
-            <Link href="/contact" className="font-bold text-green underline hover:text-orange">
+            <Link href="/contact#form" className="font-bold text-green underline hover:text-orange">
               Book a free consultation
             </Link>{' '}
             or call <a href="tel:703-544-0028" className="font-bold text-green underline hover:text-orange">703-544-0028</a>.

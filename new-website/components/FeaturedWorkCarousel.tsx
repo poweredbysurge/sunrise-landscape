@@ -40,7 +40,7 @@ export default function FeaturedWorkCarousel({
   projects,
   title = 'Our featured work',
   ctaLabel = 'Speak to an Expert',
-  ctaHref = '/contact',
+  ctaHref = '/contact#form',
 }: Props) {
   const total = projects.length
   // rawIdx includes the clone offset: CLONES = first real item, total+CLONES-1 = last real item

@@ -73,7 +73,7 @@ export default function CommunityGivingSection() {
             </p>
 
             <Link
-              href="/contact"
+              href="/contact#form"
               className="inline-flex items-center gap-2 text-orange font-ui font-bold text-xs tracking-[0.2em] uppercase group"
             >
               Schedule a Call

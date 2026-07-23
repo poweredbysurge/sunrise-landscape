@@ -62,7 +62,7 @@ export default function CommercialLandscapePage() {
               Transform your commercial property into a distinctive destination that welcomes, impresses, and adds value to your business investment. From corporate campuses to vibrant community spaces, we bring our signature blend of artistic vision and professional excellence to every commercial project.
             </p>
             <Link
-              href="/contact"
+              href="/contact#form"
               className="inline-flex items-center gap-2 font-ui font-bold text-base tracking-widest uppercase text-orange hover:underline underline-offset-2"
             >
               Schedule a Call

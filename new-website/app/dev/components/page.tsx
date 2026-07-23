@@ -122,10 +122,10 @@ export default function ComponentsPage() {
           <span className="text-xs text-black/30 font-mono">bg-orange text-cream → hover scales + shadow</span>
         </StateRow>
         <StateRow label="btn-primary (link)">
-          <Link href="/contact" className="btn-primary"><span>Free Consultation</span></Link>
+          <Link href="/contact#form" className="btn-primary"><span>Free Consultation</span></Link>
         </StateRow>
         <StateRow label="Inquire (nav)">
-          <Link href="/contact" className="inline-flex items-center justify-center px-5 py-2.5 font-ui font-bold text-xs tracking-wider uppercase transition-all duration-300 text-green bg-cream hover:bg-orange hover:text-cream" style={{ borderRadius: '8px' }}>Inquire</Link>
+          <Link href="/contact#form" className="inline-flex items-center justify-center px-5 py-2.5 font-ui font-bold text-xs tracking-wider uppercase transition-all duration-300 text-green bg-cream hover:bg-orange hover:text-cream" style={{ borderRadius: '8px' }}>Inquire</Link>
           <span className="text-xs text-black/30 font-mono">bg-cream text-green → hover bg-orange text-cream</span>
         </StateRow>
         <StateRow label="Phone (nav)">

@@ -128,7 +128,7 @@ export default function LandscapeDesignPage() {
             Transform your property into a living masterpiece where nature meets thoughtful design. Since 1986, we&apos;ve been designing distinctive outdoor spaces that reflect our clients&apos; personalities while enhancing their lifestyle and property value.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/contact" className="btn-primary"><span>Free Consultation</span></Link>
+            <Link href="/contact#form" className="btn-primary"><span>Free Consultation</span></Link>
           </div>
         </div>
       </section>

@@ -49,7 +49,7 @@ export default function WaterFeaturesPage() {
               <p className="text-xl lg:text-2xl text-cream mb-6 leading-relaxed">
                 Transform your outdoor sanctuary with the timeless allure of moving water. From meditative koi ponds to dramatic waterfalls, we craft water features that engage all the senses and create year-round interest in your landscape.
               </p>
-              <Link href="/contact" className="inline-flex items-center gap-2 text-orange uppercase tracking-widest font-bold hover:underline underline-offset-2">
+              <Link href="/contact#form" className="inline-flex items-center gap-2 text-orange uppercase tracking-widest font-bold hover:underline underline-offset-2">
                 <span>Schedule a Call</span>
                 <span aria-hidden="true">↗</span>
               </Link>
@@ -150,7 +150,7 @@ export default function WaterFeaturesPage() {
                   </li>
                 ))}
               </ul>
-              <Link href="/contact" className="inline-flex items-center gap-2 text-orange uppercase tracking-widest font-bold hover:underline underline-offset-2">
+              <Link href="/contact#form" className="inline-flex items-center gap-2 text-orange uppercase tracking-widest font-bold hover:underline underline-offset-2">
                 <span>Get in Touch</span>
                 <span aria-hidden="true">↗</span>
               </Link>

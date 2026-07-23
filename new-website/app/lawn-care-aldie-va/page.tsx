@@ -102,7 +102,7 @@ export default function LawnCareAldiePage() {
             Willowsford and Lenah every week.
           </p>
           <Link
-            href="/contact"
+            href="/contact#form"
             className="inline-block mt-8 bg-orange text-white font-bold px-8 py-4 hover:opacity-90 transition-opacity"
           >
             Get a free consultation

@@ -49,7 +49,7 @@ export default function LandscapeLightingPage() {
                 Transform your property into an enchanting evening retreat with artfully designed landscape lighting. Where security meets sophistication, our designs create ambiance that extends your living space well into the evening hours.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/contact" className="btn-primary"><span>Free Consultation</span></Link>
+                <Link href="/contact#form" className="btn-primary"><span>Free Consultation</span></Link>
                 <a href="tel:703-544-0028" className="btn-ghost on-dark">
                   <span>703-544-0028</span>
                 </a>
@@ -220,7 +220,7 @@ export default function LandscapeLightingPage() {
               Ready to transform your property's evening presence? Let's discuss how thoughtful lighting design can enhance your outdoor space.
             </p>
             <Link
-              href="/contact"
+              href="/contact#form"
               className="inline-flex items-center gap-2 font-ui font-bold text-base tracking-widest uppercase text-orange hover:underline underline-offset-2"
             >
               Schedule a Lighting Consultation

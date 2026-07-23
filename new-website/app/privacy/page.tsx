@@ -119,7 +119,7 @@ export default function PrivacyPage() {
             <p>If you have questions about this Privacy Policy, please contact us at:</p>
             <p className="mt-3 font-ui font-bold text-green">Sunrise Landscape &amp; Design</p>
             <p>Sterling, VA &bull; <a href="tel:703-544-0028" className="text-orange hover:underline">703-544-0028</a></p>
-            <Link href="/contact" className="mt-4 btn-primary text-xs inline-flex">
+            <Link href="/contact#form" className="mt-4 btn-primary text-xs inline-flex">
               <span>Contact Us</span>
             </Link>
           </div>

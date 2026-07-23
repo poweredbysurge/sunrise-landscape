@@ -75,7 +75,7 @@ export default function ServiceAreasSection({
         </div>
 
         <Link
-          href="/contact"
+          href="/contact#form"
           className="section-label text-orange inline-flex items-center gap-2 min-h-[44px] hover:underline underline-offset-2 w-fit"
         >
           Get a Free Consultation

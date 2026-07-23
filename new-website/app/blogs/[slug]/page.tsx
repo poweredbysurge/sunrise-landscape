@@ -165,7 +165,7 @@ export default async function BlogPostPage({
                   <p className="font-ui font-bold text-xl text-cream leading-snug mb-4">
                     Ready to transform your outdoor space?
                   </p>
-                  <Link href="/contact" className="btn-primary w-full justify-center">
+                  <Link href="/contact#form" className="btn-primary w-full justify-center">
                     <span>Get a Free Estimate</span>
                   </Link>
                 </div>
