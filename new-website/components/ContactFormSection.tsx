@@ -27,8 +27,8 @@ export default function ContactFormSection() {
               (ticker + nav = 116px, same constant ServicesGrid.tsx uses). */}
           <div
             id="form"
-            className="bg-cream flex flex-col gap-5 p-8 shadow-2xl overflow-y-auto scroll-mt-[116px]"
-            style={{ borderRadius: '10px', height: 560, border: '1px solid rgba(30,53,38,0.1)' }}
+            className="bg-cream flex flex-col gap-5 p-8 shadow-2xl scroll-mt-[116px]"
+            style={{ borderRadius: '10px', minHeight: 600, border: '1px solid rgba(30,53,38,0.1)' }}
           >
             <InquiryForm />
           </div>

@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
-import NewsletterSidebar from '@/components/NewsletterSidebar'
 import ShareButtons from '@/components/ShareButtons'
 import { getMdxJsonLd, getBlogHtml, getAllBlogSlugs } from '@/lib/manifest'
 import { getBlogBySlug, BLOGS } from '@/lib/blogData'
@@ -157,8 +156,6 @@ export default async function BlogPostPage({
             {/* Right — sticky sidebar */}
             <div className="w-full lg:w-80 flex-shrink-0">
               <div className="sticky top-28 space-y-6">
-                <NewsletterSidebar />
-
                 {/* Related category badge */}
                 <div className="bg-green p-6" style={{ borderRadius: '16px' }}>
                   <p className="section-label text-orange mb-3">Free Consultation</p>

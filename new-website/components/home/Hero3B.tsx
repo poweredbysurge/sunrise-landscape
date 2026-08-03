@@ -168,8 +168,8 @@ export default function Hero3B() {
         {/* Right: desktop-only inline form card */}
         <div id="hero-form" className="relative z-10 hidden lg:flex items-center px-6 lg:pr-12 py-10 lg:py-0">
           <div
-            className="flex-1 bg-cream flex flex-col gap-5 p-8 shadow-2xl overflow-y-auto"
-            style={{ borderRadius: '10px', height: 'clamp(520px, 62vh, 680px)' }}
+            className="flex-1 bg-cream flex flex-col gap-5 p-8 shadow-2xl"
+            style={{ borderRadius: '10px', minHeight: 'clamp(560px, 66vh, 720px)' }}
           >
             <InquiryForm />
           </div>
