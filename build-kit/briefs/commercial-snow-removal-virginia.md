@@ -1,0 +1,8 @@
+# Brief: /commercial-snow-removal-virginia — NEW PAGE (Mike-requested, TIME-SENSITIVE: RFP season starts end of summer)
+Ahrefs pricing (Jul 23, 2026) — ALL keyword difficulty 0, combined ~6,600/mo:
+Primary: **commercial snow removal** (2,500/mo, KD 0). Supporting, each gets one natural placement: snow removal company (1,100/0), commercial snow plowing (900/0), commercial snow removal services (700/0), snow removal contract (600/0, RFP intent, gets its own H2), commercial snow and ice management (450/0, $30 CPC, use in title-adjacent H2), commercial snow removal near me (350/0).
+This is the single largest zero-difficulty cluster in the entire Sunrise plan. Local note: regional modifier terms have negligible volume, so the page targets national phrasing and lets Google geo-localize; areaServed schema carries the geography.
+Title (draft): `Commercial Snow Removal in Northern Virginia | Sunrise Landscape`. H1: `Commercial Snow and Ice Management`.
+Nav: under Commercial ▾ alongside Commercial Maintenance. Cross-link both ways with /commercial-landscape-maintenance-virginia; link from the existing snow blog posts (snow-and-ice-management, snow-plowing-vs-snow-removal-costs).
+Structure: opener for property managers writing RFPs NOW (response tiers, trigger depths, seasonal vs per-event pricing in writing before the first flake: language already exists in commercial expansion FAQ, do not duplicate it verbatim) · H2 what a contract includes · H2 RFP-ready (we respond with unit pricing) · H2 properties served (HOA, retail, office) · FAQ x4 · CTA: request a snow proposal.
+Audience is B2B: tone drier, zero homeowner fluff. Word target 700-900.

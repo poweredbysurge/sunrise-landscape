@@ -1,0 +1,6 @@
+# Brief: /retaining-walls-northern-virginia — NEW SERVICE PAGE (Mike-approved concept, publish on authorization)
+Primary: **retaining walls northern virginia** (200/mo). Supporting: retaining wall contractor/builder variants.
+DO NOT target: "how to build a retaining wall" (3,400/8, owned by existing blog post /blogs/retaining-walls-northern-virginia — wait, that IS the local-titled blog; check and de-conflict: blog keeps the how-to intent, this page takes contractor/local intent; cross-link both ways and ensure titles differ clearly).
+Title: `Retaining Wall Contractors in Northern Virginia | Sunrise Landscape`. H1: `Retaining Wall Construction in Northern Virginia`.
+Structure: opener on NoVA slopes + clay (walls as terracing, not just holding dirt) · H2 wall types (segmental block, natural stone, timber replacement) · H2 engineering/permits (Fairfax/Loudoun height thresholds, we handle permits) · H2 walls + drainage designed together (link drainage page) · Centreville/sloped-lot tie-in (link city page) · FAQ x4 (cost range, permits, lifespan, wall failing signs) with schema · CTA yard inspection.
+Wiring: links from /hardscape-northern-virginia, /drainage-solutions-northern-virginia, Centreville city page, the how-to blog post. Word target 850-1,000. All PAGE-STANDARDS gates.

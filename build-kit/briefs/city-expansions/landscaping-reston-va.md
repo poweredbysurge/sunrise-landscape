@@ -1,0 +1,18 @@
+# Expansion Brief: /service-areas/landscaping-reston-va
+EXISTING page (349w avg). Expansion is ADDITIVE: existing slug, title, H1, and current headings stay untouched (frozen contract). Add sections below existing content + write the missing meta description.
+
+## Keywords
+no tracked keyword in bank: optimize for "landscaping reston va" + support hardscape contractor reston va via cross-link only
+Intent lane: landscaping/design ONLY. Lawn/mowing terms belong to the sibling.
+
+## Add
+1. Meta description (MISSING today): 140 to 160 chars, primary keyword + CTA.
+2. H2 local knowledge section: RA design guidelines; wooded-lot planting
+3. Local proof block: Reston Association design-standards fluency
+4. Expanded neighborhoods line: Lake Anne, South Lakes, North Point (exclusive; replaces nothing, extends the existing one-liner)
+5. FAQ (4 questions, FAQPage schema), at least 2 city-specific.
+6. Sibling teaser block linking /patio-fire-pit-leesburg-ashburn-great-falls (and accept the return link).
+Opener style for any new intro copy: B. Target: existing + new = 750 to 1,000 words.
+
+## Gates
+Humanizer pass, no em dashes, swap test vs 2 nearest city pages, human review, 60/60 parity after (existing headings unchanged).
