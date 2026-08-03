@@ -41,13 +41,14 @@ export default function AboutPage() {
           <div className="space-y-4 text-lg leading-relaxed text-black/70">
             <p>
               Sunrise started in 1986 with a truck, a small crew, and a simple standard: build
-              landscapes we would want in our own yards. Thirty nine years later the crews are
+              landscapes we would want in our own yards. Forty years later the crews are
               bigger and the projects run from quarter acre townhome lots to multi acre estates,
               but the standard has not moved.
             </p>
             <p>
               Today the company designs, builds, and maintains landscapes across more than fifteen
-              Northern Virginia communities from our home base in Sterling. Design, hardscape,
+              Northern Virginia communities from our shop at the Loudoun and Prince William County
+              line near Gainesville. Design, hardscape,
               planting, lighting, drainage, and year round maintenance all run under one roof,
               which means the person who drew your plan and the crew that builds it answer to the
               same name on the truck.

@@ -348,10 +348,15 @@ export default function LandscapeMaintenancePage() {
         <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
           <h2 className="text-2xl lg:text-3xl text-green leading-tight mb-3">Lawn Care by Town</h2>
           <p className="text-green/60 mb-8 leading-relaxed max-w-2xl">
-            Prefer a dedicated mowing and turf program instead of a full maintenance package? Each town below has its own lawn care page with local soil conditions and seasonal timing.
+            Prefer a dedicated mowing and turf program instead of a full maintenance package? See our{' '}
+            <Link href="/lawn-care-northern-virginia" className="underline text-green hover:text-orange">
+              lawn care program across Northern Virginia
+            </Link>
+            , or pick your town below for local soil conditions and seasonal timing.
           </p>
           <div className="flex flex-wrap gap-3">
             {[
+              { label: 'Lawn Care Across Northern Virginia', href: '/lawn-care-northern-virginia' },
               { label: 'Lawn Care in Leesburg', href: '/lawn-care-leesburg-va' },
               { label: 'Lawn Care in Ashburn', href: '/lawn-care-ashburn-va' },
               { label: 'Lawn Care in Herndon', href: '/lawn-care-herndon-va' },

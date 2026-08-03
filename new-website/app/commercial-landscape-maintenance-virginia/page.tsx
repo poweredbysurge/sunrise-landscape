@@ -153,6 +153,18 @@ export default function CommercialLandscapePage() {
 
       <ServiceExpansion data={serviceExpansions['commercial-landscape-maintenance-virginia']} />
 
+      <section className="py-10 px-5 lg:px-8 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-black/70 leading-relaxed">
+            Writing this winter&apos;s snow RFP? See our{' '}
+            <Link href="/commercial-snow-removal-virginia" className="font-bold text-green underline hover:text-orange">
+              commercial snow and ice management
+            </Link>{' '}
+            page for RFP-ready unit pricing, or bundle it into one contract with grounds maintenance.
+          </p>
+        </div>
+      </section>
+
       {/* ── SERVICE AREA BAR ── */}
       <ServiceAreasSection />
 

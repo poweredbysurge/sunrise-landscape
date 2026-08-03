@@ -69,7 +69,15 @@ export default function HardscapePage() {
             <Link href="/patio-fire-pit-leesburg-ashburn-great-falls" className="underline text-green hover:text-orange">
               See our patio and fire pit contractors
             </Link>{' '}
-            for Leesburg, Ashburn, and Great Falls.
+            for Leesburg, Ashburn, and Great Falls. Building on a slope?{' '}
+            <Link href="/retaining-walls-northern-virginia" className="underline text-green hover:text-orange">
+              See our retaining wall construction services
+            </Link>
+            . Planning a full backyard renovation?{' '}
+            <Link href="/outdoor-living-spaces-northern-virginia" className="underline text-green hover:text-orange">
+              See how we design complete outdoor living spaces
+            </Link>
+            .
           </p>
         </div>
       </section>

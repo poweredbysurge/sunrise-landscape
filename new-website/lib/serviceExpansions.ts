@@ -269,7 +269,7 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
       },
       {
         q: 'What areas do you cover for hardscape work?',
-        a: 'Loudoun and Fairfax counties from our Sterling shop: Leesburg, Ashburn, Reston, Great Falls, Vienna, McLean, Centreville, Sterling, and the communities between them.',
+        a: 'Loudoun and Fairfax counties on daily routes: Leesburg, Ashburn, Reston, Great Falls, Vienna, McLean, Centreville, Sterling, and the communities between them.',
       },
       {
         q: 'How far out are you booking?',
@@ -387,7 +387,7 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
       {
         heading: 'One Team, Fifteen Plus Communities',
         body: [
-          'Every crew rolls out of our Sterling shop, which puts all of Loudoun and most of Fairfax inside a practical service radius: Leesburg, Ashburn, Herndon, Reston, Sterling, Chantilly, Centreville, Great Falls, McLean, Oakton, Vienna, Aldie, and western Loudoun. Each community has its own page below with local specifics, neighborhoods we serve, and answers to the questions that town actually asks.',
+          'One team covers all of Loudoun and most of Fairfax on daily routes: Leesburg, Ashburn, Herndon, Reston, Sterling, Chantilly, Centreville, Great Falls, McLean, Oakton, Vienna, Aldie, and western Loudoun. Each community has its own page below with local specifics, neighborhoods we serve, and answers to the questions that town actually asks.',
           'Lawn care has dedicated town pages too, covering mowing programs, aeration, and turf renovation in Leesburg, Ashburn, Herndon, Fairfax, Aldie, and across Loudoun County.',
         ],
       },
@@ -395,7 +395,7 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
     faqHeading: 'Service Area Questions',
     faqs: [
       {
-        q: 'Do you charge more for towns farther from Sterling?',
+        q: 'Do you charge more for towns farther out?',
         a: 'No. Route scheduling absorbs the drive inside our service area. If an address falls outside practical range we say so instead of padding a quote.',
       },
       {
@@ -408,8 +408,104 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
       },
       {
         q: 'Where are you actually located?',
-        a: '43813 Beaver Meadow Rd #100 in Sterling, VA. The shop, the crews, and the plant staging yard all live there, fifteen minutes from most of our routes.',
+        a: '4819 Sudley Rd in Catharpin, VA, near the Loudoun and Prince William County line by Gainesville. The shop, the crews, and the plant staging yard all live there, with routes running across Loudoun and Fairfax daily.',
       },
     ],
+  },
+
+  'retaining-walls-northern-virginia': {
+    sections: [],
+    faqHeading: 'Retaining Wall Questions We Hear Most',
+    faqs: [
+      {
+        q: 'What does a retaining wall cost in Northern Virginia?',
+        a: 'Segmental block walls typically start in the mid four figures for a modest run and scale with height, length, and drainage requirements. Natural stone and engineered walls over four feet cost more because of the added structural work. Every quote follows a site visit and soil check, not a phone estimate.',
+      },
+      {
+        q: 'Do I need a permit for my retaining wall?',
+        a: 'Fairfax and Loudoun counties both require a permit and engineering once a wall crosses a set height, and the exact threshold depends on the wall\'s location and what sits above or below it. We check this during the site visit and pull the permit ourselves if the project needs one.',
+      },
+      {
+        q: 'How long does a retaining wall last?',
+        a: 'A properly built segmental or natural stone wall on a compacted gravel base and drainage lasts decades. Most failures we get called to fix trace back to a wall built without drainage behind it, not the materials themselves.',
+      },
+      {
+        q: 'What are the warning signs a retaining wall is failing?',
+        a: 'Bulging or leaning face, horizontal cracks, gaps opening at the joints, and water seeping through the wall instead of draining behind it. Any of these means the wall is holding water pressure it was never designed for. Call before a wet season makes it worse.',
+      },
+    ],
+    cta: 'Have a slope that needs terracing?',
+  },
+
+  'lawn-care-northern-virginia': {
+    sections: [],
+    faqHeading: 'Lawn Care Questions We Hear Most',
+    faqs: [
+      {
+        q: 'What is included in a full-season lawn care program?',
+        a: 'Weekly mowing and edging April through October, a spring pre-emergent application, core aeration and overseeding in fall, grub control, and seasonal fertilization timed to our growing calendar. Programs are built around your lawn, not a fixed package.',
+      },
+      {
+        q: 'Do I have to sign an annual contract?',
+        a: 'Most clients run a full-season program because that is when a lawn actually improves, but we also handle one-time aeration, overseeding, or cleanup requests without a season-long commitment.',
+      },
+      {
+        q: 'How is pricing determined for different lot sizes?',
+        a: 'Turf square footage, bed footage, and visit frequency set the price, the same measured approach whether the property is a townhome lot or a multi-acre estate. You get a fixed quote after we walk the property.',
+      },
+      {
+        q: 'Do you handle HOA common areas and multi-property portfolios?',
+        a: 'Yes. Property managers and HOA boards across both counties use one contract and one point of contact instead of coordinating several local crews, with consistent standards from property to property.',
+      },
+    ],
+    cta: 'Ready for a lawn that actually gets easier to maintain?',
+  },
+
+  'outdoor-living-spaces-northern-virginia': {
+    sections: [],
+    faqHeading: 'Outdoor Living Questions We Hear Most',
+    faqs: [
+      {
+        q: 'What does a full outdoor living project cost?',
+        a: 'A single-element project like a patio or fire pit typically starts in the low five figures. A full outdoor living space combining patio, fire, lighting, and water usually lands in the mid five figures to low six figures depending on size and materials. Every proposal follows a design and site walk, not a phone estimate.',
+      },
+      {
+        q: 'Can an outdoor living project be built in phases?',
+        a: 'Yes, and most are. We design the full plan once so every phase fits the ones before and after it, then build in an order that fits your budget and timeline, often patio first, then fire and lighting, then water in a later phase.',
+      },
+      {
+        q: 'How long does a full outdoor living build take?',
+        a: 'A single element like a patio or fire pit finishes in one to two weeks. A full multi-element space built in one continuous phase typically runs six to ten weeks depending on scope and weather.',
+      },
+      {
+        q: 'Should I hire one contractor for the whole space or separate ones for each piece?',
+        a: 'One contractor who designs and builds every element avoids the gaps that show up when a patio contractor, a lighting installer, and a pond builder never talk to each other. Grading, drainage, and electrical only get planned once when one team owns the whole project.',
+      },
+    ],
+    cta: 'Ready to design the whole space at once?',
+  },
+
+  'commercial-snow-removal-virginia': {
+    sections: [],
+    faqHeading: 'Commercial Snow Removal Questions',
+    faqs: [
+      {
+        q: 'What information do you need to respond to an RFP?',
+        a: 'Site plan or aerial with plow routes and priority areas marked, total paved and walked square footage, existing trigger depth requirements if any, and the response window your risk policy requires. We return itemized unit pricing, not a lump sum, so your committee can compare bids line by line.',
+      },
+      {
+        q: 'Seasonal contract or per-event pricing?',
+        a: 'Both are available and the right choice depends on your budget risk tolerance. Seasonal pricing is fixed regardless of snowfall totals. Per-event pricing tracks actual storms and includes a not-to-exceed cap in the contract so a heavy winter does not blow the budget.',
+      },
+      {
+        q: 'What trigger depths and response times do you work with?',
+        a: 'Trigger depths and response windows are set in the contract before the season starts, commonly 1 to 2 inches for retail and medical properties and up to 3 inches for lower-priority lots. Response times are written into the same document with penalties defined if we miss them.',
+      },
+      {
+        q: 'What size properties and portfolios do you take on?',
+        a: 'Single retail lots up to multi-site HOA and commercial portfolios. Equipment and crew count scale to route density, and multi-property contracts get one account manager instead of a different contact per site.',
+      },
+    ],
+    cta: 'Building an RFP for this winter?',
   },
 }

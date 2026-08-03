@@ -8,15 +8,15 @@ import { getMdxJsonLd } from '@/lib/manifest'
 
 export const metadata: Metadata = {
   title: 'Contact Us | Sunrise Landscape',
-  description: 'Contact Sunrise Landscape in Sterling, VA. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
+  description: 'Contact Sunrise Landscape, serving Northern Virginia. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
   openGraph: {
     title: 'Contact Us | Sunrise Landscape',
-    description: 'Contact Sunrise Landscape in Sterling, VA. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
+    description: 'Contact Sunrise Landscape, serving Northern Virginia. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
     type: 'website',
   },
   twitter: {
     title: 'Contact Us | Sunrise Landscape',
-    description: 'Contact Sunrise Landscape in Sterling, VA. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
+    description: 'Contact Sunrise Landscape, serving Northern Virginia. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
     card: 'summary_large_image',
   },
 }
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'What areas do you serve?',
-    a: 'Our primary service area covers Fairfax and Loudoun Counties, including Great Falls, McLean, Vienna, Oakton, Leesburg, and Aldie. For design-build projects we work throughout the greater DMV region. Maintenance services are limited to approximately 25 miles from our Sterling, VA office.',
+    a: 'Our primary service area covers Fairfax and Loudoun Counties, including Great Falls, McLean, Vienna, Oakton, Leesburg, and Aldie. For design-build projects we work throughout the greater DMV region. Maintenance services are limited to that primary Loudoun and Fairfax County territory.',
   },
   {
     q: 'How do I get a free consultation?',
@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: 'Do you offer year-round maintenance programs?',
-    a: 'Yes. We offer recurring maintenance programs that cover lawn care, mulching, fertilization, pre-emergent applications, seasonal cleanups, and landscape bed management. Programs are tailored to your property size and needs, and our maintenance team services properties within approximately 25 miles of our Sterling, VA office.',
+    a: 'Yes. We offer recurring maintenance programs that cover lawn care, mulching, fertilization, pre-emergent applications, seasonal cleanups, and landscape bed management. Programs are tailored to your property size and needs, and our maintenance team services properties across Loudoun and Fairfax Counties.',
   },
   {
     q: 'Can you help me meet HOA landscape requirements?',
@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: 'Are you licensed and insured?',
-    a: 'Absolutely. Sunrise Landscape and Design holds all required Virginia contractor licenses and carries full liability insurance and workers compensation coverage. We are happy to provide certificates of insurance upon request.',
+    a: 'Absolutely. Sunrise Landscape holds all required Virginia contractor licenses and carries full liability insurance and workers compensation coverage. We are happy to provide certificates of insurance upon request.',
   },
   {
     q: 'What is the best time of year to start a project?',
@@ -141,8 +141,8 @@ export default function ContactPage() {
               <div>
                 <p className="font-ui text-xs font-bold uppercase tracking-widest text-green/50 mb-1">Office</p>
                 <address className="text-base text-green not-italic leading-relaxed">
-                  43813 Beaver Meadow Rd #100<br />
-                  Sterling, VA 20166
+                  4819 Sudley Rd<br />
+                  Catharpin, VA 20143
                 </address>
               </div>
             </div>

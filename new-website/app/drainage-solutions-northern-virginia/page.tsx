@@ -224,6 +224,19 @@ export default function DrainageSolutionsPage() {
         </div>
       </section>
 
+      {/* ── CROSS-LINK: retaining walls ── */}
+      <section className="bg-cream py-10 px-5 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-green/70 leading-relaxed">
+            Grading and drainage on a slope often call for a wall to hold the new grade in place.{' '}
+            <Link href="/retaining-walls-northern-virginia" className="font-bold text-green underline hover:text-orange">
+              See our retaining wall construction services
+            </Link>
+            , designed and built alongside your drainage plan.
+          </p>
+        </div>
+      </section>
+
       <ServiceExpansion data={serviceExpansions['drainage-solutions-northern-virginia']} />
 
       {/* ── SERVICE AREA BAR ── */}

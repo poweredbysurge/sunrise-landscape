@@ -13,6 +13,11 @@ const RECOVERY_PAGES = [
   '/lawn-care-loudoun-county-va',
   '/lawn-care-aldie-va',
   '/patio-fire-pit-leesburg-ashburn-great-falls',
+  // MASTER BUILD July 2026 (Mike-approved, publish on authorization):
+  '/retaining-walls-northern-virginia',
+  '/lawn-care-northern-virginia',
+  '/outdoor-living-spaces-northern-virginia',
+  '/commercial-snow-removal-virginia',
 ]
 
 // Redirect stubs (see next.config.ts `redirects()`) — these 308 to their

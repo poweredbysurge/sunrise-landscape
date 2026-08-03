@@ -92,6 +92,56 @@ export function getMdxFrontmatter(mdxFile: string): MdxFrontmatter {
   }
 }
 
+const OPENING_HOURS_SPEC = [
+  {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '08:00',
+    closes: '17:00',
+  },
+]
+
+// Office relocation (client confirmed 7/23/26): new street address, town,
+// and postal code for every LocalBusiness node. See build-kit/REPOINT-CHANGELOG.md.
+const NEW_ADDRESS = {
+  '@type': 'PostalAddress',
+  streetAddress: '4819 Sudley Rd',
+  addressLocality: 'Catharpin',
+  addressRegion: 'VA',
+  postalCode: '20143',
+  addressCountry: 'US',
+}
+const NEW_GEO = {
+  '@type': 'GeoCoordinates',
+  latitude: '38.85417',
+  longitude: '-77.57194',
+}
+
+// July 2026 re-point (approved): every LocalBusiness node gets the brand's
+// display name, business hours, and the new office address/geo, patched in
+// code so the frozen MDX source files stay untouched. Applies inside
+// top-level nodes and any @graph.
+function patchLocalBusiness(node: Record<string, unknown>): Record<string, unknown> {
+  if (node['@type'] !== 'LocalBusiness') return node
+  return {
+    ...node,
+    name: 'Sunrise Landscape',
+    openingHoursSpecification: node.openingHoursSpecification ?? OPENING_HOURS_SPEC,
+    ...(node.address ? { address: NEW_ADDRESS } : {}),
+    ...(node.geo ? { geo: NEW_GEO } : {}),
+  }
+}
+
+function patchJsonLdTree(data: object[]): object[] {
+  return data.map((item) => {
+    const node = item as Record<string, unknown> & { '@graph'?: Record<string, unknown>[] }
+    if (Array.isArray(node['@graph'])) {
+      return { ...node, '@graph': node['@graph'].map(patchLocalBusiness) }
+    }
+    return patchLocalBusiness(node)
+  })
+}
+
 export function getMdxJsonLd(mdxFile: string): object[] {
   const filePath = path.join(MANIFEST_ROOT, mdxFile)
   let raw: string
@@ -103,7 +153,7 @@ export function getMdxJsonLd(mdxFile: string): object[] {
   const jsonLdMatch = raw.match(/<!--\n(\[[\s\S]*?\])\n-->/)
   if (!jsonLdMatch) return []
   try {
-    return JSON.parse(jsonLdMatch[1])
+    return patchJsonLdTree(JSON.parse(jsonLdMatch[1]))
   } catch {
     return []
   }
@@ -139,16 +189,16 @@ const BLOG_HTML_MAP: Record<string, string> = {
   'landscape-maintenance-near-me': 'blog-17-landscape-maintenance-near-me.html',
   'landscape-installation-and-maintenance': 'blog-18-landscape-installation-and-maintenance.html',
   'northern-virginia-landscaping-planting-guide': 'blog-northern-virginia-landscaping-planting-guide.html',
-  'when-to-mulch-in-northern-virginia-mulch-installation-guide': 'blog-when-to-mulch-in-northern-virginia-mulch-installation-guide.html',
-  'snow-plowing-vs-snow-removal-costs': 'blog-snow-plowing-vs-snow-removal-costs.html',
-  'landscape-lighting-costs-northern-virginia': 'blog-landscape-lighting-costs-northern-virginia.html',
-  'landscape-design-costs-northern-virginia': 'blog-landscape-design-costs-northern-virginia.html',
-  'what-is-dormant-turf-and-why-it-matters-in-northern-virginia': 'blog-what-is-dormant-turf-and-why-it-matters-in-northern-virginia.html',
+  'when-to-mulch-in-northern-virginia-mulch-installation-guide': 'blog-25-when-to-mulch-in-northern-virginia-mulch-installation-guide.html',
+  'snow-plowing-vs-snow-removal-costs': 'blog-21-snow-plowing-vs-snow-removal-costs.html',
+  'landscape-lighting-costs-northern-virginia': 'blog-22-landscape-lighting-costs-northern-virginia.html',
+  'landscape-design-costs-northern-virginia': 'blog-23-landscape-design-costs-northern-virginia.html',
+  'what-is-dormant-turf-and-why-it-matters-in-northern-virginia': 'blog-27-what-is-dormant-turf-and-why-it-matters-in-northern-virginia.html',
   'snow-and-ice-management': 'blog-snow-and-ice-management.html',
-  'year-round-landscape-maintenance-northern-virginia': 'blog-year-round-landscape-maintenance-northern-virginia.html',
+  'year-round-landscape-maintenance-northern-virginia': 'blog-24-year-round-landscape-maintenance-northern-virginia.html',
   'winter-outdoor-space-cozy-escape': 'blog-winter-outdoor-space-cozy-escape.html',
   'dont-wait-for-spring': 'blog-dont-wait-for-spring.html',
-  'how-to-build-a-retaining-wall': 'blog-how-to-build-a-retaining-wall.html',
+  'how-to-build-a-retaining-wall': 'blog-26-how-to-build-a-retaining-wall.html',
   'why-fall-fertilization-matters-for-trees-and-shrubs': 'blog-why-fall-fertilization-matters-for-trees-and-shrubs.html',
   'transform-your-backyard-into-a-paradise': 'blog-transform-your-backyard-into-a-paradise.html',
   'top-10-plants-for-your-garden': 'blog-top-10-plants-for-your-garden.html',

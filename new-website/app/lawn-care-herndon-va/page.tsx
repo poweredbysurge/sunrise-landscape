@@ -69,10 +69,10 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '43813 Beaver Meadow Rd #100',
-        addressLocality: 'Sterling',
+        streetAddress: '4819 Sudley Rd',
+        addressLocality: 'Catharpin',
         addressRegion: 'VA',
-        postalCode: '20166',
+        postalCode: '20143',
       },
     },
   },
@@ -201,8 +201,8 @@ export default function LawnCareHerndonPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl lg:text-4xl text-green leading-tight mb-4">Herndon Neighborhoods We Serve</h2>
           <p className="text-lg leading-relaxed max-w-3xl">
-            Downtown Herndon, Fox Mill, McNair, and the Dranesville area. Sterling is next door, so
-            Herndon sits inside our tightest service radius.
+            Downtown Herndon, Fox Mill, McNair, and the Dranesville area, all inside our regular
+            Loudoun and Fairfax route territory.
           </p>
         </div>
       </section>
@@ -241,6 +241,18 @@ export default function LawnCareHerndonPage() {
           <p className="text-lg">
             Call <a href="tel:703-544-0028" className="underline hover:text-orange">703-544-0028</a> or
             request a free consultation below.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-10 px-5 lg:px-8 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-green/70 leading-relaxed">
+            Need coverage outside this town? See our{' '}
+            <Link href="/lawn-care-northern-virginia" className="font-bold text-green underline hover:text-orange">
+              lawn care program across all of Northern Virginia
+            </Link>
+            .
           </p>
         </div>
       </section>

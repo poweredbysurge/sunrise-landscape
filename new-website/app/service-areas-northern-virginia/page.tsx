@@ -142,7 +142,7 @@ export default function ServiceAreasNVPage() {
                 For four decades, Sunrise Landscape has shaped outdoor spaces across Loudoun and Fairfax counties, from estate properties in McLean and Great Falls to family backyards in Ashburn, Reston, and Sterling. Our service area spans the breadth of Northern Virginia, covering more than a dozen communities where homeowners, HOAs, and commercial property managers count on us for landscape design, hardscape construction, lighting design, and year-round maintenance.
               </p>
               <p className="text-cream/80 leading-relaxed">
-                Northern Virginia&apos;s mid-Atlantic climate, clay-heavy soils, and four-season conditions create a unique landscape environment, one that rewards experience. Headquartered in Sterling, our team brings local knowledge to every project, whether we&apos;re installing a drainage solution in a wooded Vienna lot, designing a pool surround for a Leesburg estate, or building a low-maintenance entrance landscape for a Chantilly office park.
+                Northern Virginia&apos;s mid-Atlantic climate, clay-heavy soils, and four-season conditions create a unique landscape environment, one that rewards experience. Our team routes across the whole region daily, bringing local knowledge to every project, whether we&apos;re installing a drainage solution in a wooded Vienna lot, designing a pool surround for a Leesburg estate, or building a low-maintenance entrance landscape for a Chantilly office park.
               </p>
             </div>
 

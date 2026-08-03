@@ -9,12 +9,12 @@ import FromOurBlog, { BLOG_ART } from '@/components/FromOurBlog'
 export const metadata: Metadata = {
   title: 'Lawn Care in Loudoun County, VA | Sunrise Landscape',
   description:
-    'Countywide lawn care in Loudoun from a Sterling-based crew: quarter-acre HOA lots to western estates. Mowing, fertilization, aeration. Free consultation.',
+    'Countywide lawn care in Loudoun: quarter-acre HOA lots to western estates, one team on daily routes. Mowing, fertilization, aeration. Free consultation.',
   alternates: { canonical: 'https://www.sunriselandscapeanddesign.com/lawn-care-loudoun-county-va' },
   openGraph: {
     title: 'Lawn Care in Loudoun County, VA | Sunrise Landscape',
     description:
-      'Countywide lawn care in Loudoun from a Sterling-based crew: quarter-acre HOA lots to western estates. Mowing, fertilization, aeration. Free consultation.',
+      'Countywide lawn care in Loudoun: quarter-acre HOA lots to western estates, one team on daily routes. Mowing, fertilization, aeration. Free consultation.',
     type: 'website',
     images: [
       {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Lawn Care in Loudoun County, VA | Sunrise Landscape',
     description:
-      'Countywide lawn care in Loudoun from a Sterling-based crew: quarter-acre HOA lots to western estates. Mowing, fertilization, aeration. Free consultation.',
+      'Countywide lawn care in Loudoun: quarter-acre HOA lots to western estates, one team on daily routes. Mowing, fertilization, aeration. Free consultation.',
     card: 'summary_large_image',
     images: ['https://www.sunriselandscapeanddesign.com/media/stock/tall-fescue-lawn-sunlight.webp'],
   },
@@ -73,10 +73,10 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '43813 Beaver Meadow Rd #100',
-        addressLocality: 'Sterling',
+        streetAddress: '4819 Sudley Rd',
+        addressLocality: 'Catharpin',
         addressRegion: 'VA',
-        postalCode: '20166',
+        postalCode: '20143',
       },
     },
   },
@@ -101,9 +101,8 @@ export default function LawnCareLoudounPage() {
           <h1 className="text-4xl lg:text-6xl font-bold leading-tight">Lawn Care in Loudoun County, VA</h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed">
             Loudoun runs from quarter-acre HOA lots in South Riding to multi-acre spreads past
-            Aldie, and the same lawn program does not fit both. Our shop sits at 43813 Beaver Meadow
-            Road in Sterling, which puts every corner of the county inside a real service radius,
-            with crews sized for the lot in front of them.
+            Aldie, and the same lawn program does not fit both. One team routes crews across every
+            corner of the county, sized for the lot in front of them.
           </p>
           <Link
             href="/contact#form"
@@ -233,6 +232,18 @@ export default function LawnCareLoudounPage() {
           <p className="text-lg">
             Call <a href="tel:703-544-0028" className="underline hover:text-orange">703-544-0028</a> or
             request a free consultation below.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-10 px-5 lg:px-8 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-green/70 leading-relaxed">
+            Need coverage outside this town? See our{' '}
+            <Link href="/lawn-care-northern-virginia" className="font-bold text-green underline hover:text-orange">
+              lawn care program across all of Northern Virginia
+            </Link>
+            .
           </p>
         </div>
       </section>

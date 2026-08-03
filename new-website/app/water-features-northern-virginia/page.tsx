@@ -161,6 +161,18 @@ export default function WaterFeaturesPage() {
 
       <WaterFeatureJourney data={serviceExpansions['water-features-northern-virginia']} />
 
+      <section className="py-10 px-5 lg:px-8 bg-cream">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-green/70 leading-relaxed">
+            A water feature is often one piece of a bigger plan. See how we{' '}
+            <Link href="/outdoor-living-spaces-northern-virginia" className="font-bold text-green underline hover:text-orange">
+              design a full outdoor living space
+            </Link>{' '}
+            around patio, fire, lighting, and water together.
+          </p>
+        </div>
+      </section>
+
       {/* ── SERVICE AREA BAR ── */}
       <ServiceAreasSection />
 

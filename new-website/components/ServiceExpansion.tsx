@@ -20,6 +20,7 @@ export interface ServiceExpansionData {
 export default function ServiceExpansion({ data }: { data: ServiceExpansionData }) {
   return (
     <>
+      {data.sections.length > 0 && (
       <section className="py-16 lg:py-24 px-5 lg:px-8 bg-white">
         <div className="max-w-screen-xl mx-auto space-y-14">
           {data.sections.map((sec, i) => {
@@ -46,6 +47,7 @@ export default function ServiceExpansion({ data }: { data: ServiceExpansionData 
           })}
         </div>
       </section>
+      )}
 
       <section className="py-16 lg:py-24 px-5 lg:px-8 bg-cream/40">
         <div className="max-w-3xl mx-auto">

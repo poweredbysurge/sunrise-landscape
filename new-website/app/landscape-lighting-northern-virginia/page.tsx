@@ -234,6 +234,18 @@ export default function LandscapeLightingPage() {
 
       <ServiceExpansion data={serviceExpansions['landscape-lighting-northern-virginia']} />
 
+      <section className="py-10 px-5 lg:px-8 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-green/70 leading-relaxed">
+            Lighting is one piece of the picture. See how we{' '}
+            <Link href="/outdoor-living-spaces-northern-virginia" className="font-bold text-green underline hover:text-orange">
+              design a full outdoor living space
+            </Link>{' '}
+            around patio, fire, and water in the same plan.
+          </p>
+        </div>
+      </section>
+
       {/* ── SERVICE AREA BAR ── */}
       <ServiceAreasSection />
 

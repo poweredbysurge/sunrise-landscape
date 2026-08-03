@@ -7,20 +7,25 @@ import { usePathname } from 'next/navigation'
 
 const landscapingAndLawnCare = [
   { label: 'Landscape Maintenance', href: '/landscape-maintenance-northern-virginia' },
-  { label: 'Lawn Care', href: '/lawn-care-loudoun-county-va' },
+  { label: 'Lawn Care', href: '/lawn-care-northern-virginia' },
   { label: 'Planting', href: '/landscape-planting-northern-virginia' },
-  { label: 'Drainage Solutions', href: '/drainage-solutions-northern-virginia' },
 ]
 
 const designAndBuild = [
+  { label: 'Outdoor Living Spaces', href: '/outdoor-living-spaces-northern-virginia' },
   { label: 'Patios & Hardscaping', href: '/hardscape-northern-virginia' },
   { label: 'Landscape Design', href: '/landscape-design-northern-virginia' },
   { label: 'Outdoor Lighting', href: '/landscape-lighting-northern-virginia' },
   { label: 'Water Features', href: '/water-features-northern-virginia' },
+  { label: 'Drainage & Erosion Control', href: '/drainage-solutions-northern-virginia' },
+]
+
+const commercialLinks = [
+  { label: 'Commercial Maintenance', href: '/commercial-landscape-maintenance-virginia' },
+  { label: 'Snow Removal', href: '/commercial-snow-removal-virginia' },
 ]
 
 const navLinks = [
-  { label: 'Commercial', href: '/commercial-landscape-maintenance-virginia' },
   { label: 'Service Areas', href: '/service-areas-northern-virginia' },
   { label: 'About Us', href: '/about-us' },
   { label: 'Careers', href: '/career' },
@@ -55,14 +60,17 @@ export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [lawnOpen, setLawnOpen] = useState(false)
   const [designOpen, setDesignOpen] = useState(false)
+  const [commercialOpen, setCommercialOpen] = useState(false)
   const pathname = usePathname()
   const lawnRef = useRef<HTMLDivElement>(null)
   const dropdownRef = useRef<HTMLDivElement>(null)
+  const commercialRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     setMobileOpen(false)
     setLawnOpen(false)
     setDesignOpen(false)
+    setCommercialOpen(false)
   }, [pathname])
 
   useEffect(() => {
@@ -124,7 +132,7 @@ export default function Navigation() {
               </button>
 
               <div
-                className={`absolute top-full mt-2 left-0 w-64 bg-green shadow-2xl transition-all duration-200 ${lawnOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
+                className={`absolute top-full mt-2 left-0 w-64 z-20 bg-green shadow-2xl transition-all duration-200 ${lawnOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
                 style={{ border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}
                 onMouseEnter={() => setLawnOpen(true)}
                 onMouseLeave={() => setLawnOpen(false)}
@@ -143,29 +151,69 @@ export default function Navigation() {
               </div>
             </div>
 
-            {/* Design and Build dropdown */}
-            <div className="relative" ref={dropdownRef}>
-              <button
-                className="nav-link text-cream px-2"
-                onMouseEnter={() => setDesignOpen(true)}
-                onMouseLeave={() => setDesignOpen(false)}
-                onClick={() => setDesignOpen(!designOpen)}
+            {/* Design and Build dropdown — parent label is a real link to the
+                Outdoor Living Spaces front-door page, per the July 23 nav decision.
+                Hover state lives on the wrapping div so it covers both the label
+                and the absolutely-positioned panel (no separate handlers needed). */}
+            <div
+              className="relative"
+              ref={dropdownRef}
+              onMouseEnter={() => setDesignOpen(true)}
+              onMouseLeave={() => setDesignOpen(false)}
+            >
+              <Link
+                href="/outdoor-living-spaces-northern-virginia"
+                className="nav-link text-cream px-2 inline-flex items-center"
                 aria-expanded={designOpen}
               >
                 Design &amp; Build
-                <svg className={`ml-1 w-3 h-3 transition-transform duration-200 ${designOpen ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <svg className={`ml-1 w-3 h-3 transition-transform duration-200 ${designOpen ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </Link>
+
+              <div
+                className={`absolute top-full mt-2 left-0 w-64 z-20 bg-green shadow-2xl transition-all duration-200 ${designOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
+                style={{ border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}
+              >
+                <div className="py-2">
+                  {designAndBuild.map((s) => (
+                    <Link
+                      key={s.href}
+                      href={s.href}
+                      className="block px-5 py-3 text-sm font-ui font-bold tracking-wide uppercase text-cream hover:text-orange hover:bg-cream/5 transition-colors duration-150 border-b border-cream/10 last:border-0"
+                    >
+                      {s.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Commercial dropdown */}
+            <div
+              className="relative"
+              ref={commercialRef}
+              onMouseEnter={() => setCommercialOpen(true)}
+              onMouseLeave={() => setCommercialOpen(false)}
+            >
+              <button
+                className="nav-link text-cream px-2"
+                onClick={() => setCommercialOpen(!commercialOpen)}
+                aria-expanded={commercialOpen}
+              >
+                Commercial
+                <svg className={`ml-1 w-3 h-3 transition-transform duration-200 ${commercialOpen ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M6 9l6 6 6-6" />
                 </svg>
               </button>
 
               <div
-                className={`absolute top-full mt-2 left-0 w-64 bg-green shadow-2xl transition-all duration-200 ${designOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
+                className={`absolute top-full mt-2 left-0 w-64 z-20 bg-green shadow-2xl transition-all duration-200 ${commercialOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
                 style={{ border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}
-                onMouseEnter={() => setDesignOpen(true)}
-                onMouseLeave={() => setDesignOpen(false)}
               >
                 <div className="py-2">
-                  {designAndBuild.map((s) => (
+                  {commercialLinks.map((s) => (
                     <Link
                       key={s.href}
                       href={s.href}
@@ -259,6 +307,21 @@ export default function Navigation() {
             <p className="section-label text-orange mb-1">Design &amp; Build</p>
             <div className="flex flex-col">
               {designAndBuild.map((s) => (
+                <Link
+                  key={s.href}
+                  href={s.href}
+                  className="flex items-center min-h-[60px] font-ui text-base font-bold tracking-wide uppercase text-cream hover:text-orange transition-colors"
+                >
+                  {s.label}
+                </Link>
+              ))}
+            </div>
+
+            <div className="h-px bg-white/10 my-7" />
+
+            <p className="section-label text-orange mb-1">Commercial</p>
+            <div className="flex flex-col">
+              {commercialLinks.map((s) => (
                 <Link
                   key={s.href}
                   href={s.href}

@@ -78,10 +78,10 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '43813 Beaver Meadow Rd #100',
-        addressLocality: 'Sterling',
+        streetAddress: '4819 Sudley Rd',
+        addressLocality: 'Catharpin',
         addressRegion: 'VA',
-        postalCode: '20166',
+        postalCode: '20143',
       },
     },
   },
@@ -179,10 +179,10 @@ export default function PatioFirePitPage() {
           </h2>
           <p className="text-lg leading-relaxed max-w-3xl">
             Reston brings townhome courtyards, association design standards, and tight machine
-            access, all of which we plan around rather than discover mid-dig. Sterling is home
-            ground: our shop is on Beaver Meadow Road, so Sterling hardscape projects get the
-            shortest mobilization in our book. In both, the finish standard is the one our Great
-            Falls estate clients expect, because it is the same crew.
+            access, all of which we plan around rather than discover mid-dig. Sterling sits inside
+            our regular hardscape route, so scheduling runs on the same rhythm as our other core
+            towns. In both, the finish standard is the one our Great Falls estate clients expect,
+            because it is the same crew.
           </p>
         </div>
       </section>
@@ -243,6 +243,18 @@ export default function PatioFirePitPage() {
           <p className="text-lg">
             Call <a href="tel:703-544-0028" className="underline hover:text-orange">703-544-0028</a> or
             request a free design consultation below.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-10 px-5 lg:px-8 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-green/70 leading-relaxed">
+            Planning more than a patio? See how we{' '}
+            <Link href="/outdoor-living-spaces-northern-virginia" className="font-bold text-green underline hover:text-orange">
+              design a full outdoor living space
+            </Link>
+            , from patio to lighting to water in one project.
           </p>
         </div>
       </section>
