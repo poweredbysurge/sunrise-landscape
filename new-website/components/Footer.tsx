@@ -7,6 +7,7 @@ const serviceLinks = [
   { label: 'Planting', href: '/landscape-planting-northern-virginia' },
   { label: 'Outdoor Living Spaces', href: '/outdoor-living-spaces-northern-virginia' },
   { label: 'Patios & Hardscaping', href: '/hardscape-northern-virginia' },
+  { label: 'Retaining Walls', href: '/retaining-walls-northern-virginia' },
   { label: 'Landscape Design', href: '/landscape-design-northern-virginia' },
   { label: 'Outdoor Lighting', href: '/landscape-lighting-northern-virginia' },
   { label: 'Water Features', href: '/water-features-northern-virginia' },
