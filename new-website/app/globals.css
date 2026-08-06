@@ -279,33 +279,6 @@
   @apply text-sm p-3 border border-black/10;
 }
 
-/* ── Version A ("First Light" homepage concept) helpers ────────────── */
-
-/* Infinite marquee band */
-.va-marquee-wrap {
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.va-marquee {
-  display: inline-flex;
-  animation: va-marquee 28s linear infinite;
-  will-change: transform;
-}
-
-.va-marquee-chunk {
-  white-space: nowrap;
-  padding-right: 2rem;
-}
-
-@keyframes va-marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .va-marquee { animation: none; }
-}
 
 /* Mobile horizontal gallery — hidden scrollbar + snap */
 .va-scroll-x {

@@ -152,11 +152,11 @@ export default function ServicesGrid() {
             // section is fully pinned, before the horizontal drag starts —
             // otherwise scroll momentum yanks card 1 away before it can be read.
             const HOLD_PX = 500
-            // The site header (ticker + nav row + border) is fixed at the very
-            // top of the viewport, so a sticky top of 0 would pin the section
-            // underneath it — hiding the title behind the nav. Offset by the
-            // header's real height so the title stays fully visible once stuck.
-            const NAV_HEIGHT = 116
+            // The site header (nav row) is fixed at the very top of the
+            // viewport, so a sticky top of 0 would pin the section underneath
+            // it — hiding the title behind the nav. Offset by the header's
+            // real height so the title stays fully visible once stuck.
+            const NAV_HEIGHT = 80
 
             /* Make the section sticky via JS so mobile is unaffected */
             section.style.position = 'sticky'

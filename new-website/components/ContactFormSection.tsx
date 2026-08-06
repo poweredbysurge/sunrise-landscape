@@ -23,11 +23,11 @@ export default function ContactFormSection() {
           {/* Right: form card — matches the homepage hero's inquiry form.
               id/scroll-mt live here (not on the section) so #form anchors
               land on the form itself, not above the heading on mobile where
-              the two stack — scroll-mt-[116px] clears the fixed header
-              (ticker + nav = 116px, same constant ServicesGrid.tsx uses). */}
+              the two stack — scroll-mt-[80px] clears the fixed header
+              (nav row only, same constant ServicesGrid.tsx uses). */}
           <div
             id="form"
-            className="bg-cream flex flex-col gap-5 p-8 shadow-2xl scroll-mt-[116px]"
+            className="bg-cream flex flex-col gap-5 p-8 shadow-2xl scroll-mt-[80px]"
             style={{ borderRadius: '10px', minHeight: 600, border: '1px solid rgba(30,53,38,0.1)' }}
           >
             <InquiryForm />

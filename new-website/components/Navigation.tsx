@@ -33,29 +33,6 @@ const navLinks = [
   { label: 'Contact', href: '/contact#form' },
 ]
 
-/* Repeating text items for the marquee ticker */
-const TICKER_ITEMS = [
-  'Family Owned',
-  'Free Yard Inspection',
-  'Over 40 Years of Experience',
-  'Family Owned',
-  'Free Yard Inspection',
-  'Over 40 Years of Experience',
-]
-
-function TickerChunk() {
-  return (
-    <span className="va-marquee-chunk inline-flex items-center gap-5">
-      {TICKER_ITEMS.map((item, i) => (
-        <span key={i} className="inline-flex items-center gap-5">
-          <span className="font-ui text-xs font-bold tracking-[0.25em] uppercase text-cream">{item}</span>
-          <span className="text-orange text-base leading-none" aria-hidden="true">·</span>
-        </span>
-      ))}
-    </span>
-  )
-}
-
 export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [lawnOpen, setLawnOpen] = useState(false)
@@ -87,14 +64,6 @@ export default function Navigation() {
       <header
         className="fixed top-0 left-0 right-0 z-50 bg-[#101f16] shadow-[0_6px_30px_rgba(0,0,0,0.65)] lg:shadow-none"
       >
-        {/* ── Announcement banner — hidden on mobile while the menu is open ── */}
-        <div className={`va-marquee-wrap h-9 items-center overflow-hidden border-b border-cream/10 ${mobileOpen ? 'hidden lg:flex' : 'flex'}`} style={{ backgroundColor: 'rgba(0,0,0,0.25)' }}>
-          <div className="va-marquee">
-            <TickerChunk />
-            <TickerChunk />
-          </div>
-        </div>
-
         {/* ── Main nav row — plain flex (mobile: logo left, controls right).
             Desktop nav is taken out of flow and centered absolutely against
             this row so it's truly centered no matter how wide the logo vs.
