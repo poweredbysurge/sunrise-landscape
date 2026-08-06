@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How much does lawn service cost in Herndon?',
-    a: 'Most Herndon properties fall between $50 and $80 per mowing visit depending on lot size and access. Season-long programs bundle mowing with fertilization, aeration, and cleanups at a better rate than booking each separately. Quotes follow a free site visit.',
+    a: 'Most Herndon properties are priced depending on lot size and access. Season-long programs bundle mowing with fertilization, aeration, and cleanups at a better rate than booking each separately. Quotes follow a free site visit.',
   },
   {
     q: 'My Herndon lawn stays soggy. Do I need a french drain?',

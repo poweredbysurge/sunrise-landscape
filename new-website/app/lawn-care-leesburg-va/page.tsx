@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: 'When should I aerate and overseed in Leesburg?',
-    a: 'Mid September through mid October. Leesburg lawns are almost all tall fescue, and that window gives new seedlings warm soil, cool air, and a full fall to root before winter. Spring seeding here mostly feeds the crabgrass.',
+    a: 'Mid September through November. Leesburg lawns are almost all tall fescue, and that window gives new seedlings warm soil, cool air, and a full fall to root before winter. Spring seeding here mostly feeds the crabgrass.',
   },
   {
     q: 'Do you offer weed control in Leesburg?',
@@ -123,11 +123,11 @@ export default function LawnCareLeesburgPage() {
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-4 text-lg">
             {[
               'Weekly mowing and edging',
-              'Soil test to start, so treatments match your dirt',
+              'Soil test to start, so treatments match your soil',
               'Seasonal fertilizer and pre-emergent applications',
               'Broadleaf and grassy weed treatment',
               'Core aeration and overseeding each fall',
-              'Topdressing for thin or compacted areas',
+              'Topdressing',
               'Leaf cleanup and removal',
               'Grub control and fungicide treatments',
             ].map((s) => (
@@ -184,8 +184,8 @@ export default function LawnCareLeesburgPage() {
             Two facts drive almost every lawn decision in Leesburg. First, mature tree canopy: turf
             under a 60-year-old maple gets a fraction of the sun it needs, so it wants shade-blend
             seed, higher mowing, and patience. Second, the calendar: tall fescue germinates best when
-            soil is still warm and nights turn cool, which in Loudoun County means mid September to
-            mid October. Aeration and overseeding in that window does more for a thin lawn than
+            soil temp is below 65 degrees and nights turn cool, which in Loudoun County means mid September to
+            November. Aeration and overseeding in that window does more for a thin lawn than
             anything you can buy in a jug. We book those weeks out in August, every year.
           </p>
           <p className="text-lg leading-relaxed max-w-3xl mt-4">

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How much does lawn care cost in Ashburn?',
-    a: 'Typical Ashburn lots run $50 to $75 per mowing visit, and full-season programs are quoted by lot size and scope. Smaller HOA lots often cost less than owners expect. We confirm pricing with a free on-site visit, not a satellite guess.',
+    a: 'Typical Ashburn full-season programs are quoted by lot size and scope. Smaller HOA lots often cost less than owners expect. We confirm pricing with a free on-site visit, not a satellite guess.',
   },
   {
     q: 'Can you help if my HOA sent a lawn violation letter?',
@@ -48,11 +48,7 @@ const faqs = [
   },
   {
     q: 'When is the right time to aerate in Ashburn?',
-    a: 'September into early October. Ashburn soil is heavily compacted from construction, so annual core aeration matters more here than in older towns. Pairing it with overseeding thickens the lawn before winter and crowds out spring weeds.',
-  },
-  {
-    q: 'Do you service townhomes in One Loudoun and Brambleton?',
-    a: 'We do. Townhome lawns are small but the standards are not, and shared sight lines mean one rough yard stands out. We run several townhome rows on the same visit day, which keeps pricing reasonable for smaller properties.',
+    a: 'Mid September through November. Ashburn soil is heavily compacted from construction, so annual core aeration matters more here than in older towns. Pairing it with overseeding thickens the lawn before winter and crowds out spring weeds.',
   },
 ]
 
@@ -211,8 +207,7 @@ export default function LawnCareAshburnPage() {
           <h2 className="text-3xl lg:text-4xl text-green leading-tight mb-4">Ashburn Neighborhoods We Serve</h2>
           <p className="text-lg leading-relaxed max-w-3xl">
             Brambleton, Broadlands, Ashburn Farm, Ashburn Village, and One Loudoun, plus the streets
-            between them, all inside our regular route territory, which is why Ashburn gets some of
-            our earliest visit slots.
+            between them.
           </p>
         </div>
       </section>
