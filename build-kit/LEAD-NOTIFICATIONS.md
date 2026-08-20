@@ -32,6 +32,21 @@ A failure in 2 or 3 never tells the lead the form broke.
 
 All three are `LEAD_NOTIFY_TO` / `LEAD_NOTIFY_CC` overridable without a code change.
 
+## Deployment
+
+The Vercel project is connected to this GitHub repo as of 2026-08-19, so a push
+to `main` builds and deploys production.
+
+It was not always so. Every deployment before that date was made by hand from a
+local working tree (`vercel --prod`, showing up as `gitDirty: 1` in the
+deployment metadata), which meant pushing to `main` changed nothing in
+production. If a change is not live, check that a deployment actually exists for
+the commit before debugging the code.
+
+Environment variables are read at BUILD time. Adding or changing one in the
+Vercel dashboard does nothing to the running deployment until the next build, so
+every env change needs a redeploy to take effect.
+
 ## Step 1 — Turn the emails on (required; the form is dead until this is done)
 
 1. Create a Resend API key on Surge's Resend account.
