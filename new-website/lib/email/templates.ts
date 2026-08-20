@@ -1,4 +1,5 @@
 import { color, font, WIDTH } from './tokens'
+import { BUSINESS } from '@/lib/business'
 import type { Lead, LeadContext } from '@/lib/leads/types'
 
 /**
@@ -119,12 +120,12 @@ function shell({ eyebrow, title, preheader, body }: ShellOptions): string {
         <!-- Footer band -->
         <tr>
           <td class="sr-pad" style="background-color:${color.green}; padding:28px 40px;">
-            <p style="margin:0 0 6px 0; font-family:${font.ui}; font-size:14px; font-weight:700; color:${color.cream};">Sunrise Landscape &amp; Design</p>
+            <p style="margin:0 0 6px 0; font-family:${font.ui}; font-size:14px; font-weight:700; color:${color.cream};">${esc(BUSINESS.name)}</p>
             <p style="margin:0; font-family:${font.body}; font-size:13px; line-height:1.6; color:${color.creamDim};">
-              4819 Sudley Rd, Catharpin, VA 20143<br />
-              <a href="tel:+17035440028" style="color:${color.creamDim}; text-decoration:none;">703-544-0028</a>
+              ${esc(BUSINESS.addressLine1)}, ${esc(BUSINESS.addressLine2)}<br />
+              <a href="${BUSINESS.phoneHref}" style="color:${color.creamDim}; text-decoration:none;">${esc(BUSINESS.phone)}</a>
               &nbsp;&middot;&nbsp;
-              <a href="mailto:info@sunriselandscapeanddesign.com" style="color:${color.creamDim}; text-decoration:none;">info@sunriselandscapeanddesign.com</a>
+              <a href="mailto:${esc(BUSINESS.email)}" style="color:${color.creamDim}; text-decoration:none;">${esc(BUSINESS.email)}</a>
             </p>
           </td>
         </tr>
@@ -350,7 +351,7 @@ export function renderLeadNotification(
     '',
     `Reply to this email to answer ${lead.firstName || 'the lead'} directly.`,
     '',
-    'Sunrise Landscape & Design | 703-544-0028',
+    `${BUSINESS.name} | ${BUSINESS.phone}`,
   ].join('\n')
 
   return {
@@ -415,7 +416,7 @@ export function renderLeadConfirmation(
     ])}
     <tr>
       <td class="sr-pad" style="padding:0 40px 30px 40px;">
-        ${button('tel:+17035440028', 'Call 703-544-0028')}
+        ${button(BUSINESS.phoneHref, `Call ${BUSINESS.phone}`)}
       </td>
     </tr>
     <tr>
@@ -438,9 +439,9 @@ export function renderLeadConfirmation(
     '',
     'Need to add something? Reply to this email and it reaches the same team.',
     '',
-    'Sunrise Landscape & Design',
-    '4819 Sudley Rd, Catharpin, VA 20143',
-    '703-544-0028 | info@sunriselandscapeanddesign.com',
+    BUSINESS.name,
+    `${BUSINESS.addressLine1}, ${BUSINESS.addressLine2}`,
+    `${BUSINESS.phone} | ${BUSINESS.email}`,
   ].join('\n')
 
   return {
