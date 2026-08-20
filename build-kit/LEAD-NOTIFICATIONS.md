@@ -35,8 +35,11 @@ All three are `LEAD_NOTIFY_TO` / `LEAD_NOTIFY_CC` overridable without a code cha
 ## Step 1 — Turn the emails on (required; the form is dead until this is done)
 
 1. Create a Resend API key on Surge's Resend account.
-2. Verify `mail.thesurgeagency.com` in Resend if it is not already (SPF + DKIM on
-   Surge's DNS). This is the sender for the internal alert only.
+2. The internal alert sends from `updates.thesurgeagency.com`, which is already
+   verified in that account (us-east-1). Nothing to do here.
+
+   Do **not** use `mail.thesurgeagency.com` — ADR-024 named it but it was never
+   created and has no DNS at all.
 3. Set on the `sunrise-landscape` Vercel project, Production + Preview:
    ```
    RESEND_API_KEY=re_...
@@ -53,8 +56,16 @@ to the Vercel logs on every failure, so nothing is lost silently.
 The confirmation email is customer-facing, so per ADR-024 it must not come from a
 Surge domain. It stays switched off until this is done.
 
-1. Add `mail.sunriselandscapeanddesign.com` in Resend, add the SPF + DKIM records
-   to Sunrise's DNS, verify.
+1. Add **`mail.sunriselandscapeanddesign.com`** in Resend, add the SPF + DKIM
+   records to Sunrise's DNS, verify.
+
+   Verify the subdomain, not the apex. `sunriselandscapeanddesign.com` already
+   carries `resend._domainkey` and `send.` records in **ap-northeast-1, under a
+   different Resend account** (a prior vendor's). Domain verification is
+   per-account, so those records do nothing for us, and adding the apex to our
+   account would issue a second key for the same DNS name. The subdomain gets
+   its own records and collides with nothing. Worth separately chasing who still
+   holds sending rights on the client's apex.
 2. Set on Vercel:
    ```
    LEAD_NOTIFY_FROM=Sunrise Website <leads@mail.sunriselandscapeanddesign.com>
@@ -130,3 +141,15 @@ self-hosted `.otf` files cannot be relied on in a mail client.
 Every interpolated value is HTML-escaped and subjects are stripped of CR/LF: the
 form is public and unauthenticated, so a lead must not be able to inject markup
 into the client's inbox or headers into the subject.
+
+## Known issue: two SPF records on the client's apex
+
+`sunriselandscapeanddesign.com` publishes two `v=spf1` records. RFC 7208 allows
+exactly one, and most receivers treat two as a permerror, failing SPF for every
+sender on that domain. There is also a stray `include:...hubspotemail.net`
+fragment sitting at `_dmarc`, which looks like a mistyped record.
+
+This does **not** affect lead notifications. Resend's Return-Path is on its own
+`send.` subdomain, which carries its own SPF record, so the apex mess never
+enters the check. It does affect Sunrise's own Outlook, HubSpot, and usaepay
+mail, so it is worth fixing for them, on their schedule, not ours.

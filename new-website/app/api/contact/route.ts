@@ -22,19 +22,33 @@ import type { Lead, LeadContext } from '@/lib/leads/types'
 /**
  * Sender for the INTERNAL notification. Surge-owned by default: this mail is
  * only ever seen by Sunrise and Surge staff, so ADR-002's white-label rule is
- * not in play and it can ship on an already-verified domain. Point
- * LEAD_NOTIFY_FROM at mail.sunriselandscapeanddesign.com once that domain is
- * verified in Resend.
+ * not in play and it can ship on an already-verified domain.
+ *
+ * updates.thesurgeagency.com is the domain actually verified in Surge's Resend
+ * account (confirmed by its resend._domainkey and send. records, us-east-1).
+ * Not mail.thesurgeagency.com, which ADR-024 named but which was never created
+ * and has no DNS at all.
+ *
+ * Note that sunriselandscapeanddesign.com carries Resend records too, but in
+ * ap-northeast-1 under a DIFFERENT Resend account (a prior vendor's). Domain
+ * verification is per-account, so those records do not let this key send as
+ * Sunrise. See LEAD_REPLY_FROM below for the way out of that.
  */
 const NOTIFY_FROM =
-  process.env.LEAD_NOTIFY_FROM || 'Sunrise Website <leads@mail.thesurgeagency.com>'
+  process.env.LEAD_NOTIFY_FROM || 'Sunrise Website <leads@updates.thesurgeagency.com>'
 
 /**
  * Sender for the confirmation that goes to the LEAD. Deliberately has no
  * default: this one is customer-facing, so per ADR-024 it must come from a
- * verified Sunrise domain, never from a Surge one. Until
- * mail.sunriselandscapeanddesign.com is verified and this is set, the
- * confirmation is skipped and the lead just sees the on-site success screen.
+ * verified Sunrise domain, never from a Surge one. Until that domain is
+ * verified in OUR Resend account and this is set, the confirmation is skipped
+ * and the lead just sees the on-site success screen.
+ *
+ * Verify the SUBDOMAIN (mail.sunriselandscapeanddesign.com), not the apex. The
+ * apex already has a resend._domainkey record from another account, and adding
+ * the apex here would issue a second key for that same name. The subdomain gets
+ * its own record and collides with nothing, which is what ADR-024's
+ * mail.{tenantdomain} convention is for.
  */
 const LEAD_REPLY_FROM = process.env.LEAD_REPLY_FROM
 
