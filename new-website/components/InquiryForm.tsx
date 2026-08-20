@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { captureLeadContext, readLeadContext } from '@/lib/leads/context'
 
 type ServiceKey = 'maintenance' | 'project' | 'commercial' | 'notsure'
 
@@ -55,6 +56,13 @@ export default function InquiryForm() {
   const [submitting, setSubmitting] = useState(false)
   const [submitError, setSubmitError] = useState<string | null>(null)
 
+  // Records the landing page, lead key, and campaign params for this session the
+  // first time a form is on screen. Cheap, idempotent, and safe to run on every
+  // page since the form ships on nearly all of them.
+  useEffect(() => {
+    captureLeadContext()
+  }, [])
+
   const update = (name: keyof FieldsState, value: string) =>
     setFields((prev) => ({ ...prev, [name]: value }))
 
@@ -87,6 +95,8 @@ export default function InquiryForm() {
           phone: fields.phone,
           services: svc ? SERVICES.find((s) => s.key === svc)?.label : '',
           referralSource: hear,
+          notes: fields.notes,
+          context: readLeadContext(),
         }),
       })
       if (!res.ok) throw new Error('Failed to send')
