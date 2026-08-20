@@ -17,11 +17,13 @@ export const metadata: Metadata = {
     title: 'Hardscape Contractor Northern Virginia | Sunrise Landscape',
     description: 'Professional hardscape contractor serving Northern Virginia. Custom patios, walkways, and stonework built to last. Get your free consultation today.',
     type: 'website',
+    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Hardscape Contractor Northern Virginia | Sunrise Landscape',
     description: 'Professional hardscape contractor serving Northern Virginia. Custom patios, walkways, and stonework built to last. Get your free consultation today.',
     card: 'summary_large_image',
+    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
   },
 }
 

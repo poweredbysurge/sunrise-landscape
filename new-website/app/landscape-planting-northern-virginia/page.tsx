@@ -16,11 +16,13 @@ export const metadata: Metadata = {
     title: 'Landscape Planting Northern Virginia | Sunrise Landscape',
     description: 'Expert landscape planting services in Northern Virginia. Beautiful plantings, trees, and shrubs for residential and commercial properties. Free consultation.',
     type: 'website',
+    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Landscape Planting Northern Virginia | Sunrise Landscape',
     description: 'Expert landscape planting services in Northern Virginia. Beautiful plantings, trees, and shrubs for residential and commercial properties. Free consultation.',
     card: 'summary_large_image',
+    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
   },
 }
 
@@ -53,8 +55,8 @@ export default function LandscapePlantingPage() {
       {/* ── HERO ── */}
       <section className="relative h-[85vh] min-h-[620px] overflow-hidden flex flex-col justify-end pb-8 lg:pb-10">
         <Image
-          src="https://images.unsplash.com/photo-1710046385385-a37df445b619?auto=format&fit=crop&w=1920&q=85"
-          alt="Modern house with swimming pool surrounded by lush garden and trees"
+          src="https://images.unsplash.com/photo-1781678356452-abbead6d25f9?auto=format&fit=crop&w=1920&q=85"
+          alt="Layered planting bed with vibrant coleus, dusty miller, and ornamental grasses in a designed color pattern"
           fill
           priority
           className="object-cover"

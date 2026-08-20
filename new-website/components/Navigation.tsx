@@ -62,7 +62,7 @@ export default function Navigation() {
   return (
     <>
       <header
-        className="fixed top-0 left-0 right-0 z-50 bg-[#101f16] shadow-[0_6px_30px_rgba(0,0,0,0.65)] lg:shadow-none"
+        className="fixed top-0 left-0 right-0 z-50 bg-[#101f16] border-b-[3px] border-orange/60 shadow-[0_6px_30px_rgba(0,0,0,0.65)] lg:shadow-none"
       >
         {/* ── Main nav row — plain flex (mobile: logo left, controls right).
             Desktop nav is taken out of flow and centered absolutely against
@@ -101,7 +101,7 @@ export default function Navigation() {
               </button>
 
               <div
-                className={`absolute top-full mt-2 left-0 w-64 z-20 bg-green shadow-2xl transition-all duration-200 ${lawnOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
+                className={`absolute top-full mt-2 left-0 w-64 z-30 bg-green shadow-2xl transition-all duration-200 ${lawnOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
                 style={{ border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}
                 onMouseEnter={() => setLawnOpen(true)}
                 onMouseLeave={() => setLawnOpen(false)}
@@ -142,7 +142,7 @@ export default function Navigation() {
               </Link>
 
               <div
-                className={`absolute top-full mt-2 left-0 w-64 z-20 bg-green shadow-2xl transition-all duration-200 ${designOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
+                className={`absolute top-full mt-2 left-0 w-64 z-30 bg-green shadow-2xl transition-all duration-200 ${designOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
                 style={{ border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}
               >
                 <div className="py-2">
@@ -178,7 +178,7 @@ export default function Navigation() {
               </button>
 
               <div
-                className={`absolute top-full mt-2 left-0 w-64 z-20 bg-green shadow-2xl transition-all duration-200 ${commercialOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
+                className={`absolute top-full mt-2 left-0 w-64 z-30 bg-green shadow-2xl transition-all duration-200 ${commercialOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}
                 style={{ border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}
               >
                 <div className="py-2">
@@ -246,9 +246,6 @@ export default function Navigation() {
             </button>
           </div>
         </div>
-
-        {/* Orange accent line */}
-        <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-orange opacity-60" />
       </header>
 
       {/* Full-screen mobile menu — sits below the header (logo + close X stay in the header itself) */}

@@ -17,11 +17,13 @@ export const metadata: Metadata = {
     title: 'Landscape Maintenance Services in Northern Virginia | Sunrise Landscape',
     description: 'Year-round landscape maintenance programs in Northern Virginia: mowing, fertilization, garden care, and seasonal cleanups for residential and commercial properties.',
     type: 'website',
+    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Landscape Maintenance Services in Northern Virginia | Sunrise Landscape',
     description: 'Year-round landscape maintenance programs in Northern Virginia: mowing, fertilization, garden care, and seasonal cleanups for residential and commercial properties.',
     card: 'summary_large_image',
+    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
   },
 }
 

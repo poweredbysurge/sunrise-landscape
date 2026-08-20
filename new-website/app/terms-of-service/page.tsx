@@ -12,11 +12,13 @@ export const metadata: Metadata = {
     title: 'Terms of Service | Sunrise Landscape',
     description: 'Terms of service for Sunrise Landscape. Review our service agreements, payment policies, and client responsibilities for landscaping services in Northern Virginia.',
     type: 'website',
+    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Terms of Service | Sunrise Landscape',
     description: 'Terms of service for Sunrise Landscape. Review our service agreements, payment policies, and client responsibilities for landscaping services in Northern Virginia.',
     card: 'summary_large_image',
+    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
   },
 }
 
@@ -31,7 +33,7 @@ export default function TermsPage() {
         <div className="max-w-3xl mx-auto px-5 lg:px-8">
           <div className="relative w-24 h-8 mb-8">
             <Image
-              src={"/logos/sunrise-logo.svg"}
+              src={"/logos/sunrise-logo-dark.svg"}
               alt="SUNRISE Landscape"
               fill
               className="object-contain object-left"
@@ -43,7 +45,7 @@ export default function TermsPage() {
         </div>
       </section>
 
-      <section className="pb-20 bg-cream">
+      <section className="pt-px pb-20 bg-cream">
         <div className="max-w-3xl mx-auto px-5 lg:px-8 space-y-10">
 
           <div>

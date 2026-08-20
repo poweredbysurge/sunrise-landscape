@@ -14,11 +14,13 @@ export const metadata: Metadata = {
     title: 'About Us | Sunrise Landscape',
     description: "Learn about Sunrise Landscape, Northern Virginia's trusted landscape experts since 1986. Serving 15+ communities with excellence and integrity.",
     type: 'website',
+    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
   },
   twitter: {
     title: 'About Us | Sunrise Landscape',
     description: "Learn about Sunrise Landscape, Northern Virginia's trusted landscape experts since 1986. Serving 15+ communities with excellence and integrity.",
     card: 'summary_large_image',
+    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
   },
 }
 
@@ -47,8 +49,7 @@ export default function AboutPage() {
             </p>
             <p>
               Today the company designs, builds, and maintains landscapes across more than fifteen
-              Northern Virginia communities from our shop at the Loudoun and Prince William County
-              line near Gainesville. Design, hardscape,
+              Northern Virginia communities from our home base in Sterling. Design, hardscape,
               planting, lighting, drainage, and year round maintenance all run under one roof,
               which means the person who drew your plan and the crew that builds it answer to the
               same name on the truck.

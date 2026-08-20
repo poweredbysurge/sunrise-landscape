@@ -60,7 +60,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 pb-12 border-b border-white/10 items-start">
 
           {/* Brand */}
-          <div className="lg:col-span-1 flex flex-col items-center text-center md:items-start md:text-left">
+          <div className="lg:col-span-1 min-w-0 flex flex-col items-center text-center md:items-start md:text-left">
             <Link href="/" className="block mb-5" aria-label="Sunrise Landscape — Home">
               <Image
                 src="/logos/sunrise-logo.svg"
@@ -79,13 +79,13 @@ export default function Footer() {
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012 1.18 2 2 0 013.99 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
                 703-544-0028
               </a>
-              <a href="mailto:info@sunriselandscapeanddesign.com" className="flex items-center justify-center md:justify-start gap-2 py-2.5 hover:text-orange transition-colors">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                info@sunriselandscapeanddesign.com
+              <a href="mailto:info@sunriselandscapeanddesign.com" className="flex flex-col items-center md:items-start gap-1 py-2.5 hover:text-orange transition-colors min-w-0">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="flex-shrink-0"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span className="break-words">info@sunriselandscapeanddesign.com</span>
               </a>
               <p className="flex items-start justify-center md:justify-start gap-2">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mt-0.5 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                4819 Sudley Rd<br />Catharpin, VA 20143
+                43813 Beaver Meadow Rd #100<br />Sterling, VA 20166
               </p>
             </div>
             <div className="flex justify-center md:justify-start gap-3 mt-6">

@@ -12,11 +12,13 @@ export const metadata: Metadata = {
     title: 'Privacy Policy | Sunrise Landscape',
     description: 'Privacy policy for Sunrise Landscape. Learn how we collect, use, and protect your personal information when you visit our website or request our services.',
     type: 'website',
+    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Privacy Policy | Sunrise Landscape',
     description: 'Privacy policy for Sunrise Landscape. Learn how we collect, use, and protect your personal information when you visit our website or request our services.',
     card: 'summary_large_image',
+    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
   },
 }
 
@@ -31,7 +33,7 @@ export default function PrivacyPage() {
         <div className="max-w-3xl mx-auto px-5 lg:px-8">
           <div className="relative w-24 h-8 mb-8">
             <Image
-              src={"/logos/sunrise-logo.svg"}
+              src={"/logos/sunrise-logo-dark.svg"}
               alt="SUNRISE Landscape"
               fill
               className="object-contain object-left"
@@ -43,7 +45,7 @@ export default function PrivacyPage() {
         </div>
       </section>
 
-      <section className="pb-20 bg-cream">
+      <section className="pt-px pb-20 bg-cream">
         <div className="max-w-3xl mx-auto px-5 lg:px-8 prose-content space-y-10">
 
           <div>

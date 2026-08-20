@@ -16,11 +16,13 @@ export const metadata: Metadata = {
     title: 'Drainage Solutions Northern Virginia | Sunrise Landscape',
     description: 'Professional drainage solutions in Northern Virginia. Protect your property from water damage with expert erosion control and drainage systems.',
     type: 'website',
+    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Drainage Solutions Northern Virginia | Sunrise Landscape',
     description: 'Professional drainage solutions in Northern Virginia. Protect your property from water damage with expert erosion control and drainage systems.',
     card: 'summary_large_image',
+    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
   },
 }
 
@@ -34,8 +36,8 @@ export default function DrainageSolutionsPage() {
       {/* ── HERO — clean full-bleed image ── */}
       <section className="relative h-[65vh] min-h-[480px] overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1761201509055-30c04b68901c?w=1920&q=80&fit=crop&auto=format"
-          alt="Terraced hillside with water reservoir and lush greenery, showing natural drainage landscape."
+          src="/media/custom/drainage-french-drain-install.png"
+          alt="French drain installation with catch basin, gravel bed, and downspout tie-in through a backyard lawn"
           fill
           priority
           className="object-cover object-center"

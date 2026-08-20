@@ -14,11 +14,13 @@ export const metadata: Metadata = {
     title: 'Landscaping Blog | Sunrise Landscape',
     description: 'Landscape design tips, planting guides, hardscaping ideas, and seasonal lawn care advice for Northern Virginia homeowners. Expert insights from Sunrise Landscape.',
     type: 'website',
+    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Landscaping Blog | Sunrise Landscape',
     description: 'Landscape design tips, planting guides, hardscaping ideas, and seasonal lawn care advice for Northern Virginia homeowners. Expert insights from Sunrise Landscape.',
     card: 'summary_large_image',
+    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
   },
 }
 

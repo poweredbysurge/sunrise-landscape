@@ -17,11 +17,13 @@ export const metadata: Metadata = {
     title: 'Commercial Landscape Maintenance | Sunrise Landscape',
     description: 'Commercial landscape maintenance in Virginia. Professional care for corporate campuses and commercial properties. Serving Northern Virginia since 1986.',
     type: 'website',
+    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Commercial Landscape Maintenance | Sunrise Landscape',
     description: 'Commercial landscape maintenance in Virginia. Professional care for corporate campuses and commercial properties. Serving Northern Virginia since 1986.',
     card: 'summary_large_image',
+    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
   },
 }
 
@@ -132,7 +134,7 @@ export default function CommercialLandscapePage() {
               {
                 num: '06',
                 title: 'Religious Institutions',
-                desc: 'Respectful, consistent care for churches, temples, and community centers.',
+                desc: 'Respectful, consistent care for churches, temples, and community centers. We plan and prioritize our schedule around worship times, so walkways, entrances, and parking areas are clear and accessible well before services begin.',
                 img: 'https://images.unsplash.com/photo-1762231602041-c15ebf28879a?auto=format&fit=crop&w=800&q=80',
                 alt: 'Stone church with red roof surrounded by flowering garden',
               },
@@ -160,7 +162,7 @@ export default function CommercialLandscapePage() {
             <Link href="/commercial-snow-removal-virginia" className="font-bold text-green underline hover:text-orange">
               commercial snow and ice management
             </Link>{' '}
-            page for RFP-ready unit pricing, or bundle it into one contract with grounds maintenance.
+            page for RFP-ready time and material pricing, or bundle it into one contract with grounds maintenance.
           </p>
         </div>
       </section>

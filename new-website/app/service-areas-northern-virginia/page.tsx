@@ -16,11 +16,13 @@ export const metadata: Metadata = {
     title: 'Landscape Services Across Northern Virginia | Sunrise Landscape',
     description: 'Sunrise Landscape serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. 40 years of landscape design, hardscape, and maintenance expertise.',
     type: 'website',
+    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Landscape Services Across Northern Virginia | Sunrise Landscape',
     description: 'Sunrise Landscape serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. 40 years of landscape design, hardscape, and maintenance expertise.',
     card: 'summary_large_image',
+    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
   },
 }
 
@@ -142,7 +144,7 @@ export default function ServiceAreasNVPage() {
                 For four decades, Sunrise Landscape has shaped outdoor spaces across Loudoun and Fairfax counties, from estate properties in McLean and Great Falls to family backyards in Ashburn, Reston, and Sterling. Our service area spans the breadth of Northern Virginia, covering more than a dozen communities where homeowners, HOAs, and commercial property managers count on us for landscape design, hardscape construction, lighting design, and year-round maintenance.
               </p>
               <p className="text-cream/80 leading-relaxed">
-                Northern Virginia&apos;s mid-Atlantic climate, clay-heavy soils, and four-season conditions create a unique landscape environment, one that rewards experience. Our team routes across the whole region daily, bringing local knowledge to every project, whether we&apos;re installing a drainage solution in a wooded Vienna lot, designing a pool surround for a Leesburg estate, or building a low-maintenance entrance landscape for a Chantilly office park.
+                Northern Virginia&apos;s mid-Atlantic climate, clay-heavy soils, and four-season conditions create a unique landscape environment, one that rewards experience. Headquartered in Sterling, our team brings local knowledge to every project, whether we&apos;re installing a drainage solution in a wooded Vienna lot, designing a pool surround for a Leesburg estate, or building a low-maintenance entrance landscape for a Chantilly office park.
               </p>
             </div>
 
@@ -162,15 +164,6 @@ export default function ServiceAreasNVPage() {
             </div>
 
           </div>
-        </div>
-      </section>
-
-      {/* Second H1 (matches Webflow heading tree) */}
-      <section className="bg-cream py-8">
-        <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
-          <h2 className="text-4xl lg:text-6xl text-green">
-            Landscape Lighting Services in Northern Virginia
-          </h2>
         </div>
       </section>
 
