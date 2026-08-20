@@ -37,6 +37,13 @@ All three are `LEAD_NOTIFY_TO` / `LEAD_NOTIFY_CC` overridable without a code cha
 The Vercel project is connected to this GitHub repo as of 2026-08-19, so a push
 to `main` builds and deploys production.
 
+**Root Directory must be `new-website`.** The Next.js app is not at the repo
+root; `build-kit` is. A build started at the root fails with "Couldn't find any
+`pages` or `app` directory". The setting lives in Vercel under Settings → Build
+and Deployment → Root Directory, there is no API for it, and it is not stored in
+this repo — so if the project is ever recreated or relinked, this is the first
+thing to set and the least obvious thing to remember.
+
 It was not always so. Every deployment before that date was made by hand from a
 local working tree (`vercel --prod`, showing up as `gitDirty: 1` in the
 deployment metadata), which meant pushing to `main` changed nothing in
