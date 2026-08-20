@@ -142,7 +142,9 @@ export async function POST(request: Request) {
   if (LEAD_REPLY_FROM && lead.email && EMAIL_RE.test(lead.email)) {
     const confirmation = renderLeadConfirmation(lead)
     try {
-      await resend.emails.send({
+      // Resend reports a rejected send by RETURNING an error rather than
+      // throwing, so a bare try/catch here would swallow it silently.
+      const { error } = await resend.emails.send({
         from: LEAD_REPLY_FROM,
         to: lead.email,
         replyTo: 'info@sunriselandscapeanddesign.com',
@@ -150,6 +152,7 @@ export async function POST(request: Request) {
         html: confirmation.html,
         text: confirmation.text,
       })
+      if (error) throw new Error(error.message)
     } catch (err) {
       console.error('[lead] confirmation send failed:', (err as Error).message)
     }
