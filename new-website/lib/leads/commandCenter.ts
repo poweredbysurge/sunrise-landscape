@@ -22,10 +22,25 @@ const DEFAULT_ENDPOINT = 'https://command.thesurgeagency.com/api/inbound/lead-fo
  * soft-nulled and tagged `enum-mismatch`, so the mapping stays conservative and
  * falls back to 'unknown' rather than inventing a value.
  */
+const SEARCH_ENGINE_HOSTS = [
+  'google.', 'bing.', 'duckduckgo.', 'yahoo.', 'ecosia.', 'brave.', 'startpage.', 'baidu.',
+]
+const SOCIAL_HOSTS = ['facebook.', 'instagram.', 'fb.', 'l.facebook', 'lm.facebook']
+
+function hostOf(url: string): string {
+  try {
+    return new URL(url).hostname.toLowerCase()
+  } catch {
+    return ''
+  }
+}
+
 function sourceDetail(ctx: LeadContext): string {
   const medium = ctx.utmMedium?.toLowerCase() ?? ''
   const source = ctx.utmSource?.toLowerCase() ?? ''
 
+  // Paid first: a click id is the most reliable signal there is, and it outranks
+  // whatever the referrer happens to say.
   if (ctx.gclid) return 'google_ads'
   if (ctx.fbclid) return 'facebook'
   if (medium === 'cpc' || medium === 'ppc' || medium === 'paid') {
@@ -35,8 +50,19 @@ function sourceDetail(ctx: LeadContext): string {
   if (medium === 'email') return 'email'
   if (medium === 'referral') return 'referral'
   if (source.includes('facebook') || source.includes('instagram')) return 'facebook'
-  if (!ctx.referrer && !ctx.utmSource) return 'direct'
-  return 'unknown'
+
+  // No campaign params. Fall back to reading the referrer, which is the common
+  // case for this site: most leads arrive from an unpaid search result and carry
+  // no UTMs at all. Without this branch every one of them landed on 'unknown',
+  // which reports as "we have no idea" for what is plainly organic search.
+  const host = hostOf(ctx.referrer ?? '')
+  if (!host) return 'direct'
+  if (SEARCH_ENGINE_HOSTS.some((h) => host.includes(h))) return 'organic'
+  if (SOCIAL_HOSTS.some((h) => host.includes(h))) return 'facebook'
+  // Same-site navigation is not a referral; the lead arrived some other way and
+  // clicked through internally before submitting.
+  if (host.includes('sunriselandscapeanddesign.com')) return 'direct'
+  return 'referral'
 }
 
 /** Drops empty values so the receiver's passthrough map stays clean. */
