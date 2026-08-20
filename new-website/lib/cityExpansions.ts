@@ -178,15 +178,15 @@ export const cityExpansions: Record<string, CityExpansion> = {
 
   'landscaping-sterling-va': {
     metaDescription:
-      'Sterling landscaping: design, planting, and outdoor living from a team that routes across Loudoun and Fairfax daily. Free consultation.',
-    knowledgeHeading: 'Every Lot Size, One Crew',
+      'Sterling landscaping from the company headquartered here: design, planting, and outdoor living with same-week site visits. Free consultation.',
+    knowledgeHeading: 'The Hometown Advantage',
     knowledgePara:
-      'Sterling sits inside our regular route territory, not at its edge, so crews are already in the neighborhood most weeks of the year. Sterling yards range from Sugarland Run quarter-acres to Lowes Island view lots, and the design work runs the same range: front-yard refreshes, full backyard living spaces, and the commercial corridor properties we maintain along Route 7.',
+      'Our shop sits on Beaver Meadow Road in Sterling, which changes what service looks like here. Site visits happen the same week you call, crews pass your street daily, and a warranty visit is a five-minute drive instead of a scheduling project. Sterling yards range from Sugarland Run quarter-acres to Lowes Island view lots, and the design work runs the same range: front-yard refreshes, full backyard living spaces, and the commercial corridor properties we maintain along Route 7.',
     extraNeighborhoods: 'Sugarland Run, Cascades, and Lowes Island.',
     faqs: [
       {
-        q: 'Does Sterling get the same attention as other towns?',
-        a: 'Yes. Sterling sits inside our regular route territory, so project supervision and follow-up visits run on the same schedule as anywhere else we work.',
+        q: 'Does being Sterling-based actually matter?',
+        a: 'It shows up in speed: same-week consultations, tight project supervision, and fast follow-ups. Your project manager is never more than minutes away.',
       },
       {
         q: 'Do you do smaller Sterling projects, like a front bed refresh?',
@@ -208,7 +208,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
     },
     image: {
       src: '/media/6808afe22b48076cc8e63cef/6821cb817cc578cffd2d3726_work-img-3 (1).webp',
-      alt: 'Outdoor stone fireplace and covered patio built by Sunrise Landscape in Sterling, VA',
+      alt: 'Outdoor stone fireplace and covered patio built by Sunrise Landscape, based in Sterling, VA',
       width: 620,
       height: 527,
     },
@@ -455,7 +455,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
       'Western Loudoun landscaping for rural and estate properties: long drives, meadow edges, and outdoor living from Purcellville to Aldie. Free consultation.',
     knowledgeHeading: 'Where the Suburbs End and Design Changes',
     knowledgePara:
-      'West of Leesburg the design brief changes. Purcellville, Hamilton, and Round Hill properties come with long driveways, real acreage, and views that deserve to stay views. The work is editing at scale: defining mown space versus meadow, planting windbreaks and orchard rows that suit a rural context, and building outdoor living areas that feel connected to the land rather than dropped onto it. Our crews cover this stretch of western Loudoun on a regular route, so distance never means neglect.',
+      'West of Leesburg the design brief changes. Purcellville, Hamilton, and Round Hill properties come with long driveways, real acreage, and views that deserve to stay views. The work is editing at scale: defining mown space versus meadow, planting windbreaks and orchard rows that suit a rural context, and building outdoor living areas that feel connected to the land rather than dropped onto it. Our crews run west from the Sterling shop weekly, so distance never means neglect.',
     extraNeighborhoods: 'Purcellville, Hamilton, Round Hill, and the Willowsford edges.',
     faqs: [
       {

@@ -11,16 +11,16 @@ import { cdnToLocal } from '@/lib/mediaUrl'
 
 export const metadata: Metadata = {
   title: 'Commercial Snow Removal in Northern Virginia | Sunrise Landscape',
-  description: 'Commercial snow and ice management for HOA, retail, and office properties in Northern Virginia. RFP-ready unit pricing, contracted response times. Request a proposal.',
+  description: 'Commercial snow and ice management for HOA, retail, and office properties in Northern Virginia. RFP-ready time and material pricing, contracted response times. Request a proposal.',
   openGraph: {
     title: 'Commercial Snow Removal in Northern Virginia | Sunrise Landscape',
-    description: 'Commercial snow and ice management for HOA, retail, and office properties in Northern Virginia. RFP-ready unit pricing, contracted response times. Request a proposal.',
+    description: 'Commercial snow and ice management for HOA, retail, and office properties in Northern Virginia. RFP-ready time and material pricing, contracted response times. Request a proposal.',
     type: 'website',
     images: [{ url: 'https://images.unsplash.com/photo-1670947913768-f0e6cd48f104?auto=format&fit=crop&w=1200&q=80' }],
   },
   twitter: {
     title: 'Commercial Snow Removal in Northern Virginia | Sunrise Landscape',
-    description: 'Commercial snow and ice management for HOA, retail, and office properties in Northern Virginia. RFP-ready unit pricing, contracted response times. Request a proposal.',
+    description: 'Commercial snow and ice management for HOA, retail, and office properties in Northern Virginia. RFP-ready time and material pricing, contracted response times. Request a proposal.',
     card: 'summary_large_image',
   },
   alternates: {
@@ -41,10 +41,10 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '4819 Sudley Rd',
-        addressLocality: 'Catharpin',
+        streetAddress: '43813 Beaver Meadow Rd #100',
+        addressLocality: 'Sterling',
         addressRegion: 'VA',
-        postalCode: '20143',
+        postalCode: '20166',
       },
       openingHoursSpecification: [
         {
@@ -83,9 +83,9 @@ export default function CommercialSnowRemovalPage() {
             Commercial Snow and Ice Management
           </h1>
           <p className="text-cream/80 max-w-2xl leading-relaxed lg:text-lg mb-8">
-            If your property is writing this winter&apos;s snow RFP now, you need response tiers, trigger depths, and
+            If your property is writing this winter&apos;s snow RFP now, you need response expectations, trigger depths, and
             pricing in writing before the first flake, not a verbal understanding from last year. We provide
-            commercial snow removal and ice management with unit pricing built to answer an RFP directly, for HOA
+            commercial snow removal and ice management billed on a time and material basis, for HOA
             common areas, retail centers, and office properties across Northern Virginia.
           </p>
           <Link href="/contact#form" className="btn-primary" style={{ background: '#ff6400', color: '#fff' }}>
@@ -103,8 +103,8 @@ export default function CommercialSnowRemovalPage() {
             </h2>
             <div className="space-y-4 text-lg leading-relaxed text-black/70">
               <p>
-                Every commercial snow and ice management contract defines trigger depth, response window, service
-                priority order for lots and walkways, and de-icing material and application rate. Plow routes are
+                Every commercial snow and ice management contract defines trigger depth, response window, scope of
+                work for lots and walkways, and de-icing material and application rate. Plow routes are
                 mapped to the property before the season starts, not improvised during the first storm.
               </p>
               <p>
@@ -137,14 +137,17 @@ export default function CommercialSnowRemovalPage() {
       <section className="bg-cream py-16 lg:py-24 px-5 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-green leading-tight mb-6">
-            RFP-Ready: We Respond With Unit Pricing
+            RFP-Ready: We Respond With Time and Material Pricing
           </h2>
           <p className="text-lg leading-relaxed text-black/70">
-            Send us your snow removal contract RFP with a site plan, square footage, and current trigger depth or
-            response requirements, and we return itemized unit pricing broken out by plowing, walkway clearing, and
-            de-icing application, built so your committee can compare bids on the same line items instead of a single
-            bottom-line number. Seasonal and per-event pricing structures are both available, with a written not-to-exceed
-            cap on per-event contracts so budget risk is defined before the season, not discovered after a heavy one.
+            Snow work in the DMV is a nightmare and every storm is different. Wet heavy snow, flash ice, multi-day
+            events, and overnight refreeze each demand a different response, which is why we do not customize our
+            snow contracts site by site. They are almost all the same, billed on a time and material basis, and
+            what actually separates one contractor from another here is response time, well-trained crews, and a
+            dedication to making sure our clients&apos; properties are accessible as soon as possible. Send us your
+            snow removal RFP with a site plan, square footage, and current trigger depth or response requirements,
+            and we will return level pricing or T&amp;M pricing your committee can compare against other bids on
+            equal footing.
           </p>
         </div>
       </section>

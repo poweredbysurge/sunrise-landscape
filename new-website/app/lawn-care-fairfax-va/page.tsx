@@ -36,11 +36,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How much does lawn care cost in Fairfax?',
-    a: 'Mowing visits on typical Fairfax lots run $55 to $85, and full-season programs are quoted by lot size and scope after a free site visit. Larger Fairfax Station properties get priced on acreage and access rather than a flat tier.',
+    a: 'Fairfax lawn care is priced based on the size, scope, and access of your property, quoted after a free site visit. Larger Fairfax Station properties get priced on acreage and access rather than a flat tier.',
   },
   {
     q: 'When should I aerate my lawn in Fairfax?',
-    a: 'September. Fairfax lawns are tall fescue on soil that compacts through summer, and fall aeration opens the root zone right when the grass enters its strongest growth phase. We pair it with overseeding in the same visit so the holes become seedbeds.',
+    a: 'When soil temperatures drop below 65 degrees, so the seed can germinate. Fairfax lawns are tall fescue on soil that compacts through summer, and fall aeration opens the root zone right when the grass enters its strongest growth phase. We pair it with overseeding in the same visit so the holes become seedbeds. Unlike most landscapers, we monitor soil temperatures to ensure aeration and overseeding happens when the seed has the best chance of germinating.',
   },
   {
     q: 'Does overseeding work in Fairfax Station?',
@@ -52,7 +52,7 @@ const faqs = [
   },
   {
     q: 'How far into Fairfax County do you go?',
-    a: 'Our core Fairfax coverage is Fairfax Station, the Burke area, and the Oakton borders, part of our regular route territory. If you are near those, call and we will confirm your address is on a route.',
+    a: 'Our core Fairfax coverage is Fairfax Station, the Burke area, and the Oakton borders. If you are near those, call and we will confirm your address is on a route.',
   },
 ]
 
@@ -69,10 +69,10 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '4819 Sudley Rd',
-        addressLocality: 'Catharpin',
+        streetAddress: '43813 Beaver Meadow Rd #100',
+        addressLocality: 'Sterling',
         addressRegion: 'VA',
-        postalCode: '20143',
+        postalCode: '20166',
       },
     },
   },
@@ -124,7 +124,7 @@ export default function LawnCareFairfaxPage() {
               'Seasonal fertilizer and pre-emergent applications',
               'Broadleaf and grassy weed treatment',
               'Core aeration and overseeding each fall',
-              'Topdressing thin and shaded areas',
+              'Topdressing',
               'Leaf cleanup and removal',
               'Grub control and fungicide treatments',
             ].map((s) => (
@@ -174,8 +174,8 @@ export default function LawnCareFairfaxPage() {
             thin. Tree roots win the water fight and the canopy takes the light. Our approach is
             honest about that: shade-blend overseeding every fall, higher mowing under the drip
             lines, and grass only where grass can win. One client, Jack in neighboring Oakton, put
-            it this way after we rebuilt his yard: the team was professional, efficient, and the
-            plain yard became the outdoor escape. That is the assignment here too.
+            it this way after we rebuilt his yard: <em>&quot;The team was professional, efficient, and the
+            plain yard became the outdoor escape.&quot;</em> That is the assignment here too.
           </p>
           <div className="relative aspect-[4/3] w-full mt-8">
             <Image

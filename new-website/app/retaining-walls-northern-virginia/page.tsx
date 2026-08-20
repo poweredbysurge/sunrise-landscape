@@ -11,16 +11,16 @@ import { cdnToLocal } from '@/lib/mediaUrl'
 
 export const metadata: Metadata = {
   title: 'Retaining Wall Contractors in Northern Virginia | Sunrise Landscape',
-  description: 'Retaining wall construction in Northern Virginia. Segmental block, natural stone, and timber-replacement walls, engineered and permitted. Free yard inspection.',
+  description: 'Retaining wall construction in Northern Virginia. Precast modular block, natural stone, and boulder walls, engineered and permitted. Free yard inspection.',
   openGraph: {
     title: 'Retaining Wall Contractors in Northern Virginia | Sunrise Landscape',
-    description: 'Retaining wall construction in Northern Virginia. Segmental block, natural stone, and timber-replacement walls, engineered and permitted. Free yard inspection.',
+    description: 'Retaining wall construction in Northern Virginia. Precast modular block, natural stone, and boulder walls, engineered and permitted. Free yard inspection.',
     type: 'website',
     images: [{ url: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7e23cadf15ecbd8b2f1b_folder-3-1.webp') }],
   },
   twitter: {
     title: 'Retaining Wall Contractors in Northern Virginia | Sunrise Landscape',
-    description: 'Retaining wall construction in Northern Virginia. Segmental block, natural stone, and timber-replacement walls, engineered and permitted. Free yard inspection.',
+    description: 'Retaining wall construction in Northern Virginia. Precast modular block, natural stone, and boulder walls, engineered and permitted. Free yard inspection.',
     card: 'summary_large_image',
   },
   alternates: {
@@ -41,10 +41,10 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '4819 Sudley Rd',
-        addressLocality: 'Catharpin',
+        streetAddress: '43813 Beaver Meadow Rd #100',
+        addressLocality: 'Sterling',
         addressRegion: 'VA',
-        postalCode: '20143',
+        postalCode: '20166',
       },
       openingHoursSpecification: [
         {
@@ -84,8 +84,8 @@ export default function RetainingWallsPage() {
           </h1>
           <p className="text-green/70 max-w-2xl leading-relaxed lg:text-lg">
             Northern Virginia&apos;s clay soil holds water and lets go of it slowly, which means a slope that looks
-            stable in June can slide in a wet March. A retaining wall built right does more than hold dirt in place.
-            It turns an unusable hillside into a level patio, a planting bed, or a second yard, and it does it for
+            stable in June can slide in a wet March. The entire purpose of a retaining wall is to create more usable
+            space on your property. It turns an unusable hillside into a level patio, a planting bed, or a second yard, and it does it for
             decades instead of one good season. Most of the calls we get start the same way: a lawn too steep to mow
             safely, a patio that floods every spring, or a slope that keeps losing mulch and topsoil every time it
             rains.
@@ -102,22 +102,31 @@ export default function RetainingWallsPage() {
             </h2>
             <div className="space-y-4 text-lg leading-relaxed text-black/70">
               <p>
-                Segmental block is the workhorse: interlocking concrete units that need no mortar, drain well on
-                their own, and handle curves easily. It is the right call for most residential slopes under six
-                feet, and the color and texture options have come a long way from the gray retaining block of the
-                1990s.
+                Walls are either retaining or free-standing. A retaining wall holds back soil to create more usable
+                space. A freestanding wall does not retain soil but serves another purpose: seating around a patio
+                or fire pit, or an accent in the landscape design that directs foot traffic or visual focus.
               </p>
-              <p>
-                Natural stone costs more and reads as a permanent, high-end feature. We dry-stack fieldstone for a
-                looser, cottage look or set it with mortar for a crisper line, depending on the height and the style
-                of the house it sits behind.
-              </p>
-              <p>
-                Timber-replacement work is common on older Northern Virginia properties where a railroad-tie wall
-                from the 1990s is rotting out or leaning. We pull the old timbers, dispose of them properly, and
-                rebuild in block or stone on a compacted gravel base, which usually outlasts the original by decades
-                and needs no future replacement.
-              </p>
+              <ol className="space-y-3">
+                <li>
+                  <span className="font-bold text-green">1. Veneer mortared to CMU block</span> &mdash; natural or
+                  manufactured stone veneer mortared to CMU block, reinforced with rebar. The most expensive option,
+                  and the most durable and versatile depending on the veneer stone selected.
+                </li>
+                <li>
+                  <span className="font-bold text-green">2. Boulder wall</span> &mdash; retains soil under the
+                  weight of the stones for a natural look. The foreman needs an artistic eye to find the best face
+                  of each stone and the best angle to set it.
+                </li>
+                <li>
+                  <span className="font-bold text-green">3. Dry stack fieldstone</span> &mdash; generally built on
+                  a gravel footer. Only suitable where the wall is not retaining a large volume of soil.
+                </li>
+                <li>
+                  <span className="font-bold text-green">4. Precast modular block</span> &mdash; also called
+                  interlocking modular block. This is distinct from segmental retaining wall block in both
+                  engineering and appearance, and it is the material we specify for modular block walls.
+                </li>
+              </ol>
             </div>
           </div>
           <div className="relative aspect-[4/5] overflow-hidden" style={{ borderRadius: '20px' }}>
@@ -143,24 +152,26 @@ export default function RetainingWallsPage() {
               <p className="text-orange text-sm font-bold tracking-widest mb-2">01</p>
               <h3 className="text-xl font-bold text-green mb-2">Site Visit and Soil Check</h3>
               <p className="text-black/70 leading-relaxed">
-                We measure the slope, check drainage patterns, and dig a test hole to see what the wall will actually
-                sit on. Clay behaves differently than the fill soil common in newer subdivisions.
+                We measure the slope and check drainage patterns. Clay behaves differently than the fill soil
+                common in newer subdivisions.
               </p>
             </div>
             <div>
               <p className="text-orange text-sm font-bold tracking-widest mb-2">02</p>
               <h3 className="text-xl font-bold text-green mb-2">Design and Permit</h3>
               <p className="text-black/70 leading-relaxed">
-                You get a fixed proposal with wall type, height, and drainage plan. If the height triggers engineering
-                or a permit, we handle both before crews ever break ground.
+                You get a fixed proposal with wall type, length, width, facia material, cap material, height, and
+                drainage plan. If the height triggers engineering or a permit, we handle both before crews ever
+                break ground.
               </p>
             </div>
             <div>
               <p className="text-orange text-sm font-bold tracking-widest mb-2">03</p>
               <h3 className="text-xl font-bold text-green mb-2">Build and Backfill</h3>
               <p className="text-black/70 leading-relaxed">
-                Excavation to stable subgrade, compacted base, drainage pipe and gravel behind the wall, then the
-                finished face. Most residential walls finish in one to two weeks depending on length.
+                Excavation to stable subgrade, compacted gravel or concrete footer, drainage pipe and gravel behind
+                the wall, then lighting rough-in, finished face, wall cap, and lighting installation. Most
+                residential walls finish in one to two weeks depending on length.
               </p>
             </div>
           </div>
@@ -193,19 +204,14 @@ export default function RetainingWallsPage() {
             Walls and Drainage, Designed Together
           </h2>
           <p className="text-lg leading-relaxed text-black/70">
-            A retaining wall without drainage behind it is a dam. Water builds up in the soil it is holding back,
-            and the wall eventually bulges, leans, or fails at the joints, usually within a few wet seasons rather
-            than decades. Every wall we build includes a gravel drainage zone and a perforated pipe that carries
-            water to daylight or a dry well, tied into the same grading plan as the rest of the property. That
-            matters more here than in sandier climates: Northern Virginia clay does not let water pass through it,
-            so a wall built without an escape route for that water is really just storing a future problem. If your
-            yard already has a wet-weather problem, standing water, a soggy low spot, or a basement that gets damp
-            after storms, our{' '}
-            <Link href="/drainage-solutions-northern-virginia" className="font-bold text-green underline hover:text-orange">
-              drainage team
-            </Link>{' '}
-            designs the wall and the water solution as one project instead of two separate bids from two separate
-            contractors who never talk to each other.
+            A retaining wall without drainage behind it is a dam. Water builds up in the soil it is holding back and
+            creates hydrostatic pressure, and that pressure is what makes a wall bulge, lean, fail at the joints, or
+            push efflorescence through the face of the stone, usually within a few wet seasons rather than decades.
+            Every wall we build includes a gravel drainage zone and a perforated pipe that carries water to
+            daylight or a dry well, tied into the same grading plan as the rest of the property. That matters more
+            here than in sandier climates: Northern Virginia clay does not let water pass through it, so a wall
+            built without an escape route for that water is really just storing hydrostatic pressure for a future
+            failure.
           </p>
         </div>
       </section>

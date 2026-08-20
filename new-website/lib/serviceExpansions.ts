@@ -234,8 +234,8 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
         a: 'Straightforward patios typically start in the low five figures. Add seat walls, fire features, or grade changes and projects scale from there. Every proposal is fixed after a design and site walk.',
       },
       {
-        q: 'Pavers, flagstone, or stamped concrete?',
-        a: 'On our clay, pavers and dry laid flagstone flex and can be reset. Stamped concrete is one big piece that shows every crack. We build all three but we will tell you honestly where each belongs.',
+        q: 'Pavers or flagstone?',
+        a: 'On our clay, pavers and dry laid flagstone flex and can be reset, which is why we build in both. We will tell you honestly where each belongs based on your budget and the look you want.',
       },
       {
         q: 'Do retaining walls need permits?',
@@ -408,7 +408,7 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
       },
       {
         q: 'Where are you actually located?',
-        a: '4819 Sudley Rd in Catharpin, VA, near the Loudoun and Prince William County line by Gainesville. The shop, the crews, and the plant staging yard all live there, with routes running across Loudoun and Fairfax daily.',
+        a: '43813 Beaver Meadow Rd #100 in Sterling, VA. The shop, the crews, and the plant staging yard all live there, fifteen minutes from most of our routes.',
       },
     ],
   },
@@ -419,7 +419,7 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
     faqs: [
       {
         q: 'What does a retaining wall cost in Northern Virginia?',
-        a: 'Segmental block walls typically start in the mid four figures for a modest run and scale with height, length, and drainage requirements. Natural stone and engineered walls over four feet cost more because of the added structural work. Every quote follows a site visit and soil check, not a phone estimate.',
+        a: 'Retaining wall pricing depends on the wall type, length, height, and drainage requirements. Natural stone and engineered walls over four feet cost more because of the added structural work. Every quote follows a site visit and soil check, not a phone estimate.',
       },
       {
         q: 'Do I need a permit for my retaining wall?',
@@ -427,7 +427,7 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
       },
       {
         q: 'How long does a retaining wall last?',
-        a: 'A properly built segmental or natural stone wall on a compacted gravel base and drainage lasts decades. Most failures we get called to fix trace back to a wall built without drainage behind it, not the materials themselves.',
+        a: 'A properly built precast modular block or natural stone wall on a compacted gravel base and drainage lasts decades. Most failures we get called to fix trace back to a wall built without drainage behind it, not the materials themselves.',
       },
       {
         q: 'What are the warning signs a retaining wall is failing?',
@@ -467,7 +467,7 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
     faqs: [
       {
         q: 'What does a full outdoor living project cost?',
-        a: 'A single-element project like a patio or fire pit typically starts in the low five figures. A full outdoor living space combining patio, fire, lighting, and water usually lands in the mid five figures to low six figures depending on size and materials. Every proposal follows a design and site walk, not a phone estimate.',
+        a: 'Outdoor living project pricing depends on the size, scope, and access of your property, and how many elements you combine into one build. A single-element project like a patio or fire pit costs less than a full space combining patio, fire, lighting, and water. Every proposal follows a design and site walk, not a phone estimate.',
       },
       {
         q: 'Can an outdoor living project be built in phases?',
@@ -491,7 +491,7 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
     faqs: [
       {
         q: 'What information do you need to respond to an RFP?',
-        a: 'Site plan or aerial with plow routes and priority areas marked, total paved and walked square footage, existing trigger depth requirements if any, and the response window your risk policy requires. We return itemized unit pricing, not a lump sum, so your committee can compare bids line by line.',
+        a: 'Site plan or aerial with plow routes and priority areas marked, total paved and walked square footage, existing trigger depth requirements if any, and the response window your risk policy requires. We return time and material pricing so your committee can compare bids line by line.',
       },
       {
         q: 'Seasonal contract or per-event pricing?',

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How much does lawn service cost in Herndon?',
-    a: 'Most Herndon properties are priced depending on lot size and access. Season-long programs bundle mowing with fertilization, aeration, and cleanups at a better rate than booking each separately. Quotes follow a free site visit.',
+    a: 'Most Herndon properties are priced based on the size, scope, and access of the property. Season-long programs bundle mowing with fertilization, aeration, and cleanups at a better rate than booking each separately. Quotes follow a free site visit.',
   },
   {
     q: 'My Herndon lawn stays soggy. Do I need a french drain?',
@@ -69,10 +69,10 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '4819 Sudley Rd',
-        addressLocality: 'Catharpin',
+        streetAddress: '43813 Beaver Meadow Rd #100',
+        addressLocality: 'Sterling',
         addressRegion: 'VA',
-        postalCode: '20143',
+        postalCode: '20166',
       },
     },
   },
@@ -177,7 +177,8 @@ export default function LawnCareHerndonPage() {
           </h2>
           <p className="text-lg leading-relaxed max-w-3xl">
             Ask why a Herndon lawn puddles, thins, or browns in patches and the answer is usually the
-            same word: clay. Water cannot soak in, so it stands in low spots and drowns roots. Then
+            same word: clay. Water cannot soak in, so it stands in low spots and drowns roots or
+            creates an environment for fungus to grow and feed on roots. Then
             summer bakes the surface into something close to brick. Core aeration every fall is the
             non-negotiable fix, and topdressing with compost slowly gives the soil structure it never
             had. Where water problems go past what turf care can solve, our drainage team steps in
@@ -201,8 +202,8 @@ export default function LawnCareHerndonPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl lg:text-4xl text-green leading-tight mb-4">Herndon Neighborhoods We Serve</h2>
           <p className="text-lg leading-relaxed max-w-3xl">
-            Downtown Herndon, Fox Mill, McNair, and the Dranesville area, all inside our regular
-            Loudoun and Fairfax route territory.
+            Downtown Herndon, Fox Mill, McNair, and the Dranesville area. Herndon sits inside our
+            tightest service radius.
           </p>
         </div>
       </section>

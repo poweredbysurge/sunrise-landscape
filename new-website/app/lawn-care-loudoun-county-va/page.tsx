@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: 'How do you price large or estate lots?',
-    a: 'By measured turf area and access, not guesswork. An acre of open lawn mows very differently than an acre broken up by fencing, orchards, and outbuildings. We walk the property once, then the quote holds for the season.',
+    a: 'By measured turf area and access, not guesswork. An acre of open lawn mows very differently than an acre broken up by fencing, orchards, and outbuildings. We walk the property, take measurements, then the quote holds for the season.',
   },
   {
     q: 'Will the same crew come every week?',
@@ -52,7 +52,7 @@ const faqs = [
   },
   {
     q: 'How fast can you start?',
-    a: 'Spring onboarding usually lands within one to two weeks. Midseason starts are often faster because routes are already running. Either way it begins with a free site visit and a soil test.',
+    a: 'Spring onboarding usually lands within one to two weeks. Midseason starts are often faster because routes are already running. Either way it begins with a free site visit and proposal.',
   },
 ]
 
@@ -73,10 +73,10 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '4819 Sudley Rd',
-        addressLocality: 'Catharpin',
+        streetAddress: '43813 Beaver Meadow Rd #100',
+        addressLocality: 'Sterling',
         addressRegion: 'VA',
-        postalCode: '20143',
+        postalCode: '20166',
       },
     },
   },
@@ -101,8 +101,8 @@ export default function LawnCareLoudounPage() {
           <h1 className="text-4xl lg:text-6xl font-bold leading-tight">Lawn Care in Loudoun County, VA</h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed">
             Loudoun runs from quarter-acre HOA lots in South Riding to multi-acre spreads past
-            Aldie, and the same lawn program does not fit both. One team routes crews across every
-            corner of the county, sized for the lot in front of them.
+            Aldie, and the same lawn program does not fit both. Our routes put every corner of the
+            county inside a real service radius, with crews sized for the lot in front of them.
           </p>
           <Link
             href="/contact#form"
@@ -203,8 +203,9 @@ export default function LawnCareLoudounPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl lg:text-4xl text-green leading-tight mb-4">Communities We Serve</h2>
           <p className="text-lg leading-relaxed max-w-3xl">
-            South Riding, Stone Ridge, Potomac Falls, and the western Loudoun estates, alongside our
-            dedicated Leesburg, Ashburn, and Aldie routes.
+            South Riding, Stone Ridge, Potomac Falls, Middleburg, Watson, Oatlands, Willowsford,
+            Broadlands, Brambleton, and the western Loudoun estates, alongside our dedicated
+            Leesburg, Ashburn, and Aldie routes.
           </p>
         </div>
       </section>

@@ -50,10 +50,10 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '4819 Sudley Rd',
-        addressLocality: 'Catharpin',
+        streetAddress: '43813 Beaver Meadow Rd #100',
+        addressLocality: 'Sterling',
         addressRegion: 'VA',
-        postalCode: '20143',
+        postalCode: '20166',
       },
       openingHoursSpecification: [
         {
@@ -81,7 +81,7 @@ export default function LawnCareNorthernVirginiaPage() {
               Lawn Care Across Northern Virginia
             </h1>
             <p className="text-green/70 leading-relaxed lg:text-lg">
-              One company handles lawn care across both Loudoun and Fairfax counties, from townhome lots in Ashburn to
+              One company handles lawn care across Loudoun, Fairfax, and Prince William counties, from townhome lots in Ashburn to
               multi-acre properties out past Aldie. Same crews, same standards, same phone number, whether your lawn
               needs a weekly mow or a full turf renovation. Pick your town below or keep reading for the program
               details. We have run lawn crews across Northern Virginia since 1986, long enough to know which fixes
@@ -112,8 +112,8 @@ export default function LawnCareNorthernVirginiaPage() {
             never gets aerated. Add heavy tree cover in older neighborhoods like Reston or Herndon, and a lawn is
             fighting shade and thin soil at the same time. Newer subdivisions bring the opposite problem: builder-grade
             fill soil with almost no organic matter, which is why a lawn in a five-year-old Ashburn or Chantilly
-            neighborhood often struggles more than one in an established one. Both problems point to the same fix,
-            aeration and overseeding on a schedule the lawn actually needs, not a generic calendar.
+            neighborhood often struggles more than one in an established one. Both problems point to the same fixes,
+            aeration and overseeding, and topdressing on a schedule the lawn actually needs, not a generic calendar.
           </p>
         </div>
       </section>
@@ -128,15 +128,27 @@ export default function LawnCareNorthernVirginiaPage() {
             <div className="space-y-4 text-lg leading-relaxed text-black/70">
               <p>
                 Tall fescue, the dominant lawn type here, wants a different rhythm than the warm-season grass most
-                national lawn brands are built around. Our season starts with a spring pre-emergent to head off crabgrass,
-                moves into weekly mowing and edging through the growing months, and peaks in September with core
-                aeration and overseeding, the single highest-return service for a Northern Virginia lawn.
+                national lawn brands are built around. Our services intertwine throughout the season rather than
+                running on a fixed chronological calendar:
               </p>
-              <p>
-                Grub control goes down before the beetles do their damage in July and August, not after the lawn is
-                already dying in patches. Fall cleanup and a winterizing feed close out the season so the lawn comes
-                out of dormancy strong instead of thin.
-              </p>
+              <ol className="space-y-3">
+                <li>
+                  <span className="font-bold text-green">1. Mowing / Edging</span> &mdash; offered only if the
+                  client also carries at least fertilizer treatments.
+                </li>
+                <li>
+                  <span className="font-bold text-green">2. Turf Care</span> &mdash; fertilizer, herbicide, and
+                  pesticide treatments. We will perform these services without doing the mowing.
+                </li>
+                <li>
+                  <span className="font-bold text-green">3. Aeration / Overseeding</span> &mdash; the most
+                  important service we offer.
+                </li>
+                <li>
+                  <span className="font-bold text-green">4. Topdressing</span> &mdash; optional, but highly
+                  recommended.
+                </li>
+              </ol>
             </div>
           </div>
           <div className="relative aspect-[4/5] overflow-hidden" style={{ borderRadius: '20px' }}>
@@ -185,14 +197,15 @@ export default function LawnCareNorthernVirginiaPage() {
             Lawn Treatments We Provide
           </h2>
           <p className="text-lg leading-relaxed text-black/70">
-            A soil test tells us what the lawn is actually short on before we spread anything on it. From there, the
-            best lawn treatment for a Northern Virginia yard usually combines a pre-emergent, a slow-release
-            fertilizer matched to our clay soil, targeted weed control for the broadleaf weeds that show up every
-            spring, and grub prevention timed to the beetle life cycle. Mosquito treatments run alongside the regular
-            program for properties near wooded lots or standing water. None of it is guesswork: every treatment plan
-            starts from what the soil test and the lawn itself are telling us, and adjusts through the season if the
-            weather or the turf changes course. A dry August calls for a different plan than a wet one, and a lawn
-            that greens up fast in April does not always need the same fall program as one that is still thin.
+            A soil test tells us what nutrients the lawn is lacking before we spread anything on it. From there, the
+            best lawn treatment for a Northern Virginia yard usually combines 4 fertilizer treatments, starting with
+            two applications of a slow release fertilizer combined with pre-emergent, matched to our clay soil,
+            targeted weed control for the broadleaf weeds that show up every spring, and grub prevention timed to
+            the beetle life cycle. We also offer a 3-treatment fungicide prevention program that prevents fungus
+            from feeding on the grass roots during the humid summer months. Mosquito treatments run alongside the
+            regular program for properties near wooded lots or standing water. None of it is guesswork: every
+            treatment plan starts from what the soil test and the lawn itself are telling us, and adjusts through
+            the season if the weather or the turf changes course.
           </p>
         </div>
       </section>
@@ -208,10 +221,12 @@ export default function LawnCareNorthernVirginiaPage() {
             different lawn crews on six different schedules. One contract with Sunrise covers every property under
             one set of standards, one point of contact, and one invoice, whether that portfolio spans Sterling
             townhomes and a Great Falls estate or a single HOA common area in South Riding. Homeowners get the same
-            benefit at a smaller scale: the crew that mows this week is the same crew that will show up in October
-            for aeration, working from the same property notes every time. That continuity is where a lot of lawn
+            benefit at a smaller scale. Separate, dedicated crews perform aeration and overseeding, and the most
+            difficult but most important part of these services is sequencing them correctly: mowing, then fall
+            fertilizer, then aeration and overseeding, then skipping one week of mowing so the turf has as much
+            time as possible to absorb the fertilizer before we mow again. That coordination is where a lot of lawn
             problems actually start. A different crew every visit means nobody notices the fungus patch forming near
-            the downspout or the grub damage spreading under a shade tree until it is already a bigger job.
+            the downspout or the grub damage spreading under a shade tree until it is already a bigger problem.
           </p>
         </div>
       </section>

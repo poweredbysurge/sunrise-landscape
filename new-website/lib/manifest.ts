@@ -101,34 +101,32 @@ const OPENING_HOURS_SPEC = [
   },
 ]
 
-// Office relocation (client confirmed 7/23/26): new street address, town,
-// and postal code for every LocalBusiness node. See build-kit/REPOINT-CHANGELOG.md.
-const NEW_ADDRESS = {
+const BUSINESS_ADDRESS = {
   '@type': 'PostalAddress',
-  streetAddress: '4819 Sudley Rd',
-  addressLocality: 'Catharpin',
+  streetAddress: '43813 Beaver Meadow Rd #100',
+  addressLocality: 'Sterling',
   addressRegion: 'VA',
-  postalCode: '20143',
+  postalCode: '20166',
   addressCountry: 'US',
 }
-const NEW_GEO = {
+const BUSINESS_GEO = {
   '@type': 'GeoCoordinates',
-  latitude: '38.85417',
-  longitude: '-77.57194',
+  latitude: '39.0068',
+  longitude: '-77.4286',
 }
 
 // July 2026 re-point (approved): every LocalBusiness node gets the brand's
-// display name, business hours, and the new office address/geo, patched in
-// code so the frozen MDX source files stay untouched. Applies inside
-// top-level nodes and any @graph.
+// display name, business hours, and the canonical office address/geo,
+// patched in code so the frozen MDX source files stay untouched. Applies
+// inside top-level nodes and any @graph.
 function patchLocalBusiness(node: Record<string, unknown>): Record<string, unknown> {
   if (node['@type'] !== 'LocalBusiness') return node
   return {
     ...node,
     name: 'Sunrise Landscape',
     openingHoursSpecification: node.openingHoursSpecification ?? OPENING_HOURS_SPEC,
-    ...(node.address ? { address: NEW_ADDRESS } : {}),
-    ...(node.geo ? { geo: NEW_GEO } : {}),
+    ...(node.address ? { address: BUSINESS_ADDRESS } : {}),
+    ...(node.geo ? { geo: BUSINESS_GEO } : {}),
   }
 }
 

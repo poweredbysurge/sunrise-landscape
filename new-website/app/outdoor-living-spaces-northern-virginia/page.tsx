@@ -33,13 +33,13 @@ const elements = [
     num: '01',
     title: 'Patios & Hardscaping',
     href: '/hardscape-northern-virginia',
-    body: 'The floor of the space. Pavers, flagstone, or stamped concrete set the layout everything else builds around, from a simple sitting patio to a full outdoor kitchen and dining area.',
+    body: 'The floor of the space. Pavers or natural stone set the layout everything else builds around, from a simple sitting patio to a full outdoor kitchen and dining area.',
   },
   {
     num: '02',
     title: 'Fire Features',
     href: '/patio-fire-pit-leesburg-ashburn-great-falls',
-    body: 'A fire pit or fireplace turns a patio into a destination people use after sunset and into the fall. We size and place it for the seating layout, not as an afterthought.',
+    body: 'A fire pit or fireplace turns a patio into a destination people use after sunset and into the fall. We size and place it for the seating layout, not as an afterthought or decorative feature.',
   },
   {
     num: '03',
@@ -51,13 +51,13 @@ const elements = [
     num: '04',
     title: 'Water Features',
     href: '/water-features-northern-virginia',
-    body: 'A pondless waterfall or fountain adds sound and motion without the maintenance of open water, and works in yards where a full pond would crowd the space.',
+    body: 'A pondless waterfall or fountain adds sound and motion without the maintenance of open water, and works in yards where a full pond would crowd the space. For properties with room for a Koi pond, we also specialize in designing and building filtration systems for Koi to thrive.',
   },
   {
     num: '05',
     title: 'Planting',
     href: '/landscape-planting-northern-virginia',
-    body: 'Planting is what softens the hardscape and gives the space privacy from neighbors. It is designed alongside the patio and lighting, not added after the construction crew leaves.',
+    body: 'Planting is what softens the hardscape and gives the space privacy from neighbors. It is designed alongside the patio and lighting, considering color, texture, bloom seasons, and surrounding elements for a cohesive landscape.',
   },
 ]
 
@@ -74,10 +74,10 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '4819 Sudley Rd',
-        addressLocality: 'Catharpin',
+        streetAddress: '43813 Beaver Meadow Rd #100',
+        addressLocality: 'Sterling',
         addressRegion: 'VA',
-        postalCode: '20143',
+        postalCode: '20166',
       },
       openingHoursSpecification: [
         {

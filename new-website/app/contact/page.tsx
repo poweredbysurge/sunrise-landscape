@@ -13,11 +13,13 @@ export const metadata: Metadata = {
     title: 'Contact Us | Sunrise Landscape',
     description: 'Contact Sunrise Landscape, serving Northern Virginia. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
     type: 'website',
+    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Contact Us | Sunrise Landscape',
     description: 'Contact Sunrise Landscape, serving Northern Virginia. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
     card: 'summary_large_image',
+    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
   },
 }
 
@@ -141,8 +143,8 @@ export default function ContactPage() {
               <div>
                 <p className="font-ui text-xs font-bold uppercase tracking-widest text-green/50 mb-1">Office</p>
                 <address className="text-base text-green not-italic leading-relaxed">
-                  4819 Sudley Rd<br />
-                  Catharpin, VA 20143
+                  43813 Beaver Meadow Rd #100<br />
+                  Sterling, VA 20166
                 </address>
               </div>
             </div>

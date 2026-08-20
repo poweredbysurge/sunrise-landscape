@@ -38,19 +38,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'What does a patio and fire pit project cost?',
-    a: 'Most of our paver patio projects with a built-in fire pit land between $15,000 and $45,000 depending on size, materials, and site work. Flagstone and complicated grades cost more. Every project starts with a free design consultation and a fixed proposal.',
+    a: 'Our patio projects with a built-in fire pit are priced by size, materials, and site work. We build several types of patio: natural stone, pavers, and pea gravel. Flagstone and complicated grades cost more. Every project starts with a free design consultation and a fixed proposal.',
   },
   {
     q: 'Do I need HOA approval for a fire pit in Ashburn?',
-    a: 'Almost always yes for permanent fire features. Brambleton, Broadlands, and most Ashburn HOAs require an application with a site plan, and we prepare those drawings as part of the design phase. Approval typically takes two to six weeks.',
+    a: 'Almost always yes for permanent fire features. Brambleton, Broadlands, and most Ashburn HOAs require an application with a site plan, and we prepare those drawings as part of the design phase. Approval timelines depend entirely on your HOA.',
   },
   {
-    q: 'Paver patio or stamped concrete on Northern Virginia clay?',
-    a: 'Pavers, and it is not close. Our clay heaves with freeze-thaw cycles, and a monolithic slab shows every crack. A properly compacted paver base flexes with the soil, and individual pavers can be lifted and reset if anything ever moves.',
+    q: 'Gravel base or concrete base for a patio on Northern Virginia clay?',
+    a: 'A concrete base is the more durable option, and it is our preference. Pavers and natural stone can both be laid on either a compacted gravel base or a concrete base. A gravel base is acceptable for many patios and walkways and costs slightly less. A concrete base costs more but holds its line far longer on our clay. Paver versus natural stone is mostly a style choice, but we prefer natural stone on concrete. In practice, a tighter budget usually means pavers on a gravel base, and a project meant to last forever means flagstone or bluestone on a concrete base. We do not build stamped concrete patios.',
   },
   {
     q: 'How long does a patio project take?',
-    a: 'Design and HOA approval run a few weeks. Construction itself is usually five to ten working days for a patio and fire pit, weather allowing. We schedule so crews finish one project before starting the next, not five sites at once.',
+    a: 'Design and HOA approval run a few weeks. The duration of construction itself depends on the size, material, and access of the patio. Adding a firepit or fireplace adds to the total duration. As a guide, a simple 300 SF flagstone patio laid on a concrete base should take between 3 and 5 days. We schedule so crews finish one project before starting the next, not five sites at once.',
   },
   {
     q: 'Can you build in winter?',
@@ -78,10 +78,10 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '4819 Sudley Rd',
-        addressLocality: 'Catharpin',
+        streetAddress: '43813 Beaver Meadow Rd #100',
+        addressLocality: 'Sterling',
         addressRegion: 'VA',
-        postalCode: '20143',
+        postalCode: '20166',
       },
     },
   },
@@ -128,10 +128,13 @@ export default function PatioFirePitPage() {
           </h2>
           <p className="text-lg leading-relaxed max-w-3xl">
             Northern Virginia clay moves. It swells in wet winters, shrinks in dry Augusts, and
-            heaves with every freeze. That is why our patios start with excavation to stable
-            subgrade, a compacted open-graded base, and drainage planned before a single paver is
-            placed. Paver versus flagstone is mostly a style call. The base underneath is why one
-            patio is flat in year ten and another is a wave pool in year three.
+            heaves with every freeze. That is why every patio starts below the surface: excavation
+            to stable subgrade, the right base for the build, and drainage planned before a single
+            stone is set. The most durable patio is one built on a concrete base, and that is our
+            preference. Pavers and natural stone can each be laid on a compacted gravel base or a
+            concrete base, and that choice &mdash; not the stone on top &mdash; is what decides
+            whether a patio is flat in year ten or a wave pool in year three. Paver versus natural
+            stone is mostly a style call; base is the structural one.
           </p>
         </div>
       </section>
@@ -179,10 +182,9 @@ export default function PatioFirePitPage() {
           </h2>
           <p className="text-lg leading-relaxed max-w-3xl">
             Reston brings townhome courtyards, association design standards, and tight machine
-            access, all of which we plan around rather than discover mid-dig. Sterling sits inside
-            our regular hardscape route, so scheduling runs on the same rhythm as our other core
-            towns. In both, the finish standard is the one our Great Falls estate clients expect,
-            because it is the same crew.
+            access, all of which we plan around rather than discover mid-dig. We are experts at
+            working in tight spaces, while delivering the same product as if we were working in a
+            wide-open Great Falls estate.
           </p>
         </div>
       </section>
@@ -193,8 +195,8 @@ export default function PatioFirePitPage() {
             Patio Contractors for Centreville
           </h2>
           <p className="text-lg leading-relaxed max-w-3xl">
-            Centreville lots slope. Sully Station and Virginia Run yards often drop several feet
-            back to front, which turns a flat-patio wish into a terracing project with retaining
+            Centreville has an undulating topography. Sully Station and Virginia Run yards often drop several feet
+            back to front, which turns a flat-patio dream into a terracing project with retaining
             walls, steps, and drainage doing quiet work behind the scenes. We design the whole
             grade, not just the flat part, so the patio does not become a dam.
           </p>

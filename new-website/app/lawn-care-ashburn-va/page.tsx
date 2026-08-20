@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How much does lawn care cost in Ashburn?',
-    a: 'Typical Ashburn full-season programs are quoted by lot size and scope. Smaller HOA lots often cost less than owners expect. We confirm pricing with a free on-site visit, not a satellite guess.',
+    a: 'Typical Ashburn full-season programs are priced based on the size, scope, and access of your property. Smaller HOA lots often cost less than owners expect. We confirm pricing with a free on-site visit, not a satellite guess.',
   },
   {
     q: 'Can you help if my HOA sent a lawn violation letter?',
@@ -49,6 +49,10 @@ const faqs = [
   {
     q: 'When is the right time to aerate in Ashburn?',
     a: 'Mid September through November. Ashburn soil is heavily compacted from construction, so annual core aeration matters more here than in older towns. Pairing it with overseeding thickens the lawn before winter and crowds out spring weeds.',
+  },
+  {
+    q: 'Do you service townhomes in One Loudoun and Brambleton?',
+    a: 'We do not typically service individual townhome lots — our pricing does not make sense for most townhouse homeowners. Where we do work in these neighborhoods is on HOA common areas, and we maintain those to the same standard as every other property on our routes.',
   },
 ]
 
@@ -65,10 +69,10 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '4819 Sudley Rd',
-        addressLocality: 'Catharpin',
+        streetAddress: '43813 Beaver Meadow Rd #100',
+        addressLocality: 'Sterling',
         addressRegion: 'VA',
-        postalCode: '20143',
+        postalCode: '20166',
       },
     },
   },

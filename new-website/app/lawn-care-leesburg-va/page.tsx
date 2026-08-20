@@ -36,11 +36,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How much does lawn care cost in Leesburg?',
-    a: 'Most Leesburg homes land between $55 and $85 per mowing visit, with full-season programs priced by lot size and services included. We quote after a free site visit, so the number reflects your actual lawn rather than a county average.',
+    a: 'Leesburg lawn care is priced based on the size, scope, and access of your property. We quote after a free site visit, so the number reflects your actual lawn rather than a county average.',
   },
   {
     q: 'When should I aerate and overseed in Leesburg?',
-    a: 'Mid September through November. Leesburg lawns are almost all tall fescue, and that window gives new seedlings warm soil, cool air, and a full fall to root before winter. Spring seeding here mostly feeds the crabgrass.',
+    a: 'Mid September through November. Leesburg lawns are almost all tall fescue, and that window gives new seedlings the soil temperature they need, cool air, and a full fall to root before winter. Spring seeding here mostly feeds the crabgrass.',
   },
   {
     q: 'Do you offer weed control in Leesburg?',
@@ -69,10 +69,10 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '4819 Sudley Rd',
-        addressLocality: 'Catharpin',
+        streetAddress: '43813 Beaver Meadow Rd #100',
+        addressLocality: 'Sterling',
         addressRegion: 'VA',
-        postalCode: '20143',
+        postalCode: '20166',
       },
     },
   },
@@ -178,13 +178,13 @@ export default function LawnCareLeesburgPage() {
       <section className="py-16 px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl lg:text-4xl text-green leading-tight mb-6">
-            Shade Lawns, Sod Lawns, and the September Window
+            Shade Lawns, Sod Lawns, and the Seed Germination Window
           </h2>
           <p className="text-lg leading-relaxed max-w-3xl">
             Two facts drive almost every lawn decision in Leesburg. First, mature tree canopy: turf
             under a 60-year-old maple gets a fraction of the sun it needs, so it wants shade-blend
             seed, higher mowing, and patience. Second, the calendar: tall fescue germinates best when
-            soil temp is below 65 degrees and nights turn cool, which in Loudoun County means mid September to
+            soil temperature is below 65 degrees and above 50 degrees and nights turn cool, which in Loudoun County means mid September to
             November. Aeration and overseeding in that window does more for a thin lawn than
             anything you can buy in a jug. We book those weeks out in August, every year.
           </p>
@@ -211,8 +211,8 @@ export default function LawnCareLeesburgPage() {
           <h2 className="text-3xl lg:text-4xl text-green leading-tight mb-4">Leesburg Neighborhoods We Serve</h2>
           <p className="text-lg leading-relaxed max-w-3xl">
             Lansdowne, River Creek, Red Cedar, Potomac Station, Exeter, and the streets in and around
-            downtown Leesburg. If you are just outside those, ask. Leesburg sits inside our regular
-            route territory.
+            downtown Leesburg. If you are just outside those, ask. Our crews are based fifteen
+            minutes away in Loudoun County.
           </p>
         </div>
       </section>

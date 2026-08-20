@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: 'What does your lawn weed control program include?',
-    a: 'Pre-emergent in early spring to block crabgrass, then targeted broadleaf and grassy weed treatments as the season shows us what is actually growing. New Aldie lawns lean weedy for their first few years, so the program front-loads prevention.',
+    a: 'Our fertilization package includes 2 early spring applications of fertilizer with pre-emergent to block crabgrass, then targeted broadleaf and grassy weed treatments as the season shows us what is actually growing. New Aldie lawns lean weedy for their first few years, so the program front-loads prevention.',
   },
   {
     q: 'My Willowsford sod is struggling. Is that normal?',
@@ -48,11 +48,11 @@ const faqs = [
   },
   {
     q: 'How much does lawn care cost in Aldie?',
-    a: 'Most Aldie visits price between $55 and $85 for mowing, with programs quoted on lot size, and mosquito or tick service added as a flat seasonal line. A free site walk sets the number, and it holds for the season.',
+    a: 'Aldie lawn care is priced based on the size, scope, and access of your property, with mosquito or tick service added as a flat seasonal line. A free site walk sets the number, and it holds for the season.',
   },
   {
     q: 'Are your yard treatments safe for dogs and kids?',
-    a: 'We follow label re-entry windows strictly: keep everyone off treated turf until it dries, typically under an hour. We flag every treated lawn, note it in your visit report, and time applications around your schedule when you tell us it matters.',
+    a: 'We follow label re-entry windows strictly: keep everyone off treated turf until it dries, typically under an hour. We flag every treated lawn, note it in your visit report, and keep detailed records of applications.',
   },
 ]
 
@@ -69,10 +69,10 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '4819 Sudley Rd',
-        addressLocality: 'Catharpin',
+        streetAddress: '43813 Beaver Meadow Rd #100',
+        addressLocality: 'Sterling',
         addressRegion: 'VA',
-        postalCode: '20143',
+        postalCode: '20166',
       },
     },
   },
@@ -196,8 +196,8 @@ export default function LawnCareAldiePage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl lg:text-4xl text-green leading-tight mb-4">Where We Work Around Aldie</h2>
           <p className="text-lg leading-relaxed max-w-3xl">
-            Willowsford, Lenah, and the Stone Ridge borders, with the rest of the county covered
-            through our Loudoun routes.
+            Willowsford, Lenah, Middleburg, South Riding, Watson, Oatlands, and the Stone Ridge
+            borders, with the rest of the county covered through our Loudoun routes.
           </p>
         </div>
       </section>
