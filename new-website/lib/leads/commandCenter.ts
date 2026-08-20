@@ -71,6 +71,14 @@ export async function forwardToCommandCenter(lead: Lead, ctx: LeadContext = {}):
     services: lead.services,
     referral_source: lead.referralSource,
 
+    // Graded by the landscaping intake classifier. Validated as closed enums by
+    // the receiver, which soft-nulls an unrecognised value rather than rejecting
+    // the lead, so a future option added here cannot cost a submission.
+    service_interest: lead.serviceInterest,
+    urgency: lead.urgency,
+    budget_band: lead.budgetBand,
+    property_type: lead.propertyType,
+
     form_id: 'inquiry',
     lead_key: ctx.leadKey,
     step: 1,

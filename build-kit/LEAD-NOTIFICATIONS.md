@@ -84,7 +84,32 @@ split `address_street` / `address_city` / `address_state` / `address_zip`, `note
 `services`, `referral_source`, `form_id: 'inquiry'`, a per-session `lead_key` for
 dedupe, and full UTM / gclid / fbclid attribution.
 
-The roofing enums (`reason`, `roof_age`, `urgency`, `signed_other_contractor`) are
+### Qualifying answers
+
+`InquiryForm` branches on the step-1 answer. Maintenance and Commercial keep the
+four-question flow; a **Project** lead gets a fifth screen asking timeline and
+budget, because that is the answer that decides whether a designer goes out and
+it is noise on a mowing enquiry. Both chips are skippable.
+
+Those answers post as closed-enum values, which the receiver validates and the
+landscaping classifier grades:
+
+| Field | Values |
+|---|---|
+| `service_interest` | `maintenance` · `design_build` · `commercial` · `not_sure` |
+| `urgency` | `right_away` · `within_month` · `1_3_months` · `planning` |
+| `budget_band` | `under_5k` · `5k_15k` · `15k_50k` · `50k_100k` · `over_100k` · `not_sure` |
+| `property_type` | `residential` · `hoa` · `commercial` · `municipal` |
+
+`urgency` reuses the receiver's existing enum rather than a landscaping-specific
+one that would mean the same thing in different words. `property_type` is only
+asserted (`commercial`) when the lead picked Commercial — guessing `residential`
+for everyone else would mislabel the HOA manager who picked Maintenance.
+
+The notification email renders these as words, never as raw enum values, and
+omits the rows entirely on a lead that was never asked.
+
+The roofing enums (`reason`, `roof_age`, `signed_other_contractor`) are
 deliberately **not** sent — they are HomeSource-vertical and would only produce
 `enum_mismatches` noise on every landscaping lead. A landscaping equivalent can be
 added to the receiver later if it is worth the taxonomy.

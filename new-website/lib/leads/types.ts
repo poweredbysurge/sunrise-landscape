@@ -18,6 +18,19 @@ export interface Lead {
   referralSource: string
   /** Free-text "anything else we should know?" from the final step. */
   notes: string
+
+  // ── Qualifying answers. Closed-enum values matching the Command Center
+  // lead-form contract, not display strings. Only Project leads are asked for
+  // urgency and budget, so these are blank on maintenance and commercial
+  // enquiries by design, never because something failed.
+  /** maintenance | design_build | commercial | not_sure */
+  serviceInterest: string
+  /** right_away | within_month | 1_3_months | planning */
+  urgency: string
+  /** under_5k | 5k_15k | 15k_50k | 50k_100k | over_100k | not_sure */
+  budgetBand: string
+  /** residential | hoa | commercial | municipal */
+  propertyType: string
 }
 
 /**

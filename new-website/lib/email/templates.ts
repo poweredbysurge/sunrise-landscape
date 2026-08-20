@@ -201,6 +201,32 @@ function spacer(px: number): string {
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
+/**
+ * Enum value to the words a person reads. The form posts closed-enum values so
+ * the Command Center classifier can grade them; nobody wants "50k_100k" in their
+ * inbox. An unmapped value falls back to the raw string rather than vanishing.
+ */
+const URGENCY_LABEL: Record<string, string> = {
+  right_away: 'As soon as possible',
+  within_month: 'Within a month',
+  '1_3_months': 'This season',
+  planning: 'Just planning ahead',
+}
+
+const BUDGET_LABEL: Record<string, string> = {
+  under_5k: 'Under $5,000',
+  '5k_15k': '$5,000 to $15,000',
+  '15k_50k': '$15,000 to $50,000',
+  '50k_100k': '$50,000 to $100,000',
+  over_100k: 'Over $100,000',
+  not_sure: 'Not sure yet',
+}
+
+function labelled(map: Record<string, string>, value: string): string {
+  if (!value) return ''
+  return map[value] ?? value
+}
+
 function fullName(lead: Lead): string {
   return [lead.firstName, lead.lastName].filter(Boolean).join(' ').trim()
 }
@@ -276,6 +302,14 @@ export function renderLeadNotification(
     ${sectionHeading('What they need')}
     ${detailRows([
       { label: 'Service interest', value: esc(lead.services) },
+      // Asked only on project enquiries, so these rows are omitted rather than
+      // shown as blanks on a maintenance lead.
+      ...(lead.urgency
+        ? [{ label: 'Timeline', value: esc(labelled(URGENCY_LABEL, lead.urgency)) }]
+        : []),
+      ...(lead.budgetBand
+        ? [{ label: 'Budget range', value: esc(labelled(BUDGET_LABEL, lead.budgetBand)) }]
+        : []),
       { label: 'Heard about us', value: esc(lead.referralSource) },
       { label: 'Notes', value: esc(lead.notes).replace(/\n/g, '<br />') },
     ])}
@@ -304,6 +338,8 @@ export function renderLeadNotification(
     '',
     'WHAT THEY NEED',
     `Service interest: ${lead.services || '-'}`,
+    ...(lead.urgency ? [`Timeline:         ${labelled(URGENCY_LABEL, lead.urgency)}`] : []),
+    ...(lead.budgetBand ? [`Budget range:     ${labelled(BUDGET_LABEL, lead.budgetBand)}`] : []),
     `Heard about us:   ${lead.referralSource || '-'}`,
     `Notes:            ${lead.notes || '-'}`,
     '',
@@ -371,6 +407,9 @@ export function renderLeadConfirmation(
     ${sectionHeading('What you sent us')}
     ${detailRows([
       { label: 'Service interest', value: esc(lead.services) },
+      ...(lead.urgency
+        ? [{ label: 'Timeline', value: esc(labelled(URGENCY_LABEL, lead.urgency)) }]
+        : []),
       { label: 'Property', value: esc(fullAddress(lead)).replace(/\n/g, '<br />') },
       { label: 'Notes', value: esc(lead.notes).replace(/\n/g, '<br />') },
     ])}

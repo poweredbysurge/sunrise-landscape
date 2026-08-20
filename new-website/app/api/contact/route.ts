@@ -81,6 +81,10 @@ export async function POST(request: Request) {
     services: str(body.services, 100),
     referralSource: str(body.referralSource, 100),
     notes: str(body.notes, 2000),
+    serviceInterest: str(body.serviceInterest, 40),
+    urgency: str(body.urgency, 40),
+    budgetBand: str(body.budgetBand, 40),
+    propertyType: str(body.propertyType, 40),
   }
 
   const ctxIn = (body.context ?? {}) as Record<string, unknown>

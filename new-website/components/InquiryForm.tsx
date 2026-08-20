@@ -12,6 +12,34 @@ const SERVICES: { key: ServiceKey; label: string; sub: string }[] = [
   { key: 'notsure', label: 'Not sure', sub: "We'll point you the right way" },
 ]
 
+// Command Center lead-form contract values. The site's own labels stay
+// human-facing; these are the closed-enum values the receiver validates against
+// (an unrecognised one is soft-nulled and tagged, never rejected).
+const SERVICE_INTEREST_ENUM: Record<ServiceKey, string> = {
+  maintenance: 'maintenance',
+  project: 'design_build',
+  commercial: 'commercial',
+  notsure: 'not_sure',
+}
+
+// Timeline reuses the receiver's existing `urgency` enum rather than inventing a
+// landscaping-specific one that would mean the same thing in different words.
+const TIMELINE_OPTIONS: { value: string; label: string }[] = [
+  { value: 'right_away', label: 'As soon as possible' },
+  { value: 'within_month', label: 'Within a month' },
+  { value: '1_3_months', label: 'This season' },
+  { value: 'planning', label: 'Just planning ahead' },
+]
+
+const BUDGET_OPTIONS: { value: string; label: string }[] = [
+  { value: 'under_5k', label: 'Under $5,000' },
+  { value: '5k_15k', label: '$5,000 to $15,000' },
+  { value: '15k_50k', label: '$15,000 to $50,000' },
+  { value: '50k_100k', label: '$50,000 to $100,000' },
+  { value: 'over_100k', label: 'Over $100,000' },
+  { value: 'not_sure', label: 'Not sure yet' },
+]
+
 const HEAR_OPTIONS = [
   'From an internet search',
   'Word of mouth',
@@ -52,6 +80,8 @@ export default function InquiryForm() {
   const [step, setStep] = useState(1)
   const [svc, setSvc] = useState<ServiceKey | null>(null)
   const [hear, setHear] = useState<string | null>(null)
+  const [timeline, setTimeline] = useState<string | null>(null)
+  const [budget, setBudget] = useState<string | null>(null)
   const [fields, setFields] = useState<FieldsState>(EMPTY_FIELDS)
   const [submitting, setSubmitting] = useState(false)
   const [submitError, setSubmitError] = useState<string | null>(null)
@@ -63,6 +93,17 @@ export default function InquiryForm() {
     captureLeadContext()
   }, [])
 
+  // Steps 1-3 are the same for everyone. A Project lead then gets a qualifying
+  // screen (timeline + budget) before the final one, so the flow is five
+  // questions for them and four for everyone else. Derived rather than
+  // hard-coded so the progress dots and the "Question X of Y" counter stay
+  // honest when the branch changes.
+  const isProject = svc === 'project'
+  const STEP_QUALIFY = 4
+  const stepFinal = isProject ? 5 : 4
+  const totalSteps = stepFinal
+  const stepDone = stepFinal + 1
+
   const update = (name: keyof FieldsState, value: string) =>
     setFields((prev) => ({ ...prev, [name]: value }))
 
@@ -70,6 +111,8 @@ export default function InquiryForm() {
     setStep(1)
     setSvc(null)
     setHear(null)
+    setTimeline(null)
+    setBudget(null)
     setFields(EMPTY_FIELDS)
     setSubmitError(null)
   }
@@ -96,11 +139,20 @@ export default function InquiryForm() {
           services: svc ? SERVICES.find((s) => s.key === svc)?.label : '',
           referralSource: hear,
           notes: fields.notes,
+          // Closed-enum values for Command Center intake classification. The
+          // human-readable `services` / `referralSource` above are what the
+          // notification emails render; these are what the classifier grades.
+          serviceInterest: svc ? SERVICE_INTEREST_ENUM[svc] : '',
+          urgency: timeline ?? '',
+          budgetBand: budget ?? '',
+          // Only asserted when they said so. Guessing 'residential' for everyone
+          // else would mislabel the HOA manager who picked Maintenance.
+          propertyType: svc === 'commercial' ? 'commercial' : '',
           context: readLeadContext(),
         }),
       })
       if (!res.ok) throw new Error('Failed to send')
-      setStep(5)
+      setStep(stepDone)
     } catch {
       setSubmitError('Something went wrong. Please call us at 703-544-0028.')
     } finally {
@@ -112,7 +164,7 @@ export default function InquiryForm() {
     <>
       <div className="flex items-center justify-between">
         <div className="flex gap-1.5">
-          {[1, 2, 3, 4].map((n) => (
+          {Array.from({ length: totalSteps }, (_, i) => i + 1).map((n) => (
             <div
               key={n}
               className="h-2 rounded-full transition-all duration-200"
@@ -124,7 +176,7 @@ export default function InquiryForm() {
           ))}
         </div>
         <div className="font-mono text-xs text-green/50">
-          {step <= 4 ? `Question ${step} of 4` : 'Done'}
+          {step <= totalSteps ? `Question ${step} of ${totalSteps}` : 'Done'}
         </div>
       </div>
 
@@ -254,7 +306,7 @@ export default function InquiryForm() {
           <button
             type="button"
             disabled={!fields.phone.trim() || !fields.email.trim()}
-            onClick={() => setStep(4)}
+            onClick={() => setStep(isProject ? STEP_QUALIFY : stepFinal)}
             className="bg-orange text-cream text-center font-bold text-sm tracking-wider uppercase py-4 hover:brightness-95 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
             style={{ borderRadius: 4 }}
           >
@@ -270,7 +322,82 @@ export default function InquiryForm() {
         </div>
       )}
 
-      {step === 4 && (
+      {isProject && step === STEP_QUALIFY && (
+        <div className="flex flex-col gap-4 flex-1">
+          <h2 className="text-green" style={{ fontSize: '2.1rem' }}>
+            About the project
+          </h2>
+          <p className="text-xs font-bold text-green/60">When would you like the work done?</p>
+          <div className="flex flex-wrap gap-2">
+            {TIMELINE_OPTIONS.map((opt) => {
+              const active = timeline === opt.value
+              return (
+                <button
+                  key={opt.value}
+                  type="button"
+                  onClick={() => setTimeline(active ? null : opt.value)}
+                  className="text-[13px] font-bold px-3.5 py-1.5 whitespace-nowrap transition-colors"
+                  style={{
+                    borderRadius: 999,
+                    border: active ? '1.5px solid #ff6400' : '1px solid rgba(30,53,38,0.3)',
+                    background: active ? '#ff6400' : 'transparent',
+                    color: active ? '#e7e6d2' : '#1e3526',
+                  }}
+                >
+                  {opt.label}
+                </button>
+              )
+            })}
+          </div>
+
+          <p className="text-xs font-bold text-green/60">
+            Do you have a budget range in mind?
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {BUDGET_OPTIONS.map((opt) => {
+              const active = budget === opt.value
+              return (
+                <button
+                  key={opt.value}
+                  type="button"
+                  onClick={() => setBudget(active ? null : opt.value)}
+                  className="text-[13px] font-bold px-3.5 py-1.5 whitespace-nowrap transition-colors"
+                  style={{
+                    borderRadius: 999,
+                    border: active ? '1.5px solid #ff6400' : '1px solid rgba(30,53,38,0.3)',
+                    background: active ? '#ff6400' : 'transparent',
+                    color: active ? '#e7e6d2' : '#1e3526',
+                  }}
+                >
+                  {opt.label}
+                </button>
+              )
+            })}
+          </div>
+          <p className="text-[12px] text-green/50 leading-relaxed">
+            A range helps us send the right person out. Skip either one if you are not sure.
+          </p>
+
+          <div className="flex-1" />
+          <button
+            type="button"
+            onClick={() => setStep(stepFinal)}
+            className="bg-orange text-cream text-center font-bold text-sm tracking-wider uppercase py-4 hover:brightness-95 transition-all"
+            style={{ borderRadius: 4 }}
+          >
+            Next &rarr;
+          </button>
+          <button
+            type="button"
+            onClick={() => setStep(3)}
+            className="text-xs text-green/50 underline text-center"
+          >
+            &larr; Back
+          </button>
+        </div>
+      )}
+
+      {step === stepFinal && (
         <div className="flex flex-col gap-4 flex-1">
           <h2 className="text-green" style={{ fontSize: '2.1rem' }}>
             Final Touches
@@ -317,7 +444,7 @@ export default function InquiryForm() {
           </button>
           <button
             type="button"
-            onClick={() => setStep(3)}
+            onClick={() => setStep(isProject ? STEP_QUALIFY : 3)}
             className="text-xs text-green/50 underline text-center"
           >
             &larr; Back
@@ -325,7 +452,7 @@ export default function InquiryForm() {
         </div>
       )}
 
-      {step === 5 && (
+      {step === stepDone && (
         <div className="flex flex-col gap-4 flex-1 items-center justify-center text-center">
           <div
             className="w-14 h-14 flex items-center justify-center text-cream text-2xl"
