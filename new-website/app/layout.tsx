@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import { SITE_URL } from '@/lib/siteUrl'
 import './globals.css'
 
 const aeonikNew = localFont({
@@ -38,7 +39,7 @@ const DEFAULT_OG_IMAGE = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.sunriselandscapeanddesign.com'),
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     images: [DEFAULT_OG_IMAGE],
   },

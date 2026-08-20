@@ -8,6 +8,7 @@ import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
 import ServiceExpansion from '@/components/ServiceExpansion'
 import { serviceExpansions } from '@/lib/serviceExpansions'
+import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
   title: 'Landscape Planting Northern Virginia | Sunrise Landscape',
@@ -16,13 +17,13 @@ export const metadata: Metadata = {
     title: 'Landscape Planting Northern Virginia | Sunrise Landscape',
     description: 'Expert landscape planting services in Northern Virginia. Beautiful plantings, trees, and shrubs for residential and commercial properties. Free consultation.',
     type: 'website',
-    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
+    images: [{ url: `${SITE_URL}/media/og/sunrise-landscape-og.png`, width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Landscape Planting Northern Virginia | Sunrise Landscape',
     description: 'Expert landscape planting services in Northern Virginia. Beautiful plantings, trees, and shrubs for residential and commercial properties. Free consultation.',
     card: 'summary_large_image',
-    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
+    images: [`${SITE_URL}/media/og/sunrise-landscape-og.png`],
   },
 }
 

@@ -10,6 +10,7 @@ import ServiceExpansion from '@/components/ServiceExpansion'
 import { serviceExpansions } from '@/lib/serviceExpansions'
 import HardscapeHero from '@/components/HardscapeHero'
 import HardscapeCarousel from '@/components/HardscapeCarousel'
+import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
   title: 'Hardscape Contractor Northern Virginia | Sunrise Landscape',
@@ -18,13 +19,13 @@ export const metadata: Metadata = {
     title: 'Hardscape Contractor Northern Virginia | Sunrise Landscape',
     description: 'Professional hardscape contractor serving Northern Virginia. Custom patios, walkways, and stonework built to last. Get your free consultation today.',
     type: 'website',
-    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
+    images: [{ url: `${SITE_URL}/media/og/sunrise-landscape-og.png`, width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Hardscape Contractor Northern Virginia | Sunrise Landscape',
     description: 'Professional hardscape contractor serving Northern Virginia. Custom patios, walkways, and stonework built to last. Get your free consultation today.',
     card: 'summary_large_image',
-    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
+    images: [`${SITE_URL}/media/og/sunrise-landscape-og.png`],
   },
 }
 

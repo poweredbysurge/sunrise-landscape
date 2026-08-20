@@ -4,6 +4,7 @@ import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
+import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
   title: 'Terms of Service | Sunrise Landscape',
@@ -12,13 +13,13 @@ export const metadata: Metadata = {
     title: 'Terms of Service | Sunrise Landscape',
     description: 'Terms of service for Sunrise Landscape. Review our service agreements, payment policies, and client responsibilities for landscaping services in Northern Virginia.',
     type: 'website',
-    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
+    images: [{ url: `${SITE_URL}/media/og/sunrise-landscape-og.png`, width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Terms of Service | Sunrise Landscape',
     description: 'Terms of service for Sunrise Landscape. Review our service agreements, payment policies, and client responsibilities for landscaping services in Northern Virginia.',
     card: 'summary_large_image',
-    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
+    images: [`${SITE_URL}/media/og/sunrise-landscape-og.png`],
   },
 }
 

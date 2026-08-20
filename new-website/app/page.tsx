@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
 import { getMdxJsonLd } from '@/lib/manifest'
 import HomeVersionB from '@/components/home/HomeVersionB'
+import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
   title: 'Landscaping Company in Northern Virginia | Sunrise Landscape',
@@ -10,13 +11,13 @@ export const metadata: Metadata = {
     title: 'Landscaping Company in Northern Virginia | Sunrise Landscape',
     description: 'Full-service landscaping in Northern Virginia: year-round maintenance, lawn care, patios and outdoor living. Family owned since 1986. Free yard inspection.',
     type: 'website',
-    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
+    images: [{ url: `${SITE_URL}/media/og/sunrise-landscape-og.png`, width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Landscaping Company in Northern Virginia | Sunrise Landscape',
     description: 'Full-service landscaping in Northern Virginia: year-round maintenance, lawn care, patios and outdoor living. Family owned since 1986. Free yard inspection.',
     card: 'summary_large_image',
-    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
+    images: [`${SITE_URL}/media/og/sunrise-landscape-og.png`],
   },
 }
 

@@ -6,6 +6,7 @@ import ContactFormSection from '@/components/ContactFormSection'
 import CommunityGivingSection from '@/components/CommunityGivingSection'
 import DesignApproachSection from '@/components/DesignApproachSection'
 import AboutHero from '@/components/AboutHero'
+import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
   title: 'About Us | Sunrise Landscape',
@@ -14,13 +15,13 @@ export const metadata: Metadata = {
     title: 'About Us | Sunrise Landscape',
     description: "Learn about Sunrise Landscape, Northern Virginia's trusted landscape experts since 1986. Serving 15+ communities with excellence and integrity.",
     type: 'website',
-    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
+    images: [{ url: `${SITE_URL}/media/og/sunrise-landscape-og.png`, width: 1200, height: 630 }],
   },
   twitter: {
     title: 'About Us | Sunrise Landscape',
     description: "Learn about Sunrise Landscape, Northern Virginia's trusted landscape experts since 1986. Serving 15+ communities with excellence and integrity.",
     card: 'summary_large_image',
-    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
+    images: [`${SITE_URL}/media/og/sunrise-landscape-og.png`],
   },
 }
 

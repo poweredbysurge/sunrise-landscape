@@ -5,6 +5,7 @@ import ContactHero from '@/components/ContactHero'
 import LeafletMapClient from '@/components/LeafletMapClient'
 import FaqAccordion from '@/components/FaqAccordion'
 import { getMdxJsonLd } from '@/lib/manifest'
+import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
   title: 'Contact Us | Sunrise Landscape',
@@ -13,13 +14,13 @@ export const metadata: Metadata = {
     title: 'Contact Us | Sunrise Landscape',
     description: 'Contact Sunrise Landscape, serving Northern Virginia. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
     type: 'website',
-    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
+    images: [{ url: `${SITE_URL}/media/og/sunrise-landscape-og.png`, width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Contact Us | Sunrise Landscape',
     description: 'Contact Sunrise Landscape, serving Northern Virginia. Call 703-544-0028 or request a free consultation for your landscape project in Northern Virginia.',
     card: 'summary_large_image',
-    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
+    images: [`${SITE_URL}/media/og/sunrise-landscape-og.png`],
   },
 }
 

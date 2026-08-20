@@ -4,6 +4,7 @@ import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
+import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Sunrise Landscape',
@@ -12,13 +13,13 @@ export const metadata: Metadata = {
     title: 'Privacy Policy | Sunrise Landscape',
     description: 'Privacy policy for Sunrise Landscape. Learn how we collect, use, and protect your personal information when you visit our website or request our services.',
     type: 'website',
-    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
+    images: [{ url: `${SITE_URL}/media/og/sunrise-landscape-og.png`, width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Privacy Policy | Sunrise Landscape',
     description: 'Privacy policy for Sunrise Landscape. Learn how we collect, use, and protect your personal information when you visit our website or request our services.',
     card: 'summary_large_image',
-    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
+    images: [`${SITE_URL}/media/og/sunrise-landscape-og.png`],
   },
 }
 

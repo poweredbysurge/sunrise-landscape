@@ -7,6 +7,7 @@ import CareerAccordion from '@/components/CareerAccordion'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
+import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
   title: 'Landscaping Careers Northern Virginia | Sunrise Landscape',
@@ -15,13 +16,13 @@ export const metadata: Metadata = {
     title: 'Landscaping Careers Northern Virginia | Sunrise Landscape',
     description: 'Join Sunrise Landscape in Northern Virginia. We\'re hiring skilled landscape professionals for design, installation, and maintenance. Apply today.',
     type: 'website',
-    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
+    images: [{ url: `${SITE_URL}/media/og/sunrise-landscape-og.png`, width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Landscaping Careers Northern Virginia | Sunrise Landscape',
     description: 'Join Sunrise Landscape in Northern Virginia. We\'re hiring skilled landscape professionals for design, installation, and maintenance. Apply today.',
     card: 'summary_large_image',
-    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
+    images: [`${SITE_URL}/media/og/sunrise-landscape-og.png`],
   },
 }
 

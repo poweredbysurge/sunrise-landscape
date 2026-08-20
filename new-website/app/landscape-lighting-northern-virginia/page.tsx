@@ -9,6 +9,7 @@ import ContactFormSection from '@/components/ContactFormSection'
 import ServiceExpansion from '@/components/ServiceExpansion'
 import { serviceExpansions } from '@/lib/serviceExpansions'
 import ServiceCard from '@/components/ServiceCard'
+import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
   title: 'Landscape Lighting Northern Virginia | Sunrise Landscape',
@@ -17,13 +18,13 @@ export const metadata: Metadata = {
     title: 'Landscape Lighting Northern Virginia | Sunrise Landscape',
     description: 'Transform your property with professional landscape lighting in Northern Virginia. Expert design and installation for homes and businesses.',
     type: 'website',
-    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png', width: 1200, height: 630 }],
+    images: [{ url: `${SITE_URL}/media/og/sunrise-landscape-og.png`, width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Landscape Lighting Northern Virginia | Sunrise Landscape',
     description: 'Transform your property with professional landscape lighting in Northern Virginia. Expert design and installation for homes and businesses.',
     card: 'summary_large_image',
-    images: ['https://www.sunriselandscapeanddesign.com/media/og/sunrise-landscape-og.png'],
+    images: [`${SITE_URL}/media/og/sunrise-landscape-og.png`],
   },
 }
 
