@@ -9,6 +9,7 @@ import AboutHero from '@/components/AboutHero'
 import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about-us' },
   title: 'About Us | Sunrise Landscape',
   description: "Learn about Sunrise Landscape, Northern Virginia's trusted landscape experts since 1986. Serving 15+ communities with excellence and integrity.",
   openGraph: {

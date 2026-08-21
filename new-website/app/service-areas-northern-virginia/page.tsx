@@ -11,6 +11,7 @@ import { serviceExpansions } from '@/lib/serviceExpansions'
 import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/service-areas-northern-virginia' },
   title: 'Landscape Services Across Northern Virginia | Sunrise Landscape',
   description: 'Sunrise Landscape serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. 40 years of landscape design, hardscape, and maintenance expertise.',
   openGraph: {

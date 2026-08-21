@@ -28,6 +28,7 @@ export async function generateMetadata({
       ? `${post.title} | Sunrise Landscape`
       : 'Sunrise Landscape',
     description: post?.excerpt || 'Read expert landscaping advice from Sunrise Landscape.',
+    alternates: { canonical: `/blogs/${slug}` },
     openGraph: {
       title: post?.title,
       description: post?.excerpt,

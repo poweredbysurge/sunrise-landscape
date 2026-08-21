@@ -11,6 +11,7 @@ import { serviceExpansions } from '@/lib/serviceExpansions'
 import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/landscape-planting-northern-virginia' },
   title: 'Landscape Planting Northern Virginia | Sunrise Landscape',
   description: 'Expert landscape planting services in Northern Virginia. Beautiful plantings, trees, and shrubs for residential and commercial properties. Free consultation.',
   openGraph: {

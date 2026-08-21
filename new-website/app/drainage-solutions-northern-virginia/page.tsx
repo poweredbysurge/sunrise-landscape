@@ -11,6 +11,7 @@ import { serviceExpansions } from '@/lib/serviceExpansions'
 import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/drainage-solutions-northern-virginia' },
   title: 'Drainage Solutions Northern Virginia | Sunrise Landscape',
   description: 'Professional drainage solutions in Northern Virginia. Protect your property from water damage with expert erosion control and drainage systems.',
   openGraph: {

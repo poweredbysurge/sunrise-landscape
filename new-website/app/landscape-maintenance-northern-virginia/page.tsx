@@ -12,6 +12,7 @@ import { serviceExpansions } from '@/lib/serviceExpansions'
 import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/landscape-maintenance-northern-virginia' },
   title: 'Landscape Maintenance Services in Northern Virginia | Sunrise Landscape',
   description: 'Year-round landscape maintenance programs in Northern Virginia: mowing, fertilization, garden care, and seasonal cleanups for residential and commercial properties.',
   openGraph: {

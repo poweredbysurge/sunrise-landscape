@@ -12,6 +12,7 @@ import ServiceCard from '@/components/ServiceCard'
 import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/landscape-lighting-northern-virginia' },
   title: 'Landscape Lighting Northern Virginia | Sunrise Landscape',
   description: 'Transform your property with professional landscape lighting in Northern Virginia. Expert design and installation for homes and businesses.',
   openGraph: {

@@ -7,6 +7,7 @@ import { getMdxJsonLd } from '@/lib/manifest'
 import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/terms-of-service' },
   title: 'Terms of Service | Sunrise Landscape',
   description: 'Terms of service for Sunrise Landscape. Review our service agreements, payment policies, and client responsibilities for landscaping services in Northern Virginia.',
   openGraph: {

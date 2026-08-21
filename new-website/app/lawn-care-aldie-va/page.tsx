@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: 'What does your lawn weed control program include?',
-    a: 'Our fertilization package includes 2 early spring applications of fertilizer with pre-emergent to block crabgrass, then targeted broadleaf and grassy weed treatments as the season shows us what is actually growing. New Aldie lawns lean weedy for their first few years, so the program front-loads prevention.',
+    a: 'Our fertilization package includes 2 early spring applications of fertilizer with pre-emergent to prevent weeds from germinating, then targeted broadleaf and grassy weed treatments as the season shows us what is actually growing. New Aldie lawns lean weedy for their first few years, so the program front-loads prevention.',
   },
   {
     q: 'My Willowsford sod is struggling. Is that normal?',

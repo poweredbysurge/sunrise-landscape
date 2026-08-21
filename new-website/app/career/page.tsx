@@ -10,6 +10,7 @@ import ContactFormSection from '@/components/ContactFormSection'
 import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/career' },
   title: 'Landscaping Careers Northern Virginia | Sunrise Landscape',
   description: 'Join Sunrise Landscape in Northern Virginia. We\'re hiring skilled landscape professionals for design, installation, and maintenance. Apply today.',
   openGraph: {

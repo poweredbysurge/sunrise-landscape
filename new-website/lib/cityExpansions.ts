@@ -6,6 +6,7 @@
 export type CityFaq = { q: string; a: string }
 
 export interface CityExpansion {
+  title: string
   metaDescription: string
   knowledgeHeading: string
   knowledgePara: string
@@ -19,6 +20,7 @@ export interface CityExpansion {
 
 export const cityExpansions: Record<string, CityExpansion> = {
   'landscaping-leesburg-va': {
+    title: 'Landscaping in Leesburg, VA | Sunrise Landscape',
     metaDescription:
       'Leesburg landscaping from design through build: patios, plantings, water features. 40 years in Loudoun County. Get a free design consultation.',
     knowledgeHeading: 'Designing for Leesburg Lots, Old and New',
@@ -59,6 +61,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
   },
 
   'landscaping-ashburn-va': {
+    title: 'Landscaping in Ashburn, VA | Sunrise Landscape',
     metaDescription:
       'Ashburn landscaping for new-build lots: privacy planting, patios, full-yard design. Trusted across Loudoun for 40 years. Free design consultation.',
     knowledgeHeading: 'The Blank-Slate Backyard Problem',
@@ -99,6 +102,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
   },
 
   'landscaping-herndon-va': {
+    title: 'Landscaping in Herndon, VA | Sunrise Landscape',
     metaDescription:
       'Herndon landscaping that solves water first: erosion control, plantings, and outdoor living built for clay soil. Free design consultation.',
     knowledgeHeading: 'Design That Starts With Where Water Goes',
@@ -139,6 +143,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
   },
 
   'landscaping-reston-va': {
+    title: 'Landscaping in Reston, VA | Sunrise Landscape',
     metaDescription:
       'Reston landscaping designed to RA standards: wooded-lot plantings, courtyards, and outdoor living. 40 years in Northern Virginia. Free consultation.',
     knowledgeHeading: 'Working With Reston Association Standards',
@@ -177,6 +182,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
   },
 
   'landscaping-sterling-va': {
+    title: 'Landscaping in Sterling, VA | Sunrise Landscape',
     metaDescription:
       'Sterling landscaping from the company headquartered here: design, planting, and outdoor living with same-week site visits. Free consultation.',
     knowledgeHeading: 'The Hometown Advantage',
@@ -215,6 +221,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
   },
 
   'landscaping-chantilly-va': {
+    title: 'Landscaping in Chantilly, VA | Sunrise Landscape',
     metaDescription:
       'Chantilly landscaping for homes and commercial properties: design, planting, patios, and maintenance from one local team. Free consultation and quote.',
     knowledgeHeading: 'What Landscaping Costs in Chantilly',
@@ -249,6 +256,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
   },
 
   'landscaping-mclean-va': {
+    title: 'Landscaping in McLean, VA | Sunrise Landscape',
     metaDescription:
       'McLean landscaping at estate scale: mature tree preservation, formal plantings, and outdoor living designed to last. Free design consultation.',
     knowledgeHeading: 'Estate Work Around Trees Worth Protecting',
@@ -287,6 +295,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
   },
 
   'landscaping-centreville-va': {
+    title: 'Landscaping in Centreville, VA | Sunrise Landscape',
     metaDescription:
       'Centreville landscaping built for sloped lots: terracing, retaining walls, plantings, and patios from one design-build team. Free consultation.',
     knowledgeHeading: 'Terracing the Centreville Slope',
@@ -330,6 +339,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
   },
 
   'landscaping-great-falls-va': {
+    title: 'Landscaping in Great Falls, VA | Sunrise Landscape',
     metaDescription:
       'Great Falls landscaping for acre-plus properties: estate plantings, pools and hardscape surrounds, deer-resistant design. Free consultation.',
     knowledgeHeading: 'Acreage, Deer, and Design That Handles Both',
@@ -370,6 +380,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
   },
 
   'landscaping-oakton-va': {
+    title: 'Landscaping in Oakton, VA | Sunrise Landscape',
     metaDescription:
       'Oakton landscaping for wooded lots: grand entrances, driveway plantings, and shade gardens designed and built by one team. Free consultation.',
     knowledgeHeading: 'Entrances That Earn the Driveway',
@@ -413,6 +424,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
   },
 
   'landscaping-vienna-va': {
+    title: 'Landscaping in Vienna, VA | Sunrise Landscape',
     metaDescription:
       'Vienna landscaping with four-season design: town tree rules handled, gardens in full bloom, patios and plantings by one team. Free consultation.',
     knowledgeHeading: 'Full-Bloom Design Inside Town Rules',
@@ -451,6 +463,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
   },
 
   'landscaping-western-loudoun-va': {
+    title: 'Landscaping in Western Loudoun, VA | Sunrise Landscape',
     metaDescription:
       'Western Loudoun landscaping for rural and estate properties: long drives, meadow edges, and outdoor living from Purcellville to Aldie. Free consultation.',
     knowledgeHeading: 'Where the Suburbs End and Design Changes',

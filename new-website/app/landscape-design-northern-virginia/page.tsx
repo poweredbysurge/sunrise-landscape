@@ -12,6 +12,7 @@ import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/landscape-design-northern-virginia' },
   title: 'Landscape Design Northern Virginia | Sunrise Landscape',
   description: 'Expert landscape design services in Northern Virginia. Transform your outdoor space with custom designs from our experienced team. Free consultation available.',
   openGraph: {

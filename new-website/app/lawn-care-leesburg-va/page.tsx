@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: 'Do you offer weed control in Leesburg?',
-    a: 'Yes. Our lawn weed control services in Leesburg run through the season: pre-emergent in early spring to stop crabgrass, then targeted broadleaf and grassy weed treatments as needed. We treat what is actually growing, not a fixed spray calendar.',
+    a: 'Yes. Our lawn weed control services in Leesburg run through the season: pre-emergent in early spring to prevent weeds from germinating, then targeted broadleaf and grassy weed treatments as needed. We treat what is actually growing, not a fixed spray calendar.',
   },
   {
     q: 'Do you service lawns near downtown Leesburg and the historic district?',
@@ -187,11 +187,6 @@ export default function LawnCareLeesburgPage() {
             soil temperature is below 65 degrees and above 50 degrees and nights turn cool, which in Loudoun County means mid September to
             November. Aeration and overseeding in that window does more for a thin lawn than
             anything you can buy in a jug. We book those weeks out in August, every year.
-          </p>
-          <p className="text-lg leading-relaxed max-w-3xl mt-4">
-            This is the same team behind our Leesburg water feature and landscape work, including the
-            lakefront project our design portfolio features. If your plans go past the lawn, the crew
-            that mows it can bring in the team that builds.
           </p>
           <div className="relative aspect-[4/3] w-full mt-8">
             <Image

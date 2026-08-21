@@ -9,6 +9,7 @@ import { BLOGS } from '@/lib/blogData'
 import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog' },
   title: 'Landscaping Blog | Sunrise Landscape',
   description: 'Landscape design tips, planting guides, hardscaping ideas, and seasonal lawn care advice for Northern Virginia homeowners. Expert insights from Sunrise Landscape.',
   openGraph: {

@@ -13,6 +13,7 @@ import ServiceCard from '@/components/ServiceCard'
 import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/water-features-northern-virginia' },
   title: 'Water Features Northern Virginia | Sunrise Landscape',
   description: 'Custom water features and pond installation in Northern Virginia. From koi ponds to waterfalls, we create stunning aquatic landscapes. Contact us today.',
   openGraph: {

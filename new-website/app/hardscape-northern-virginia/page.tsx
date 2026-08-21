@@ -13,6 +13,7 @@ import HardscapeCarousel from '@/components/HardscapeCarousel'
 import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/hardscape-northern-virginia' },
   title: 'Hardscape Contractor Northern Virginia | Sunrise Landscape',
   description: 'Professional hardscape contractor serving Northern Virginia. Custom patios, walkways, and stonework built to last. Get your free consultation today.',
   openGraph: {

@@ -5,6 +5,7 @@ import HomeVersionB from '@/components/home/HomeVersionB'
 import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/' },
   title: 'Landscaping Company in Northern Virginia | Sunrise Landscape',
   description: 'Full-service landscaping in Northern Virginia: year-round maintenance, lawn care, patios and outdoor living. Family owned since 1986. Free yard inspection.',
   openGraph: {

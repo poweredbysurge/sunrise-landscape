@@ -12,6 +12,7 @@ import ServiceCard from '@/components/ServiceCard'
 import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/commercial-landscape-maintenance-virginia' },
   title: 'Commercial Landscape Maintenance | Sunrise Landscape',
   description: 'Commercial landscape maintenance in Virginia. Professional care for corporate campuses and commercial properties. Serving Northern Virginia since 1986.',
   openGraph: {

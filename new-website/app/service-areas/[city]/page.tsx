@@ -35,8 +35,9 @@ export async function generateMetadata({
       ? { url: encodeURI(`https://www.sunriselandscapeanddesign.com${cdnToLocal(heroImg.src)}`) }
       : undefined
   return {
-    title: fm.title || 'Sunrise Landscape',
+    title: expansion?.title || fm.title || 'Sunrise Landscape',
     description: fm.description || expansion?.metaDescription || undefined,
+    alternates: { canonical: `/service-areas/${city}` },
     openGraph: ogImage ? { images: [ogImage] } : undefined,
     twitter: ogImage ? { card: 'summary_large_image', images: [ogImage.url] } : undefined,
   }

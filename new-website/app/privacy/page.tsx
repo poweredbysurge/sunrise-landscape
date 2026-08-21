@@ -7,6 +7,7 @@ import { getMdxJsonLd } from '@/lib/manifest'
 import { SITE_URL } from '@/lib/siteUrl'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/privacy' },
   title: 'Privacy Policy | Sunrise Landscape',
   description: 'Privacy policy for Sunrise Landscape. Learn how we collect, use, and protect your personal information when you visit our website or request our services.',
   openGraph: {
