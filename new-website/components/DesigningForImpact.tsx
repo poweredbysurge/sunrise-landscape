@@ -97,7 +97,7 @@ export default function DesigningForImpact() {
             }}
           >
             <Image
-              src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/681c87540d64604910521baa_about-img-1%20(1).webp')}
+              src={cdnToLocal('/media/6808afe22b48076cc8e63cef/681c87540d64604910521baa_about-img-1 (1).webp')}
               alt="Stone retaining wall steps with lush planting — Sunrise Landscape design craftsmanship"
               fill
               className="object-cover"

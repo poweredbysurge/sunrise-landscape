@@ -63,7 +63,7 @@ export default function AboutHero() {
           style={{ borderRadius: '16px', aspectRatio: '4/3' }}
         >
           <Image
-            src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/681c87540d64604910521baa_about-img-1%20(1).webp')}
+            src={cdnToLocal('/media/6808afe22b48076cc8e63cef/681c87540d64604910521baa_about-img-1 (1).webp')}
             alt="Sunrise team member tending to a garden planting near a decorative pot"
             fill
             className="object-cover"
@@ -76,7 +76,7 @@ export default function AboutHero() {
           style={{ borderRadius: '16px', aspectRatio: '4/3' }}
         >
           <Image
-            src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/681c878de1dcc6f50faeabac_about-img-2%20(1).webp')}
+            src={cdnToLocal('/media/6808afe22b48076cc8e63cef/681c878de1dcc6f50faeabac_about-img-2 (1).webp')}
             alt="Sunrise team member planting small green shrubs in freshly tilled soil"
             fill
             className="object-cover"

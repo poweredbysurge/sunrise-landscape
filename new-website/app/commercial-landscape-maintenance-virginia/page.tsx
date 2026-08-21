@@ -39,7 +39,7 @@ export default function CommercialLandscapePage() {
       {/* ── HERO — clean image, no overlay ── */}
       <section className="relative h-[65vh] min-h-[480px] overflow-hidden">
         <Image
-          src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/68512a743bcf0ea3fbccff0a_commercial-hero-img-new.webp')}
+          src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68512a743bcf0ea3fbccff0a_commercial-hero-img-new.webp')}
           alt="Gray wooden building with a peaked roof and white double doors, surrounded by manicured bushes and green lawn."
           fill
           priority
@@ -79,7 +79,7 @@ export default function CommercialLandscapePage() {
           {/* Right: image */}
           <div className="relative min-h-[320px] lg:min-h-0">
             <Image
-              src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/68230cb41bf1c271c22f3138_commercial-img%20(1).webp')}
+              src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68230cb41bf1c271c22f3138_commercial-img (1).webp')}
               alt="Modern glass commercial building illuminated with blue and yellow lights at dusk"
               fill
               className="object-cover"

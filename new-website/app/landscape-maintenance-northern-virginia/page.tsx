@@ -216,7 +216,7 @@ export default function LandscapeMaintenancePage() {
             {/* Right: image */}
             <div className="relative overflow-hidden" style={{ borderRadius: '20px', aspectRatio: '4 / 5' }}>
               <Image
-                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6822fae33f0e864553518e47_mowing-img%20(1).webp')}
+                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6822fae33f0e864553518e47_mowing-img (1).webp')}
                 alt="Large two-story brick house with dark roof, red front door, and a well-maintained lawn with striped mowing patterns."
                 fill
                 className="object-cover"
@@ -236,7 +236,7 @@ export default function LandscapeMaintenancePage() {
             {/* Left: image */}
             <div className="relative overflow-hidden" style={{ borderRadius: '20px', aspectRatio: '4 / 3' }}>
               <Image
-                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/68230187ed0e534a13fbd511_season-img-1%20(1).webp')}
+                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68230187ed0e534a13fbd511_season-img-1 (1).webp')}
                 alt="Landscaped garden bed with vibrant pink flowers, green shrubs, and trees bordered by black mulch and a stone wall with patio furniture in the background."
                 fill
                 className="object-cover"
@@ -333,7 +333,7 @@ export default function LandscapeMaintenancePage() {
             {/* Right: image */}
             <div className="relative overflow-hidden" style={{ borderRadius: '20px', aspectRatio: '4 / 5' }}>
               <Image
-                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6822f8c8c8ec5c4eba8b85e6_fall-img%20(1).webp')}
+                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6822f8c8c8ec5c4eba8b85e6_fall-img (1).webp')}
                 alt="Terraced backyard garden with stone retaining walls, green shrubs, red-leaved bush, outdoor seating, and tall trees under a blue sky."
                 fill
                 className="object-cover"

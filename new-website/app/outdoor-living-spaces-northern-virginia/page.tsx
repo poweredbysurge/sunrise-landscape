@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Outdoor Living Contractor in Northern Virginia | Sunrise Landscape',
     description: 'Outdoor living spaces in Northern Virginia: patios, fire features, lighting, water features, and planting designed and built as one project. Free consultation.',
     type: 'website',
-    images: [{ url: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7fb273f8f7c44bbbc942_folder-5-cover.webp') }],
+    images: [{ url: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7fb273f8f7c44bbbc942_folder-5-cover.webp') }],
   },
   twitter: {
     title: 'Outdoor Living Contractor in Northern Virginia | Sunrise Landscape',
@@ -99,7 +99,7 @@ export default function OutdoorLivingSpacesPage() {
       {/* ── HERO — clean image, no overlay ── */}
       <section className="relative h-[65vh] min-h-[480px] overflow-hidden">
         <Image
-          src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7fb273f8f7c44bbbc942_folder-5-cover.webp')}
+          src={cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7fb273f8f7c44bbbc942_folder-5-cover.webp')}
           alt="Backyard with a rectangular swimming pool, lounge chairs, and a covered patio area with outdoor seating and a fireplace."
           fill
           priority

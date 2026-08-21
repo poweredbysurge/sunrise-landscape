@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Lawn Care Company in Northern Virginia | Sunrise Landscape',
     description: 'Lawn care across Loudoun and Fairfax counties. Mowing, fertilization, aeration, and full-season programs from one Northern Virginia lawn care company. Free yard inspection.',
     type: 'website',
-    images: [{ url: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6889b8bca45b369aa14f8ade_Katie%20Bird%20Mowing%20Lines%202.jpg') }],
+    images: [{ url: cdnToLocal('/media/6808afe22b48076cc8e63cef/6889b8bca45b369aa14f8ade_Katie Bird Mowing Lines 2.jpg') }],
   },
   twitter: {
     title: 'Lawn Care Company in Northern Virginia | Sunrise Landscape',
@@ -90,7 +90,7 @@ export default function LawnCareNorthernVirginiaPage() {
           </div>
           <div className="relative aspect-[4/3] lg:aspect-square overflow-hidden" style={{ borderRadius: '20px' }}>
             <Image
-              src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6889b8bca45b369aa14f8ade_Katie%20Bird%20Mowing%20Lines%202.jpg')}
+              src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6889b8bca45b369aa14f8ade_Katie Bird Mowing Lines 2.jpg')}
               alt="Expansive striped lawn leading up to a modern estate home with a pool and mature tree line."
               fill
               priority
@@ -153,7 +153,7 @@ export default function LawnCareNorthernVirginiaPage() {
           </div>
           <div className="relative aspect-[4/5] overflow-hidden" style={{ borderRadius: '20px' }}>
             <Image
-              src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6822fae33f0e864553518e47_mowing-img%20(1).webp')}
+              src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6822fae33f0e864553518e47_mowing-img (1).webp')}
               alt="Landscaping crew mowing a manicured lawn in Northern Virginia"
               fill
               className="object-cover"

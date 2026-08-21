@@ -23,10 +23,10 @@ const sampleTestimonials = [
 ]
 
 const sampleProjects = [
-  { img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7a462c7d0f5245e2a462_cover.webp'), alt: 'Stone patio project', name: 'Backyard Living Retreat', location: 'Great Falls, VA' },
-  { img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7d113c21f26f490bb45a_folder-2-cover-1.webp'), alt: 'Koi pond and fire pit', name: 'Koi Pond & Fire Pit', location: 'Ashburn, VA' },
-  { img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp'), alt: 'Estate garden', name: 'Estate Elegance', location: 'Vienna, VA' },
-  { img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7ecfc4042333b3219c72_folder-4-cover.webp'), alt: 'Grand entrance', name: 'Grand Entrance Design', location: 'Oakton, VA' },
+  { img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7a462c7d0f5245e2a462_cover.webp'), alt: 'Stone patio project', name: 'Backyard Living Retreat', location: 'Great Falls, VA' },
+  { img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7d113c21f26f490bb45a_folder-2-cover-1.webp'), alt: 'Koi pond and fire pit', name: 'Koi Pond & Fire Pit', location: 'Ashburn, VA' },
+  { img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp'), alt: 'Estate garden', name: 'Estate Elegance', location: 'Vienna, VA' },
+  { img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7ecfc4042333b3219c72_folder-4-cover.webp'), alt: 'Grand entrance', name: 'Grand Entrance Design', location: 'Oakton, VA' },
 ]
 
 const sampleFaqs = [
@@ -157,7 +157,7 @@ export default function ComponentsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <ServiceCard
             num="01"
-            image={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7a462c7d0f5245e2a462_cover.webp')}
+            image={cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7a462c7d0f5245e2a462_cover.webp')}
             alt="Stone patio project"
             title="Landscape Design"
             description="Expert outdoor space design for Northern Virginia homeowners."
@@ -165,13 +165,13 @@ export default function ComponentsPage() {
           />
           <ServiceCard
             num="02"
-            image={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7d113c21f26f490bb45a_folder-2-cover-1.webp')}
+            image={cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7d113c21f26f490bb45a_folder-2-cover-1.webp')}
             alt="Hardscape project"
             title="Hardscape"
             description="Patios, walkways, fire pits, and retaining walls built to last."
           />
           <ServiceCard
-            image={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp')}
+            image={cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp')}
             alt="Garden maintenance"
             title="Without Number Prop"
             description="ServiceCard with no num prop — badge is omitted."
@@ -226,11 +226,11 @@ export default function ComponentsPage() {
       {/* ── 11. HardscapeCarousel ── */}
       <Section label="HardscapeCarousel" sub="components/HardscapeCarousel.tsx — hardscape project portfolio. Requires slides prop: { src: string; alt: string }[]." dark>
         <HardscapeCarousel slides={[
-          { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821c39fee5907320e170120_harmony-img-1%20(1).webp'), alt: 'Stone pathway leading to a wooden dock' },
-          { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821c3be80facb1a793f7612_harmony-img-2%20(1).webp'), alt: 'Outdoor patio with fire pit' },
-          { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821cb4ae52f9959c143a822_work-img-1%20(1).webp'), alt: 'Patio with umbrella' },
-          { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821cb71a545e0059d060bf5_work-img-2%20(1).webp'), alt: 'Stone patio with fire pit seating' },
-          { src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821cb817cc578cffd2d3726_work-img-3%20(1).webp'), alt: 'Covered patio with fireplace' },
+          { src: cdnToLocal('/media/6808afe22b48076cc8e63cef/6821c39fee5907320e170120_harmony-img-1 (1).webp'), alt: 'Stone pathway leading to a wooden dock' },
+          { src: cdnToLocal('/media/6808afe22b48076cc8e63cef/6821c3be80facb1a793f7612_harmony-img-2 (1).webp'), alt: 'Outdoor patio with fire pit' },
+          { src: cdnToLocal('/media/6808afe22b48076cc8e63cef/6821cb4ae52f9959c143a822_work-img-1 (1).webp'), alt: 'Patio with umbrella' },
+          { src: cdnToLocal('/media/6808afe22b48076cc8e63cef/6821cb71a545e0059d060bf5_work-img-2 (1).webp'), alt: 'Stone patio with fire pit seating' },
+          { src: cdnToLocal('/media/6808afe22b48076cc8e63cef/6821cb817cc578cffd2d3726_work-img-3 (1).webp'), alt: 'Covered patio with fireplace' },
         ]} />
       </Section>
 

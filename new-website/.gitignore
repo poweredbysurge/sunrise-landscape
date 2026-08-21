@@ -2,3 +2,8 @@
 node_modules/
 .vercel
 .env*.local
+/media-originals/
+/to-upscale/
+/upscaled/
+image-audit.json
+restore-progress.json

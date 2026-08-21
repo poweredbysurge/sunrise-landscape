@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Retaining Wall Contractors in Northern Virginia | Sunrise Landscape',
     description: 'Retaining wall construction in Northern Virginia. Precast modular block, natural stone, and boulder walls, engineered and permitted. Free yard inspection.',
     type: 'website',
-    images: [{ url: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7e23cadf15ecbd8b2f1b_folder-3-1.webp') }],
+    images: [{ url: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e23cadf15ecbd8b2f1b_folder-3-1.webp') }],
   },
   twitter: {
     title: 'Retaining Wall Contractors in Northern Virginia | Sunrise Landscape',
@@ -66,7 +66,7 @@ export default function RetainingWallsPage() {
       {/* ── HERO — clean image, no overlay ── */}
       <section className="relative h-[65vh] min-h-[480px] overflow-hidden">
         <Image
-          src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7e23cadf15ecbd8b2f1b_folder-3-1.webp')}
+          src={cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e23cadf15ecbd8b2f1b_folder-3-1.webp')}
           alt="Curved stone retaining wall with layered plantings of purple catmint, ornamental grasses, and shrubs beneath mature trees."
           fill
           priority
@@ -132,7 +132,7 @@ export default function RetainingWallsPage() {
           </div>
           <div className="relative aspect-[4/5] overflow-hidden" style={{ borderRadius: '20px' }}>
             <Image
-              src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7e23ce1a9da1404d5685_folder-3-2.webp')}
+              src={cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e23ce1a9da1404d5685_folder-3-2.webp')}
               alt="Tiered stone retaining walls with a Japanese maple, flowering dogwoods, and colorful perennial beds along a paver walkway."
               fill
               className="object-cover"

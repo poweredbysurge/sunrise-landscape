@@ -61,13 +61,13 @@ export default function WaterFeaturesPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
-              <Image src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/68232209aa9a940cdc9eb536_pw-header-img-2%20(1).webp')} alt="A small landscaped waterfall with flowing water over rocks surrounded by green plants and mulch." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68232209aa9a940cdc9eb536_pw-header-img-2 (1).webp')} alt="A small landscaped waterfall with flowing water over rocks surrounded by green plants and mulch." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
             <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
-              <Image src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/68828511b1625ab8175ffac0_image016.jpg')} alt="Tranquil garden pond with small cascading waterfalls surrounded by lush green plants and rocks." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68828511b1625ab8175ffac0_image016.jpg')} alt="Tranquil garden pond with small cascading waterfalls surrounded by lush green plants and rocks." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
             <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
-              <Image src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6823250e85c30890c0101ca6_pw-art-img%20(1).webp')} alt="Backyard patio with stone fireplace, outdoor seating, a small waterfall, and a pond with stepping stones surrounded by greenery." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6823250e85c30890c0101ca6_pw-art-img (1).webp')} alt="Backyard patio with stone fireplace, outdoor seating, a small waterfall, and a pond with stepping stones surrounded by greenery." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
           </div>
         </div>
@@ -85,21 +85,21 @@ export default function WaterFeaturesPage() {
                 num: '01',
                 title: 'Custom Pond Installation',
                 desc: 'From intimate koi sanctuaries to natural swimming ponds and reflection pools, we design and build custom water ecosystems tailored to your landscape and lifestyle.',
-                img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7caebf8b5d7ad36bb774_folder-2-3.webp'),
+                img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7caebf8b5d7ad36bb774_folder-2-3.webp'),
                 alt: 'Illuminated koi pond and waterfall glowing green at night beside a stone patio and fireplace.',
               },
               {
                 num: '02',
                 title: 'Waterfall Design & Installation',
                 desc: 'From dramatic multi-tiered rock cascades to elegant architectural water walls, we engineer waterfalls that become the living centerpiece of your outdoor space.',
-                img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/682321dd71e368222af56712_pw-header-img-1%20(1).webp'),
+                img: cdnToLocal('/media/6808afe22b48076cc8e63cef/682321dd71e368222af56712_pw-header-img-1 (1).webp'),
                 alt: 'Natural stone waterfall cascading into a garden pond surrounded by flowering plants.',
               },
               {
                 num: '03',
                 title: 'Fountain Installation',
                 desc: 'From classical tiered designs to contemporary sculptures and floating features, our custom fountains bring movement, sound, and artistry to any outdoor setting.',
-                img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/688287c75f22cbb21d340914_aquatic.jpg'),
+                img: cdnToLocal('/media/6808afe22b48076cc8e63cef/688287c75f22cbb21d340914_aquatic.jpg'),
                 alt: 'Reflective pond bordered by ornamental trees and grasses on a landscaped property.',
               },
             ].map((card) => (
@@ -127,7 +127,7 @@ export default function WaterFeaturesPage() {
             {/* Image */}
             <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
               <Image
-                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7d113c21f26f490bb45a_folder-2-cover-1.webp')}
+                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7d113c21f26f490bb45a_folder-2-cover-1.webp')}
                 alt="Koi pond with stepping stones and a stone fireplace patio surrounded by lush plantings."
                 fill
                 className="object-cover"

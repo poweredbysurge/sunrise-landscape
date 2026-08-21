@@ -38,7 +38,7 @@ export default function CommercialAliasPage() {
       <section className="relative min-h-[60vh] flex items-end bg-green overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/68512a743bcf0ea3fbccff0a_commercial-hero-img-new.webp')}
+            src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68512a743bcf0ea3fbccff0a_commercial-hero-img-new.webp')}
             alt="Gray wooden building with a peaked roof and white double doors, surrounded by manicured bushes and green lawn."
             fill
             className="object-cover opacity-50"
@@ -81,7 +81,7 @@ export default function CommercialAliasPage() {
             <div className="space-y-4">
               <div className="relative aspect-[16/9] overflow-hidden" style={{ borderRadius: '16px' }}>
                 <Image
-                  src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/68230cb41bf1c271c22f3138_commercial-img%20(1).webp')}
+                  src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68230cb41bf1c271c22f3138_commercial-img (1).webp')}
                   alt="Modern glass building illuminated with blue and yellow lights at dusk, surrounded by trees and lawn."
                   fill
                   className="object-cover"
@@ -90,7 +90,7 @@ export default function CommercialAliasPage() {
               </div>
               <div className="relative aspect-[16/9] overflow-hidden" style={{ borderRadius: '16px' }}>
                 <Image
-                  src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/68828a60664f16a909e9fa6b_image002.jpg')}
+                  src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68828a60664f16a909e9fa6b_image002.jpg')}
                   alt="Sidewalk alongside a building with stone and wood exterior, bordered by pink and white flowers, with a grassy hill and another building in the background under a blue sky."
                   fill
                   className="object-cover"

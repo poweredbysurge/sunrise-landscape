@@ -21,15 +21,15 @@ const ArrowRight = () => (
 
 const slides = [
   {
-    src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/682335ae15765002fa05b2ec_pw-slider-img-1%20(1).webp'),
+    src: cdnToLocal('/media/6808afe22b48076cc8e63cef/682335ae15765002fa05b2ec_pw-slider-img-1 (1).webp'),
     alt: 'Small garden pond with water plants, koi fish, and a gentle waterfall over rocks.',
   },
   {
-    src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/682335cc3a010354185703b0_pw-slider-img-3%20(1).webp'),
+    src: cdnToLocal('/media/6808afe22b48076cc8e63cef/682335cc3a010354185703b0_pw-slider-img-3 (1).webp'),
     alt: 'A landscaped garden with a small pond surrounded by rocks, various green plants, and a grassy lawn.',
   },
   {
-    src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/682348cfa19ec32d50466fa3_beyond-img%20(1).webp'),
+    src: cdnToLocal('/media/6808afe22b48076cc8e63cef/682348cfa19ec32d50466fa3_beyond-img (1).webp'),
     alt: 'Outdoor garden with a stone pond featuring a small waterfall and stepping stones leading across the water.',
   },
 ]

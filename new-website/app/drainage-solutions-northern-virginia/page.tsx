@@ -80,7 +80,7 @@ export default function DrainageSolutionsPage() {
             {/* Left: single image */}
             <div className="relative overflow-hidden" style={{ borderRadius: '20px', aspectRatio: '4/3' }}>
               <Image
-                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/68247fc088d049498e40412d_dec-protect-img-1.webp')}
+                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68247fc088d049498e40412d_dec-protect-img-1.webp')}
                 alt="Small cascading waterfall flowing under a stone bridge surrounded by green plants and trees."
                 fill
                 className="object-cover object-center"
@@ -202,7 +202,7 @@ export default function DrainageSolutionsPage() {
       {/* ── BEGIN YOUR PROTECTION PLAN ── */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <Image
-          src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/68247fdb1ba1dd89a423afe7_dec-protect-img-2%20(1).webp')}
+          src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68247fdb1ba1dd89a423afe7_dec-protect-img-2 (1).webp')}
           alt="Water flowing out from a drainage pipe into a natural water body."
           fill
           className="object-cover"

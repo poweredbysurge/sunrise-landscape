@@ -111,10 +111,10 @@ export default function LandscapePlantingPage() {
           <h2 className="text-3xl lg:text-5xl text-green leading-tight mb-12">What We Offer</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {([
-              { title: 'Custom Garden and Planting Design', body: 'We create thoughtful planting layouts using trees, shrubs, perennials, annuals, and ground covers. Each design balances color, texture, and seasonal interest to keep your landscape vibrant year-round.', img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/68230187ed0e534a13fbd511_season-img-1%20(1).webp'), alt: 'Landscaped garden bed with vibrant pink flowers and green shrubs' },
-              { title: 'Specialty Garden Design and Installation', body: 'We design specialty gardens that reflect your unique style and site conditions, including native, English, woodland, wetland, shade, and meadow gardens. Crafted to thrive with minimal upkeep.', img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp'), alt: 'Estate home with manicured specialty garden' },
-              { title: 'Turf & Lawn Installation', body: 'Our team installs high-quality turf and lawn systems for a lush, durable finish. From expert soil preparation to the final roll of sod, we handle every detail with care.', img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7ecfc4042333b3219c72_folder-4-cover.webp'), alt: 'Brick house with manicured green lawn' },
-              { title: 'Planters & Seasonal Displays', body: 'We create stunning planters and fresh seasonal displays to add color and charm to your property. Each arrangement is designed to highlight the best of every season.', img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7a462c7d0f5245e2a462_cover.webp'), alt: 'Backyard with stone patio and colorful seasonal plantings' },
+              { title: 'Custom Garden and Planting Design', body: 'We create thoughtful planting layouts using trees, shrubs, perennials, annuals, and ground covers. Each design balances color, texture, and seasonal interest to keep your landscape vibrant year-round.', img: cdnToLocal('/media/6808afe22b48076cc8e63cef/68230187ed0e534a13fbd511_season-img-1 (1).webp'), alt: 'Landscaped garden bed with vibrant pink flowers and green shrubs' },
+              { title: 'Specialty Garden Design and Installation', body: 'We design specialty gardens that reflect your unique style and site conditions, including native, English, woodland, wetland, shade, and meadow gardens. Crafted to thrive with minimal upkeep.', img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp'), alt: 'Estate home with manicured specialty garden' },
+              { title: 'Turf & Lawn Installation', body: 'Our team installs high-quality turf and lawn systems for a lush, durable finish. From expert soil preparation to the final roll of sod, we handle every detail with care.', img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7ecfc4042333b3219c72_folder-4-cover.webp'), alt: 'Brick house with manicured green lawn' },
+              { title: 'Planters & Seasonal Displays', body: 'We create stunning planters and fresh seasonal displays to add color and charm to your property. Each arrangement is designed to highlight the best of every season.', img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7a462c7d0f5245e2a462_cover.webp'), alt: 'Backyard with stone patio and colorful seasonal plantings' },
             ] as { title: string; body: string; img: string; alt: string }[]).map((item) => (
               <div key={item.title} className="relative bg-green overflow-hidden" style={{ borderRadius: '20px' }}>
                 <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 1000 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -224,7 +224,7 @@ export default function LandscapePlantingPage() {
             {/* Right: image */}
             <div className="relative overflow-hidden" style={{ borderRadius: '20px', aspectRatio: '4/3' }}>
               <Image
-                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/682316025847f4be966b0fd5_commercial-includes-img%20(1).webp')}
+                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/682316025847f4be966b0fd5_commercial-includes-img (1).webp')}
                 alt="Aerial view of a curved stone patio with circular fire pit, seating area, and manicured garden beds"
                 fill
                 className="object-cover"
@@ -244,7 +244,7 @@ export default function LandscapePlantingPage() {
             {/* Left: image */}
             <div className="relative overflow-hidden" style={{ borderRadius: '20px', aspectRatio: '4 / 3' }}>
               <Image
-                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/686b7e23ce1a9da1404d5685_folder-3-2.webp')}
+                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e23ce1a9da1404d5685_folder-3-2.webp')}
                 alt="Tiered stone retaining walls with a Japanese maple, flowering dogwoods, and colorful perennial beds along a paver walkway."
                 fill
                 className="object-cover"

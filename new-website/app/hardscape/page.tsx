@@ -50,7 +50,7 @@ export default function HardscapeAliasPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             <div className="relative aspect-[16/9] overflow-hidden" style={{ borderRadius: '16px' }}>
               <Image
-                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821c39fee5907320e170120_harmony-img-1%20(1).webp')}
+                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6821c39fee5907320e170120_harmony-img-1 (1).webp')}
                 alt="Stone pathway leading to a wooden dock by a lake, with chairs and green grass on the sides."
                 fill
                 className="object-cover"
@@ -59,7 +59,7 @@ export default function HardscapeAliasPage() {
             </div>
             <div className="relative aspect-[16/9] overflow-hidden" style={{ borderRadius: '16px' }}>
               <Image
-                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821c3be80facb1a793f7612_harmony-img-2%20(1).webp')}
+                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6821c3be80facb1a793f7612_harmony-img-2 (1).webp')}
                 alt="Outdoor patio area with black metal chairs and a bench around a round stone fire pit, next to a landscaped garden with stone steps and red and green shrubs."
                 fill
                 className="object-cover"
@@ -78,9 +78,9 @@ export default function HardscapeAliasPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { src: 'https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821cb4ae52f9959c143a822_work-img-1%20(1).webp', alt: 'Outdoor patio area with a round glass table, four mesh chairs, and a large black umbrella, next to a white house.' },
-              { src: 'https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821cb71a545e0059d060bf5_work-img-2%20(1).webp', alt: 'A stone patio with cushioned outdoor chairs, a fire pit, small side table, and landscaped garden beds surrounded by a gravel path.' },
-              { src: 'https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821cb817cc578cffd2d3726_work-img-3%20(1).webp', alt: 'Outdoor covered patio with wicker seating, stone fireplace, wall-mounted TV, and bar counter with stools.' },
+              { src: '/media/6808afe22b48076cc8e63cef/6821cb4ae52f9959c143a822_work-img-1 (1).webp', alt: 'Outdoor patio area with a round glass table, four mesh chairs, and a large black umbrella, next to a white house.' },
+              { src: '/media/6808afe22b48076cc8e63cef/6821cb71a545e0059d060bf5_work-img-2 (1).webp', alt: 'A stone patio with cushioned outdoor chairs, a fire pit, small side table, and landscaped garden beds surrounded by a gravel path.' },
+              { src: '/media/6808afe22b48076cc8e63cef/6821cb817cc578cffd2d3726_work-img-3 (1).webp', alt: 'Outdoor covered patio with wicker seating, stone fireplace, wall-mounted TV, and bar counter with stools.' },
             ].map((img) => (
               <div key={img.src} className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
                 <Image src={cdnToLocal(img.src)} alt={img.alt} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />

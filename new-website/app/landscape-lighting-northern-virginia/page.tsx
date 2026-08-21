@@ -66,7 +66,7 @@ export default function LandscapeLightingPage() {
               style={{ borderRadius: '16px' }}
             >
               <Image
-                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821db31696152a2f76d3a41_lighting-header-img%20(1).webp')}
+                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6821db31696152a2f76d3a41_lighting-header-img (1).webp')}
                 alt="Illuminated backyard patio at night with waterfall flowing into a pond, outdoor fireplace, and seating area."
                 fill
                 priority
@@ -98,10 +98,10 @@ export default function LandscapeLightingPage() {
         <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
-              <Image src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/68827f23d5ddb3f4a120998a_plant%20light.jpg')} alt="Curved stone pathway at dusk with garden landscape lighting illuminating rock wall, plants, and a tree." fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+              <Image src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68827f23d5ddb3f4a120998a_plant light.jpg')} alt="Curved stone pathway at dusk with garden landscape lighting illuminating rock wall, plants, and a tree." fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
             </div>
             <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
-              <Image src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821ddef6588d920f302dc9d_illum-img-2%20(1).webp')} alt="Cozy outdoor patio with cushioned chairs, a stone fireplace with fire, plants, and ambient lighting at dusk." fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+              <Image src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6821ddef6588d920f302dc9d_illum-img-2 (1).webp')} alt="Cozy outdoor patio with cushioned chairs, a stone fireplace with fire, plants, and ambient lighting at dusk." fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
             </div>
           </div>
         </div>
@@ -169,13 +169,13 @@ export default function LandscapeLightingPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
-              <Image src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821e3d0a6db9a1d3151b66c_lighting-img-1%20(1).webp')} alt="Outdoor patio bar area at night with stone counter, three metal bar stools with cushions, and a built-in grill under a covered roof with ambient lighting." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6821e3d0a6db9a1d3151b66c_lighting-img-1 (1).webp')} alt="Outdoor patio bar area at night with stone counter, three metal bar stools with cushions, and a built-in grill under a covered roof with ambient lighting." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
             <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
-              <Image src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821e3f94b3e6ecdea889e48_lighting-img-2%20(1).webp')} alt="Cozy outdoor seating area at night with cushioned chairs, a stone fireplace, and soft ambient lighting." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6821e3f94b3e6ecdea889e48_lighting-img-2 (1).webp')} alt="Cozy outdoor seating area at night with cushioned chairs, a stone fireplace, and soft ambient lighting." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
             <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
-              <Image src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821e40bcf6e5cadaefac37b_lighting-img-3%20(1).webp')} alt="Night scene of a paved patio with stone walls, small garden beds, a tree illuminated by ground lights, and a rock water feature." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6821e40bcf6e5cadaefac37b_lighting-img-3 (1).webp')} alt="Night scene of a paved patio with stone walls, small garden beds, a tree illuminated by ground lights, and a rock water feature." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
           </div>
         </div>

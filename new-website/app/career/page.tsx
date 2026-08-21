@@ -31,25 +31,25 @@ const whyWork = [
   {
     heading: 'Professional Growth',
     items: ['Comprehensive training', 'Skill development', 'Career advancement', 'Mentorship opportunities', 'Industry certifications'],
-    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6836d8e3e6470f81829242c8_success_11350673.png'),
+    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/6836d8e3e6470f81829242c8_success_11350673.png'),
     alt: 'A person next to a growth graph',
   },
   {
     heading: 'Tools for Success',
     items: ['Premium equipment', 'Company vehicles', 'Professional uniforms', 'Latest technology', 'Safety gear'],
-    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6836d7f8010663ec9af7dd58_trophy_8377990.png'),
+    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/6836d7f8010663ec9af7dd58_trophy_8377990.png'),
     alt: 'A cup with a hand below it',
   },
   {
     heading: 'Quality of Life',
     items: ['Competitive compensation', 'Health benefits', 'Paid time off', 'Work-life balance', 'Year-round employment'],
-    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6836d748eb20d9202cc6c58f_employee_5491841.png'),
+    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/6836d748eb20d9202cc6c58f_employee_5491841.png'),
     alt: 'A person surrounded from a dollar sign, an umbrella and a house',
   },
   {
     heading: 'Culture of Excellence',
     items: ['Team recognition', 'Performance rewards', 'Company events', 'Collaborative environment', 'Professional development'],
-    img: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6836d84bb42491bf5612007b_group_10227316.png'),
+    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/6836d84bb42491bf5612007b_group_10227316.png'),
     alt: 'A group of three people',
   },
 ]
@@ -184,7 +184,7 @@ export default function CareerPage() {
             {/* Center: team photo */}
             <div className="relative overflow-hidden order-first lg:order-none" style={{ aspectRatio: '3/4', borderRadius: '16px' }}>
               <Image
-                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6825b46f04c55a8038291b82_career-work-img.webp')}
+                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6825b46f04c55a8038291b82_career-work-img.webp')}
                 alt="The Sunrise Landscape team posing with trucks and equipment"
                 fill
                 className="object-cover"

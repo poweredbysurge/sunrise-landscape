@@ -59,13 +59,16 @@ export default function HardscapePage() {
             </div>
           </div>
 
-          {/* 5-image carousel: CDN URLs used directly — local copies are too low-res for full-width display */}
+          {/* 5-image carousel: local, AI-upscaled copies. Source photos were originally
+              quite small (323-620px), so even after a 4x upscale a couple of these land
+              short of the ideal full-width resolution — that's the source ceiling, not
+              a processing issue. */}
           <HardscapeCarousel slides={[
-            { src: 'https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821c39fee5907320e170120_harmony-img-1%20(1).webp', alt: 'Stone pathway leading to a wooden dock by a lake, with chairs and green grass on the sides' },
-            { src: 'https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821c3be80facb1a793f7612_harmony-img-2%20(1).webp', alt: 'Outdoor patio area with black metal chairs and a bench around a round stone fire pit next to a landscaped garden' },
-            { src: 'https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821cb4ae52f9959c143a822_work-img-1%20(1).webp', alt: 'Outdoor patio area with a round glass table, four mesh chairs, and a large black umbrella, next to a white house' },
-            { src: 'https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821cb71a545e0059d060bf5_work-img-2%20(1).webp', alt: 'Stone patio with cushioned outdoor chairs, a fire pit, small side table, and landscaped garden beds' },
-            { src: 'https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821cb817cc578cffd2d3726_work-img-3%20(1).webp', alt: 'Outdoor covered patio with wicker seating, stone fireplace, wall-mounted TV, and bar counter with stools' },
+            { src: '/media/6808afe22b48076cc8e63cef/6821c39fee5907320e170120_harmony-img-1 (1).webp', alt: 'Stone pathway leading to a wooden dock by a lake, with chairs and green grass on the sides' },
+            { src: '/media/6808afe22b48076cc8e63cef/6821c3be80facb1a793f7612_harmony-img-2 (1).webp', alt: 'Outdoor patio area with black metal chairs and a bench around a round stone fire pit next to a landscaped garden' },
+            { src: '/media/6808afe22b48076cc8e63cef/6821cb4ae52f9959c143a822_work-img-1 (1).webp', alt: 'Outdoor patio area with a round glass table, four mesh chairs, and a large black umbrella, next to a white house' },
+            { src: '/media/6808afe22b48076cc8e63cef/6821cb71a545e0059d060bf5_work-img-2 (1).webp', alt: 'Stone patio with cushioned outdoor chairs, a fire pit, small side table, and landscaped garden beds' },
+            { src: '/media/6808afe22b48076cc8e63cef/6821cb817cc578cffd2d3726_work-img-3 (1).webp', alt: 'Outdoor covered patio with wicker seating, stone fireplace, wall-mounted TV, and bar counter with stools' },
           ]} />
 
           <p className="text-green/70 mt-10 leading-relaxed">

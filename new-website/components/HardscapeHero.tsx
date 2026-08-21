@@ -7,11 +7,11 @@ import { cdnToLocal } from '@/lib/mediaUrl'
 // avoids showing the same photo twice on one page.
 const IMGS = [
   {
-    src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821cf884cff5a6c39872bd1_hs-header-img-1%20(1).webp'),
+    src: cdnToLocal('/media/6808afe22b48076cc8e63cef/6821cf884cff5a6c39872bd1_hs-header-img-1 (1).webp'),
     alt: 'Outdoor patio area with black metal seating surrounding a stone fire pit and landscaped garden with stone steps',
   },
   {
-    src: cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/6821cf9d8567ec857f4ce0e4_hs-header-img-2%20(1).webp'),
+    src: cdnToLocal('/media/6808afe22b48076cc8e63cef/6821cf9d8567ec857f4ce0e4_hs-header-img-2 (1).webp'),
     alt: 'Outdoor stone fireplace with a mounted flat-screen TV above it under a wooden patio roof',
   },
 ]

@@ -33,84 +33,84 @@ const cityCards = [
     city: 'Western Loudoun',
     slug: 'landscaping-western-loudoun-va',
     neighborhoods: 'Willowsford, Aldie Village, Middleburg corridor, Hunt Country, Goose Creek',
-    img: 'https://cdn.prod.website-files.com/680b491848812a8a8cf323ac/6a17364544ce089fe9dbc0f8_photo-1500382017468-9049fed747ef.jpeg',
+    img: '/media/680b491848812a8a8cf323ac/6a17364544ce089fe9dbc0f8_photo-1500382017468-9049fed747ef.jpeg',
     alt: 'Rolling farmland at sunset in Western Loudoun County, Virginia',
   },
   {
     city: 'Oakton',
     slug: 'landscaping-oakton-va',
     neighborhoods: 'Hunter Mill, Oak Marr, Difficult Run, Vale, Five Oaks',
-    img: 'https://cdn.prod.website-files.com/680b491848812a8a8cf323ac/6a17364744ce089fe9dbc165_photo-1598902108854-10e335adac99.jpeg',
+    img: '/media/680b491848812a8a8cf323ac/6a17364744ce089fe9dbc165_photo-1598902108854-10e335adac99.jpeg',
     alt: 'Lush shaded garden landscape in Oakton, Virginia',
   },
   {
     city: 'Great Falls',
     slug: 'landscaping-great-falls-va',
     neighborhoods: 'Falcon Ridge, Holly Knoll, Riverbend, Brooks Farm, Springvale',
-    img: 'https://cdn.prod.website-files.com/680b491848812a8a8cf323ac/6a17364544ce089fe9dbc0f3_photo-1568605114967-8130f3a36994.jpeg',
+    img: '/media/680b491848812a8a8cf323ac/6a17364544ce089fe9dbc0f3_photo-1568605114967-8130f3a36994.jpeg',
     alt: 'Custom estate home with landscape lighting at dusk in Great Falls, Virginia',
   },
   {
     city: 'Centreville',
     slug: 'landscaping-centreville-va',
     neighborhoods: 'Sully Station, Bull Run, Faircrest, Virginia Run, Little Rocky Run',
-    img: 'https://cdn.prod.website-files.com/680b491848812a8a8cf323ac/6a17364744ce089fe9dbc16f_photo-1600047509807-ba8f99d2cdde.jpeg',
+    img: '/media/680b491848812a8a8cf323ac/6a17364744ce089fe9dbc16f_photo-1600047509807-ba8f99d2cdde.jpeg',
     alt: 'Contemporary home with paver walkway and landscaping in Centreville, Virginia',
   },
   {
     city: 'Chantilly',
     slug: 'landscaping-chantilly-va',
     neighborhoods: 'Westfield, Greenbriar, Pleasant Valley, Franklin Glen, Brookfield',
-    img: 'https://cdn.prod.website-files.com/680b491848812a8a8cf323ac/6a17364544ce089fe9dbc0ff_photo-1567496898669-ee935f5f647a.jpeg',
+    img: '/media/680b491848812a8a8cf323ac/6a17364544ce089fe9dbc0ff_photo-1567496898669-ee935f5f647a.jpeg',
     alt: 'Row of townhomes in a Chantilly, Virginia community',
   },
   {
     city: 'Vienna',
     slug: 'landscaping-vienna-va',
     neighborhoods: 'Tysons, Wolf Trap, Westwood Village, Hunter Mill, Country Club Manor',
-    img: 'https://cdn.prod.website-files.com/680b491848812a8a8cf323ac/6a17364544ce089fe9dbc10b_photo-1572120360610-d971b9d7767c.jpeg',
+    img: '/media/680b491848812a8a8cf323ac/6a17364544ce089fe9dbc10b_photo-1572120360610-d971b9d7767c.jpeg',
     alt: 'Classic American home with front porch and autumn foliage in Vienna, Virginia',
   },
   {
     city: 'McLean',
     slug: 'landscaping-mclean-va',
     neighborhoods: 'Langley, Chesterbrook, Pimmit Hills, McLean Hamlet, Salona Village',
-    img: 'https://cdn.prod.website-files.com/680b491848812a8a8cf323ac/6a17364644ce089fe9dbc11d_photo-1598228723793-52759bba239c.jpeg',
+    img: '/media/680b491848812a8a8cf323ac/6a17364644ce089fe9dbc11d_photo-1598228723793-52759bba239c.jpeg',
     alt: 'Stately brick home with manicured landscaping in McLean, Virginia',
   },
   {
     city: 'Herndon',
     slug: 'landscaping-herndon-va',
     neighborhoods: 'Old Town Herndon, Folly Lick, Chandon, Franklin Farm, Hiddenbrook',
-    img: 'https://cdn.prod.website-files.com/680b491848812a8a8cf323ac/6a17364544ce089fe9dbc10f_photo-1605146769289-440113cc3d00.jpeg',
+    img: '/media/680b491848812a8a8cf323ac/6a17364544ce089fe9dbc10f_photo-1605146769289-440113cc3d00.jpeg',
     alt: 'Newly built suburban homes in a Herndon, Virginia neighborhood',
   },
   {
     city: 'Reston',
     slug: 'landscaping-reston-va',
     neighborhoods: 'Lake Anne, North Point, South Lakes, Hunters Woods, Tall Oaks',
-    img: 'https://cdn.prod.website-files.com/680b491848812a8a8cf323ac/6a17364644ce089fe9dbc121_photo-1600585154340-be6161a56a0c.jpeg',
+    img: '/media/680b491848812a8a8cf323ac/6a17364644ce089fe9dbc121_photo-1600585154340-be6161a56a0c.jpeg',
     alt: 'Modern home nestled among mature trees in Reston, Virginia',
   },
   {
     city: 'Leesburg',
     slug: 'landscaping-leesburg-va',
     neighborhoods: 'Lansdowne, Old Town Leesburg, River Creek, Beacon Hill, Potomac Station',
-    img: 'https://cdn.prod.website-files.com/680b491848812a8a8cf323ac/6a17364744ce089fe9dbc16b_photo-1570129477492-45c003edd2be.jpeg',
+    img: '/media/680b491848812a8a8cf323ac/6a17364744ce089fe9dbc16b_photo-1570129477492-45c003edd2be.jpeg',
     alt: 'Historic white colonial home with wraparound porch and lush lawn in Leesburg, Virginia',
   },
   {
     city: 'Ashburn',
     slug: 'landscaping-ashburn-va',
     neighborhoods: 'Brambleton, Broadlands, One Loudoun, Belmont Country Club, Belmont Ridge',
-    img: 'https://cdn.prod.website-files.com/680b491848812a8a8cf323ac/6a17364544ce089fe9dbc0fb_photo-1605276374104-dee2a0ed3cd6.jpeg',
+    img: '/media/680b491848812a8a8cf323ac/6a17364544ce089fe9dbc0fb_photo-1605276374104-dee2a0ed3cd6.jpeg',
     alt: 'Brick suburban home with manicured lawn in Ashburn, Virginia',
   },
   {
     city: 'Sterling',
     slug: 'landscaping-sterling-va',
     neighborhoods: 'Potomac Falls, Lowes Island, Cascades, Countryside, Sugarland Run',
-    img: 'https://cdn.prod.website-files.com/680b491848812a8a8cf323ac/6a17364544ce089fe9dbc113_photo-1449844908441-8829872d2607.jpeg',
+    img: '/media/680b491848812a8a8cf323ac/6a17364544ce089fe9dbc113_photo-1449844908441-8829872d2607.jpeg',
     alt: 'Shingled home along a tree-lined street in Sterling, Virginia',
   },
 ]
@@ -156,7 +156,7 @@ export default function ServiceAreasNVPage() {
               style={{ borderRadius: '20px', aspectRatio: '4/3' }}
             >
               <Image
-                src={cdnToLocal('https://cdn.prod.website-files.com/6808afe22b48076cc8e63cef/680b3f278dd4a418016b50d1_Outer-pattio.webp')}
+                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/680b3f278dd4a418016b50d1_Outer-pattio.webp')}
                 alt="Stone patio with flowering planting beds and outdoor seating overlooking a Northern Virginia landscape"
                 fill
                 priority
