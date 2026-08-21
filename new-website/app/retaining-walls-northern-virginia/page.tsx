@@ -123,8 +123,9 @@ export default function RetainingWallsPage() {
                 </li>
                 <li>
                   <span className="font-bold text-green">4. Precast modular block</span> &mdash; also called
-                  interlocking modular block. This is distinct from segmental retaining wall block in both
-                  engineering and appearance, and it is the material we specify for modular block walls.
+                  interlocking modular block. This is a different product from the colored concrete block sold
+                  at home improvement stores, in both engineering and appearance, and it is the material we
+                  specify for modular block walls.
                 </li>
               </ol>
             </div>
