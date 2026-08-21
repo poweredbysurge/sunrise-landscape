@@ -94,7 +94,11 @@ export default function Navigation() {
                 onClick={() => setLawnOpen(!lawnOpen)}
                 aria-expanded={lawnOpen}
               >
-                Landscaping &amp; Lawn Care
+                <span className="text-center leading-[1.15]">
+                  Landscaping &amp;
+                  <br />
+                  Lawn Care
+                </span>
                 <svg className={`ml-1 w-3 h-3 transition-transform duration-200 ${lawnOpen ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M6 9l6 6 6-6" />
                 </svg>
