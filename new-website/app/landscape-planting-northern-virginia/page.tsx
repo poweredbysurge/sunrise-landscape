@@ -213,7 +213,7 @@ export default function LandscapePlantingPage() {
                   </li>
                 ))}
               </ul>
-              <Link href="/maintenance" className="inline-flex items-center gap-2 section-label text-orange hover:underline underline-offset-2">
+              <Link href="/landscape-maintenance-northern-virginia" className="inline-flex items-center gap-2 section-label text-orange hover:underline underline-offset-2">
                 Check Out Our Maintenance Packages
                 <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 -rotate-45" aria-hidden="true">
                   <path d="M4 10h12M12 5l5 5-5 5" />
