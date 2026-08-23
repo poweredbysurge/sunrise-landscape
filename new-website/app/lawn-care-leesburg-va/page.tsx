@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: 'When should I aerate and overseed in Leesburg?',
-    a: 'Mid September through November. Leesburg lawns are almost all tall fescue, and that window gives new seedlings the soil temperature they need, cool air, and a full fall to root before winter. Spring seeding here mostly feeds the crabgrass.',
+    a: 'Mid September through November. Leesburg lawns are almost all tall fescue, and that window gives new seedlings the soil temperature they need, cool air, and a full fall to root before winter.',
   },
   {
     q: 'Do you offer weed control in Leesburg?',
@@ -207,7 +207,7 @@ export default function LawnCareLeesburgPage() {
           <p className="text-lg leading-relaxed max-w-3xl">
             Lansdowne, River Creek, Red Cedar, Potomac Station, Exeter, and the streets in and around
             downtown Leesburg. If you are just outside those, ask. Our crews are based fifteen
-            minutes away in Loudoun County.
+            minutes away.
           </p>
         </div>
       </section>

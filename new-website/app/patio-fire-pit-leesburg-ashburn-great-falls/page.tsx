@@ -37,8 +37,11 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
+    // Price range is intentional and client-approved (Aug 22, 2026). The "remove all
+    // pricing" rule applies to per-visit lawn service pricing only. Project-scale
+    // ranges stay here deliberately — they qualify leads out. Do not remove.
     q: 'What does a patio and fire pit project cost?',
-    a: 'Our patio projects with a built-in fire pit are priced by size, materials, and site work. We build several types of patio: natural stone, pavers, and pea gravel. Flagstone and complicated grades cost more. Every project starts with a free design consultation and a fixed proposal.',
+    a: 'Most of our patio projects with a built-in fire pit land between $10,000 and $45,000 depending on size, materials, and site work. We build several types of patio: natural stone, pavers, and pea gravel. Flagstone and complicated grades cost more. Every project starts with a free design consultation and a fixed proposal.',
   },
   {
     q: 'Do I need HOA approval for a fire pit in Ashburn?',

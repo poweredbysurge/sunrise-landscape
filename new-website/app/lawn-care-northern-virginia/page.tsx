@@ -123,13 +123,13 @@ export default function LawnCareNorthernVirginiaPage() {
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
             <h2 className="text-3xl lg:text-4xl font-bold text-green leading-tight mb-6">
-              The Full-Season Program
+              The Full-Season Lawn Care Program
             </h2>
             <div className="space-y-4 text-lg leading-relaxed text-black/70">
               <p>
                 Tall fescue, the dominant lawn type here, wants a different rhythm than the warm-season grass most
-                national lawn brands are built around. Our services intertwine throughout the season rather than
-                running on a fixed chronological calendar:
+                national lawn brands are built around. Our lawn care services intertwine throughout the season
+                rather than running on a fixed chronological calendar:
               </p>
               <ol className="space-y-3">
                 <li>
@@ -202,8 +202,7 @@ export default function LawnCareNorthernVirginiaPage() {
             two applications of a slow release fertilizer combined with pre-emergent, matched to our clay soil,
             targeted weed control for the broadleaf weeds that show up every spring, and grub prevention timed to
             the beetle life cycle. We also offer a 3-treatment fungicide prevention program that prevents fungus
-            from feeding on the grass roots during the humid summer months. Mosquito treatments run alongside the
-            regular program for properties near wooded lots or standing water. None of it is guesswork: every
+            from feeding on the grass roots during the humid summer months. None of it is guesswork: every
             treatment plan starts from what the soil test and the lawn itself are telling us, and adjusts through
             the season if the weather or the turf changes course.
           </p>
