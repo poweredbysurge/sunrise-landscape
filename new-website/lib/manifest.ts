@@ -115,6 +115,36 @@ const BUSINESS_GEO = {
   longitude: '-77.4286',
 }
 
+// Aug 2026 Google Business Profile rename: the profile now reads
+// "Sunrise Landscape". Every brand name string in structured data has to
+// agree with it, or Google sees the site and the profile disagreeing.
+const BRAND_NAME = 'Sunrise Landscape'
+const BRAND_LEGAL_NAME = 'Sunrise Landscape LLC'
+const BRAND_ALTERNATE_NAME = 'Sunrise Landscape and Design'
+
+// Only rename nodes that are already a known variant of the brand, so an
+// unrelated node that happens to sit in a provider/publisher slot is left be.
+const BRAND_ALIASES = new Set([
+  'Sunrise Landscape',
+  'Sunrise Landscape LLC',
+  'Sunrise Landscape and Design',
+  'Sunrise Landscape & Design',
+])
+
+function isBrandNode(node: Record<string, unknown>): boolean {
+  return typeof node.name === 'string' && BRAND_ALIASES.has(node.name)
+}
+
+// Reference nodes — WebSite, Service.provider, publisher — point at the
+// business but are not the primary entity, so they carry the display name
+// only. legalName/alternateName stay on the LocalBusiness entity itself.
+function renameBrandReference(value: unknown): unknown {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return value
+  const node = value as Record<string, unknown>
+  if (!isBrandNode(node)) return node
+  return { ...node, name: BRAND_NAME }
+}
+
 // July 2026 re-point (approved): every LocalBusiness node gets the brand's
 // display name, business hours, and the canonical office address/geo,
 // patched in code so the frozen MDX source files stay untouched. Applies
@@ -123,7 +153,9 @@ function patchLocalBusiness(node: Record<string, unknown>): Record<string, unkno
   if (node['@type'] !== 'LocalBusiness') return node
   return {
     ...node,
-    name: 'Sunrise Landscape',
+    name: BRAND_NAME,
+    legalName: BRAND_LEGAL_NAME,
+    alternateName: BRAND_ALTERNATE_NAME,
     openingHoursSpecification: node.openingHoursSpecification ?? OPENING_HOURS_SPEC,
     ...(node.address ? { address: BUSINESS_ADDRESS } : {}),
     ...(node.geo ? { geo: BUSINESS_GEO } : {}),
@@ -132,11 +164,25 @@ function patchLocalBusiness(node: Record<string, unknown>): Record<string, unkno
 
 function patchJsonLdTree(data: object[]): object[] {
   return data.map((item) => {
-    const node = item as Record<string, unknown> & { '@graph'?: Record<string, unknown>[] }
-    if (Array.isArray(node['@graph'])) {
-      return { ...node, '@graph': node['@graph'].map(patchLocalBusiness) }
+    const node = { ...(item as Record<string, unknown>) } as Record<string, unknown> & {
+      '@graph'?: Record<string, unknown>[]
     }
-    return patchLocalBusiness(node)
+
+    if (Array.isArray(node['@graph'])) {
+      node['@graph'] = node['@graph'].map((child) =>
+        child['@type'] === 'LocalBusiness'
+          ? patchLocalBusiness(child)
+          : (renameBrandReference(child) as Record<string, unknown>)
+      )
+    }
+
+    for (const key of ['provider', 'publisher'] as const) {
+      if (node[key]) node[key] = renameBrandReference(node[key])
+    }
+
+    return node['@type'] === 'LocalBusiness'
+      ? patchLocalBusiness(node)
+      : (renameBrandReference(node) as object)
   })
 }
 
