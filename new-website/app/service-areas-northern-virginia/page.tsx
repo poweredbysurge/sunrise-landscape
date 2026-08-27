@@ -13,16 +13,16 @@ import { SITE_URL } from '@/lib/siteUrl'
 export const metadata: Metadata = {
   alternates: { canonical: '/service-areas-northern-virginia' },
   title: 'Landscape Services Across Northern Virginia | Sunrise Landscape',
-  description: 'Sunrise Landscape serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. 40 years of landscape design, hardscape, and maintenance expertise.',
+  description: 'Sunrise Landscape serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. Landscape design, hardscape, and maintenance expertise since 1986.',
   openGraph: {
     title: 'Landscape Services Across Northern Virginia | Sunrise Landscape',
-    description: 'Sunrise Landscape serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. 40 years of landscape design, hardscape, and maintenance expertise.',
+    description: 'Sunrise Landscape serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. Landscape design, hardscape, and maintenance expertise since 1986.',
     type: 'website',
     images: [{ url: `${SITE_URL}/media/og/sunrise-landscape-og.png`, width: 1200, height: 630 }],
   },
   twitter: {
     title: 'Landscape Services Across Northern Virginia | Sunrise Landscape',
-    description: 'Sunrise Landscape serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. 40 years of landscape design, hardscape, and maintenance expertise.',
+    description: 'Sunrise Landscape serves 12+ Northern Virginia communities including Ashburn, Leesburg, Reston, McLean, and Vienna. Landscape design, hardscape, and maintenance expertise since 1986.',
     card: 'summary_large_image',
     images: [`${SITE_URL}/media/og/sunrise-landscape-og.png`],
   },

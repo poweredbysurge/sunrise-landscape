@@ -43,7 +43,7 @@ export default function ContactHero() {
         <div className="lg:w-[360px] lg:pt-3 flex flex-col gap-6">
           <p className="text-cream leading-relaxed">
             Ready to transform your outdoor space? Our team has been serving Northern Virginia
-            homeowners and businesses for 40 years. Fill out the form below or reach out directly
+            homeowners and businesses since 1986. Fill out the form below or reach out directly
             to get started with a free consultation.
           </p>
           <div className="flex flex-wrap gap-4">

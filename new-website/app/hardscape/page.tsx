@@ -45,7 +45,7 @@ export default function HardscapeAliasPage() {
             Hardscape Services: Patios , Fire Pits &amp; More
           </h2>
           <p className="text-green/70 max-w-2xl mb-12 leading-relaxed">
-            Sunrise creates stylish and functional hardscapes with the highest quality workmanship and time-tested methods. With over 35 years of experience and ICPI certification, Sunrise delivers exceptional results for you to enjoy forever.
+            Sunrise creates stylish and functional hardscapes with the highest quality workmanship and time-tested methods. With ICPI certification and a track record going back to 1986, Sunrise delivers exceptional results for you to enjoy forever.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             <div className="relative aspect-[16/9] overflow-hidden" style={{ borderRadius: '16px' }}>

@@ -22,7 +22,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
   'landscaping-leesburg-va': {
     title: 'Landscaping in Leesburg, VA | Sunrise Landscape',
     metaDescription:
-      'Leesburg landscaping from design through build: patios, plantings, water features. 40 years in Loudoun County. Get a free design consultation.',
+      'Leesburg landscaping from design through build: patios, plantings, water features. In Loudoun County since 1986. Get a free design consultation.',
     knowledgeHeading: 'Designing for Leesburg Lots, Old and New',
     knowledgePara:
       'Leesburg splits into two design worlds. Around the historic district, front yards are shallow, sight lines matter, and mature trees set the rules, so we design understory plantings and hardscape that defer to what is already there. Out in the newer communities the lots are bigger and blanker, which is where full design and build work shines: structure first, then plantings that will look intentional in year five, not just at install.',
@@ -63,7 +63,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
   'landscaping-ashburn-va': {
     title: 'Landscaping in Ashburn, VA | Sunrise Landscape',
     metaDescription:
-      'Ashburn landscaping for new-build lots: privacy planting, patios, full-yard design. Trusted across Loudoun for 40 years. Free design consultation.',
+      'Ashburn landscaping for new-build lots: privacy planting, patios, full-yard design. Trusted across Loudoun since 1986. Free design consultation.',
     knowledgeHeading: 'The Blank-Slate Backyard Problem',
     knowledgePara:
       'Most Ashburn backyards start as a rectangle of builder sod with a fence and zero privacy. The houses sit close, so the first design job is almost always screening: layered evergreens and ornamental trees that create a room without building a wall. From there the yard earns its keep with structure, a patio or deck landing, beds that hold shape year round, and lighting that makes the space usable after commute hours.',
@@ -145,7 +145,7 @@ export const cityExpansions: Record<string, CityExpansion> = {
   'landscaping-reston-va': {
     title: 'Landscaping in Reston, VA | Sunrise Landscape',
     metaDescription:
-      'Reston landscaping designed to RA standards: wooded-lot plantings, courtyards, and outdoor living. 40 years in Northern Virginia. Free consultation.',
+      'Reston landscaping designed to RA standards: wooded-lot plantings, courtyards, and outdoor living. In Northern Virginia since 1986. Free consultation.',
     knowledgeHeading: 'Working With Reston Association Standards',
     knowledgePara:
       'Reston was planned around trees, and the Reston Association design review process protects that. We design with it, not around it: plans that preserve canopy, use naturalized planting palettes, and meet the covenants the first time they are submitted. Wooded lots in South Lakes and North Point call for shade-layer design, understory trees, ferns, and groundcovers that make a forest floor feel intentional.',

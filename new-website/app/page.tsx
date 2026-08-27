@@ -32,7 +32,10 @@ function renameBrand(node: NamedNode): NamedNode {
   return {
     ...node,
     name: 'Sunrise Landscape',
-    description: node.description?.replace('over 39 years', 'over 40 years'),
+    description: node.description?.replace(
+      'Trusted local experts with over 39 years of experience.',
+      'Trusted local experts serving Northern Virginia since 1986.',
+    ),
   }
 }
 

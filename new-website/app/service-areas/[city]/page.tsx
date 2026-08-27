@@ -52,7 +52,12 @@ function extractIntroParagraph(body: string): string {
   // Manifest body content is frozen, but the approved anniversary-math fix
   // (39 -> 40 years) applies here too — correct post-extraction rather than
   // editing the frozen MDX source.
-  return m ? m[1].trim().replace(/\b39 years\b/, '40 years') : ''
+  return m
+    ? m[1]
+        .trim()
+        .replace(/\bfor nearly 40 years\b/, 'since 1986')
+        .replace(/\b39 years\b/, 'four decades')
+    : ''
 }
 
 function extractNeighborhoods(body: string): string {

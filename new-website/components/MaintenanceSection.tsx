@@ -34,7 +34,7 @@ export default function MaintenanceSection() {
     <section className="py-16 lg:py-24 bg-cream">
       <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
         <div className="sr-only" aria-hidden="true">
-          <p>Northern Virginia&#8217;s Most Trusted Landscape Experts for Over 40 Years.</p>
+          <p>Northern Virginia&#8217;s Most Trusted Landscape Experts since 1986.</p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div

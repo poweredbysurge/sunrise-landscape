@@ -45,7 +45,7 @@ export default function AboutPage() {
           <div className="space-y-4 text-lg leading-relaxed text-black/70">
             <p>
               Sunrise started in 1986 with a truck, a small crew, and a simple standard: build
-              landscapes we would want in our own yards. Forty years later the crews are
+              landscapes we would want in our own yards. Four decades later the crews are
               bigger and the projects run from quarter acre townhome lots to multi acre estates,
               but the standard has not moved.
             </p>
