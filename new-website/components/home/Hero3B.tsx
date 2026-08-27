@@ -84,7 +84,7 @@ export default function Hero3B() {
       {/* Desktop trust bar */}
       <div className="hidden lg:flex items-center gap-6 flex-wrap pt-4 border-t border-cream/15 text-cream/75 text-sm">
         <div className="flex flex-col gap-0.5">
-          <span className="text-cream font-bold">4.9 on Google</span>
+          <span className="text-cream font-bold">4.7 on Google &middot; 47 reviews</span>
           <span className="text-orange tracking-widest">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
         </div>
         <div className="w-px h-4 bg-cream/20" />
@@ -108,8 +108,9 @@ export default function Hero3B() {
             <span className="text-green/50 text-sm">Reviews</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-green font-bold text-xl">4.9</span>
+            <span className="text-green font-bold text-xl">4.7</span>
             <span className="text-orange text-base tracking-widest">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span className="text-green/50 text-sm">47 reviews</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5 text-left min-h-[120px]">

@@ -25,11 +25,16 @@ export const metadata: Metadata = {
 // Manifest JSON-LD is frozen content, but the brand-rename and anniversary-math
 // approvals (July 2026 hierarchy audit) apply to it too — patch in code rather
 // than editing the frozen MDX source.
-type NamedNode = { '@type'?: string; name?: string; description?: string }
+type NamedNode = {
+  '@type'?: string
+  name?: string
+  description?: string
+  aggregateRating?: unknown
+}
 
 function renameBrand(node: NamedNode): NamedNode {
   if (node['@type'] !== 'LocalBusiness' && node['@type'] !== 'WebSite') return node
-  return {
+  const patched: NamedNode = {
     ...node,
     name: 'Sunrise Landscape',
     description: node.description?.replace(
@@ -37,6 +42,12 @@ function renameBrand(node: NamedNode): NamedNode {
       'Trusted local experts serving Northern Virginia since 1986.',
     ),
   }
+  // The crawled manifest carries a self-serving aggregateRating (5.0 from 3
+  // reviews) that is both inaccurate — the profile is 4.7 from 47 — and
+  // ineligible for review rich results, since Google does not honour a
+  // business rating its own pages. Strip it rather than editing frozen MDX.
+  delete patched.aggregateRating
+  return patched
 }
 
 function patchLocalBusinessJsonLd(data: object[]): object[] {
