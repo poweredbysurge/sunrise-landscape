@@ -11,7 +11,7 @@
  * Source of truth: components/Footer.tsx as of the 2026-08-19 address revert.
  */
 export const BUSINESS = {
-  name: 'Sunrise Landscape & Design',
+  name: 'Sunrise Landscape',
   phone: '703-544-0028',
   /** Digits-only form, for tel: hrefs. */
   phoneHref: 'tel:+17035440028',
