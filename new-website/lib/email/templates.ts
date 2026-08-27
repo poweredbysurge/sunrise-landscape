@@ -445,7 +445,7 @@ export function renderLeadConfirmation(
   ].join('\n')
 
   return {
-    subject: 'We got your request — Sunrise Landscape & Design',
+    subject: `We got your request — ${BUSINESS.name}`,
     html: shell({
       eyebrow: 'Request received',
       title: 'We&rsquo;ll be in touch<br />within one business day.',

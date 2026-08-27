@@ -1,5 +1,5 @@
 /**
- * Sunrise Landscape & Design — email design tokens.
+ * Sunrise Landscape — email design tokens.
  *
  * Mirrors workspace/clients/sunrise/branding/design-tokens.json and the
  * sunrise-design skill, narrowed to what email clients can actually render.
