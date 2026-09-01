@@ -7,3 +7,6 @@ node_modules/
 /upscaled/
 image-audit.json
 restore-progress.json
+
+# TypeScript build artifact
+tsconfig.tsbuildinfo
