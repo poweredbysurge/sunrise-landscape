@@ -233,7 +233,14 @@ export default function ServicesGrid() {
               >
                 <Image src={svc.img} alt={svc.alt} fill className="object-cover" sizes="(min-width: 1024px) 420px, 82vw" loading="lazy" />
                 <div
-                  className="absolute inset-x-0 bottom-0 px-6 pb-5 pt-3 lg:px-7 lg:pb-6 transition-transform duration-500 ease-out translate-y-[calc(100%-9.5rem)] group-hover:translate-y-0"
+                  /* Mobile has no hover, so the description would never open. The
+                     centred card (tracked by the same observer that drives the
+                     arrows) shows its full body; swiping to another card collapses
+                     it again. Desktop keeps the original hover-to-open behaviour —
+                     the lg: rules re-assert the collapsed default at ≥1024px. */
+                  className={`absolute inset-x-0 bottom-0 px-6 pb-5 pt-3 lg:px-7 lg:pb-6 transition-transform duration-500 ease-out ${
+                    i === mobileIndex ? 'translate-y-0' : 'translate-y-[calc(100%-9.5rem)]'
+                  } lg:translate-y-[calc(100%-9.5rem)] lg:group-hover:translate-y-0`}
                   style={{
                     background: 'linear-gradient(to top, rgba(16,31,22,1) 0%, rgba(16,31,22,0.98) 55%, rgba(16,31,22,0.9) 78%, rgba(16,31,22,0.55) 92%, transparent 100%)',
                   }}
