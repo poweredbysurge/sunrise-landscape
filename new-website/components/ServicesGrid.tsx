@@ -23,18 +23,11 @@ const NavArrowIcon = ({ direction }: { direction: 'left' | 'right' }) => (
 
 const SERVICES = [
   {
-    heading: 'Landscape Maintenance Services',
-    body: 'Transform your outdoor space into a living masterpiece that evolves beautifully through every season. Our curated maintenance packages ensure your landscape receives precisely what it needs, when it needs it.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/6822f6271cbe1867ff2caf42_MP-header-img-1 (1).webp'),
-    alt: 'Year-round landscape maintenance services in Northern Virginia',
-    href: '/landscape-maintenance-northern-virginia',
-  },
-  {
-    heading: 'Landscape Design Services',
-    body: 'As experts in landscape and hardscape design, we specialize in crafting durable and visually stunning outdoor spaces that enhance both functionality and aesthetics.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/681c9fd4dec20f523b550af0_design-img-2 (1).webp'),
-    alt: 'Custom landscape design project in Northern Virginia',
-    href: '/landscape-design-northern-virginia',
+    heading: 'Commercial Landscaping',
+    body: 'Transform your commercial property into a distinctive destination that welcomes, impresses, and adds value to your business investment. From corporate campuses to vibrant community spaces, we bring our signature blend of artistic vision and professional excellence to every commercial project.',
+    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/682313a1105c47482807f99e_commercial-signature-img (1).webp'),
+    alt: 'Commercial landscape maintenance in Northern Virginia',
+    href: '/commercial-landscape-maintenance-virginia',
   },
   {
     heading: 'Hardscape Design Services',
@@ -44,11 +37,11 @@ const SERVICES = [
     href: '/hardscape-northern-virginia',
   },
   {
-    heading: 'Commercial Landscaping',
-    body: 'Transform your commercial property into a distinctive destination that welcomes, impresses, and adds value to your business investment. From corporate campuses to vibrant community spaces, we bring our signature blend of artistic vision and professional excellence to every commercial project.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/682313a1105c47482807f99e_commercial-signature-img (1).webp'),
-    alt: 'Commercial landscape maintenance in Northern Virginia',
-    href: '/commercial-landscape-maintenance-virginia',
+    heading: 'Landscape Maintenance Services',
+    body: 'Transform your outdoor space into a living masterpiece that evolves beautifully through every season. Our curated maintenance packages ensure your landscape receives precisely what it needs, when it needs it.',
+    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/6822f6271cbe1867ff2caf42_MP-header-img-1 (1).webp'),
+    alt: 'Year-round landscape maintenance services in Northern Virginia',
+    href: '/landscape-maintenance-northern-virginia',
   },
   {
     heading: 'Landscape Lighting Design',
@@ -58,7 +51,7 @@ const SERVICES = [
     href: '/landscape-lighting-northern-virginia',
   },
   {
-    heading: 'Ponds & Water Feature',
+    heading: 'Ponds & Water Features',
     body: 'Transform your outdoor sanctuary with the timeless allure of moving water. From meditative koi ponds to dramatic waterfalls, we craft water features that engage all the senses and create year-round interest in your landscape.',
     img: cdnToLocal('/media/6808afe22b48076cc8e63cef/682321dd71e368222af56712_pw-header-img-1 (1).webp'),
     alt: 'Custom pond and water feature installation in Northern Virginia',
@@ -70,6 +63,13 @@ const SERVICES = [
     img: cdnToLocal('/media/6808afe22b48076cc8e63cef/68247d8f31ffd45cf0a28ba9_dec-header-img-2 (1).webp'),
     alt: 'Drainage solution and erosion control landscaping in Northern Virginia',
     href: '/drainage-solutions-northern-virginia',
+  },
+  {
+    heading: 'Landscape Design Services',
+    body: 'As experts in landscape and hardscape design, we specialize in crafting durable and visually stunning outdoor spaces that enhance both functionality and aesthetics.',
+    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/681c9fd4dec20f523b550af0_design-img-2 (1).webp'),
+    alt: 'Custom landscape design project in Northern Virginia',
+    href: '/landscape-design-northern-virginia',
   },
 ]
 

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import ServicesGrid from '@/components/ServicesGrid'
 import DesigningForImpact from '@/components/DesigningForImpact'
 import Hero3B from '@/components/home/Hero3B'
@@ -8,110 +7,6 @@ import MaintenanceSection from '@/components/MaintenanceSection'
 import ServiceAreasSection from '@/components/ServiceAreasSection'
 import TestimonialsSection from '@/components/TestimonialsSection'
 import ContactFormSection from '@/components/ContactFormSection'
-
-const serviceCards1 = [
-  {
-    heading: 'Hardscape Design Services',
-    body: 'Our hardscapes are designed to be visually stunning and functional, and built to last a lifetime.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/6889b8bb276774b7c21ff399_Katie Bird Pool 5.jpg'),
-    alt: 'Hardscape patio and stonework installation in Northern Virginia',
-    href: '/hardscape-northern-virginia',
-  },
-  {
-    heading: 'Landscape Design Services',
-    body: 'As experts in landscape and hardscape design, we specialize in crafting durable and visually stunning outdoor spaces that enhance both functionality and aesthetics.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/681c9fd4dec20f523b550af0_design-img-2 (1).webp'),
-    alt: 'Custom landscape design project in Northern Virginia',
-    href: '/landscape-design-northern-virginia',
-  },
-  {
-    heading: 'Landscape Maintenance Services',
-    body: 'Transform your outdoor space into a living masterpiece that evolves beautifully through every season. Our curated maintenance packages ensure your landscape receives precisely what it needs, when it needs it.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/6822f6271cbe1867ff2caf42_MP-header-img-1 (1).webp'),
-    alt: 'Year-round landscape maintenance services in Northern Virginia',
-    href: '/landscape-maintenance-northern-virginia',
-  },
-  {
-    heading: 'Landscape Lighting Design',
-    body: 'Transform your property into an enchanting evening retreat with artfully designed landscape lighting.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/680f2d0d1148d166273a6347_design-1.webp'),
-    alt: 'Professional landscape lighting design for outdoor spaces',
-    href: '/landscape-lighting-northern-virginia',
-  },
-  {
-    heading: 'Ponds & Water Feature',
-    body: 'Transform your outdoor sanctuary with the timeless allure of moving water. From meditative koi ponds to dramatic waterfalls, we craft water features that engage all the senses and create year-round interest in your landscape.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/682321dd71e368222af56712_pw-header-img-1 (1).webp'),
-    alt: 'Custom pond and water feature installation in Northern Virginia',
-    href: '/water-features-northern-virginia',
-  },
-  {
-    heading: 'Drainage & Erosion Control',
-    body: 'Where art meets engineering, we transform water challenges into opportunities for landscape enhancement. Our expertise ensures your property remains beautiful and structurally sound through every season.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/68247d8f31ffd45cf0a28ba9_dec-header-img-2 (1).webp'),
-    alt: 'Drainage solution and erosion control landscaping in Northern Virginia',
-    href: '/drainage-solutions-northern-virginia',
-  },
-  {
-    heading: 'Commercial Landscaping',
-    body: 'Transform your commercial property into a distinctive destination that welcomes, impresses, and adds value to your business investment. From corporate campuses to vibrant community spaces, we bring our signature blend of artistic vision and professional excellence to every commercial project.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/682313a1105c47482807f99e_commercial-signature-img (1).webp'),
-    alt: 'Commercial landscape maintenance in Northern Virginia',
-    href: '/commercial-landscape-maintenance-virginia',
-  },
-]
-
-const serviceCards2 = [
-  {
-    heading: 'Hardscape Design Services',
-    body: 'Our hardscapes are designed to be visually stunning and functional, and built to last a lifetime.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/6889b8bb276774b7c21ff399_Katie Bird Pool 5.jpg'),
-    alt: 'Hardscape patio and stonework installation in Northern Virginia',
-    href: '/hardscape-northern-virginia',
-  },
-  {
-    heading: 'Landscape Design Services',
-    body: 'As experts in landscape and hardscape design, we specialize in crafting durable and visually stunning outdoor spaces that enhance both functionality and aesthetics.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/681c9fd4dec20f523b550af0_design-img-2 (1).webp'),
-    alt: 'Custom landscape design project in Northern Virginia',
-    href: '/landscape-design-northern-virginia',
-  },
-  {
-    heading: 'Landscape Lighting Services',
-    body: 'Transform your property into an enchanting evening retreat with artfully designed landscape lighting.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/680f2d0d1148d166273a6347_design-1.webp'),
-    alt: 'Professional landscape lighting design for outdoor spaces',
-    href: '/landscape-lighting-northern-virginia',
-  },
-  {
-    heading: 'Ponds & Water Feature',
-    body: 'Transform your outdoor sanctuary with the timeless allure of moving water. From meditative koi ponds to dramatic waterfalls, we craft water features that engage all the senses and create year-round interest in your landscape.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/682321dd71e368222af56712_pw-header-img-1 (1).webp'),
-    alt: 'Custom pond and water feature installation in Northern Virginia',
-    href: '/water-features-northern-virginia',
-  },
-  {
-    heading: 'Drainage & Erosion Control',
-    body: 'Where art meets engineering, we transform water challenges into opportunities for landscape enhancement. Our expertise ensures your property remains beautiful and structurally sound through every season.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/68247d8f31ffd45cf0a28ba9_dec-header-img-2 (1).webp'),
-    alt: 'Drainage solution and erosion control landscaping in Northern Virginia',
-    href: '/drainage-solutions-northern-virginia',
-  },
-  {
-    heading: 'Landscape Maintenance Services',
-    body: 'Transform your outdoor space into a living masterpiece that evolves beautifully through every season. Our curated maintenance packages ensure your landscape receives precisely what it needs, when it needs it.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/6822f6271cbe1867ff2caf42_MP-header-img-1 (1).webp'),
-    alt: 'Stone pathway flanked by green hedges leading to a grassy backyard with trees and a fence.',
-    href: '/landscape-maintenance-northern-virginia',
-  },
-  {
-    heading: 'Commercial Landscaping',
-    body: 'Transform your commercial property into a distinctive destination that welcomes, impresses, and adds value to your business investment. From corporate campuses to vibrant community spaces, we bring our signature blend of artistic vision and professional excellence to every commercial project.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/682313a1105c47482807f99e_commercial-signature-img (1).webp'),
-    alt: 'Gray building with white double doors and red trim, surrounded by neatly trimmed bushes and green trees under a clear blue sky.',
-    href: '/commercial-landscape-maintenance-virginia',
-  },
-]
 
 const featuredWork = [
   {
@@ -203,13 +98,6 @@ export default function HomeVersionB() {
       {/* ── SERVICES GRID ─────────────────────────────────────────── */}
       <ServicesGrid />
 
-      {/* SEO headings preserved from manifest — visually hidden */}
-      <div aria-hidden="true" className="sr-only">
-        <h2>Hardscape Services in Northern Virginia</h2>
-        <h2>Landscape Maintenance in Northern Virginia</h2>
-        <h2>Commercial Landscape Services</h2>
-      </div>
-
       {/* ── MAINTENANCE SECTION ─────────────────────────────────────
           Maintenance-led business: this band runs ahead of the
           design/hardscape showcase content below (page mirrors revenue). */}
@@ -246,32 +134,8 @@ export default function HomeVersionB() {
         </div>
       </section>
 
-      {/* ── SERVICE GRID 1 → sr-only for SEO ──────────────────────── */}
-      <div aria-hidden="true" className="sr-only">
-        <p>Where Vision ‍ meets craftsmanship.</p>
-        {serviceCards1.map(card => (
-          <div key={card.heading + '-sg1'}>
-            <h3>{card.heading}</h3>
-            <Image src={card.img} alt={card.alt} width={1} height={1} />
-            <p>{card.body}</p>
-          </div>
-        ))}
-      </div>
-
       {/* ── FEATURED WORK ──────────────────────────────────────────── */}
       <FeaturedWorkCarousel projects={featuredWork} ctaLabel="Get My Free Yard Inspection" ctaHref="/contact#form" />
-
-      {/* ── SERVICE GRID 2 → sr-only for SEO ──────────────────────── */}
-      <div aria-hidden="true" className="sr-only">
-        <p>Where vision meets craftsmanship</p>
-        {serviceCards2.map(card => (
-          <div key={card.heading + '-sg2'}>
-            <h3>{card.heading}</h3>
-            <Image src={card.img} alt={card.alt} width={1} height={1} />
-            <p>{card.body}</p>
-          </div>
-        ))}
-      </div>
 
       {/* ── TESTIMONIALS ───────────────────────────────────────────── */}
       <TestimonialsSection testimonials={testimonials} />

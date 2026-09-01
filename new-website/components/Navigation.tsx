@@ -8,13 +8,13 @@ import { usePathname } from 'next/navigation'
 const landscapingAndLawnCare = [
   { label: 'Landscape Maintenance', href: '/landscape-maintenance-northern-virginia' },
   { label: 'Lawn Care', href: '/lawn-care-northern-virginia' },
-  { label: 'Planting', href: '/landscape-planting-northern-virginia' },
 ]
 
 const designAndBuild = [
   { label: 'Outdoor Living Spaces', href: '/outdoor-living-spaces-northern-virginia' },
   { label: 'Patios & Hardscaping', href: '/hardscape-northern-virginia' },
   { label: 'Landscape Design', href: '/landscape-design-northern-virginia' },
+  { label: 'Planting', href: '/landscape-planting-northern-virginia' },
   { label: 'Outdoor Lighting', href: '/landscape-lighting-northern-virginia' },
   { label: 'Water Features', href: '/water-features-northern-virginia' },
   { label: 'Drainage & Erosion Control', href: '/drainage-solutions-northern-virginia' },

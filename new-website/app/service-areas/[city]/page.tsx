@@ -107,7 +107,7 @@ const serviceCards = [
     href: '/landscape-lighting-northern-virginia',
   },
   {
-    heading: 'Ponds & Water Feature',
+    heading: 'Ponds & Water Features',
     desc: 'Transform your outdoor sanctuary with the timeless allure of moving water. From meditative koi ponds to dramatic waterfalls, we craft water features that engage all the senses and create year-round interest in your landscape.',
     href: '/water-features-northern-virginia',
   },
