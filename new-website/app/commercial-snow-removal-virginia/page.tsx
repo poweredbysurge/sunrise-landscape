@@ -41,7 +41,7 @@ const schema = [
       telephone: '703-544-0028',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: '43813 Beaver Meadow Rd #100',
+        streetAddress: '43813 Beaver Meadow Rd Ste 100',
         addressLocality: 'Sterling',
         addressRegion: 'VA',
         postalCode: '20166',

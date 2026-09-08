@@ -103,7 +103,7 @@ const OPENING_HOURS_SPEC = [
 
 const BUSINESS_ADDRESS = {
   '@type': 'PostalAddress',
-  streetAddress: '43813 Beaver Meadow Rd #100',
+  streetAddress: '43813 Beaver Meadow Rd Ste 100',
   addressLocality: 'Sterling',
   addressRegion: 'VA',
   postalCode: '20166',

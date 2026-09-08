@@ -1,3 +1,6 @@
 .vercel
 
 .DS_Store
+
+# stray unused images dropped in components/
+new-website/components/*.png

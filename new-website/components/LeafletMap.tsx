@@ -17,7 +17,7 @@ const fixLeafletIcons = () => {
 }
 
 const OFFICE = { lat: 39.0106, lng: -77.4002 }
-const ADDRESS = '43813 Beaver Meadow Rd #100, Sterling, VA 20166'
+const ADDRESS = '43813 Beaver Meadow Rd Ste 100, Sterling, VA 20166'
 
 export default function LeafletMap() {
   useEffect(() => {

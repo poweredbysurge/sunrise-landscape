@@ -85,7 +85,7 @@ export default function Footer() {
               </a>
               <p className="flex items-start justify-center md:justify-start gap-2">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mt-0.5 flex-shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                43813 Beaver Meadow Rd #100<br />Sterling, VA 20166
+                43813 Beaver Meadow Rd Ste 100<br />Sterling, VA 20166
               </p>
             </div>
             <div className="flex justify-center md:justify-start gap-3 mt-6">

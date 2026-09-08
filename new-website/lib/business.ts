@@ -16,6 +16,6 @@ export const BUSINESS = {
   /** Digits-only form, for tel: hrefs. */
   phoneHref: 'tel:+17035440028',
   email: 'info@sunriselandscapeanddesign.com',
-  addressLine1: '43813 Beaver Meadow Rd #100',
+  addressLine1: '43813 Beaver Meadow Rd Ste 100',
   addressLine2: 'Sterling, VA 20166',
 } as const
