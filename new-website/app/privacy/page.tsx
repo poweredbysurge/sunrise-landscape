@@ -52,7 +52,7 @@ export default function PrivacyPage() {
 
           <div>
             <h2 className="text-xl font-ui not-italic font-bold text-green mb-3">Introduction</h2>
-            <p>Sunrise Landscape &amp; Design (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) respects your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website, submit forms, or interact with our services.</p>
+            <p>Sunrise Landscape LLC (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) respects your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website, submit forms, or interact with our services.</p>
           </div>
 
           <div>
@@ -78,7 +78,7 @@ export default function PrivacyPage() {
 
           <div>
             <h2 className="text-xl font-ui not-italic font-bold text-green mb-3">SMS / Text Messaging Communications</h2>
-            <p className="mb-3">By providing your phone number and consenting on our website or landing pages, you agree to receive text messages from Sunrise Landscape &amp; Design. These messages may include appointment confirmations, service reminders, follow-ups related to your inquiry, and promotional offers.</p>
+            <p className="mb-3">By providing your phone number and consenting on our website or landing pages, you agree to receive text messages from Sunrise Landscape LLC. These messages may include appointment confirmations, service reminders, follow-ups related to your inquiry, and promotional offers.</p>
             <ul className="space-y-2 pl-4 text-base">
               <li className="flex items-start gap-2"><span className="text-orange mt-1">–</span><span><strong>Message frequency varies</strong> based on your interactions and service needs.</span></li>
               <li className="flex items-start gap-2"><span className="text-orange mt-1">–</span><span><strong>Message and data rates may apply</strong> depending on your mobile carrier and plan.</span></li>
@@ -121,7 +121,7 @@ export default function PrivacyPage() {
           <div>
             <h2 className="text-xl font-ui not-italic font-bold text-green mb-3">Contact Us</h2>
             <p>If you have questions about this Privacy Policy, please contact us at:</p>
-            <p className="mt-3 font-ui font-bold text-green">Sunrise Landscape &amp; Design</p>
+            <p className="mt-3 font-ui font-bold text-green">Sunrise Landscape LLC</p>
             <p>Sterling, VA &bull; <a href="tel:703-544-0028" className="text-orange hover:underline">703-544-0028</a></p>
             <Link href="/contact#form" className="mt-4 btn-primary text-xs inline-flex">
               <span>Contact Us</span>

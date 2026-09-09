@@ -52,12 +52,12 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-ui not-italic font-bold text-green mb-3">Agreement to Terms</h2>
-            <p className="text-black/70 leading-relaxed">By accessing or using the services of Sunrise Landscape and Design, you agree to be bound by these Terms of Service. These terms apply to all clients, visitors, and others who use our services.</p>
+            <p className="text-black/70 leading-relaxed">By accessing or using the services of Sunrise Landscape LLC (&ldquo;Sunrise Landscape&rdquo;), you agree to be bound by these Terms of Service. These terms apply to all clients, visitors, and others who use our services.</p>
           </div>
 
           <div>
             <h2 className="text-xl font-ui not-italic font-bold text-green mb-3">Services</h2>
-            <p className="text-black/70 leading-relaxed">Sunrise Landscape and Design provides landscape design, installation, hardscaping, planting, drainage, maintenance, and related outdoor services in Northern Virginia. All services are subject to a written proposal or estimate agreed upon by both parties prior to commencement of work.</p>
+            <p className="text-black/70 leading-relaxed">Sunrise Landscape LLC provides landscape design, installation, hardscaping, planting, drainage, maintenance, and related outdoor services in Northern Virginia. All services are subject to a written proposal or estimate agreed upon by both parties prior to commencement of work.</p>
           </div>
 
           <div>
@@ -82,19 +82,19 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-ui not-italic font-bold text-green mb-3">Liability</h2>
-            <p className="text-black/70 leading-relaxed">Sunrise Landscape and Design carries full general liability insurance and workers&apos; compensation coverage. We are not responsible for pre-existing conditions, damage caused by unmarked underground utilities, or acts of nature. Any claims must be reported within 5 business days of service completion.</p>
+            <p className="text-black/70 leading-relaxed">Sunrise Landscape LLC carries full general liability insurance and workers&apos; compensation coverage. We are not responsible for pre-existing conditions, damage caused by unmarked underground utilities, or acts of nature. Any claims must be reported within 5 business days of service completion.</p>
           </div>
 
           <div>
             <h2 className="text-xl font-ui not-italic font-bold text-green mb-3">Design &amp; Intellectual Property</h2>
-            <p className="text-black/70 leading-relaxed">All landscape design plans, drawings, and concepts created by Sunrise Landscape remain the intellectual property of Sunrise Landscape and Design until full payment is received. Photos of completed projects may be used for portfolio and marketing purposes.</p>
+            <p className="text-black/70 leading-relaxed">All landscape design plans, drawings, and concepts created by Sunrise Landscape remain the intellectual property of Sunrise Landscape LLC until full payment is received. Photos of completed projects may be used for portfolio and marketing purposes.</p>
           </div>
 
           <div>
             <h2 className="text-xl font-ui not-italic font-bold text-green mb-3">SMS / Text Messaging Terms</h2>
-            <p className="text-black/70 leading-relaxed mb-3">By opting in to receive text messages from Sunrise Landscape &amp; Design (through our website, landing pages, or other opt-in methods), you agree to the following terms:</p>
+            <p className="text-black/70 leading-relaxed mb-3">By opting in to receive text messages from Sunrise Landscape LLC (through our website, landing pages, or other opt-in methods), you agree to the following terms:</p>
             <ul className="space-y-2 pl-4 text-black/70">
-              <li className="flex items-start gap-2"><span className="text-orange mt-1">–</span><span>You consent to receive automated and non-automated text messages from Sunrise Landscape &amp; Design at the phone number you provide. These messages may include appointment confirmations, service reminders, consultation follow-ups, and promotional offers.</span></li>
+              <li className="flex items-start gap-2"><span className="text-orange mt-1">–</span><span>You consent to receive automated and non-automated text messages from Sunrise Landscape LLC at the phone number you provide. These messages may include appointment confirmations, service reminders, consultation follow-ups, and promotional offers.</span></li>
               <li className="flex items-start gap-2"><span className="text-orange mt-1">–</span><span><strong>Message frequency varies</strong> depending on your interactions, service needs, and campaign type.</span></li>
               <li className="flex items-start gap-2"><span className="text-orange mt-1">–</span><span><strong>Message and data rates may apply.</strong> Your mobile carrier&apos;s standard messaging and data rates may apply to any messages you send or receive.</span></li>
               <li className="flex items-start gap-2"><span className="text-orange mt-1">–</span><span>You may <strong>opt out at any time</strong> by replying <strong>STOP</strong> to any message. You will receive a single confirmation text and no further messages will be sent.</span></li>
@@ -114,7 +114,7 @@ export default function TermsPage() {
           <div>
             <h2 className="text-xl font-ui not-italic font-bold text-green mb-3">Contact Us</h2>
             <p className="text-black/70 leading-relaxed">For questions about these terms, contact us at:</p>
-            <p className="mt-3 font-ui font-bold text-green">Sunrise Landscape and Design</p>
+            <p className="mt-3 font-ui font-bold text-green">Sunrise Landscape LLC</p>
             <p className="text-black/70">Sterling, VA &bull; <a href="tel:703-544-0028" className="text-orange hover:underline">703-544-0028</a> &bull; <a href="https://sunriselandscapeanddesign.com" className="text-orange hover:underline">sunriselandscapeanddesign.com</a></p>
             <Link href="/contact#form" className="mt-4 btn-primary text-xs inline-flex">
               <span>Contact Us</span>
