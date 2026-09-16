@@ -153,19 +153,29 @@ export default function InquiryForm() {
       })
       if (!res.ok) throw new Error('Failed to send')
       // GA4 conversion. Fires only past the !res.ok throw, so a failed submit
-      // never counts as a lead. The gtag guard matters because the tag only
-      // loads where NEXT_PUBLIC_GA_ID is set (Production); everywhere else
-      // gtag is undefined and an unguarded call would break the form. Closed
-      // enums, not the human labels, so the params group cleanly in reports.
+      // never counts as a lead. Closed enums, not the human labels, so the
+      // params group cleanly in reports and match what Command Center gets.
       // No name/email/phone/address here: GA4 prohibits PII and the property
       // has Redact Data on.
-      if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
-        (window as any).gtag('event', 'generate_lead', {
-          service_interest: svc ? SERVICE_INTEREST_ENUM[svc] : '',
-          urgency: timeline ?? '',
-          budget_band: budget ?? '',
-          property_type: svc === 'commercial' ? 'commercial' : 'residential',
-        })
+      //
+      // Its own try/catch, not the outer one: the lead has already been
+      // accepted by this point, so nothing analytics does may surface a
+      // submission error or skip the success screen. The typeof guard covers
+      // gtag being absent (no NEXT_PUBLIC_GA_ID outside Production); the catch
+      // covers it being present but blocked or monkeypatched by an extension.
+      try {
+        if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+          (window as any).gtag('event', 'generate_lead', {
+            service_interest: svc ? SERVICE_INTEREST_ENUM[svc] : '',
+            urgency: timeline ?? '',
+            budget_band: budget ?? '',
+            // Matches the propertyType sent above: only asserted when they said
+            // so, so a commercial HOA who picked Maintenance is not mislabelled.
+            property_type: svc === 'commercial' ? 'commercial' : '',
+          })
+        }
+      } catch {
+        // Analytics is best-effort. The lead is already in.
       }
       setStep(stepDone)
     } catch {
