@@ -152,6 +152,21 @@ export default function InquiryForm() {
         }),
       })
       if (!res.ok) throw new Error('Failed to send')
+      // GA4 conversion. Fires only past the !res.ok throw, so a failed submit
+      // never counts as a lead. The gtag guard matters because the tag only
+      // loads where NEXT_PUBLIC_GA_ID is set (Production); everywhere else
+      // gtag is undefined and an unguarded call would break the form. Closed
+      // enums, not the human labels, so the params group cleanly in reports.
+      // No name/email/phone/address here: GA4 prohibits PII and the property
+      // has Redact Data on.
+      if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+        (window as any).gtag('event', 'generate_lead', {
+          service_interest: svc ? SERVICE_INTEREST_ENUM[svc] : '',
+          urgency: timeline ?? '',
+          budget_band: budget ?? '',
+          property_type: svc === 'commercial' ? 'commercial' : 'residential',
+        })
+      }
       setStep(stepDone)
     } catch {
       setSubmitError('Something went wrong. Please call us at 703-544-0028.')
