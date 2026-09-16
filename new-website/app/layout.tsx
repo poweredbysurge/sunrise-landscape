@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { SITE_URL } from '@/lib/siteUrl'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 
 const aeonikNew = localFont({
@@ -38,6 +39,8 @@ const DEFAULT_OG_IMAGE = {
   alt: 'Sunrise Landscape + Design — Hardscape, Landscape, Planting, Design, Drainage, Commercial, Lighting',
 }
 
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   openGraph: {
@@ -56,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navigation />
         <main>{children}</main>
         <Footer />
+        {GA_ID ? <GoogleAnalytics gaId={GA_ID} /> : null}
       </body>
     </html>
   )
