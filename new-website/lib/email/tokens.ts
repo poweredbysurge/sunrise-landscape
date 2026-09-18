@@ -9,9 +9,9 @@
  * rule per email — never as a fill, never in a paragraph, never on a button.
  * Corners are square, borders are 1px, surfaces are flat. No shadows.
  *
- * Email caveat: the brand faces (Aeonik, Editorsnote) are self-hosted .otf/.woff2
- * and cannot be relied on in a mail client. They lead the stack so desktop clients
- * on a machine that has them render on-brand; Arial/Helvetica is the real target.
+ * Email caveat: the brand faces (Figtree, Editorsnote) cannot be relied on in a
+ * mail client. They lead the stack so desktop clients on a machine that has them
+ * render on-brand; Arial/Helvetica is the real target.
  */
 
 export const color = {
@@ -30,8 +30,8 @@ export const color = {
 } as const
 
 export const font = {
-  ui: "'Aeonik', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-  body: "'Aeonik new', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+  ui: "'Figtree', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+  body: "'Figtree', 'Helvetica Neue', Helvetica, Arial, sans-serif",
   mono: "'SF Mono', Menlo, Consolas, monospace",
 } as const
 

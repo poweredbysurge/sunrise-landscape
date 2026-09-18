@@ -1,24 +1,24 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+import { Figtree } from 'next/font/google'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { SITE_URL } from '@/lib/siteUrl'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 
-const aeonikNew = localFont({
-  src: [
-    { path: '../public/fonts/AeonikTRIAL-Regular.otf', weight: '400', style: 'normal' },
-    { path: '../public/fonts/AeonikTRIAL-Bold.otf', weight: '700', style: 'normal' },
-  ],
+// Figtree replaces both Aeonik faces sitewide (Sept 2026). The CSS variable
+// names are deliberately left as --font-aeonik-new / --font-aeonik so that
+// globals.css, tailwind.config.ts and the component files need no edits; the
+// names now describe the slot, not the typeface.
+const figtreeBody = Figtree({
+  subsets: ['latin'],
   variable: '--font-aeonik-new',
   display: 'swap',
 })
 
-const aeonik = localFont({
-  src: [
-    { path: '../public/fonts/Aeonik-Regular.otf', weight: '400', style: 'normal' },
-  ],
+const figtreeUi = Figtree({
+  subsets: ['latin'],
   variable: '--font-aeonik',
   display: 'swap',
 })
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${aeonik.variable} ${aeonikNew.variable} ${editorsNote.variable}`}>
+    <html lang="en" className={`${figtreeUi.variable} ${figtreeBody.variable} ${editorsNote.variable}`}>
       <body className="font-sans antialiased text-black bg-white min-w-0">
         <Navigation />
         <main>{children}</main>
