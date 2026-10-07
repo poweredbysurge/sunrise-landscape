@@ -132,7 +132,7 @@ export default function ServiceAreasNVPage() {
             <div>
               <div className="relative w-24 h-8 mb-8 opacity-60">
                 <Image
-                  src={"/logos/sunrise-logo.svg"}
+                  src={"/logos/sunrise-logo-white.svg"}
                   alt="SUNRISE Landscape"
                   fill
                   className="object-contain object-left"

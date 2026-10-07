@@ -63,12 +63,11 @@ export default function Footer() {
           <div className="lg:col-span-1 min-w-0 flex flex-col items-center text-center md:items-start md:text-left">
             <Link href="/" className="block mb-5" aria-label="Sunrise Landscape — Home">
               <Image
-                src="/logos/sunrise-logo.svg"
+                src="/logos/sunrise-logo-white.svg"
                 alt="SUNRISE Landscape"
                 width={200}
                 height={69}
                 className="w-36 h-auto"
-                style={{ filter: 'brightness(0) invert(1)' }}
               />
             </Link>
             <h2 className="font-display editorial-display text-3xl text-cream leading-none mb-6">

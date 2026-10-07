@@ -74,10 +74,10 @@ export default function Navigation() {
           <div>
             <Link href="/" className="inline-flex flex-shrink-0 transition-opacity duration-300 hover:opacity-85" aria-label="Sunrise Landscape — Home">
               <Image
-                src="/logos/sunrise-logo.svg"
+                src="/logos/sunrise-logo-white.svg"
                 alt="SUNRISE Landscape"
                 width={190}
-                height={66}
+                height={65}
                 priority
               />
             </Link>

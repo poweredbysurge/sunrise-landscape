@@ -35,7 +35,7 @@ export default function TermsPage() {
         <div className="max-w-3xl mx-auto px-5 lg:px-8">
           <div className="relative w-24 h-8 mb-8">
             <Image
-              src={"/logos/sunrise-logo-dark.svg"}
+              src={"/logos/sunrise-logo-green.svg"}
               alt="SUNRISE Landscape"
               fill
               className="object-contain object-left"

@@ -49,7 +49,7 @@ export default function CommercialAliasPage() {
         <div className="relative z-10 max-w-screen-xl mx-auto px-5 lg:px-8 pb-16">
           <div className="relative w-24 h-8 mb-8">
             <Image
-              src={"/logos/sunrise-logo.svg"}
+              src={"/logos/sunrise-logo-white.svg"}
               alt="SUNRISE Landscape"
               fill
               className="object-contain object-left"
