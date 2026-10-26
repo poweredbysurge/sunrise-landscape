@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
+import { checkBotId } from 'botid/server'
 import { renderLeadNotification, renderLeadConfirmation } from '@/lib/email/templates'
 import { forwardToCommandCenter } from '@/lib/leads/commandCenter'
 import type { Lead, LeadContext } from '@/lib/leads/types'
@@ -15,6 +16,11 @@ import type { Lead, LeadContext } from '@/lib/leads/types'
  *
  * Only (1) can fail the request. A lead is never told the form broke because a
  * secondary send did.
+ *
+ * Before any of that, Vercel BotID screens out automated submissions (see
+ * instrumentation-client.ts for the client half). It fails open: if the check
+ * itself errors, the submission is delivered, because a lost lead costs more
+ * than one extra piece of spam.
  */
 
 // ─── Configuration ───────────────────────────────────────────────────────────
@@ -115,6 +121,30 @@ export async function POST(request: Request) {
     gclid: str(ctxIn.gclid, 200) || undefined,
     fbclid: str(ctxIn.fbclid, 200) || undefined,
     leadKey: str(ctxIn.leadKey, 100) || undefined,
+  }
+
+  // ── Bot gate (Vercel BotID). ──
+  // Runs before validation and before any email is sent, so automated spam never
+  // reaches Sunrise's inbox or the Command Center.
+  //
+  // A blocked submission gets a 403, which the form shows as "Something went
+  // wrong. Please call us", so a real person wrongly flagged still has a way
+  // through. Name, email and phone are logged so a false positive can be
+  // recovered from the Vercel logs, the same way a failed send is.
+  try {
+    const verification = await checkBotId()
+    if (verification.isBot) {
+      console.warn('[lead] blocked by BotID', {
+        name: `${lead.firstName} ${lead.lastName}`.trim(),
+        email: lead.email,
+        phone: lead.phone,
+        pageUrl: ctx.pageUrl,
+      })
+      return NextResponse.json({ error: 'Request blocked' }, { status: 403 })
+    }
+  } catch (err) {
+    // Fail open. Deliver the lead rather than drop it on an infrastructure error.
+    console.error('[lead] BotID check errored, delivering anyway:', (err as Error).message)
   }
 
   // The form gates its own submit button on phone AND email, so requiring one of

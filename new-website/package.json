@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@next/third-parties": "^16.3.5",
+    "botid": "^1.5.11",
     "framer-motion": "^12.18.1",
     "leaflet": "^1.9.4",
     "next": "^15.3.3",

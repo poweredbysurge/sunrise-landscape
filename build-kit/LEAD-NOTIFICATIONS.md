@@ -7,6 +7,11 @@ contact in the Surge Command Center.
 
 `InquiryForm` (4-step widget, on ~28 pages + the homepage hero)
   → `POST /api/contact`
+    → 0. **Bot gate** (Vercel BotID, added 2026-10-26). Automated submissions get a 403
+         and never reach anyone's inbox. Fails open: if the check itself errors, the
+         lead is delivered. Blocked attempts are logged as `[lead] blocked by BotID`
+         in the Vercel logs, with name, email and phone, so a false positive can be
+         recovered by hand.
     → 1. **Internal alert** to Sunrise + Surge. The only send that can fail the request.
     → 2. **Confirmation** back to the lead. Best effort, gated on a Sunrise sender.
     → 3. **Command Center forward**. Best effort, dormant until a tenant exists.
@@ -17,7 +22,8 @@ A failure in 2 or 3 never tells the lead the form broke.
 
 | File | Role |
 |---|---|
-| `new-website/app/api/contact/route.ts` | Receiver, validation, fan-out |
+| `new-website/app/api/contact/route.ts` | Receiver, bot gate, validation, fan-out |
+| `new-website/instrumentation-client.ts` | BotID client half. Every route here must call `checkBotId()` on the server, and vice versa |
 | `new-website/lib/email/tokens.ts` | Brand tokens, narrowed to what mail clients render |
 | `new-website/lib/email/templates.ts` | Both emails, HTML + plain text |
 | `new-website/lib/leads/types.ts` | `Lead` / `LeadContext` — one shared shape |
