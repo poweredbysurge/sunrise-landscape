@@ -135,7 +135,7 @@ export default function HomeVersionB() {
       </section>
 
       {/* ── FEATURED WORK ──────────────────────────────────────────── */}
-      <FeaturedWorkCarousel projects={featuredWork} ctaLabel="Get My Free Yard Inspection" ctaHref="/contact#form" />
+      <FeaturedWorkCarousel projects={featuredWork} ctaLabel="Start Free Consultation" ctaHref="/contact#form" />
 
       {/* ── TESTIMONIALS ───────────────────────────────────────────── */}
       <TestimonialsSection testimonials={testimonials} />

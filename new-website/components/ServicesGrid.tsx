@@ -267,7 +267,7 @@ export default function ServicesGrid() {
                 Have a project in mind?
               </span>
               <span className="section-label text-green inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-200">
-                Get My Free Yard Inspection <ArrowIcon />
+                Start Free Consultation <ArrowIcon />
               </span>
             </Link>
           </div>

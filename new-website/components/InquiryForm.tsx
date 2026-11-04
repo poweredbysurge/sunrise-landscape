@@ -54,7 +54,7 @@ const HEAR_OPTIONS = [
 function ctaFor(svc: ServiceKey | null) {
   if (svc === 'project') return 'Start My Project Conversation'
   if (svc === 'commercial') return 'Talk To Our Commercial Team'
-  return 'Get My Free Yard Inspection'
+  return 'Start Free Consultation'
 }
 
 interface FieldsState {

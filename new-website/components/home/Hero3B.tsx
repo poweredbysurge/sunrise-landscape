@@ -78,7 +78,7 @@ export default function Hero3B() {
       </p>
       <div className="flex items-center gap-6 flex-wrap">
         <Link href="/contact#form" className="btn-primary">
-          <span>Get My Free Yard Inspection</span>
+          <span>Start Free Consultation</span>
         </Link>
       </div>
       {/* Desktop trust bar */}
@@ -204,7 +204,7 @@ export default function Hero3B() {
             className="w-full flex items-center justify-center gap-2 bg-orange text-white font-ui font-bold text-sm tracking-wider uppercase px-7 rounded-lg cursor-pointer active:scale-[0.96] active:opacity-90 transition-transform"
             style={{ minHeight: '44px' }}
           >
-            <span>Get My Free Yard Inspection</span>
+            <span>Start Free Consultation</span>
           </Link>
         </div>
       )}

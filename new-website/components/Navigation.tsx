@@ -330,7 +330,7 @@ export default function Navigation() {
             className="btn-primary w-full justify-center"
             style={{ minHeight: 56 }}
           >
-            <span>Get My Free Yard Inspection</span>
+            <span>Start Free Consultation</span>
           </Link>
         </div>
       </div>
