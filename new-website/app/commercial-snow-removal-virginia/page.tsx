@@ -131,9 +131,24 @@ export default function CommercialSnowRemovalPage() {
             </div>
           </div>
         </div>
-        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 lg:mt-16">
+        {/* Bento: looping crew video on the left (2 of 3 columns, both rows), two photos stacked on the right */}
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 mt-12 lg:mt-16">
+          <div className="relative aspect-video md:aspect-auto md:col-span-2 md:row-span-2 overflow-hidden" style={{ borderRadius: '16px' }}>
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              poster="/media/snow-removal/snow-hero-loop-poster.jpg"
+              className="absolute inset-0 w-full h-full object-cover"
+              aria-label="Sunrise crew clearing snow from a walkway with a compact track loader"
+            >
+              <source src="/media/snow-removal/snow-hero-loop.webm" type="video/webm" />
+              <source src="/media/snow-removal/snow-hero-loop.mp4" type="video/mp4" />
+            </video>
+          </div>
           {[
-            { src: '/media/snow-removal/snow-2026-02-02-crew-clearing-walkway.jpg', alt: 'Sunrise crew clearing a snow-covered walkway with a compact track loader' },
             { src: '/media/snow-removal/snow-2026-01-29-parking-lot-cleared.jpg', alt: 'Commercial parking lot plowed down to the pavement' },
             { src: '/media/snow-removal/snow-2026-01-29-snow-piles-lot-edge.jpg', alt: 'Plowed snow stacked at the edge of a parking lot to keep spaces open' },
           ].map((photo) => (
