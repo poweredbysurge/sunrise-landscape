@@ -85,8 +85,8 @@ export default function WaterFeaturesPage() {
                 num: '01',
                 title: 'Custom Pond Installation',
                 desc: 'From intimate koi sanctuaries to natural swimming ponds and reflection pools, we design and build custom water ecosystems tailored to your landscape and lifestyle.',
-                img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7caebf8b5d7ad36bb774_folder-2-3.webp'),
-                alt: 'Illuminated koi pond and waterfall glowing green at night beside a stone patio and fireplace.',
+                img: cdnToLocal('/media/6808afe22b48076cc8e63cef/688287c75f22cbb21d340914_aquatic.jpg'),
+                alt: 'Reflective pond bordered by ornamental trees and grasses on a landscaped property.',
               },
               {
                 num: '02',
@@ -99,8 +99,8 @@ export default function WaterFeaturesPage() {
                 num: '03',
                 title: 'Fountain Installation',
                 desc: 'From classical tiered designs to contemporary sculptures and floating features, our custom fountains bring movement, sound, and artistry to any outdoor setting.',
-                img: cdnToLocal('/media/6808afe22b48076cc8e63cef/688287c75f22cbb21d340914_aquatic.jpg'),
-                alt: 'Reflective pond bordered by ornamental trees and grasses on a landscaped property.',
+                img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7caebf8b5d7ad36bb774_folder-2-3.webp'),
+                alt: 'Illuminated koi pond and waterfall glowing green at night beside a stone patio and fireplace.',
               },
             ].map((card) => (
               <ServiceCard

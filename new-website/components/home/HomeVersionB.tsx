@@ -22,19 +22,6 @@ const featuredWork = [
     ],
   },
   {
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7d113c21f26f490bb45a_folder-2-cover-1.webp'),
-    alt: 'Backyard landscape design project in Ashburn Virginia',
-    name: 'Backyard Retreat',
-    location: 'Ashburn, VA',
-    images: [
-      { src: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7d113c21f26f490bb45a_folder-2-cover-1.webp'), alt: 'Backyard landscape design project in Ashburn Virginia' },
-      { src: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7caf1811776d3267929d_folder-2-1.webp'), alt: 'Outdoor stone fireplace with a lit fire, surrounded by cushioned patio furniture, a koi pond with waterfall, and flowering plants at dusk.' },
-      { src: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7caebf8b5d7ad36bb774_folder-2-3.webp'), alt: 'Nighttime view of an illuminated koi pond with waterfall, stone patio seating, and an outdoor fireplace glowing against a dark blue sky.' },
-      { src: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7cb07b41400be77ba043_folder-2-4.webp'), alt: 'Stone patio with an outdoor fireplace, cushioned seating, and a built-in grill overlooking an open rolling landscape.' },
-      { src: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7caeb433ebe730947285_folder-2-5.webp'), alt: 'Koi pond with a stone waterfall and stepping-stone path, flanked by an outdoor stone fireplace and patio seating on a sunny day.' },
-    ],
-  },
-  {
     img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp'),
     alt: 'Estate landscape design in full bloom in Vienna Virginia',
     name: 'Estate Garden',

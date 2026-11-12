@@ -306,7 +306,7 @@ export default function FeaturedWorkCarousel({
                       </p>
                     )}
                     <p
-                      className="text-white font-ui font-bold leading-tight"
+                      className="text-white font-heading font-normal leading-none"
                       style={{ fontSize: 'clamp(2rem, 3.5vw, 4rem)' }}
                     >
                       {project.name}
