@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Commercial Snow Removal in Northern Virginia | Sunrise Landscape',
     description: 'Commercial snow and ice management for HOA, retail, and office properties in Northern Virginia. RFP-ready time and material pricing, contracted response times. Request a proposal.',
     type: 'website',
-    images: [{ url: 'https://images.unsplash.com/photo-1670947913768-f0e6cd48f104?auto=format&fit=crop&w=1200&q=80' }],
+    images: [{ url: 'https://www.sunriselandscapeanddesign.com/media/snow-removal/snow-2026-01-27-church-walkways-cleared.jpg' }],
   },
   twitter: {
     title: 'Commercial Snow Removal in Northern Virginia | Sunrise Landscape',
@@ -66,8 +66,8 @@ export default function CommercialSnowRemovalPage() {
       {/* ── HERO — clean image, no overlay ── */}
       <section className="relative h-[55vh] min-h-[420px] overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1670947913768-f0e6cd48f104?auto=format&fit=crop&w=1920&q=80"
-          alt="Loader plowing snow from a commercial property lot during heavy snowfall"
+          src="/media/snow-removal/snow-2026-01-27-church-walkways-cleared.jpg"
+          alt="Church entrance walkways and drive cleared of snow by a Sunrise crew in January 2026"
           fill
           priority
           className="object-cover"
@@ -152,6 +152,38 @@ export default function CommercialSnowRemovalPage() {
         </div>
       </section>
 
+      {/* ── OUR CREWS THIS WINTER: real job photos (CompanyCam, Jan to Feb 2026) ── */}
+      <section className="bg-white py-16 lg:py-24 px-5 lg:px-8">
+        <div className="max-w-screen-xl mx-auto">
+          <div className="max-w-3xl mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-green leading-tight mb-5">
+              Our Crews This Winter
+            </h2>
+            <p className="text-lg leading-relaxed text-black/70">
+              Photos from our snow and ice work in January and February 2026: lots plowed to the pavement, walkways
+              opened with compact track loaders, and snow stacked out of the way so parking stays usable.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {[
+              { src: '/media/snow-removal/snow-2026-02-02-crew-clearing-walkway.jpg', alt: 'Sunrise crew clearing a snow-covered walkway with a compact track loader', caption: 'Crews clearing walkways with a compact track loader.' },
+              { src: '/media/snow-removal/snow-2026-02-02-track-loader-operator.jpg', alt: 'Operator pushing deep snow with a compact track loader', caption: 'Pushing deep snow off the paths.' },
+              { src: '/media/snow-removal/snow-2026-01-29-parking-lot-cleared.jpg', alt: 'Commercial parking lot plowed down to the pavement', caption: 'A parking lot cleared down to the pavement.' },
+              { src: '/media/snow-removal/snow-2026-01-29-walkway-cleared-fence-line.jpg', alt: 'Walkway cleared of snow along a fence line', caption: 'A walkway cleared along the fence line.' },
+              { src: '/media/snow-removal/snow-2026-01-29-snow-piles-lot-edge.jpg', alt: 'Plowed snow stacked at the edge of a parking lot', caption: 'Snow stacked at the lot edge to keep spaces open.' },
+              { src: '/media/snow-removal/snow-2026-02-23-lot-cleared-before-dawn.jpg', alt: 'Parking lot cleared of snow before sunrise', caption: 'A lot cleared before 5:30 in the morning.' },
+            ].map((photo) => (
+              <figure key={photo.src}>
+                <div className="relative overflow-hidden" style={{ borderRadius: '16px', aspectRatio: '4/3' }}>
+                  <Image src={photo.src} alt={photo.alt} fill className="object-cover object-center" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+                </div>
+                <figcaption className="mt-3 text-black/70 text-base leading-snug">{photo.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ServiceExpansion data={serviceExpansions['commercial-snow-removal-virginia']} />
 
       {/* ── CROSS-LINK: commercial maintenance ── */}
@@ -169,8 +201,8 @@ export default function CommercialSnowRemovalPage() {
 
       <FromOurBlog
         posts={[
-          { slug: 'snow-and-ice-management', image: 'https://images.unsplash.com/photo-1701809922861-6f650117c966?auto=format&fit=crop&w=800&q=80' },
-          { slug: 'snow-plowing-vs-snow-removal-costs', image: 'https://images.unsplash.com/photo-1662906849229-e5b34c4488db?auto=format&fit=crop&w=800&q=80' },
+          { slug: 'snow-and-ice-management', image: '/media/snow-removal/snow-2026-01-29-skid-steer-clearing-sidewalk.jpg' },
+          { slug: 'snow-plowing-vs-snow-removal-costs', image: '/media/snow-removal/snow-2026-02-02-track-loader-clearing-path.jpg' },
         ]}
       />
 
