@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import ServiceAreasSection from '@/components/ServiceAreasSection'
-import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
 import ServiceExpansion from '@/components/ServiceExpansion'
@@ -38,8 +37,8 @@ export default function DrainageSolutionsPage() {
       {/* ── HERO — clean full-bleed image ── */}
       <section className="relative h-[65vh] min-h-[480px] overflow-hidden">
         <Image
-          src="/media/custom/drainage-french-drain-install.png"
-          alt="French drain installation with catch basin, gravel bed, and downspout tie-in through a backyard lawn"
+          src="/media/drainage/drainage-pipe-fabric-gravel-hero.jpg"
+          alt="Sunrise crew installing a large corrugated drainage pipe wrapped in filter fabric and gravel, with an excavator at work behind it"
           fill
           priority
           className="object-cover object-center"
@@ -80,8 +79,8 @@ export default function DrainageSolutionsPage() {
             {/* Left: single image */}
             <div className="relative overflow-hidden" style={{ borderRadius: '20px', aspectRatio: '4/3' }}>
               <Image
-                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68247fc088d049498e40412d_dec-protect-img-1.webp')}
-                alt="Small cascading waterfall flowing under a stone bridge surrounded by green plants and trees."
+                src="/media/drainage/drainage-crew-compacting-gravel.jpg"
+                alt="Sunrise crew compacting the gravel bed over filter fabric on a drainage installation"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -199,11 +198,42 @@ export default function DrainageSolutionsPage() {
         </div>
       </section>
 
+      {/* ── RECENT PROJECT: real job photos (CompanyCam, June 2025) ── */}
+      <section className="py-16 lg:py-24 bg-cream">
+        <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
+          <div className="max-w-3xl mb-12">
+            <h2 className="text-3xl lg:text-5xl text-green leading-tight mb-5">
+              Inside a Recent Drainage Project
+            </h2>
+            <p className="text-green/70 text-lg leading-relaxed">
+              Photos from a three-day job our crew finished in June 2025: a large drain pipe set in a trench, wrapped in filter fabric and gravel, buried, and finished with a stone outlet.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {[
+              { src: '/media/drainage/drainage-setting-pipe-trench.jpg', alt: 'Sunrise crew setting a large corrugated drain pipe in a trench', caption: 'Day 1: setting the drain pipe in the trench.' },
+              { src: '/media/drainage/drainage-pipe-run-woods.jpg', alt: 'Drain pipe running downhill through a wooded yard toward the outlet', caption: 'The pipe runs downhill through the woods to the outlet.' },
+              { src: '/media/drainage/drainage-gravel-over-fabric.jpg', alt: 'Excavator spreading gravel over filter fabric around the new drain pipe', caption: 'Day 2: filter fabric and gravel go in around the pipe.' },
+              { src: '/media/drainage/drainage-backfill-track-loader.jpg', alt: 'Crew member backfilling the trench with a compact track loader', caption: 'Backfilling the trench with the track loader.' },
+              { src: '/media/drainage/drainage-stone-outlet-apron.jpg', alt: 'Stone apron laid at the drain pipe outlet to slow the water', caption: 'Day 3: a stone apron at the outlet slows the water and stops erosion.' },
+              { src: '/media/drainage/drainage-finished-outlet.jpg', alt: 'Finished drain pipe outlet with stone apron, three days after the job started', caption: 'The finished outlet, three days start to finish.' },
+            ].map((photo) => (
+              <figure key={photo.src}>
+                <div className="relative overflow-hidden" style={{ borderRadius: '16px', aspectRatio: '4/5' }}>
+                  <Image src={photo.src} alt={photo.alt} fill className="object-cover object-center" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+                </div>
+                <figcaption className="mt-3 text-green/80 text-base leading-snug">{photo.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── BEGIN YOUR PROTECTION PLAN ── */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <Image
-          src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68247fdb1ba1dd89a423afe7_dec-protect-img-2 (1).webp')}
-          alt="Water flowing out from a drainage pipe into a natural water body."
+          src="/media/drainage/drainage-stone-outlet-finished.jpg"
+          alt="Finished drainage pipe outlet with a stone apron in a wooded yard"
           fill
           className="object-cover"
           sizes="100vw"
