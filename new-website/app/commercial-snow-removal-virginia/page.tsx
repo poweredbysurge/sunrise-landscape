@@ -131,6 +131,17 @@ export default function CommercialSnowRemovalPage() {
             </div>
           </div>
         </div>
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 lg:mt-16">
+          {[
+            { src: '/media/snow-removal/snow-2026-02-02-crew-clearing-walkway.jpg', alt: 'Sunrise crew clearing a snow-covered walkway with a compact track loader' },
+            { src: '/media/snow-removal/snow-2026-01-29-parking-lot-cleared.jpg', alt: 'Commercial parking lot plowed down to the pavement' },
+            { src: '/media/snow-removal/snow-2026-01-29-snow-piles-lot-edge.jpg', alt: 'Plowed snow stacked at the edge of a parking lot to keep spaces open' },
+          ].map((photo) => (
+            <div key={photo.src} className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
+              <Image src={photo.src} alt={photo.alt} fill className="object-cover object-center" sizes="(max-width: 768px) 100vw, 33vw" />
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* ── RFP READY ── */}
@@ -149,38 +160,6 @@ export default function CommercialSnowRemovalPage() {
             and we will return level pricing or T&amp;M pricing your committee can compare against other bids on
             equal footing.
           </p>
-        </div>
-      </section>
-
-      {/* ── OUR CREWS THIS WINTER: real job photos (CompanyCam, Jan to Feb 2026) ── */}
-      <section className="bg-white py-16 lg:py-24 px-5 lg:px-8">
-        <div className="max-w-screen-xl mx-auto">
-          <div className="max-w-3xl mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-green leading-tight mb-5">
-              Our Crews This Winter
-            </h2>
-            <p className="text-lg leading-relaxed text-black/70">
-              Photos from our snow and ice work in January and February 2026: lots plowed to the pavement, walkways
-              opened with compact track loaders, and snow stacked out of the way so parking stays usable.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {[
-              { src: '/media/snow-removal/snow-2026-02-02-crew-clearing-walkway.jpg', alt: 'Sunrise crew clearing a snow-covered walkway with a compact track loader', caption: 'Crews clearing walkways with a compact track loader.' },
-              { src: '/media/snow-removal/snow-2026-02-02-track-loader-operator.jpg', alt: 'Operator pushing deep snow with a compact track loader', caption: 'Pushing deep snow off the paths.' },
-              { src: '/media/snow-removal/snow-2026-01-29-parking-lot-cleared.jpg', alt: 'Commercial parking lot plowed down to the pavement', caption: 'A parking lot cleared down to the pavement.' },
-              { src: '/media/snow-removal/snow-2026-01-29-walkway-cleared-fence-line.jpg', alt: 'Walkway cleared of snow along a fence line', caption: 'A walkway cleared along the fence line.' },
-              { src: '/media/snow-removal/snow-2026-01-29-snow-piles-lot-edge.jpg', alt: 'Plowed snow stacked at the edge of a parking lot', caption: 'Snow stacked at the lot edge to keep spaces open.' },
-              { src: '/media/snow-removal/snow-2026-02-23-lot-cleared-before-dawn.jpg', alt: 'Parking lot cleared of snow before sunrise', caption: 'A lot cleared before 5:30 in the morning.' },
-            ].map((photo) => (
-              <figure key={photo.src}>
-                <div className="relative overflow-hidden" style={{ borderRadius: '16px', aspectRatio: '4/3' }}>
-                  <Image src={photo.src} alt={photo.alt} fill className="object-cover object-center" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
-                </div>
-                <figcaption className="mt-3 text-black/70 text-base leading-snug">{photo.caption}</figcaption>
-              </figure>
-            ))}
-          </div>
         </div>
       </section>
 
