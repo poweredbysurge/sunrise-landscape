@@ -28,8 +28,8 @@ type Props = {
 }
 
 export default function ServiceAreasSection({
-  backgroundImage = '/media/6808afe22b48076cc8e63cef/686b7ecfc4042333b3219c72_folder-4-cover.webp',
-  backgroundAlt = 'Residential landscape design project in Northern Virginia',
+  backgroundImage = '/media/work/lawn-striped-front-yard-colonial-home.jpg',
+  backgroundAlt = 'Striped front lawn and planting beds at a Northern Virginia home maintained by Sunrise Landscape',
 }: Props) {
   return (
     <section className="flex flex-col lg:flex-row" style={{ minHeight: '580px' }}>

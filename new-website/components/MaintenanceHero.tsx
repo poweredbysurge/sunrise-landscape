@@ -2,8 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const HERO_IMAGE = {
-  src: 'https://images.unsplash.com/photo-1636301587190-88cbb412fea0',
-  alt: 'Professionally landscaped home exterior with dense green garden beds and mature trees surrounding a residential patio.',
+  src: '/media/work/maintenance-rose-bed-fresh-mulch-lawn.jpg',
+  alt: 'Rose bed with fresh mulch and a crisp lawn edge at a home Sunrise maintains',
 }
 
 export default function MaintenanceHero() {

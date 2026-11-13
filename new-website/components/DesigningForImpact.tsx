@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from 'react'
 import Image from 'next/image'
-import { cdnToLocal } from '@/lib/mediaUrl'
 
 function Words({ text }: { text: string }) {
   return (
@@ -97,8 +96,8 @@ export default function DesigningForImpact() {
             }}
           >
             <Image
-              src={cdnToLocal('/media/6808afe22b48076cc8e63cef/681c87540d64604910521baa_about-img-1 (1).webp')}
-              alt="Stone retaining wall steps with lush planting — Sunrise Landscape design craftsmanship"
+              src={'/media/work/crew-mason-setting-stone-wall.jpg'}
+              alt="Sunrise mason setting stone on a garden wall"
               fill
               className="object-cover"
               sizes="40vw"

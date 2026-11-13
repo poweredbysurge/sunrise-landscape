@@ -127,8 +127,8 @@ export default function CareerPage() {
       {/* Hero */}
       <section className="relative min-h-[540px] lg:min-h-[620px] flex items-end overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1734303023491-db8037a21f09?auto=format&fit=crop&w=1920&q=80"
-          alt="Landscaper mowing a green lawn on a sunny day"
+          src='/media/work/crew-installing-pond-liner-wide.jpg'
+          alt="Sunrise crew working together on a pond rebuild"
           fill
           className="object-cover"
           priority

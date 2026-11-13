@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
-import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import { SITE_URL } from '@/lib/siteUrl'
 

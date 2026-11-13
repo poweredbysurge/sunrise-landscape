@@ -153,8 +153,8 @@ export default function LawnCareNorthernVirginiaPage() {
           </div>
           <div className="relative aspect-[4/5] overflow-hidden" style={{ borderRadius: '20px' }}>
             <Image
-              src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6822fae33f0e864553518e47_mowing-img (1).webp')}
-              alt="Landscaping crew mowing a manicured lawn in Northern Virginia"
+              src={'/media/work/lawn-mowing-stripes-shaped-shrubs.jpg'}
+              alt="Striped lawn bordered by shaped shrubs at a property maintained by Sunrise Landscape"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"

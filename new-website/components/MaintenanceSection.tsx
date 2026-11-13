@@ -39,8 +39,8 @@ export default function MaintenanceSection() {
             style={{ borderRadius: '16px' }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1200&q=80"
-              alt="Beautifully manicured lawn and garden in Northern Virginia"
+              src='/media/work/maintenance-rounded-shrubs-garden-path.jpg'
+              alt="Rounded shrubs and a garden path at a property Sunrise maintains in Northern Virginia"
               fill
               className="object-cover"
             />

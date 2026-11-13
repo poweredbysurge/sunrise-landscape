@@ -38,8 +38,8 @@ export default function CommercialAliasPage() {
       <section className="relative min-h-[60vh] flex items-end bg-green overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68512a743bcf0ea3fbccff0a_commercial-hero-img-new.webp')}
-            alt="Gray wooden building with a peaked roof and white double doors, surrounded by manicured bushes and green lawn."
+            src={'/media/work/commercial-striped-lawn-chapel-campus.jpg'}
+            alt="Striped lawn in front of a commercial campus maintained by Sunrise Landscape"
             fill
             className="object-cover opacity-50"
             priority
@@ -81,8 +81,8 @@ export default function CommercialAliasPage() {
             <div className="space-y-4">
               <div className="relative aspect-[16/9] overflow-hidden" style={{ borderRadius: '16px' }}>
                 <Image
-                  src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68230cb41bf1c271c22f3138_commercial-img (1).webp')}
-                  alt="Modern glass building illuminated with blue and yellow lights at dusk, surrounded by trees and lawn."
+                  src={'/media/work/commercial-annuals-entry-steps.jpg'}
+                  alt="Seasonal flowers planted beside the entry steps of a commercial building"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"

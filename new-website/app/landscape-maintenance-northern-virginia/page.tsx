@@ -4,7 +4,6 @@ import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import ServiceAreasSection from '@/components/ServiceAreasSection'
 import MaintenanceHero from '@/components/MaintenanceHero'
-import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
 import ServiceExpansion from '@/components/ServiceExpansion'
@@ -216,8 +215,8 @@ export default function LandscapeMaintenancePage() {
             {/* Right: image */}
             <div className="relative overflow-hidden" style={{ borderRadius: '20px', aspectRatio: '4 / 5' }}>
               <Image
-                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6822fae33f0e864553518e47_mowing-img (1).webp')}
-                alt="Large two-story brick house with dark roof, red front door, and a well-maintained lawn with striped mowing patterns."
+                src={'/media/work/lawn-mowing-stripes-shaped-shrubs.jpg'}
+                alt="Striped lawn bordered by shaped shrubs at a property maintained by Sunrise Landscape"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -236,8 +235,8 @@ export default function LandscapeMaintenancePage() {
             {/* Left: image */}
             <div className="relative overflow-hidden" style={{ borderRadius: '20px', aspectRatio: '4 / 3' }}>
               <Image
-                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68230187ed0e534a13fbd511_season-img-1 (1).webp')}
-                alt="Landscaped garden bed with vibrant pink flowers, green shrubs, and trees bordered by black mulch and a stone wall with patio furniture in the background."
+                src={'/media/work/seasonal-annuals-red-white-bed.jpg'}
+                alt="Red and white seasonal flowers planted along a brick building"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -333,8 +332,8 @@ export default function LandscapeMaintenancePage() {
             {/* Right: image */}
             <div className="relative overflow-hidden" style={{ borderRadius: '20px', aspectRatio: '4 / 5' }}>
               <Image
-                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6822f8c8c8ec5c4eba8b85e6_fall-img (1).webp')}
-                alt="Terraced backyard garden with stone retaining walls, green shrubs, red-leaved bush, outdoor seating, and tall trees under a blue sky."
+                src={'/media/work/seasonal-fresh-mulch-stone-wall-bed.jpg'}
+                alt="Freshly mulched planting bed with a low stone wall after a spring cleanup"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

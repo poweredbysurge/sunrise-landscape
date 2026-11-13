@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
+import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 import Image from 'next/image'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import ServiceAreasSection from '@/components/ServiceAreasSection'
-import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
 import ServiceExpansion from '@/components/ServiceExpansion'
@@ -64,11 +64,11 @@ export default function HardscapePage() {
               short of the ideal full-width resolution — that's the source ceiling, not
               a processing issue. */}
           <HardscapeCarousel slides={[
-            { src: '/media/6808afe22b48076cc8e63cef/6821c39fee5907320e170120_harmony-img-1 (1).webp', alt: 'Stone pathway leading to a wooden dock by a lake, with chairs and green grass on the sides' },
-            { src: '/media/6808afe22b48076cc8e63cef/6821c3be80facb1a793f7612_harmony-img-2 (1).webp', alt: 'Outdoor patio area with black metal chairs and a bench around a round stone fire pit next to a landscaped garden' },
-            { src: '/media/6808afe22b48076cc8e63cef/6821cb4ae52f9959c143a822_work-img-1 (1).webp', alt: 'Outdoor patio area with a round glass table, four mesh chairs, and a large black umbrella, next to a white house' },
-            { src: '/media/6808afe22b48076cc8e63cef/6821cb71a545e0059d060bf5_work-img-2 (1).webp', alt: 'Stone patio with cushioned outdoor chairs, a fire pit, small side table, and landscaped garden beds' },
-            { src: '/media/6808afe22b48076cc8e63cef/6821cb817cc578cffd2d3726_work-img-3 (1).webp', alt: 'Outdoor covered patio with wicker seating, stone fireplace, wall-mounted TV, and bar counter with stools' },
+            { src: '/media/work/hardscape-fire-pit-adirondack-chairs.jpg', alt: 'Stone fire pit with Adirondack chairs beside a paver patio' },
+            { src: '/media/work/hardscape-flagstone-patio.jpg', alt: 'New flagstone patio in a rectangular pattern' },
+            { src: '/media/work/hardscape-stone-steps-seat-wall.jpg', alt: 'Stone steps and a capped seat wall beside rounded shrubs' },
+            { src: '/media/work/hardscape-paver-patio-dining.jpg', alt: 'Paver dining patio edged with boulders and plantings' },
+            { src: '/media/work/hardscape-knot-garden-gravel-court.jpg', alt: 'Gravel knot garden court edged in brick with clipped shrubs' },
           ]} />
 
           <p className="text-green/70 mt-10 leading-relaxed">
@@ -86,6 +86,28 @@ export default function HardscapePage() {
             </Link>
             .
           </p>
+        </div>
+      </section>
+
+      {/* ── BEFORE / AFTER: front walk (drag to compare) ── */}
+      <section className="bg-white py-16 lg:py-24 px-5 lg:px-8">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div>
+            <p className="section-label text-orange mb-4">Drag to compare</p>
+            <h2 className="text-3xl lg:text-5xl text-green leading-tight mb-5">A Front Walk, Rebuilt in Flagstone</h2>
+            <p className="text-green/70 text-lg leading-relaxed">
+              The same walk from the same spot: the new base going in, and the finished flagstone a few weeks later.
+            </p>
+          </div>
+          <div className="w-full max-w-md mx-auto lg:max-w-lg">
+            <BeforeAfterSlider
+              aspect="3 / 4"
+              beforeLabel="During"
+              afterLabel="After"
+              before={{ src: '/media/work/ba-front-walk-during.jpg', alt: 'Front walk during construction with forms set for the new base' }}
+              after={{ src: '/media/work/ba-front-walk-after.jpg', alt: 'Finished flagstone front walk leading to the house' }}
+            />
+          </div>
         </div>
       </section>
 

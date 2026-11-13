@@ -1,18 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { cdnToLocal } from '@/lib/mediaUrl'
 
 // Only the two dedicated header photos — harmony-img-1/2 and work-img-1/2/3 are used
 // further down the page (harmony section / work carousel), so keeping them out here
 // avoids showing the same photo twice on one page.
 const IMGS = [
   {
-    src: cdnToLocal('/media/6808afe22b48076cc8e63cef/6821cf884cff5a6c39872bd1_hs-header-img-1 (1).webp'),
-    alt: 'Outdoor patio area with black metal seating surrounding a stone fire pit and landscaped garden with stone steps',
+    src: '/media/work/hardscape-paver-patio-fire-pit.jpg',
+    alt: 'Paver patio with a stone fire pit, seating and planting beds built by Sunrise',
   },
   {
-    src: cdnToLocal('/media/6808afe22b48076cc8e63cef/6821cf9d8567ec857f4ce0e4_hs-header-img-2 (1).webp'),
-    alt: 'Outdoor stone fireplace with a mounted flat-screen TV above it under a wooden patio roof',
+    src: '/media/work/hardscape-paver-walk-patio-boulders.jpg',
+    alt: 'Paver walkway and dining patio with boulders and new plantings',
   },
 ]
 

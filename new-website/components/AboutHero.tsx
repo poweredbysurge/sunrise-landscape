@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { cdnToLocal } from '@/lib/mediaUrl'
 
 const TOPO_LINES = [
   'M-50,480 C120,420 300,500 500,440 C660,392 780,452 1000,420',
@@ -63,8 +62,8 @@ export default function AboutHero() {
           style={{ borderRadius: '16px', aspectRatio: '4/3' }}
         >
           <Image
-            src={cdnToLocal('/media/6808afe22b48076cc8e63cef/681c87540d64604910521baa_about-img-1 (1).webp')}
-            alt="Sunrise team member tending to a garden planting near a decorative pot"
+            src={'/media/work/crew-fitting-pond-liner.jpg'}
+            alt="Sunrise crew fitting a liner while rebuilding a backyard pond"
             fill
             className="object-cover"
             sizes="(max-width: 640px) 100vw, 50vw"
@@ -76,8 +75,8 @@ export default function AboutHero() {
           style={{ borderRadius: '16px', aspectRatio: '4/3' }}
         >
           <Image
-            src={cdnToLocal('/media/6808afe22b48076cc8e63cef/681c878de1dcc6f50faeabac_about-img-2 (1).webp')}
-            alt="Sunrise team member planting small green shrubs in freshly tilled soil"
+            src={'/media/work/crew-planting-shrubs-roundabout.jpg'}
+            alt="Sunrise crew planting shrubs in a commercial entrance bed"
             fill
             className="object-cover"
             sizes="(max-width: 640px) 100vw, 50vw"

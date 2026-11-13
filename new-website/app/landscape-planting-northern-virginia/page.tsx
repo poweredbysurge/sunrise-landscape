@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
+import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 import Image from 'next/image'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import ServiceAreasSection from '@/components/ServiceAreasSection'
-import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
 import ServiceExpansion from '@/components/ServiceExpansion'
@@ -57,8 +57,8 @@ export default function LandscapePlantingPage() {
       {/* ── HERO ── */}
       <section className="relative h-[85vh] min-h-[620px] overflow-hidden flex flex-col justify-end pb-8 lg:pb-10">
         <Image
-          src="https://images.unsplash.com/photo-1781678356452-abbead6d25f9?auto=format&fit=crop&w=1920&q=85"
-          alt="Layered planting bed with vibrant coleus, dusty miller, and ornamental grasses in a designed color pattern"
+          src='/media/work/planting-poolside-beds-planter.jpg'
+          alt="Poolside planting beds with shaped shrubs and a planter of seasonal flowers"
           fill
           priority
           className="object-cover"
@@ -111,10 +111,10 @@ export default function LandscapePlantingPage() {
           <h2 className="text-3xl lg:text-5xl text-green leading-tight mb-12">What We Offer</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {([
-              { title: 'Custom Garden and Planting Design', body: 'We create thoughtful planting layouts using trees, shrubs, perennials, annuals, and ground covers. Each design balances color, texture, and seasonal interest to keep your landscape vibrant year-round.', img: cdnToLocal('/media/6808afe22b48076cc8e63cef/68230187ed0e534a13fbd511_season-img-1 (1).webp'), alt: 'Landscaped garden bed with vibrant pink flowers and green shrubs' },
-              { title: 'Specialty Garden Design and Installation', body: 'We design specialty gardens that reflect your unique style and site conditions, including native, English, woodland, wetland, shade, and meadow gardens. Crafted to thrive with minimal upkeep.', img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp'), alt: 'Estate home with manicured specialty garden' },
-              { title: 'Turf & Lawn Installation', body: 'Our team installs high-quality turf and lawn systems for a lush, durable finish. From expert soil preparation to the final roll of sod, we handle every detail with care.', img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7ecfc4042333b3219c72_folder-4-cover.webp'), alt: 'Brick house with manicured green lawn' },
-              { title: 'Planters & Seasonal Displays', body: 'We create stunning planters and fresh seasonal displays to add color and charm to your property. Each arrangement is designed to highlight the best of every season.', img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7a462c7d0f5245e2a462_cover.webp'), alt: 'Backyard with stone patio and colorful seasonal plantings' },
+              { title: 'Custom Garden and Planting Design', body: 'We create thoughtful planting layouts using trees, shrubs, perennials, annuals, and ground covers. Each design balances color, texture, and seasonal interest to keep your landscape vibrant year-round.', img: '/media/work/planting-layered-garden-bed-stone-edge.jpg', alt: 'Layered garden bed with shrubs, grasses and a stone edge' },
+              { title: 'Specialty Garden Design and Installation', body: 'We design specialty gardens that reflect your unique style and site conditions, including native, English, woodland, wetland, shade, and meadow gardens. Crafted to thrive with minimal upkeep.', img: '/media/work/planting-shade-garden-stepping-stones.jpg', alt: 'Shade garden with stepping stones and new perennials beside a stone home' },
+              { title: 'Turf & Lawn Installation', body: 'Our team installs high-quality turf and lawn systems for a lush, durable finish. From expert soil preparation to the final roll of sod, we handle every detail with care.', img: '/media/work/lawn-striped-backyard-evergreens.jpg', alt: 'Striped lawn bordered by evergreens' },
+              { title: 'Planters & Seasonal Displays', body: 'We create stunning planters and fresh seasonal displays to add color and charm to your property. Each arrangement is designed to highlight the best of every season.', img: '/media/work/planting-seasonal-annuals-office-entry.jpg', alt: 'Bed of seasonal annuals in red, yellow and purple at a building entrance' },
             ] as { title: string; body: string; img: string; alt: string }[]).map((item) => (
               <div key={item.title} className="relative bg-green overflow-hidden" style={{ borderRadius: '20px' }}>
                 <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 1000 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -224,14 +224,34 @@ export default function LandscapePlantingPage() {
             {/* Right: image */}
             <div className="relative overflow-hidden" style={{ borderRadius: '20px', aspectRatio: '4/3' }}>
               <Image
-                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/682316025847f4be966b0fd5_commercial-includes-img (1).webp')}
-                alt="Aerial view of a curved stone patio with circular fire pit, seating area, and manicured garden beds"
+                src={'/media/work/crew-pruning-shaped-shrub.jpg'}
+                alt="Sunrise crew member hand pruning a rounded shrub above a stone wall"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* ── BEFORE / AFTER: evergreen screen (drag to compare) ── */}
+      <section className="bg-white py-16 lg:py-24 px-5 lg:px-8">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="w-full max-w-md mx-auto lg:max-w-lg lg:order-1">
+            <BeforeAfterSlider
+              aspect="3 / 4"
+              before={{ src: '/media/work/ba-tree-screen-before.jpg', alt: 'Row of new evergreens with the planting trench still open' }}
+              after={{ src: '/media/work/ba-tree-screen-after.jpg', alt: 'The same evergreen row finished with mulch and new sod' }}
+            />
+          </div>
+          <div className="lg:order-2">
+            <p className="section-label text-orange mb-4">Drag to compare</p>
+            <h2 className="text-3xl lg:text-5xl text-green leading-tight mb-5">An Evergreen Screen, Start to Finish</h2>
+            <p className="text-green/70 text-lg leading-relaxed">
+              A row of evergreens on planting day, and the same row once the bed was mulched and the lawn was put back.
+            </p>
           </div>
         </div>
       </section>
@@ -244,8 +264,8 @@ export default function LandscapePlantingPage() {
             {/* Left: image */}
             <div className="relative overflow-hidden" style={{ borderRadius: '20px', aspectRatio: '4 / 3' }}>
               <Image
-                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e23ce1a9da1404d5685_folder-3-2.webp')}
-                alt="Tiered stone retaining walls with a Japanese maple, flowering dogwoods, and colorful perennial beds along a paver walkway."
+                src={'/media/work/planting-shaped-shrubs-estate-lawn.jpg'}
+                alt="Shaped shrubs and evergreens framing a lawn in front of a home"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

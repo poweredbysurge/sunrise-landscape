@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
+import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 import Image from 'next/image'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import ServiceAreasSection from '@/components/ServiceAreasSection'
-import { cdnToLocal } from '@/lib/mediaUrl'
 import { getMdxJsonLd } from '@/lib/manifest'
 import ContactFormSection from '@/components/ContactFormSection'
 import ServiceExpansion from '@/components/ServiceExpansion'
@@ -39,8 +39,8 @@ export default function CommercialLandscapePage() {
       {/* ── HERO — clean image, no overlay ── */}
       <section className="relative h-[65vh] min-h-[480px] overflow-hidden">
         <Image
-          src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68512a743bcf0ea3fbccff0a_commercial-hero-img-new.webp')}
-          alt="Gray wooden building with a peaked roof and white double doors, surrounded by manicured bushes and green lawn."
+          src={'/media/work/commercial-striped-lawn-chapel-campus.jpg'}
+          alt="Striped lawn in front of a commercial campus maintained by Sunrise Landscape"
           fill
           priority
           className="object-cover object-center"
@@ -79,8 +79,8 @@ export default function CommercialLandscapePage() {
           {/* Right: image */}
           <div className="relative min-h-[320px] lg:min-h-0">
             <Image
-              src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68230cb41bf1c271c22f3138_commercial-img (1).webp')}
-              alt="Modern glass commercial building illuminated with blue and yellow lights at dusk"
+              src={'/media/work/commercial-annuals-entry-steps.jpg'}
+              alt="Seasonal flowers planted beside the entry steps of a commercial building"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 55vw"
@@ -102,43 +102,43 @@ export default function CommercialLandscapePage() {
                 num: '01',
                 title: 'Corporate Campuses',
                 desc: 'Large-scale landscape design and maintenance for professional office environments.',
-                img: 'https://images.unsplash.com/photo-1743178207584-4a0c1109975e?auto=format&fit=crop&w=800&q=80',
-                alt: 'Modern glass office building with manicured green landscaping',
+                img: '/media/work/commercial-office-lawn-beds.jpg',
+                alt: 'Lawn and planting beds along a brick office building',
               },
               {
                 num: '02',
                 title: 'HOA Communities',
                 desc: 'Pristine common area maintenance and seasonal enhancements for homeowner associations.',
-                img: 'https://images.unsplash.com/photo-1775112077888-8fa36e9bbc51?auto=format&fit=crop&w=800&q=80',
-                alt: 'Gated community entrance with manicured landscaping',
+                img: '/media/work/commercial-hoa-entrance-sign-beds.jpg',
+                alt: 'Community entrance sign with flower beds and trimmed hedges',
               },
               {
                 num: '03',
                 title: 'Retail Environments',
                 desc: 'Welcoming entrances and curb appeal for retail centers and shopping destinations.',
-                img: 'https://images.unsplash.com/photo-1780874919204-8868612fcfeb?auto=format&fit=crop&w=800&q=80',
-                alt: 'Retail building entrance with planters and rock garden landscaping',
+                img: '/media/work/commercial-streetside-flower-bed.jpg',
+                alt: 'Flower bed between a sidewalk and a commercial driveway',
               },
               {
                 num: '04',
                 title: 'Multi-Family Properties',
                 desc: 'Year-round care for apartment complexes and condominium communities.',
-                img: 'https://images.unsplash.com/photo-1773470920361-4f6cbb702ce0?auto=format&fit=crop&w=800&q=80',
-                alt: 'Modern apartment buildings with serene park and water feature',
+                img: '/media/work/commercial-community-flower-bed.jpg',
+                alt: 'Bed of red and pink flowers at a community entrance',
               },
               {
                 num: '05',
                 title: 'Data Centers',
                 desc: 'Specialized maintenance respecting security requirements and critical infrastructure.',
-                img: 'https://images.unsplash.com/photo-1780417805734-036faf1724ac?auto=format&fit=crop&w=800&q=80',
-                alt: 'Large modern facility building exterior with trees and clear blue sky',
+                img: '/media/work/commercial-campus-walkway-plantings.jpg',
+                alt: 'Walkway and young trees beside a modern commercial building',
               },
               {
                 num: '06',
                 title: 'Religious Institutions',
                 desc: 'Respectful, consistent care for churches, temples, and community centers. We plan and prioritize our schedule around worship times, so walkways, entrances, and parking areas are clear and accessible well before services begin.',
-                img: 'https://images.unsplash.com/photo-1762231602041-c15ebf28879a?auto=format&fit=crop&w=800&q=80',
-                alt: 'Stone church with red roof surrounded by flowering garden',
+                img: '/media/work/commercial-church-garden-arch.jpg',
+                alt: 'Church garden with a stone arch, brick path and new plantings',
               },
             ].map((item) => (
               <ServiceCard
@@ -152,6 +152,24 @@ export default function CommercialLandscapePage() {
               />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── BEFORE / AFTER: entrance roundabout (drag to compare) ── */}
+      <section className="bg-white py-16 lg:py-24 px-5 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="section-label text-orange mb-4">Drag to compare</p>
+            <h2 className="editorial-display text-3xl lg:text-5xl text-green leading-tight" style={{ fontWeight: 400 }}>
+              An Entrance Bed, Replanted
+            </h2>
+          </div>
+          <BeforeAfterSlider
+            aspect="4 / 3"
+            sizes="(max-width: 1024px) 100vw, 900px"
+            before={{ src: '/media/work/ba-roundabout-before.jpg', alt: 'Entrance roundabout bed on planting day with shrubs set out in pots' }}
+            after={{ src: '/media/work/ba-roundabout-after.jpg', alt: 'The same roundabout planted with a shrub border, new sod and a center flower bed' }}
+          />
         </div>
       </section>
 

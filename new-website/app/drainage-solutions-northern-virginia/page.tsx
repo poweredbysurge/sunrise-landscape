@@ -109,6 +109,17 @@ export default function DrainageSolutionsPage() {
               </ul>
             </div>
           </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 lg:mt-16">
+            {[
+              { src: '/media/work/drainage-pipe-junction-trench.jpg', alt: 'Drain lines joined at a junction in an open trench' },
+              { src: '/media/work/drainage-downspout-tie-in-river-rock.jpg', alt: 'Downspout tied into a buried drain line with river rock at the outlet' },
+              { src: '/media/work/drainage-geogrid-berm-slope.jpg', alt: 'Geogrid laid on a slope to build a berm that redirects water' },
+            ].map((photo) => (
+              <div key={photo.src} className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
+                <Image src={photo.src} alt={photo.alt} fill className="object-cover object-center" sizes="(max-width: 768px) 100vw, 33vw" />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

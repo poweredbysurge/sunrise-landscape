@@ -85,15 +85,15 @@ export default function WaterFeaturesPage() {
                 num: '01',
                 title: 'Custom Pond Installation',
                 desc: 'From intimate koi sanctuaries to natural swimming ponds and reflection pools, we design and build custom water ecosystems tailored to your landscape and lifestyle.',
-                img: cdnToLocal('/media/6808afe22b48076cc8e63cef/688287c75f22cbb21d340914_aquatic.jpg'),
-                alt: 'Reflective pond bordered by ornamental trees and grasses on a landscaped property.',
+                img: '/media/work/water-feature-pond-waterfall-rebuilt.jpg',
+                alt: 'Rebuilt backyard pond with a stone waterfall',
               },
               {
                 num: '02',
                 title: 'Waterfall Design & Installation',
                 desc: 'From dramatic multi-tiered rock cascades to elegant architectural water walls, we engineer waterfalls that become the living centerpiece of your outdoor space.',
-                img: cdnToLocal('/media/6808afe22b48076cc8e63cef/682321dd71e368222af56712_pw-header-img-1 (1).webp'),
-                alt: 'Natural stone waterfall cascading into a garden pond surrounded by flowering plants.',
+                img: '/media/work/water-feature-waterfall-closeup.jpg',
+                alt: 'Water spilling over a stacked stone waterfall into a pond',
               },
               {
                 num: '03',
@@ -113,6 +113,24 @@ export default function WaterFeaturesPage() {
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── POND REBUILD: bento of real job photos (Aug 2026) ── */}
+      <section className="bg-cream py-16 lg:py-24 px-5 lg:px-8">
+        <div className="max-w-screen-xl mx-auto">
+          <h2 className="text-3xl lg:text-5xl text-green leading-tight mb-10">Rebuilding a Pond and Waterfall</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6">
+            <div className="relative aspect-[4/3] md:aspect-auto md:col-span-2 md:row-span-2 overflow-hidden" style={{ borderRadius: '16px' }}>
+              <Image src="/media/work/crew-fitting-pond-liner.jpg" alt="Sunrise crew fitting a new liner into a pond basin" fill className="object-cover" sizes="(max-width: 768px) 100vw, 66vw" />
+            </div>
+            <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
+              <Image src="/media/work/water-feature-excavated-basin.jpg" alt="Old water feature excavated down to the basin" fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+            </div>
+            <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
+              <Image src="/media/work/water-feature-crew-setting-boulders.jpg" alt="Crew setting boulders around the new pond liner" fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+            </div>
           </div>
         </div>
       </section>

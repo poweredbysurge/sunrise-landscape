@@ -112,8 +112,8 @@ export default function LandscapeDesignPage() {
       {/* ── HERO ── */}
       <section className="relative h-[80vh] min-h-[540px] flex items-end overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1633330948542-0b3bdeefcdb3?auto=format&fit=crop&w=1920&q=85"
-          alt="Elegant outdoor patio with seating area surrounded by professional landscaping"
+          src='/media/work/hardscape-knot-garden-gravel-court.jpg'
+          alt="Gravel knot garden court with clipped shrubs and hostas designed and built by Sunrise"
           fill
           priority
           className="object-cover"

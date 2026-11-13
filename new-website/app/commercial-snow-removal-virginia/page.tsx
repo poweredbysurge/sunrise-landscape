@@ -7,7 +7,6 @@ import ContactFormSection from '@/components/ContactFormSection'
 import ServiceExpansion from '@/components/ServiceExpansion'
 import { serviceExpansions } from '@/lib/serviceExpansions'
 import FromOurBlog from '@/components/FromOurBlog'
-import { cdnToLocal } from '@/lib/mediaUrl'
 
 export const metadata: Metadata = {
   title: 'Commercial Snow Removal in Northern Virginia | Sunrise Landscape',

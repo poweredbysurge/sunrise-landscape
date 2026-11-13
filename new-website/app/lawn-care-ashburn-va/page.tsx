@@ -145,8 +145,8 @@ export default function LawnCareAshburnPage() {
         <div className="max-w-5xl mx-auto">
           <div className="relative aspect-[16/9] w-full">
             <Image
-              src="/media/6808afe22b48076cc8e63cef/6822fae33f0e864553518e47_mowing-img (1).webp"
-              alt="Freshly mowed, striped tall fescue lawn maintained by Sunrise Landscape in Northern Virginia"
+              src='/media/work/lawn-mowing-stripes-shaped-shrubs.jpg'
+              alt="Striped lawn bordered by shaped shrubs at a property maintained by Sunrise Landscape"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 1024px"
