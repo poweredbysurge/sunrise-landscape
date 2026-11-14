@@ -39,8 +39,8 @@ export const cityExpansions: Record<string, CityExpansion> = {
         a: 'Yes. Shallow setbacks, visible frontages, and established trees shape what we propose. We design to the street context rather than against it.',
       },
       {
-        q: 'Do you maintain the landscapes you build in Leesburg?',
-        a: 'Yes. Leesburg is inside our maintenance area, so the same company that installs a project can keep it looking right in the seasons after.',
+        q: 'What do Leesburg landscape projects typically cost?',
+        a: 'Planting refreshes often start around five figures, and full design-build projects with hardscape scale from there. A free consultation gets you a real number for your property.',
       },
       {
         q: 'How far ahead should I book a Leesburg project?',
@@ -224,9 +224,9 @@ export const cityExpansions: Record<string, CityExpansion> = {
     title: 'Landscaping in Chantilly, VA | Sunrise Landscape',
     metaDescription:
       'Chantilly landscaping for homes and commercial properties: design, planting, patios, and maintenance from one local team. Free consultation and quote.',
-    knowledgeHeading: 'Why Chantilly Projects Start With a Walk-Through',
+    knowledgeHeading: 'What Landscaping Costs in Chantilly',
     knowledgePara:
-      'Chantilly homeowners often ask for a number over the phone. We would rather walk the yard, because slope and access move every project, and on a design-build job one choice changes the next. A planting refresh in Greenbriar or Brookfield and a full backyard with a patio are different conversations. A walk-through gives you a fixed proposal, and the consultation costs nothing.',
+      'Chantilly homeowners ask us about cost more directly than any other town, so here are honest ranges. A designed planting refresh for a typical Greenbriar or Brookfield front yard generally runs in the low five figures. Full backyard design and build with a patio starts in the mid five figures and scales with materials and grading. Maintenance programs price by property size. Two things move every number: slope and access. A walk-through gives you a fixed proposal, and the consultation costs nothing.',
     proofPara:
       'Chantilly is also where our residential and commercial work overlap most, and the same crews handle both, which keeps quality identical on either side of the line.',
     extraNeighborhoods: 'Greenbriar, Brookfield, and Pleasant Valley.',

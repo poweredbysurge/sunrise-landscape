@@ -12,7 +12,7 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
         heading: 'How We Fix a Wet Yard',
         body: [
           'Every drainage project starts with watching water, not moving dirt. We map where runoff enters the property, where it stalls, and where it exits, then design the fix: french drains for subsurface water, dry creek beds for surface flow, regrading where the yard slopes toward the house, and downspout extensions that get roof water out of the beds.',
-          'Most quick fixes fail because the water has nowhere to go. A gravel pit with no outlet just becomes a bathtub. Our systems are sized to the site, given a real outlet, and built with cleanouts so they can be maintained instead of replaced.',
+          'Northern Virginia clay is the reason most quick fixes fail here. Water moves across clay, not through it, so a gravel pit that works in sandy soil just becomes a bathtub in Herndon or Vienna. Our systems are sized for clay and built with cleanouts so they can be maintained instead of replaced.',
         ],
       },
       {
@@ -25,12 +25,12 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
     faqHeading: 'Drainage Questions We Hear Most',
     faqs: [
       {
-        q: 'How do you find what is causing the water problem?',
-        a: 'We walk the property and trace where water comes in, where it sits, and where it can leave. The fix follows the water: a french drain, regrading, a dry creek bed, or a downspout tie-in. You get a fixed proposal after that site walk.',
+        q: 'How much does drainage work cost in Northern Virginia?',
+        a: 'Downspout extensions and small surface fixes often run in the low thousands. Full french drain systems with regrading typically land in the mid four figures to low five figures depending on length, depth, and access. Every project gets a fixed proposal after a site walk.',
       },
       {
-        q: 'Will a french drain solve standing water in my yard?',
-        a: 'Only if it is designed for the site: correct depth, washed stone, fabric that will not clog, and a real outlet. A french drain with nowhere to send water is a buried trench. We design the outlet first.',
+        q: 'Will a french drain solve standing water in clay soil?',
+        a: 'Only if it is designed for clay: correct depth, washed stone, fabric that will not clog, and a real outlet. A french drain with nowhere to send water is a buried trench. We design the outlet first.',
       },
       {
         q: 'My basement gets damp after storms. Is that a yard problem?',
@@ -80,8 +80,8 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
     faqHeading: 'Pond and Water Feature Questions',
     faqs: [
       {
-        q: 'How long does a pond or waterfall project take?',
-        a: 'A pond and waterfall rebuild we finished this summer took about a week from teardown to running water. New builds depend on size, rockwork, and access, and the schedule comes with your proposal after a site visit.',
+        q: 'How much does a pond or waterfall cost?',
+        a: 'Fountains and small pondless waterfalls typically start in the mid four figures. Full koi ponds with filtration, rockwork, and planting usually run five figures, scaling with size. A site visit gets you a fixed number.',
       },
       {
         q: 'Are ponds a lot of work in Northern Virginia?',
@@ -121,8 +121,8 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
         a: 'Fall is king: warm soil, cool air, and a full dormant season to root before summer stress. Spring is second best. We plant container stock nearly year round, adjusting care to the season.',
       },
       {
-        q: 'Should I plant larger or smaller sizes?',
-        a: 'Bigger installed sizes look finished on day one. Smaller sizes are easier on the budget and often catch up within a few seasons. We help you choose based on how soon you want the bed to look full.',
+        q: 'What does a planting project cost?',
+        a: 'Foundation bed refreshes commonly run in the low five figures with design, removal, soil work, and installation included. Larger layered designs scale by plant count and sizes. Bigger installed sizes cost more up front and look finished immediately.',
       },
       {
         q: 'Do you guarantee your plants?',
@@ -184,15 +184,15 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
       {
         heading: 'Built for Northern Virginia Nights',
         body: [
-          'Our fixtures and connections are specified for real weather: freeze, thaw, shifting soil, and summer storms. Brass housings instead of throwaway aluminum, waterproof connections instead of pierce taps, and a layout documented so future landscape work never means cut wires.',
+          'Our fixtures and connections are specified for real weather: freeze, thaw, clay soil movement, and summer storms. Brass housings instead of throwaway aluminum, waterproof connections instead of pierce taps, and a layout documented so future landscape work never means cut wires.',
         ],
       },
     ],
     faqHeading: 'Landscape Lighting Questions',
     faqs: [
       {
-        q: 'Where should landscape lighting start?',
-        a: 'Usually at the front walk and the face of the house, where people need light to arrive safely. From there we add trees, walls, and patios in layers, so a system can grow over time without being rewired.',
+        q: 'What does landscape lighting cost?',
+        a: 'Entry systems covering a front walk and facade typically start in the mid four figures. Full property designs with tree lighting and scenes run higher, scaling with fixture count. Quality fixtures cost more once and stop costing after that.',
       },
       {
         q: 'Can lighting be added without tearing up the beds?',
@@ -230,8 +230,8 @@ export const serviceExpansions: Record<string, ServiceExpansionData> = {
     faqHeading: 'Hardscape Questions We Hear Most',
     faqs: [
       {
-        q: 'What shapes the scope of a patio project?',
-        a: 'Size, grade, access, and what goes with it: seat walls, steps, a fire feature, or lighting. Each choice changes the next one, which is why every proposal is fixed after a design and site walk.',
+        q: 'What does a paver patio cost in Northern Virginia?',
+        a: 'Straightforward patios typically start in the low five figures. Add seat walls, fire features, or grade changes and projects scale from there. Every proposal is fixed after a design and site walk.',
       },
       {
         q: 'Pavers or flagstone?',
