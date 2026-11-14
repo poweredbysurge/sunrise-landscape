@@ -130,7 +130,7 @@ export default function CareerPage() {
           src='/media/work/crew-installing-pond-liner-wide.jpg'
           alt="Sunrise crew working together on a pond rebuild"
           fill
-          className="object-cover"
+          className="object-cover lg:object-[10%_20%]"
           priority
           sizes="100vw"
         />
