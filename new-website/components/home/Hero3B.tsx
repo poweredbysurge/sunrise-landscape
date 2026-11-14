@@ -14,7 +14,15 @@ import heroBg7 from './hero-bg/hero-bg-7.png'
 import mobileHeroBackground from './Background 2 - backup (pre hero.png swap, 2026-08-23).png'
 import InquiryForm from '@/components/InquiryForm'
 
-const HERO_BACKGROUNDS = [heroBg1, heroBg2, heroBg3, heroBg4, heroBg5, heroBg6, heroBg7]
+const HERO_BACKGROUNDS = [
+  { src: heroBg1, alt: 'Curved segmental retaining wall with layered flower beds and Japanese maples in Northern Virginia' },
+  { src: heroBg2, alt: 'Circular paver patio with a gas fire pit and four lounge chairs, edged by planting beds' },
+  { src: heroBg3, alt: 'Natural stone waterfall spilling over boulders into a backyard pond' },
+  { src: heroBg4, alt: 'Backyard with a stone patio, fire pit seating and planted beds below a two-story deck' },
+  { src: heroBg5, alt: 'Striped front lawn and foundation plantings at a stone colonial home' },
+  { src: heroBg6, alt: 'Tiered retaining walls planted with spring pansies and tulips on a sloped yard' },
+  { src: heroBg7, alt: 'Stone outdoor fireplace on a flagstone patio with dining chairs and flowering planters' },
+]
 
 interface GoogleReview {
   initial: string
@@ -172,7 +180,7 @@ export default function Hero3B() {
         <div className="absolute inset-0 z-0">
           {/* Mobile: static original background. Desktop: autoscroll carousel. */}
           <div className="absolute inset-0 lg:hidden">
-            <Image src={mobileHeroBackground} alt="" fill priority className="object-cover" sizes="100vw" />
+            <Image src={mobileHeroBackground} alt="" aria-hidden="true" fill priority className="object-cover" sizes="100vw" />
           </div>
           <div className="absolute inset-0 hidden lg:block">
             <HeroBackgroundCarousel images={HERO_BACKGROUNDS} />

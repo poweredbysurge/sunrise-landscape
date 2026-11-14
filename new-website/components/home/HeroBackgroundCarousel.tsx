@@ -6,7 +6,9 @@ import Image, { type StaticImageData } from 'next/image'
 const HOLD_MS = 2000
 const FADE_MS = 800
 
-export default function HeroBackgroundCarousel({ images }: { images: StaticImageData[] }) {
+export type HeroSlide = { src: StaticImageData; alt: string }
+
+export default function HeroBackgroundCarousel({ images }: { images: HeroSlide[] }) {
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
@@ -21,8 +23,8 @@ export default function HeroBackgroundCarousel({ images }: { images: StaticImage
       {images.map((img, i) => (
         <Image
           key={i}
-          src={img}
-          alt=""
+          src={img.src}
+          alt={img.alt}
           fill
           priority={i === 0}
           className="object-cover transition-opacity ease-in-out"
