@@ -69,14 +69,6 @@ const SERVICES = [
     Icon: HardscapeIcon,
   },
   {
-    name: 'Landscape Design',
-    body: 'As experts in landscape and hardscape design, we specialize in crafting durable and visually stunning outdoor spaces that enhance both functionality and aesthetics.',
-    href: '/landscape-design-northern-virginia',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/681c9fd4dec20f523b550af0_design-img-2 (1).webp'),
-    alt: 'Custom landscape design project in Northern Virginia',
-    Icon: DesignIcon,
-  },
-  {
     name: 'Landscape Maintenance',
     body: 'Transform your outdoor space into a living masterpiece that evolves beautifully through every season. Our curated maintenance packages ensure your landscape receives precisely what it needs, when it needs it.',
     href: '/landscape-maintenance-northern-virginia',
@@ -142,7 +134,6 @@ export type CarouselItem = {
 
 const ICON_BY_HREF: Record<string, () => React.JSX.Element> = {
   '/hardscape-northern-virginia': HardscapeIcon,
-  '/landscape-design-northern-virginia': DesignIcon,
   '/landscape-maintenance-northern-virginia': MaintenanceIcon,
   '/landscape-lighting-northern-virginia': LightingIcon,
   '/water-features-northern-virginia': WaterIcon,

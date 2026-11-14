@@ -22,7 +22,7 @@ const RECOVERY_PAGES = [
 
 // Redirect stubs (see next.config.ts `redirects()`) — these 308 to their
 // canonical -northern-virginia/-virginia pages and must not appear in the sitemap.
-const REDIRECT_STUB_PATHS = ['/hardscape', '/commercial']
+const REDIRECT_STUB_PATHS = ['/hardscape', '/commercial', '/landscape-design-northern-virginia']
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = getPageIndex().filter((page) => !REDIRECT_STUB_PATHS.includes(page.path))

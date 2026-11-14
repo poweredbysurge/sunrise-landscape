@@ -97,11 +97,6 @@ const serviceCards = [
     href: '/hardscape-northern-virginia',
   },
   {
-    heading: 'Landscape Design Services',
-    desc: 'As experts in landscape and hardscape design, we specialize in crafting durable and visually stunning outdoor spaces that enhance both functionality and aesthetics.',
-    href: '/landscape-design-northern-virginia',
-  },
-  {
     heading: 'Landscape Lighting Services',
     desc: 'Transform your property into an enchanting evening retreat with artfully designed landscape lighting.',
     href: '/landscape-lighting-northern-virginia',

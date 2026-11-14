@@ -64,13 +64,6 @@ const SERVICES = [
     alt: 'Drainage solution and erosion control landscaping in Northern Virginia',
     href: '/drainage-solutions-northern-virginia',
   },
-  {
-    heading: 'Landscape Design Services',
-    body: 'As experts in landscape and hardscape design, we specialize in crafting durable and visually stunning outdoor spaces that enhance both functionality and aesthetics.',
-    img: cdnToLocal('/media/6808afe22b48076cc8e63cef/681c9fd4dec20f523b550af0_design-img-2 (1).webp'),
-    alt: 'Custom landscape design project in Northern Virginia',
-    href: '/landscape-design-northern-virginia',
-  },
 ]
 
 const TOTAL_CARDS = SERVICES.length + 1 // + the "Have a project in mind?" CTA card

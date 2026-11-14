@@ -225,8 +225,8 @@ export default function LawnCareLoudounPage() {
               landscape maintenance
             </Link>
             . Design and build work starts at{' '}
-            <Link href="/landscape-design-northern-virginia" className="underline hover:text-orange">
-              landscape design
+            <Link href="/outdoor-living-spaces-northern-virginia" className="underline hover:text-orange">
+              outdoor living spaces
             </Link>
             .
           </p>

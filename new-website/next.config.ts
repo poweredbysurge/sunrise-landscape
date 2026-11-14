@@ -5,6 +5,12 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        // Nov 2026: Sunrise no longer sells standalone design. Send the old service page to design-build.
+        source: '/landscape-design-northern-virginia',
+        destination: '/outdoor-living-spaces-northern-virginia',
+        permanent: true,
+      },
+      {
         source: '/old-home',
         destination: '/',
         permanent: true,
@@ -39,7 +45,7 @@ const nextConfig: NextConfig = {
       // moved to Vercel on 2026-08-23. They had been 404ing for three weeks.
 
       // Service page renames (old Webflow slugs)
-      { source: '/design', destination: '/landscape-design-northern-virginia', permanent: true },
+      { source: '/design', destination: '/outdoor-living-spaces-northern-virginia', permanent: true },
       { source: '/lighting', destination: '/landscape-lighting-northern-virginia', permanent: true },
       { source: '/maintenance-packages', destination: '/landscape-maintenance-northern-virginia', permanent: true },
       { source: '/drainage-erosion-control', destination: '/drainage-solutions-northern-virginia', permanent: true },

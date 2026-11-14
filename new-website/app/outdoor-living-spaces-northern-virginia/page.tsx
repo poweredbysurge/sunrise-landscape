@@ -174,8 +174,8 @@ export default function OutdoorLivingSpacesPage() {
             Our featured projects page shows completed outdoor living spaces across Northern Virginia, patios with
             fire pits, koi ponds paired with stone fireplaces, and pool surrounds built as full backyard renovations.
             Every photo is a finished Sunrise project, not a rendering.{' '}
-            <Link href="/landscape-design-northern-virginia" className="font-bold text-green underline hover:text-orange">
-              See our featured landscape design projects
+            <Link href="/hardscape-northern-virginia" className="font-bold text-green underline hover:text-orange">
+              See our patio and hardscape work
             </Link>
             .
           </p>
