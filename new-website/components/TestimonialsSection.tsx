@@ -38,7 +38,9 @@ export default function TestimonialsSection({ testimonials }: { testimonials: Te
   const [rawIdx, setRawIdx] = useState(CLONES)
   const [animate, setAnimate] = useState(true)
   const [cardPx, setCardPx] = useState(0)
-  const wrapRef = useRef<HTMLDivElement>(null)
+  // left edge of the content column (where the heading starts), measured from the section edge
+  const [edge, setEdge] = useState(0)
+  const contentRef = useRef<HTMLDivElement>(null)
 
   const items = useMemo(() => [
     ...testimonials.slice(-CLONES),
@@ -47,15 +49,27 @@ export default function TestimonialsSection({ testimonials }: { testimonials: Te
   ], [testimonials])
 
   useEffect(() => {
+    // The track lines up with the heading: cards start at the content column's left edge,
+    // a whole number of cards fills the column exactly, and the side margins hold the fades.
     const measure = () => {
-      if (!wrapRef.current) return
-      const w = wrapRef.current.offsetWidth
-      const isMobile = window.innerWidth < 768
-      setCardPx(isMobile ? w * 0.85 : Math.min(w * 0.42, 520))
+      const el = contentRef.current
+      if (!el) return
+      const cs = getComputedStyle(el)
+      const padL = parseFloat(cs.paddingLeft)
+      const padR = parseFloat(cs.paddingRight)
+      const inner = el.clientWidth - padL - padR
+      setEdge(el.offsetLeft + padL)
+      const vw = window.innerWidth
+      if (vw < 768) {
+        setCardPx(inner * 0.85)
+      } else {
+        const perView = vw >= 1100 ? 3 : 2
+        setCardPx((inner - GAP * (perView - 1)) / perView)
+      }
     }
     measure()
     const ro = new ResizeObserver(measure)
-    if (wrapRef.current) ro.observe(wrapRef.current)
+    if (contentRef.current) ro.observe(contentRef.current)
     return () => ro.disconnect()
   }, [])
 
@@ -90,7 +104,7 @@ export default function TestimonialsSection({ testimonials }: { testimonials: Te
 
   return (
     <section className="py-16 lg:py-24" style={{ backgroundColor: BG }}>
-      <div className="max-w-screen-xl mx-auto px-5 lg:px-8">
+      <div ref={contentRef} className="max-w-screen-xl mx-auto px-5 lg:px-8">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-10">
           <div>
@@ -130,24 +144,23 @@ export default function TestimonialsSection({ testimonials }: { testimonials: Te
         <div className="border-t border-green/15 mb-12" />
       </div>
 
-      {/* Card track — bleeds right edge */}
-      <div ref={wrapRef} className="pl-5 lg:pl-8 overflow-hidden relative">
-        {/* Left fade — desktop only; hidden on the first card so the section starts with a clean 32px left edge, then fades in once scrolled past it */}
+      {/* Card track: full width, first card aligned with the heading, cut off and faded in the side margins */}
+      <div className="overflow-hidden relative">
+        {/* Fades fill each side margin: solid at the screen edge, clear where the content column begins. Desktop only. */}
         <div
-          className="hidden lg:block absolute top-0 left-0 bottom-0 w-32 pointer-events-none z-10 transition-opacity duration-500"
-          style={{ background: `linear-gradient(to right, ${BG}, transparent)`, opacity: rawIdx > CLONES ? 1 : 0 }}
+          className="hidden lg:block absolute top-0 left-0 bottom-0 pointer-events-none z-10"
+          style={{ width: `${edge}px`, background: `linear-gradient(to right, ${BG}, transparent)` }}
         />
-        {/* Right fade — desktop only */}
         <div
-          className="hidden lg:block absolute top-0 right-0 bottom-0 w-40 pointer-events-none z-10"
-          style={{ background: `linear-gradient(to right, transparent, ${BG})` }}
+          className="hidden lg:block absolute top-0 right-0 bottom-0 pointer-events-none z-10"
+          style={{ width: `${edge}px`, background: `linear-gradient(to left, ${BG}, transparent)` }}
         />
 
         <div
           className="flex"
           style={{
             gap: `${GAP}px`,
-            transform: `translateX(${cardPx ? -rawIdx * (cardPx + GAP) : 0}px)`,
+            transform: `translateX(${cardPx ? edge - rawIdx * (cardPx + GAP) : edge}px)`,
             transition: animate && cardPx ? 'transform 0.65s cubic-bezier(0.4,0,0.2,1)' : 'none',
           }}
           onTransitionEnd={handleTransitionEnd}
