@@ -148,7 +148,7 @@ export default function CommercialSnowRemovalPage() {
             </video>
           </div>
           {[
-            { src: '/media/snow-removal/snow-2026-01-29-parking-lot-cleared.jpg', alt: 'Commercial parking lot plowed down to the pavement' },
+            { src: '/media/snow-removal/snow-sidewalk-shoveled-clear.jpg', alt: 'Concrete sidewalk shoveled clear between high snowbanks next to a plowed parking lot on a sunny winter day.' },
             { src: '/media/snow-removal/snow-2026-01-29-snow-piles-lot-edge.jpg', alt: 'Plowed snow stacked at the edge of a parking lot to keep spaces open' },
           ].map((photo) => (
             <div key={photo.src} className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
