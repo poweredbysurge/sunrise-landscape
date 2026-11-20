@@ -123,8 +123,8 @@ export default function CommercialLandscapePage() {
                 num: '04',
                 title: 'Multi-Family Properties',
                 desc: 'Year-round care for apartment complexes and condominium communities.',
-                img: '/media/work/commercial-community-flower-bed.jpg',
-                alt: 'Bed of red and pink flowers at a community entrance',
+                img: '/media/work/commercial-multifamily-entrance-bed.jpg',
+                alt: 'Raised stone-wall bed of bright pink impatiens and clipped shrubs in front of a townhome community entrance sign.',
               },
               {
                 num: '05',
