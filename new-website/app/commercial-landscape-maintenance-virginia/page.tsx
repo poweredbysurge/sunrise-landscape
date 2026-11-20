@@ -109,7 +109,7 @@ export default function CommercialLandscapePage() {
                 num: '02',
                 title: 'HOA Communities',
                 desc: 'Pristine common area maintenance and seasonal enhancements for homeowner associations.',
-                img: '/media/work/commercial-hoa-entrance-sign-beds.jpg',
+                img: '/media/work/commercial-hoa-entrance-beds.jpg',
                 alt: 'Community entrance sign with flower beds and trimmed hedges',
               },
               {
