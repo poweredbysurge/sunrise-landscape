@@ -25,7 +25,7 @@ const sampleTestimonials = [
 const sampleProjects = [
   { img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7a462c7d0f5245e2a462_cover.webp'), alt: 'Stone patio project', name: 'Backyard Living Retreat', location: 'Great Falls, VA' },
   { img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7d113c21f26f490bb45a_folder-2-cover-1.webp'), alt: 'Koi pond and fire pit', name: 'Koi Pond & Fire Pit', location: 'Ashburn, VA' },
-  { img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp'), alt: 'Estate garden', name: 'Estate Elegance', location: 'Vienna, VA' },
+  { img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp'), alt: 'Garden with tiered stone walls and layered perennial beds', name: 'Tiered Stone Garden', location: 'Great Falls, VA' },
   { img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7ecfc4042333b3219c72_folder-4-cover.webp'), alt: 'Grand entrance', name: 'Grand Entrance Design', location: 'Oakton, VA' },
 ]
 

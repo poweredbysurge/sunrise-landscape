@@ -23,11 +23,11 @@ const featuredWork = [
   },
   {
     img: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp'),
-    alt: 'Estate landscape design in full bloom in Vienna Virginia',
-    name: 'Estate Garden',
-    location: 'Vienna, VA',
+    alt: 'Garden in full bloom with tiered stone walls and layered perennial beds in Great Falls, Virginia.',
+    name: 'Tiered Stone Garden',
+    location: 'Great Falls, VA',
     images: [
-      { src: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp'), alt: 'Estate landscape design in full bloom in Vienna Virginia' },
+      { src: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e1387270569bd211cb9_folder-3-cover.webp'), alt: 'Garden in full bloom with tiered stone walls and layered perennial beds in Great Falls, Virginia.' },
       { src: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e23cadf15ecbd8b2f1b_folder-3-1.webp'), alt: 'Curved stone retaining wall with layered plantings of purple catmint, ornamental grasses, and shrubs beneath mature trees.' },
       { src: cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7e23ce1a9da1404d5685_folder-3-2.webp'), alt: 'Tiered stone retaining walls with a Japanese maple, flowering dogwoods, and colorful perennial beds along a paver walkway.' },
     ],
