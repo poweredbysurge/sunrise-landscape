@@ -236,7 +236,7 @@ export default function LandscapeLightingPage() {
         </div>
       </section>
 
-      <ServiceExpansion data={serviceExpansions['landscape-lighting-northern-virginia']} layout="columns" />
+      <ServiceExpansion data={serviceExpansions['landscape-lighting-northern-virginia']} />
 
       <section className="py-10 px-5 lg:px-8 bg-white">
         <div className="max-w-3xl mx-auto text-center">

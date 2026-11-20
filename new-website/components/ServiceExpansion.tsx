@@ -17,33 +17,26 @@ export interface ServiceExpansionData {
   cta?: string
 }
 
-// layout="columns" (trial on the lighting page, Nov 2026): sections sit side by
-// side in a 50/50 grid, each heading with its body directly underneath.
-// Default "legacy" keeps the alternating heading-left / body-right layout.
-export default function ServiceExpansion({
-  data,
-  layout = 'legacy',
-}: {
-  data: ServiceExpansionData
-  layout?: 'legacy' | 'columns'
-}) {
-  const columns = layout === 'columns'
+// Sections sit side by side in a 50/50 grid, each heading with its body
+// directly underneath (Mario, 2026-11-20). A single section runs full width.
+// Stacks to one column on phones.
+export default function ServiceExpansion({ data }: { data: ServiceExpansionData }) {
+  const paired = data.sections.length > 1
   return (
     <>
       {data.sections.length > 0 && (
       <section className="py-16 lg:py-24 px-5 lg:px-8 bg-white">
         <div
           className={
-            columns
+            paired
               ? 'max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-14'
-              : 'max-w-screen-xl mx-auto space-y-14'
+              : 'max-w-screen-xl mx-auto'
           }
         >
-          {data.sections.map((sec, i) => {
+          {data.sections.map((sec) => {
             const H = sec.level === 3 ? 'h3' : 'h2'
-            const split = !columns && i % 2 === 0
             return (
-              <div key={sec.heading} className={split ? 'grid grid-cols-1 lg:grid-cols-2 gap-8 items-start' : ''}>
+              <div key={sec.heading}>
                 <H
                   className={
                     sec.level === 3
