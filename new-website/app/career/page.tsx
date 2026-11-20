@@ -117,6 +117,41 @@ const TOPO_LINES = [
   'M-50,130 C-20,70 160,150 360,90 C520,42 640,102 1000,70',
 ]
 
+const lifePhotos: { src: string; alt: string; span: string; sizes: string; pos?: string }[] = [
+  {
+    src: '/media/careers/team-group-yard-trucks.jpg',
+    alt: 'Large landscaping team posing together in an equipment yard in front of dump trucks and machinery',
+    span: 'col-span-2 row-span-2',
+    sizes: '(max-width: 1024px) 100vw, 600px',
+  },
+  {
+    src: '/media/careers/crew-breakfast-buffet-shop-doors.jpg',
+    alt: 'Crew members in green shirts lining up at a breakfast buffet of waffles, pancakes and eggs inside the shop',
+    span: 'row-span-2',
+    sizes: '(max-width: 1024px) 50vw, 300px',
+  },
+  {
+    src: '/media/careers/crew-breakfast-warehouse.jpg',
+    alt: 'Crew member carrying a plate of waffles and strawberries past a breakfast table in the equipment warehouse',
+    span: 'row-span-2',
+    sizes: '(max-width: 1024px) 50vw, 300px',
+    pos: '75% center',
+  },
+  {
+    src: '/media/careers/crew-cornhole-yard.jpg',
+    alt: 'Crew playing cornhole in the company yard beside orange work trucks on a sunny fall day',
+    span: 'col-span-2',
+    sizes: '(max-width: 1024px) 100vw, 600px',
+  },
+  {
+    src: '/media/careers/office-dog-red-balloon.jpg',
+    alt: 'Gray and white office dog sitting on a striped blanket holding a red happy birthday balloon',
+    span: 'col-span-2',
+    sizes: '(max-width: 1024px) 100vw, 600px',
+    pos: 'center top',
+  },
+]
+
 export default function CareerPage() {
   const jsonLd = getMdxJsonLd('pages/career/index.mdx')
 
@@ -210,6 +245,22 @@ export default function CareerPage() {
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* Life at Sunrise photo grid */}
+          <div className="mt-16 lg:mt-24 grid grid-cols-2 lg:grid-cols-4 auto-rows-[160px] sm:auto-rows-[220px] lg:auto-rows-[240px] gap-3 lg:gap-4">
+            {lifePhotos.map((p) => (
+              <div key={p.src} className={`relative overflow-hidden ${p.span}`} style={{ borderRadius: '16px' }}>
+                <Image
+                  src={p.src}
+                  alt={p.alt}
+                  fill
+                  className="object-cover"
+                  style={{ objectPosition: p.pos ?? 'center' }}
+                  sizes={p.sizes}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
