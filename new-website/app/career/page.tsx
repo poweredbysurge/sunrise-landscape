@@ -184,8 +184,8 @@ export default function CareerPage() {
             {/* Center: team photo */}
             <div className="relative overflow-hidden order-first lg:order-none" style={{ aspectRatio: '3/4', borderRadius: '16px' }}>
               <Image
-                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6825b46f04c55a8038291b82_career-work-img.webp')}
-                alt="The Sunrise Landscape team posing with trucks and equipment"
+                src="/media/work/crew-group-aeration-equipment.jpg"
+                alt="Landscape crew in matching gray uniforms standing under a shade tree with aerators, seeders and spreaders"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 440px"
