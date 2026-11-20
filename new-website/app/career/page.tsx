@@ -119,12 +119,6 @@ const TOPO_LINES = [
 
 const lifePhotos: { src: string; alt: string; span: string; sizes: string; pos?: string }[] = [
   {
-    src: '/media/careers/team-group-yard-trucks.jpg',
-    alt: 'Large landscaping team posing together in an equipment yard in front of dump trucks and machinery',
-    span: 'col-span-2 row-span-2',
-    sizes: '(max-width: 1024px) 100vw, 600px',
-  },
-  {
     src: '/media/careers/crew-breakfast-buffet-shop-doors.jpg',
     alt: 'Crew members in green shirts lining up at a breakfast buffet of waffles, pancakes and eggs inside the shop',
     span: 'row-span-2',
