@@ -137,8 +137,8 @@ export default function CommercialLandscapePage() {
                 num: '06',
                 title: 'Religious Institutions',
                 desc: 'Respectful, consistent care for churches, temples, and community centers. We plan and prioritize our schedule around worship times, so walkways, entrances, and parking areas are clear and accessible well before services begin.',
-                img: '/media/work/commercial-church-garden-arch.jpg',
-                alt: 'Church garden with a stone arch, brick path and new plantings',
+                img: '/media/work/commercial-church-statue-garden-bed.jpg',
+                alt: 'Island bed of coleus, canna lilies and yellow flowers around a bronze statue on a striped church lawn.',
               },
             ].map((item) => (
               <ServiceCard
