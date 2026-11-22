@@ -59,13 +59,12 @@ export default function HardscapePage() {
             </div>
           </div>
 
-          {/* 5-image carousel: local, AI-upscaled copies. Source photos were originally
+          {/* 4-image carousel: local, AI-upscaled copies. Source photos were originally
               quite small (323-620px), so even after a 4x upscale a couple of these land
               short of the ideal full-width resolution — that's the source ceiling, not
               a processing issue. */}
           <HardscapeCarousel slides={[
             { src: '/media/work/hardscape-fire-pit-adirondack-chairs.jpg', alt: 'Stone fire pit with Adirondack chairs beside a paver patio' },
-            { src: '/media/work/hardscape-flagstone-patio.jpg', alt: 'New flagstone patio in a rectangular pattern' },
             { src: '/media/work/hardscape-stone-steps-seat-wall.jpg', alt: 'Stone steps and a capped seat wall beside rounded shrubs' },
             { src: '/media/work/hardscape-paver-patio-dining.jpg', alt: 'Paver dining patio edged with boulders and plantings' },
             { src: '/media/work/hardscape-knot-garden-gravel-court.jpg', alt: 'Gravel knot garden court edged in brick with clipped shrubs' },
