@@ -76,8 +76,8 @@ export default function WaterFeatureJourney({ data }: { data: ServiceExpansionDa
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="relative aspect-[4/5] lg:aspect-[3/4] overflow-hidden rounded-[20px] lg:order-2">
             <Image
-              src={cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7caf1811776d3267929d_folder-2-1.webp')}
-              alt="Evening patio with stone fireplace overlooking a koi pond and waterfall lit by landscape lighting."
+              src={cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7d113c21f26f490bb45a_folder-2-cover-1.webp')}
+              alt="Koi pond with stepping stones and a stone fireplace patio surrounded by lush plantings."
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
