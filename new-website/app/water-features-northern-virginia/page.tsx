@@ -145,8 +145,8 @@ export default function WaterFeaturesPage() {
             {/* Image */}
             <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
               <Image
-                src={cdnToLocal('/media/6808afe22b48076cc8e63cef/686b7caf1811776d3267929d_folder-2-1.webp')}
-                alt="Evening patio with stone fireplace overlooking a koi pond and waterfall lit by landscape lighting."
+                src={'/media/work/water-feature-backyard-pond-garden.jpg'}
+                alt="Backyard pond with a small stone waterfall and water plants, ringed by ornamental grasses, stacked stone walls and a curving lawn."
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
