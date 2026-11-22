@@ -67,7 +67,7 @@ export default function WaterFeaturesPage() {
               <Image src={cdnToLocal('/media/6808afe22b48076cc8e63cef/68828511b1625ab8175ffac0_image016.jpg')} alt="Tranquil garden pond with small cascading waterfalls surrounded by lush green plants and rocks." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
             <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: '16px' }}>
-              <Image src={cdnToLocal('/media/6808afe22b48076cc8e63cef/6823250e85c30890c0101ca6_pw-art-img (1).webp')} alt="Backyard patio with stone fireplace, outdoor seating, a small waterfall, and a pond with stepping stones surrounded by greenery." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src="/media/work/water-feature-backyard-pond-garden.jpg" alt="Backyard pond with a small stone waterfall and water plants, ringed by ornamental grasses, stacked stone walls and a curving lawn." fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
             </div>
           </div>
         </div>
