@@ -11,6 +11,8 @@ import { serviceExpansions } from '@/lib/serviceExpansions'
 import HardscapeHero from '@/components/HardscapeHero'
 import HardscapeCarousel from '@/components/HardscapeCarousel'
 import { SITE_URL } from '@/lib/siteUrl'
+import { V } from '@/components/preview/CopyVersion'
+import { hardscapeExpansionNew } from '@/lib/previewCopy'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/hardscape-northern-virginia' },
@@ -47,14 +49,17 @@ export default function HardscapePage() {
           {/* Label + oversized heading */}
           <div className="grid lg:grid-cols-[180px_1fr] gap-6 lg:gap-10 items-start mb-10 lg:mb-14">
             <p className="section-label text-green/50 leading-snug pt-1">
-              Hardscapes Creating Harmony
+              <V c="Hardscapes Creating Harmony" n="What We Build" />
             </p>
             <div>
               <h2 className="text-green" style={{ fontSize: 'clamp(2.6rem, 6.5vw, 6.2rem)', lineHeight: 1.0, letterSpacing: '-0.02em' }}>
                 Hardscape Services: Patios, Fire Pits &amp; More
               </h2>
               <p className="text-green/70 mt-6 max-w-3xl lg:text-lg leading-relaxed">
-                Sunrise creates stylish and functional hardscapes with the highest quality workmanship and time-tested methods. With ICPI certification and a track record going back to 1986, Sunrise delivers exceptional results for you to enjoy forever.
+                <V
+                  c={<>Sunrise creates stylish and functional hardscapes with the highest quality workmanship and time-tested methods. With ICPI certification and a track record going back to 1986, Sunrise delivers exceptional results for you to enjoy forever.</>}
+                  n={<>We handle hardscape design and installation from the first site visit to the last joint: patios, walkways and stone steps, retaining and seat walls, fire pits and outdoor kitchens. We install pavers more than anything else, along with flagstone and bluestone. Natural stone is set on a poured concrete base rather than gravel, so it is worth talking through both before you choose. Everything we build carries a one-year workmanship warranty.</>}
+                />
               </p>
             </div>
           </div>
@@ -95,7 +100,10 @@ export default function HardscapePage() {
             <p className="section-label text-orange mb-4">Drag to compare</p>
             <h2 className="text-3xl lg:text-5xl text-green leading-tight mb-5">A Front Walk, Rebuilt in Flagstone</h2>
             <p className="text-green/70 text-lg leading-relaxed">
-              The same walk from the same spot: the new base going in, and the finished flagstone a few weeks later.
+              <V
+                c={<>The same walk from the same spot: the new base going in, and the finished flagstone a few weeks later.</>}
+                n={<>The same walk from the same spot: the new base going in, then the finished flagstone a few weeks later. Once the stone is down, nobody sees the base again. It is still the part that decides whether the walk stays level.</>}
+              />
             </p>
           </div>
           <div className="w-full max-w-md mx-auto lg:max-w-lg">
@@ -110,7 +118,10 @@ export default function HardscapePage() {
         </div>
       </section>
 
-      <ServiceExpansion data={serviceExpansions['hardscape-northern-virginia']} />
+      <V
+        c={<ServiceExpansion data={serviceExpansions['hardscape-northern-virginia']} />}
+        n={<ServiceExpansion data={hardscapeExpansionNew} />}
+      />
 
       {/* ── SERVICE AREA BAR ── */}
       <ServiceAreasSection />

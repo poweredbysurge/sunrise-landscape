@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import HardscapeCarousel from '@/components/HardscapeCarousel'
+import { V } from '@/components/preview/CopyVersion'
 
 // Header photos only. The photos in the services carousel further down the page are kept
 // out of this list so the same photo never shows twice on one page.
@@ -41,9 +42,10 @@ export default function HardscapeHero() {
           {/* Right: paragraph + CTAs */}
           <div>
             <p className="text-green/70 text-lg leading-relaxed mb-8">
-              As experts in hardscape design, we specialize in crafting beautiful, functional outdoor
-              environments. From integrated walkways and driveways that connect your landscape, to retaining
-              walls that maximize usable space. We bring structure and elegance to your yard.
+              <V
+                c={<>As experts in hardscape design, we specialize in crafting beautiful, functional outdoor environments. From integrated walkways and driveways that connect your landscape, to retaining walls that maximize usable space. We bring structure and elegance to your yard.</>}
+                n={<>Sunrise has been building patios, walkways, driveways, retaining walls, steps and fire features across Northern Virginia since 1986, with our own crews. Most hardscape problems start below the surface, so that is where our hardscape installation starts too. We work across Loudoun and Fairfax counties, including Leesburg, Ashburn, Herndon, Reston and Great Falls.</>}
+              />
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact#form" className="btn-primary">

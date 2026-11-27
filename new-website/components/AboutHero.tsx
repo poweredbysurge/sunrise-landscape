@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { V } from '@/components/preview/CopyVersion'
 
 const TOPO_LINES = [
   'M-50,480 C120,420 300,500 500,440 C660,392 780,452 1000,420',
@@ -39,17 +40,20 @@ export default function AboutHero() {
             className="text-cream"
             style={{ fontFamily: 'var(--font-editorsnote), Georgia, serif', fontStyle: 'normal', fontWeight: 400, fontSize: '4.5rem', lineHeight: 0.92, letterSpacing: '-0.025em' }}
           >
-            <span className="block">Growing joy</span>
-            <span className="block">The sunrise story</span>
+            <V
+              c={<><span className="block">Growing joy</span><span className="block">The sunrise story</span></>}
+              n={<><span className="block">Landscapes</span><span className="block">for living</span></>}
+            />
           </p>
         </div>
 
         {/* Right: body text */}
         <div className="lg:w-[340px] lg:pt-3">
           <p className="text-cream leading-relaxed">
-            Since 1986, we&apos;ve been more than just a landscaping company — we&apos;re a
-            passionate collective of outdoor artists, plant enthusiasts, and design dreamers
-            who love transforming spaces and bringing smiles to our clients&apos; faces.
+            <V
+              c={<>Since 1986, we&apos;ve been more than just a landscaping company — we&apos;re a passionate collective of outdoor artists, plant enthusiasts, and design dreamers who love transforming spaces and bringing smiles to our clients&apos; faces.</>}
+              n={<>Sunrise has been a family-owned landscaping company since 1986, building and caring for landscapes across Northern Virginia from our home base in Sterling. The job is still the one we started with: make the view from your driveway one you&apos;re glad to come home to.</>}
+            />
           </p>
         </div>
 

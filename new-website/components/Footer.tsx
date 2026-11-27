@@ -160,7 +160,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-cream">
           <p>&copy; {new Date().getFullYear()} Sunrise Landscape. All rights reserved.</p>
-          <p>Est. 1986 · Sterling, Virginia · Serving Northern Virginia</p>
+          <p>Est. 1986 · Sterling, Virginia · Class A Contractor&apos;s License #2705194124</p>
         </div>
       </div>
     </footer>

@@ -38,6 +38,14 @@ export default function Navigation() {
   const [designOpen, setDesignOpen] = useState(false)
   const [commercialOpen, setCommercialOpen] = useState(false)
   const pathname = usePathname()
+  // Larger logo at the top of the page that eases down to the standard size once the visitor scrolls (desktop).
+  const [scrolled, setScrolled] = useState(false)
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
   const lawnRef = useRef<HTMLDivElement>(null)
   const dropdownRef = useRef<HTMLDivElement>(null)
   const commercialRef = useRef<HTMLDivElement>(null)
@@ -68,7 +76,7 @@ export default function Navigation() {
             this row so it's truly centered no matter how wide the logo vs.
             right-side content is — a 3-column flex/grid can't do that when
             the two sides are different widths. ── */}
-        <div className="relative px-5 lg:px-8 flex items-center justify-between h-20">
+        <div className={`relative px-5 lg:px-8 flex items-center justify-between h-20 transition-[height] duration-300 ease-out ${scrolled ? 'lg:h-20' : 'lg:h-28'}`}>
           {/* Left: Logo */}
           <div>
             <Link href="/" className="inline-flex flex-shrink-0 transition-opacity duration-300 hover:opacity-85" aria-label="Sunrise Landscape — Home">
@@ -78,6 +86,7 @@ export default function Navigation() {
                 width={190}
                 height={65}
                 priority
+                className={`h-auto w-[190px] transition-[width] duration-300 ease-out ${scrolled ? 'lg:w-[190px]' : 'lg:w-[260px]'}`}
               />
             </Link>
           </div>

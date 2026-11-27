@@ -3,27 +3,33 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { V } from '@/components/preview/CopyVersion'
 
 const ITEMS = [
   {
     title: 'Lawn Care',
     body: 'Regular mowing, edging, and cleanup keep your lawn consistently pristine throughout the growing season. Scheduled visits ensure you never have to think about it.',
+    bodyNew: "Mowing, edging and cleanup on a regular schedule through the growing season. You come home to an even, finished lawn without ever putting it on your list.",
   },
   {
     title: 'Garden Care',
     body: 'Mulching, fertilization, and landscape bed maintenance to keep your planting areas healthy, weed-free, and visually polished year-round.',
+    bodyNew: "Mulch, fertilization and bed care that keep your plantings healthy and the weeds down, so the beds look tended in every season.",
   },
   {
     title: 'Seasonal Services',
     body: "Pre-emergent weed applications in spring, fall cleanups, leaf removal, and winterization treatments timed precisely for Northern Virginia's climate.",
+    bodyNew: "Pre-emergent in spring, leaf cleanup in fall and winter preparation, each timed to Northern Virginia's seasons. Spring cleanups start in February.",
   },
   {
     title: 'Property Maintenance',
     body: 'Full-service property care packages combining lawn, garden, and hardscape upkeep into one seamless recurring relationship. Everything handled, nothing overlooked.',
+    bodyNew: "One plan for your lawn, beds and hardscape, with one company responsible for all of it and one number to call.",
   },
   {
     title: 'Planting & Updates',
     body: 'Strategic plant additions, replacements, and design refreshes to keep your landscape evolving beautifully through every season.',
+    bodyNew: "New plants, replacements and small refreshes as your landscape matures. Plants we install carry a warranty when our watering guidance is followed.",
   },
 ]
 
@@ -50,8 +56,10 @@ export default function MaintenanceSection() {
               Maintenance Services
             </p>
             <h2 className="absolute bottom-8 left-8 leading-tight editorial-display text-3xl text-cream">
-              <span className="block">Your Yard, </span>
-              <span className="block">Our Passion.</span>
+              <V
+                c={<><span className="block">Your Yard, </span><span className="block">Our Passion.</span></>}
+                n={<><span className="block">Year-round care, </span><span className="block">off your list.</span></>}
+              />
             </h2>
           </div>
 
@@ -74,7 +82,7 @@ export default function MaintenanceSection() {
                     </span>
                   </button>
                   {open === i ? (
-                    <p className="text-green/70 leading-relaxed pb-5 pr-8">{item.body}</p>
+                    <p className="text-green/70 leading-relaxed pb-5 pr-8"><V c={item.body} n={item.bodyNew} /></p>
                   ) : null}
                 </div>
               ))}

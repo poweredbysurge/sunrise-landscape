@@ -2,6 +2,15 @@
 
 import { useEffect, useRef } from 'react'
 import Image from 'next/image'
+import { V } from '@/components/preview/CopyVersion'
+
+const EXPECT = [
+  ['High standards', 'We have worked in the same Northern Virginia communities since 1986, and our name stays on every job long after the crew leaves.'],
+  ['Communication', 'You hear what happens next and what we need from you before you have to ask.'],
+  ['Attention to detail', 'Joints, edges, grades and plant spacing get checked before we call a job finished.'],
+  ['Timing', 'We give you an honest start date and tell you early if the weather moves it.'],
+  ['Preparation', 'Every proposal follows a visit to your property, and we pull the permit when a project needs one.'],
+]
 
 function Words({ text }: { text: string }) {
   return (
@@ -69,21 +78,45 @@ export default function DesigningForImpact() {
 
         {/* Left: scroll-reveal text */}
         <div className="flex-1 flex flex-col justify-center items-center text-center lg:items-start lg:text-left px-8 lg:px-16 py-16">
-          <p className="section-label text-orange mb-10">
-            Designing For Impact
-          </p>
+          <V
+            c={<>
+              <p className="section-label text-orange mb-10">
+                Designing For Impact
+              </p>
 
-          {/* SEO heading preserved from MDX manifest — visually hidden */}
-          <h2 className="sr-only">Designing for impact with a purposeful approach.</h2>
+              {/* SEO heading preserved from MDX manifest — visually hidden */}
+              <h2 className="sr-only">Designing for impact with a purposeful approach.</h2>
 
-          <div className="max-w-xl">
-            <p
-              className="text-cream leading-relaxed"
-              style={{ fontSize: 'clamp(1.3rem, 2.2vw, 2.1rem)', lineHeight: 1.6 }}
-            >
-              <Words text="We believe creating, and maintaning beautiful landscapes should bring joy, both in the process and the result. Our passion for innovative design and sustainable practices drives us to exceed expectations, but it's our love for what we do that sets us apart." />
-            </p>
-          </div>
+              <div className="max-w-xl">
+                <p
+                  className="text-cream leading-relaxed"
+                  style={{ fontSize: 'clamp(1.3rem, 2.2vw, 2.1rem)', lineHeight: 1.6 }}
+                >
+                  <Words text="We believe creating, and maintaning beautiful landscapes should bring joy, both in the process and the result. Our passion for innovative design and sustainable practices drives us to exceed expectations, but it's our love for what we do that sets us apart." />
+                </p>
+              </div>
+            </>}
+            n={<>
+              <p className="section-label text-orange mb-5 lg:mb-6">
+                Working With Sunrise
+              </p>
+              <h2 className="text-cream leading-tight mb-5" style={{ fontSize: 'clamp(1.9rem, 3vw, 2.9rem)' }}>
+                What to expect when you work with us
+              </h2>
+              <div className="max-w-xl">
+                <p className="text-cream/90 leading-relaxed mb-6" style={{ fontSize: 'clamp(1.05rem, 1.5vw, 1.3rem)' }}>
+                  <Words text="Most of what makes a project go well happens before our crew arrives and between the days they are on site. These are the five things we hold ourselves to on every property." />
+                </p>
+                <ul className="space-y-3 text-left">
+                  {EXPECT.map(([t, b]) => (
+                    <li key={t} className="text-cream/80 leading-snug text-sm lg:text-base">
+                      <span className="text-orange font-bold">{t}.</span> {b}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </>}
+          />
         </div>
 
         {/* Right: arched portrait image */}

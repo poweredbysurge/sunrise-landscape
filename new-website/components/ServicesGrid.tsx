@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { V } from '@/components/preview/CopyVersion'
 import { cdnToLocal } from '@/lib/mediaUrl'
 import { loadGsap } from '@/lib/loadGsap'
 
@@ -25,6 +26,7 @@ const SERVICES = [
   {
     heading: 'Commercial Landscaping',
     body: 'Transform your commercial property into a distinctive destination that welcomes, impresses, and adds value to your business investment. From corporate campuses to vibrant community spaces, we bring our signature blend of artistic vision and professional excellence to every commercial project.',
+    bodyNew: "Office properties, retail centers and HOA common areas across Loudoun and Fairfax counties, maintained on a schedule we build from a walk of your property. The entrance your tenants and residents see every morning stays the way it should.",
     img: cdnToLocal('/media/6808afe22b48076cc8e63cef/682313a1105c47482807f99e_commercial-signature-img (1).webp'),
     alt: 'Commercial landscape maintenance in Northern Virginia',
     href: '/commercial-landscape-maintenance-virginia',
@@ -32,6 +34,7 @@ const SERVICES = [
   {
     heading: 'Hardscape Design Services',
     body: 'Our hardscapes are designed to be visually stunning and functional, and built to last a lifetime.',
+    bodyNew: "Patios, walkways, retaining walls, steps and fire features, designed and built by our own crews. We spend the time on the base you'll never see, because that is what keeps the surface level for years.",
     img: cdnToLocal('/media/6808afe22b48076cc8e63cef/6889b8bb276774b7c21ff399_Katie Bird Pool 5.jpg'),
     alt: 'Hardscape patio and stonework installation in Northern Virginia',
     href: '/hardscape-northern-virginia',
@@ -39,6 +42,7 @@ const SERVICES = [
   {
     heading: 'Landscape Maintenance Services',
     body: 'Transform your outdoor space into a living masterpiece that evolves beautifully through every season. Our curated maintenance packages ensure your landscape receives precisely what it needs, when it needs it.',
+    bodyNew: "Mowing, bed care, mulch and seasonal cleanups on a set schedule, so the property looks cared for all year. Spring cleanups start in February, so beds are ready before new growth comes in.",
     img: cdnToLocal('/media/6808afe22b48076cc8e63cef/6822f6271cbe1867ff2caf42_MP-header-img-1 (1).webp'),
     alt: 'Year-round landscape maintenance services in Northern Virginia',
     href: '/landscape-maintenance-northern-virginia',
@@ -46,6 +50,7 @@ const SERVICES = [
   {
     heading: 'Landscape Lighting Design',
     body: 'Transform your property into an enchanting evening retreat with artfully designed landscape lighting.',
+    bodyNew: "Low-voltage lighting for paths, steps, trees and the front of the house. The yard you enjoy by day still works after dark, and the walk to the door is easier to see.",
     img: cdnToLocal('/media/6808afe22b48076cc8e63cef/680f2d0d1148d166273a6347_design-1.webp'),
     alt: 'Professional landscape lighting design for outdoor spaces',
     href: '/landscape-lighting-northern-virginia',
@@ -53,6 +58,7 @@ const SERVICES = [
   {
     heading: 'Ponds & Water Features',
     body: 'Transform your outdoor sanctuary with the timeless allure of moving water. From meditative koi ponds to dramatic waterfalls, we craft water features that engage all the senses and create year-round interest in your landscape.',
+    bodyNew: "Ponds, waterfalls and fountains, built new or rebuilt when an older one starts to leak. We look at the liner, pump and edging first, because that is usually where an older pond gives out.",
     img: cdnToLocal('/media/6808afe22b48076cc8e63cef/682321dd71e368222af56712_pw-header-img-1 (1).webp'),
     alt: 'Custom pond and water feature installation in Northern Virginia',
     href: '/water-features-northern-virginia',
@@ -60,6 +66,7 @@ const SERVICES = [
   {
     heading: 'Drainage & Erosion Control',
     body: 'Where art meets engineering, we transform water challenges into opportunities for landscape enhancement. Our expertise ensures your property remains beautiful and structurally sound through every season.',
+    bodyNew: "Standing water, washed-out mulch and a lawn that never dries usually trace back to one cause we can find on a site visit. We fix the cause first, then the landscape on top of it.",
     img: cdnToLocal('/media/6808afe22b48076cc8e63cef/68247d8f31ffd45cf0a28ba9_dec-header-img-2 (1).webp'),
     alt: 'Drainage solution and erosion control landscaping in Northern Virginia',
     href: '/drainage-solutions-northern-virginia',
@@ -206,7 +213,7 @@ export default function ServicesGrid() {
         {/* Header */}
         <div className="flex-shrink-0 max-w-screen-xl mx-auto px-5 lg:px-8 pt-14 pb-4 lg:pb-8 text-center">
           <h2 data-sg-reveal className="text-cream" style={{ fontSize: 'clamp(2rem, 4.5vw, 4.2rem)', lineHeight: 1.05 }}>
-            {'Where Vision ‍ meets craftsmanship.'}
+            <V c={'Where Vision ‍ meets craftsmanship.'} n="Landscaping services, from installation to year-round care" />
           </h2>
         </div>
 
@@ -244,7 +251,7 @@ export default function ServicesGrid() {
                   >
                     {svc.heading}
                   </h3>
-                  <p className="text-cream/90 leading-relaxed">{svc.body}</p>
+                  <p className="text-cream/90 leading-relaxed"><V c={svc.body} n={svc.bodyNew} /></p>
                 </div>
               </Link>
             ))}

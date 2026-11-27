@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import HeroBackgroundCarousel from './HeroBackgroundCarousel'
+import { V } from '@/components/preview/CopyVersion'
 import heroBg1 from './hero-bg/hero-bg-1.png'
 import heroBg2 from './hero-bg/hero-bg-2.png'
 import heroBg3 from './hero-bg/hero-bg-3.png'
@@ -81,8 +82,10 @@ export default function Hero3B() {
         Landscaping &amp; Hardscaping in Northern Virginia
       </h1>
       <p className="text-cream/85 text-lg leading-relaxed max-w-xl">
-        Year-round maintenance plans, plus outdoor living projects when you&apos;re ready. Family
-        owned, serving Northern Virginia since 1986. We respond in minutes.
+        <V
+          c={<>Year-round maintenance plans, plus outdoor living projects when you&apos;re ready. Family owned, serving Northern Virginia since 1986. We respond in minutes.</>}
+          n={<>Most days you see your yard twice: pulling out of the driveway in the morning and pulling back in at night. Sunrise is a family-owned landscaping company that has designed, built and cared for Northern Virginia landscapes since 1986, so that view is one you&apos;re glad to come home to.</>}
+        />
       </p>
       <div className="flex items-center gap-6 flex-wrap">
         <Link href="/contact#form" className="btn-primary">

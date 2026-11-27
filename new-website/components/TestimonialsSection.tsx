@@ -1,4 +1,5 @@
 'use client'
+import { V } from '@/components/preview/CopyVersion'
 
 import { useState, useCallback, useRef, useEffect, useMemo } from 'react'
 
@@ -96,15 +97,19 @@ export default function TestimonialsSection({ testimonials }: { testimonials: Te
           <div>
             <p className="section-label text-green/50 mb-5">Testimonials</p>
             <h2 className="text-green leading-tight" style={{ fontSize: 'clamp(2.8rem, 5.5vw, 4.5rem)' }}>
-              Hear it from the{' '}
-              <em>people</em>{' '}
-              who <em>matter</em>
+              <V
+                c={<>Hear it from the{' '}<em>people</em>{' '}who <em>matter</em></>}
+                n={<>What our <em>clients</em> say</>}
+              />
             </h2>
           </div>
 
           <div className="max-w-sm lg:pb-2">
             <p className="text-green/55 leading-relaxed mb-7">
-              Choosing a licensed landscaping team ensures your investment is backed by expertise, safety standards, and professionalism. While others may offer lower prices, our certifications guarantee your project is completed correctly the first time.
+              <V
+                c={<>Choosing a licensed landscaping team ensures your investment is backed by expertise, safety standards, and professionalism. While others may offer lower prices, our certifications guarantee your project is completed correctly the first time.</>}
+                n={<>Sunrise holds a Class A contractor&apos;s license, is fully insured and backs its workmanship with a one-year warranty. The best description of working with us comes from the people we&apos;ve worked for.</>}
+              />
             </p>
             <div className="flex items-center gap-3">
               <button

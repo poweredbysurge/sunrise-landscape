@@ -7,11 +7,12 @@ import CommunityGivingSection from '@/components/CommunityGivingSection'
 import DesignApproachSection from '@/components/DesignApproachSection'
 import AboutHero from '@/components/AboutHero'
 import { SITE_URL } from '@/lib/siteUrl'
+import { V } from '@/components/preview/CopyVersion'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/about-us' },
   title: 'About Us | Sunrise Landscape',
-  description: "Learn about Sunrise Landscape, Northern Virginia's trusted landscape experts since 1986. Serving 15+ communities with excellence and integrity.",
+  description: "Family owned since 1986 and based in Sterling, Sunrise Landscape designs, builds and maintains landscapes across 15+ Northern Virginia communities.",
   openGraph: {
     title: 'About Us | Sunrise Landscape',
     description: "Learn about Sunrise Landscape, Northern Virginia's trusted landscape experts since 1986. Serving 15+ communities with excellence and integrity.",
@@ -43,19 +44,45 @@ export default function AboutPage() {
             Professional Landscape Design Since 1986
           </h2>
           <div className="space-y-4 text-lg leading-relaxed text-black/70">
-            <p>
-              Sunrise started in 1986 with a truck, a small crew, and a simple standard: build
-              landscapes we would want in our own yards. Four decades later the crews are
-              bigger and the projects run from quarter acre townhome lots to multi acre estates,
-              but the standard has not moved.
-            </p>
-            <p>
-              Today the company designs, builds, and maintains landscapes across more than fifteen
-              Northern Virginia communities from our home base in Sterling. Design, hardscape,
-              planting, lighting, drainage, and year round maintenance all run under one roof,
-              which means the person who drew your plan and the crew that builds it answer to the
-              same name on the truck.
-            </p>
+            <V
+              c={<>
+                <p>
+                  Sunrise started in 1986 with a truck, a small crew, and a simple standard: build
+                  landscapes we would want in our own yards. Four decades later the crews are
+                  bigger and the projects run from quarter acre townhome lots to multi acre estates,
+                  but the standard has not moved.
+                </p>
+                <p>
+                  Today the company designs, builds, and maintains landscapes across more than fifteen
+                  Northern Virginia communities from our home base in Sterling. Design, hardscape,
+                  planting, lighting, drainage, and year round maintenance all run under one roof,
+                  which means the person who drew your plan and the crew that builds it answer to the
+                  same name on the truck.
+                </p>
+              </>}
+              n={<>
+                <p>
+                  Our President, Mike Flickinger, puts it this way: most people see their landscape
+                  twice a day, pulling out of the driveway in the morning and pulling back in at night.
+                  If what you see is the soggy corner still on your to-do list, it follows you into the
+                  day. If it&apos;s a yard you&apos;re proud of, or the patio where you&apos;ll sit with a
+                  glass of wine after a long day, the day starts and ends differently. That second view
+                  is what we work for.
+                </p>
+                <p>
+                  Sunrise started in 1986 with a truck, a small crew and a simple standard: build
+                  landscapes we would want in our own yards. The crews are bigger now and the projects run
+                  from townhome lots to multi-acre estates, but the standard hasn&apos;t moved.
+                </p>
+                <p>
+                  Today we design, build and maintain landscapes across more than fifteen Northern
+                  Virginia communities from our home base in Sterling. Patios and walls, planting,
+                  lighting, drainage and year-round maintenance all run through one company, and our
+                  own crews do the work. When something needs attention after the job, you call the same
+                  company that built it.
+                </p>
+              </>}
+            />
           </div>
         </div>
       </section>

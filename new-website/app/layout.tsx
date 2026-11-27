@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import { Figtree } from 'next/font/google'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import { CopyVersionProvider } from '@/components/preview/CopyVersion'
 import { SITE_URL } from '@/lib/siteUrl'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
@@ -56,9 +57,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${figtreeUi.variable} ${figtreeBody.variable} ${editorsNote.variable}`}>
       <body className="font-sans antialiased text-black bg-white min-w-0">
-        <Navigation />
-        <main>{children}</main>
-        <Footer />
+        <CopyVersionProvider>
+          <Navigation />
+          <main>{children}</main>
+          <Footer />
+        </CopyVersionProvider>
         {GA_ID ? <GoogleAnalytics gaId={GA_ID} /> : null}
       </body>
     </html>

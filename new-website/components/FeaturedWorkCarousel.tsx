@@ -3,6 +3,7 @@
 import { useState, useCallback, useRef, useEffect, useMemo, type TouchEvent } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { V } from '@/components/preview/CopyVersion'
 
 export type GalleryImage = { src: string; alt: string }
 export type Project = {
@@ -209,7 +210,10 @@ export default function FeaturedWorkCarousel({
         <div className="flex-shrink-0 w-full lg:w-[clamp(260px,28vw,400px)] px-6 lg:px-16 pt-6 pb-6 lg:pt-8 lg:pb-14 flex flex-col gap-6 lg:gap-0 lg:justify-between">
           <div>
             <p className="text-green/60 leading-relaxed mb-7">
-              Each project we undertake is a reflection of bold creativity and refined elegance. Every space we create is carefully tailored to embody our clients&apos; unique vision while pushing the boundaries of modern landscape design.
+              <V
+                c={<>Each project we undertake is a reflection of bold creativity and refined elegance. Every space we create is carefully tailored to embody our clients&apos; unique vision while pushing the boundaries of modern landscape design.</>}
+                n={<>A few finished projects from Vienna, Great Falls, Oakton and Leesburg, each one a landscape design built around how the family uses the yard. Open any one to see the full set of photos.</>}
+              />
             </p>
             <Link
               href={ctaHref}

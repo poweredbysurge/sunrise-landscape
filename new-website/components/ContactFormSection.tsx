@@ -1,4 +1,5 @@
 import InquiryForm from '@/components/InquiryForm'
+import { V } from '@/components/preview/CopyVersion'
 
 export default function ContactFormSection() {
   return (
@@ -12,11 +13,10 @@ export default function ContactFormSection() {
               className="text-green leading-[0.92] tracking-tight"
               style={{ fontSize: 'clamp(3.5rem, 5vw, 4.5rem)' }}
             >
-              Let&apos;s get <br />
-              <span className="editorial-display">started</span> in <br />
-              making your <br />
-              dream a <br />
-              <span className="editorial-display">reality.</span>
+              <V
+                c={<>Let&apos;s get <br /><span className="editorial-display">started</span> in <br />making your <br />dream a <br /><span className="editorial-display">reality.</span></>}
+                n={<>Let&apos;s talk <br />about your <br /><span className="editorial-display">property.</span></>}
+              />
             </h2>
           </div>
 

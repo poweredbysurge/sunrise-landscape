@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { cdnToLocal } from '@/lib/mediaUrl'
+import { V } from '@/components/preview/CopyVersion'
 
 const TOPO_LINES = [
   'M-50,520 C150,460 320,540 500,480 C640,436 760,496 950,460',
@@ -85,13 +86,10 @@ export default function DesignApproachSection() {
               className="absolute bottom-0 left-0 right-0 text-white/90 leading-relaxed"
               style={{ fontSize: '16px', padding: 'clamp(1.5rem, 4vw, 2.5rem)' }}
             >
-              Transforming your outdoor space should be as enjoyable as the result. Our team
-              brings enthusiasm and creativity to every project, making the journey fun while
-              maintaining excellence. We celebrate perfect plant combinations just as eagerly as
-              we tackle complex design challenges. With clear communication and attention to
-              detail, we aim to exceed your expectations while creating lasting beauty.
-              It&apos;s not just landscaping; it&apos;s about building lasting relationships
-              with clients.
+              <V
+                c={<>Transforming your outdoor space should be as enjoyable as the result. Our team brings enthusiasm and creativity to every project, making the journey fun while maintaining excellence. We celebrate perfect plant combinations just as eagerly as we tackle complex design challenges. With clear communication and attention to detail, we aim to exceed your expectations while creating lasting beauty. It&apos;s not just landscaping; it&apos;s about building lasting relationships with clients.</>}
+                n={<>A good project should be as easy to live through as it is to look at. We plan it with you on your property, tell you what happens next at each stage, and check the details before we call it finished: the joints, the edges, the grade and the spacing between plants. Sunrise holds a Class A contractor&apos;s license, and everything we build is backed by a one-year workmanship warranty.</>}
+              />
             </p>
           </div>
         </div>
