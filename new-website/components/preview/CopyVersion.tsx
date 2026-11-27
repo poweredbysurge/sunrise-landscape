@@ -2,8 +2,8 @@
 
 // Preview-only copy switcher (Mike review, Nov 2026).
 // Every rewritten string is wrapped in <V c={current} n={new} />. The page shows the NEW copy by default.
-// On any host other than the live domain, a small toggle lets the reviewer flip back to the CURRENT copy
-// to compare. On the live domain the toggle never renders. After approval, unwrap <V> to its `n` value.
+// On any host other than the live domain, an A/B switch at the top of the page lets the reviewer compare:
+// A = the original (current live) copy, B = the new copy. Add ?copy=current to a link to open on A. On the live domain the toggle never renders. After approval, unwrap <V> to its `n` value.
 
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react'
 import { usePathname } from 'next/navigation'
@@ -25,6 +25,14 @@ export function useCopyVersion() {
 export function CopyVersionProvider({ children }: { children: ReactNode }) {
   const [version, setVersion] = useState<Version>('new')
   const [isPreviewHost, setIsPreviewHost] = useState(false)
+  // The header is taller at the very top of the page on desktop (shrinking logo), so the switch follows it.
+  const [scrolled, setScrolled] = useState(false)
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
   const pathname = usePathname()
 
   useEffect(() => {
@@ -47,13 +55,13 @@ export function CopyVersionProvider({ children }: { children: ReactNode }) {
       {children}
       {showToggle && (
         <div
-          className="fixed bottom-5 left-1/2 -translate-x-1/2 z-[60] flex items-center gap-1 p-1 bg-[#101f16] text-cream shadow-2xl border border-orange/60"
+          className={`fixed left-1/2 -translate-x-1/2 z-[60] flex items-center gap-1 p-1 bg-[#101f16] text-cream shadow-2xl border border-orange/60 top-[92px] transition-[top] duration-300 ease-out ${scrolled ? 'lg:top-[92px]' : 'lg:top-[124px]'}`}
           style={{ borderRadius: 9999 }}
           role="group"
           aria-label="Compare page copy"
         >
-          <span className="px-3 text-[11px] font-bold uppercase tracking-widest text-cream/70 hidden sm:inline">Page copy</span>
-          {(['new', 'current'] as Version[]).map((v) => (
+          <span className="px-3 text-[11px] font-bold uppercase tracking-widest text-cream/70 hidden sm:inline">Compare copy</span>
+          {(['current', 'new'] as Version[]).map((v) => (
             <button
               key={v}
               type="button"
@@ -64,7 +72,7 @@ export function CopyVersionProvider({ children }: { children: ReactNode }) {
               }`}
               style={{ borderRadius: 9999 }}
             >
-              {v === 'new' ? 'New copy' : 'Current copy'}
+              {v === 'current' ? 'A · Original' : 'B · New'}
             </button>
           ))}
         </div>
